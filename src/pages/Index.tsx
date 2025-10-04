@@ -6,8 +6,10 @@ import { ThemeSection } from '@/components/ThemeSection';
 import { AchievementsModal } from '@/components/AchievementsModal';
 import { QuickNav } from '@/components/QuickNav';
 import { BackToTop } from '@/components/BackToTop';
+import { AdminPanel } from '@/components/AdminPanel';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { poemsData, themeTitles } from '@/data/poems';
+import { loadCustomPoems, saveCustomPoem, mergePoems, generatePoemId } from '@/utils/poemLoader';
 
 interface DiaryEntry {
   text: string;
@@ -18,10 +20,26 @@ const Index = () => {
   const [readPoems, setReadPoems] = useLocalStorage<string[]>('readPoems', []);
   const [diaryEntries, setDiaryEntries] = useLocalStorage<DiaryEntry[]>('spiritualDiaryEntries', []);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [customPoems, setCustomPoems] = useState(loadCustomPoems());
+
+  // Mescla poemas base com poemas customizados
+  const allPoems = useMemo(() => mergePoems(poemsData, customPoems), [customPoems]);
 
   const totalPoems = useMemo(() => {
-    return Object.values(poemsData).reduce((sum, poems) => sum + poems.length, 0);
-  }, []);
+    return Object.values(allPoems).reduce((sum, poems) => sum + poems.length, 0);
+  }, [allPoems]);
+
+  const handleAddPoem = (newPoem: { theme: string; title: string; text: string }) => {
+    const poemId = generatePoemId(newPoem.theme);
+    const poem = {
+      id: poemId,
+      title: newPoem.title,
+      text: newPoem.text
+    };
+    
+    saveCustomPoem(newPoem.theme, poem);
+    setCustomPoems(loadCustomPoems());
+  };
 
   const handleToggleRead = (poemId: string, isRead: boolean) => {
     setReadPoems(prev => {
@@ -44,6 +62,7 @@ const Index = () => {
 
   return (
     <div className="w-full scroll-smooth">
+      <AdminPanel onAddPoem={handleAddPoem} />
       <QuickNav />
       <BackToTop />
 
@@ -64,7 +83,7 @@ const Index = () => {
 
         <div className="space-y-4">
           {Object.keys(themeTitles).map((themeKey) => {
-            const poems = poemsData[themeKey];
+            const poems = allPoems[themeKey];
             if (!poems || poems.length === 0) return null;
             
             const themeId = `theme-${themeKey}`;
