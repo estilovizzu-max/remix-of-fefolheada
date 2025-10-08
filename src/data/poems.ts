@@ -206,12 +206,215 @@ E milagres do céu você vai colher.`}
     { id: 'oi-2', title: 'Aproxime-se com calma', text: `Aproxime-se com calma,\nOuça a voz a chamar.\nSanta e doce é Sua presença,\nO Senhor está a chegar.\nPurifique os seus passos,\nPara em Sua glória andar.\nO lugar que agora pisas\nÉ um templo a se honrar.\nSua presença é real,\nDeus habita neste lugar.\nTire a dúvida do peito,\nPela fé, tudo vai mudar.`},
     { id: 'oi-3', title: 'Marta e Maria (Lucas 10:38-42)', text: `Jesus entrou na casa de Marta para ensinar.\nMaria, aos Seus pés, sentou-se a escutar.\nMarta, preocupada com os afazeres do lar,\naproximou-se de Jesus e começou a reclamar.\nCom ternura, Jesus a respondeu:\n"Marta, Marta, por tantas coisas andas ansiosa.\nMaria escolheu a melhor parte,\ne esta não lhe será tirada."\nAbandone a preocupação,\nrelaxe e venha sentar.\nOuça agora o que tenho a dizer,\npara o seu coração curar.\nAprenda com Maria,\nbusque intimidade com o Senhor.\nSente-se para escutar,\nperceba o Seu amor.\nAdore como Maria,\nabandone a preocupação.\nÉ hora de cuidar do seu coração.`}
   ],
-  'transformacao-renovacao': [],
-  'amor-graca': [],
-  'chamado-missao': [],
-  'salvacao-vidaeterna': [],
-  'paz-cura': [],
-  'reflexoes-vida': []
+  'transformacao-renovacao': [
+    { id: 'tr-1', title: 'Acenda Sua Luz', text: `Deixe sua luz brilhar,
+Você precisará acender o que está te impedindo,
+Terá que logo resolver.`},
+    { id: 'tr-2', title: 'O pecado está queimando', text: `O pecado está queimando,
+Meu irmão, pode lançar!
+Já tomou sua decisão?
+Deixe Deus te libertar.
+Pois Ele apaga a culpa,
+Basta apenas confessar.
+Abra a boca neste instante,
+Deixe a fé te guiar!`},
+    { id: 'tr-3', title: 'A Mudar a Vida', text: `Para minha vida mudar,
+o que preciso fazer?
+Se não fosse hoje,
+então, quando iria ser?
+Você pode conhecer Jesus
+e nada na sua vida mudar,
+pois tudo depende de você,
+é preciso se enxergar.
+Deus sustenta sua vida
+através da oração,
+permaneça em Sua graça,
+Ele cuida do seu coração.
+O Senhor está revelando,
+chamando a sua atenção.
+Esteja aberta à Sua palavra,
+coloque-a em ação.
+Se tu conheceres Jesus
+e ouvir Sua voz a falar,
+acolhe Sua palavra
+e a pratique sem hesitar.
+Através do Seu Espírito,
+Ele vem para revelar,
+curar o seu coração
+e fazer a vida transformar.
+Jesus sempre está presente,
+Ele vem para cuidar,
+está te incomodando,
+Deus te abençoe a caminhar.`},
+    { id: 'tr-4', title: 'O Novo Começo', text: `A nova história começou em primeiro de janeiro,
+Pois no dia derradeiro, o passado foi inteiro.
+Tudo aquilo que antes me fez desabar,
+Ficou para trás — já não pode mais me parar.
+Que Deus fale bem de você — é o que desejo,
+Que esteja ao seu lado com graça e com beijo.
+Hoje, recebi um livro em branco para escrever:
+A história da minha vida, que um dia você vai ler.
+Como é bom perceber que a alegria não se apaga,
+Pois, em Deus, nada se perde — tudo se embala e se embasa.
+Ele quer nos ensinar, com carinho e com saber,
+Que depende de você, a cada dia, renascer.
+Resolvi deixar no passado minhas antigas prisões,
+Enterrei as culpas e confusas convicções.
+Hoje, na mente, trago paz e emoção,
+Porque vivo com Deus dentro do meu coração.`},
+    { id: 'tr-5', title: 'Renovação em Cristo', text: `Renova-me, ó Senhor,
+no Teu amor quero habitar.
+Faz do meu coração Templo,
+onde a paz venha morar.
+Remove minhas angústias,
+minhas culpas, meu pesar.
+Ensina-me a ser luz,
+a verdade proclamar.
+No Teu Espírito encontro
+a força que me conduz.
+Nas trevas, Tu és caminho,
+és minha eterna luz.
+Renova minha esperança,
+que o cansaço quer roubar.
+Faz de mim testemunho,
+do Teu amor a brilhar.
+No Teu tempo, sei que tudo
+encontrará razão e fim.
+Renova-me, ó Senhor,
+começa hoje, aqui, em mim.`}
+  ],
+  'amor-graca': [
+    { id: 'ag-1', title: 'O Dom do Amor', text: `Cada um recebe um dom
+Para a Igreja edificar.
+Vou mostrar-te o caminho,
+Para que possas caminhar.
+Quanto tempo ainda tens?
+O Senhor quer te ensinar.
+O amor é paciente,
+Para e vem analisar.
+Como o bronze que ressoa,
+Ou o címbalo a tocar,
+Sem amor, dons são vazios,
+Nada podem transformar.
+Ainda que fales línguas,
+Ou profetizes sem cessar,
+Se não houver caridade,
+Nada disso há de contar.
+Espera no Senhor,
+Ele tudo vai te dar.
+Com fé amadurecida,
+Segue firme a caminhar.
+Acolhe os teus irmãos,
+A quem tanto precisar.
+Persevera todo dia,
+Na promessa a se firmar.
+Ele deu de Sua graça,
+Como oferta e puro amor.
+Tudo vale quando a alma
+Segue livre em Seu louvor.
+Ela cresce na verdade,
+Leve e pura como a pena.
+Recomeça na bondade,
+Pois no bem não há algema.
+Avança a cada dia,
+Na fé e na caridade.
+Jesus disse: "Este é o caminho,
+A verdade e a liberdade."`}
+  ],
+  'chamado-missao': [
+    { id: 'cm-1', title: 'Chamado do Senhor', text: `Ele está confirmando,
+Derramando o Seu amor.
+Escute bem esta voz,
+Pois quem fala é o Senhor.
+Entregue-se a Ele,
+Todo dia, sem temer.
+Ouça a voz que te chama,
+Sinta Deus em teu viver.
+O medo tenta impedir,
+Mas não pode te parar.
+O fogo segue ardendo,
+E jamais deixará de queimar.
+A presença do Senhor
+Faz renascer, faz transformar.
+Sua graça é derramada,
+Basta apenas acreditar.
+Deus te chama a conduzir
+O rebanho com fervor.
+Permaneça em Sua presença,
+Mesmo em tempos de dor.
+Se estiver no deserto,
+Ele vem te confortar.
+Aguenta firme, meu irmão,
+Logo tudo vai mudar.
+Peça com fé, não desista,
+Esse tempo vai passar.
+A promessa está chegando,
+Se prepare para pegar.
+Permaneça no Espírito,
+Para o propósito alcançar.
+Cuide bem do Seu rebanho,
+Pois tua hora vai chegar.`}
+  ],
+  'salvacao-vidaeterna': [
+    { id: 'sv-1', title: 'O Caminho para o Céu', text: `Jesus, junto aos discípulos,
+Anuncia sua paixão,
+O sofrimento que viria,
+Para nossa redenção.
+Os discípulos, acostumados,
+Sempre ao lado do Senhor,
+Não compreendem que o Mestre
+Padecerá por amor.
+Se quiser ser o primeiro,
+Sirva a todos sem temor.
+Para entrar no Reino eterno,
+Aprenda com o Senhor.
+Mantenha acesa a chama,
+O desejo de crescer.
+Não desvie o seu olhar,
+Ouça o que Ele veio dizer.
+Servir é o caminho certo,
+Para o céu poder entrar.
+Amar e se entregar,
+Sem nada em troca esperar.
+"Está tudo consumado",
+Jesus disse em sua dor.
+Na cruz, Ele derramou
+Seu sangue puro de amor.
+O modelo da criança
+Nos convida a enxergar
+Que sem a graça de Deus
+Não podemos nos santificar.
+A técnica sem o Espírito
+Não nos traz conversão.
+A criança sempre ensina
+O valor do perdão.`}
+  ],
+  'paz-cura': [
+    { id: 'pc-1', title: 'Força e Proteção', text: `Dá-me força, Senhor,
+aceito o Teu amor que me sustenta,
+que me protege e me guia.
+És meu Deus, meu Salvador,
+minha rocha, minha vida.`}
+  ],
+  'reflexoes-vida': [
+    { id: 'rv-1', title: 'O Peso da Redenção', text: `A dor não impediu
+que o Senhor cumprisse sua missão.
+Ela só te mantém preso
+se não tratar teu coração.
+Imagine o peso nos ombros
+que Ele carregou pra vencer,
+pra salvar.
+Esmagou o ódio,
+a falta de perdão…
+Já pensou?
+Está na hora de pensar.
+Ofereceu amor a todos,
+mas nem todos quiseram entender.
+Resgatou o pecado do mundo
+pra que todos pudessem
+ver…
+e crer.`}
+  ]
 };
 
 export const readingAchievementsList = [
