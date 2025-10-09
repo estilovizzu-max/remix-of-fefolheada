@@ -120,11 +120,14 @@ All colors MUST be HSL.
 
 @layer components {
   .poem-container {
-    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-[3px] border-[hsl(var(--poem-border))] px-8 py-6 shadow-md;
+    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-4 border-[hsl(var(--poem-border))] px-8 py-8 shadow-md;
+    background-image: linear-gradient(to bottom, hsl(var(--poem-bg)), hsl(var(--poem-bg)) 95%, hsl(var(--poem-border) / 0.05));
   }
   
   .poem-text {
-    @apply font-['Lora',serif] whitespace-pre-line leading-[1.9] text-[1.1rem] text-foreground relative z-10;
+    @apply font-['Lora',serif] whitespace-pre-line leading-[2] text-[1.15rem] text-foreground relative z-10;
+    text-align: justify;
+    text-indent: 0;
   }
   
   .poem-text::selection {
@@ -132,11 +135,13 @@ All colors MUST be HSL.
   }
   
   .poem-watermark {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-['Dancing_Script',cursive] text-[5rem] text-[hsl(var(--poem-watermark))] opacity-5 pointer-events-none -z-0 whitespace-nowrap -rotate-[30deg];
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-['Dancing_Script',cursive] text-[6rem] text-[hsl(var(--poem-watermark))] opacity-[0.04] pointer-events-none -z-0 whitespace-nowrap -rotate-[30deg];
+    user-select: none;
   }
   
   .theme-header {
-    @apply text-3xl font-bold text-primary mt-4 mb-0 p-4 border-b-2 border-muted scroll-mt-8 transition-colors hover:bg-accent/50;
+    @apply text-3xl font-bold text-primary mt-8 mb-4 p-6 border-b-[3px] border-primary/30 scroll-mt-8 transition-all hover:bg-gradient-to-r hover:from-primary/10 hover:to-secondary/10 rounded-t-lg;
+    background: linear-gradient(to right, hsl(var(--muted)), hsl(var(--background)));
   }
   
   .progress-bar-bg {

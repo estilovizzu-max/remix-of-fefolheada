@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Play, Square, Volume2 } from 'lucide-react';
+import { Volume2, Square, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Poem } from '@/data/poems';
+import { toast } from '@/hooks/use-toast';
 
 interface PoemCardProps {
   poem: Poem;
@@ -29,36 +30,74 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
 
     const utterance = new SpeechSynthesisUtterance(poem.text);
     utterance.lang = 'pt-BR';
+    utterance.rate = 0.9;
+    utterance.pitch = 1.0;
     utterance.onstart = () => setIsSpeaking(true);
     utterance.onend = () => setIsSpeaking(false);
     utterance.onerror = () => setIsSpeaking(false);
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleShare = async () => {
+    const shareData = {
+      title: `${poem.title} - Evaldo Poeta`,
+      text: `${poem.title}\n\n${poem.text}\n\n- Evaldo Poeta`,
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        toast({
+          title: "Compartilhado com sucesso!",
+          description: "Obrigado por compartilhar 🙏"
+        });
+      } else {
+        await navigator.clipboard.writeText(`${shareData.title}\n\n${shareData.text}`);
+        toast({
+          title: "Copiado!",
+          description: "Poema copiado para a área de transferência"
+        });
+      }
+    } catch (error) {
+      console.error('Erro ao compartilhar:', error);
+    }
+  };
+
   return (
-    <article className="bg-card rounded-lg shadow-sm border border-border overflow-hidden">
-      <div className="p-4 border-b border-border flex justify-between items-center">
-        <h3 className="text-lg font-semibold text-foreground">{poem.title}</h3>
-        <div className="flex items-center gap-4">
+    <article className="bg-card rounded-lg shadow-lg border border-border overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+      <div className="p-4 border-b border-border bg-gradient-to-r from-primary/5 to-secondary/5">
+        <h3 className="text-xl font-bold text-primary mb-3">{poem.title}</h3>
+        <div className="flex items-center gap-2 flex-wrap">
           <Button
             onClick={handleSpeak}
-            variant="ghost"
+            variant="outline"
             size="sm"
-            className="text-muted-foreground hover:text-primary"
+            className="gap-2 hover:bg-primary hover:text-primary-foreground transition-colors"
+            title={isSpeaking ? "Parar áudio" : "Ouvir poema"}
           >
             {isSpeaking ? (
-              <Square className="h-5 w-5" />
+              <><Square className="h-4 w-4" /> Parar</>
             ) : (
-              <Volume2 className="h-5 w-5" />
+              <><Volume2 className="h-4 w-4" /> Ouvir</>
             )}
           </Button>
-          <Label className="flex items-center gap-2 cursor-pointer">
+          <Button
+            onClick={handleShare}
+            variant="outline"
+            size="sm"
+            className="gap-2 hover:bg-secondary hover:text-secondary-foreground transition-colors"
+            title="Compartilhar poema"
+          >
+            <Share2 className="h-4 w-4" /> Compartilhar
+          </Button>
+          <Label className="flex items-center gap-2 cursor-pointer ml-auto">
             <Switch
               checked={isRead}
               onCheckedChange={(checked) => onToggleRead(poem.id, checked)}
             />
-            <span className={`text-sm ${isRead ? 'text-primary font-semibold' : 'text-muted-foreground'}`}>
-              {isRead ? 'Lido' : 'Não lido'}
+            <span className={`text-sm font-medium ${isRead ? 'text-primary' : 'text-muted-foreground'}`}>
+              {isRead ? '✓ Lido' : 'Marcar como lido'}
             </span>
           </Label>
         </div>
@@ -66,6 +105,9 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
       <div className="poem-container">
         <div className="poem-watermark">Evaldo Poeta</div>
         <p className="poem-text">{poem.text}</p>
+        <div className="mt-6 text-right">
+          <p className="text-sm font-['Dancing_Script',cursive] text-primary/60 italic">— Evaldo Poeta</p>
+        </div>
       </div>
     </article>
   );
