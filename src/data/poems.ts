@@ -428,6 +428,75 @@ Recita diariamente, salmodia para Deus, Nos cantos de louvor, oferece graças es
 A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.`,
       reflection: '"Seja um missionário em teu próprio lar". A primeira missão é dentro de casa.',
       inspiration: 'Minha casa servirá ao Senhor e eu...'
+    },
+    {
+      id: 'p5-5',
+      title: 'Obra Divina (O Grande Final)',
+      text: `Deus fez uma obra na sua vida, ah! Já está concluída, viu? Se alegre no Senhor, a porta do céu abriu.
+A boa notícia é que Ele é a melhor notícia pra você.
+O mundo apresenta dificuldade e problemas para se perder.
+A solução é Jesus Cristo, Ele veio te dizer.
+O mundo quer te oprimir, mas Deus traz para você:
+Tenha ânimo e esperança, a palavra que foi pregada é para você viver.
+Sua história, sua vida, Deus não esquece de você.
+Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida.`,
+      reflection: '"Já está concluída". A obra de Deus em mim não é um "talvez", é um fato consumado na Cruz.',
+      inspiration: 'A obra está feita. Eu me levanto e entro...'
+    },
+    {
+      id: 'p5-6',
+      title: 'O Novo Começo',
+      text: `A nova história começou em primeiro de janeiro, Pois no dia derradeiro, o passado aniquilou,
+Acabando com aquilo que antes me derrotou.
+Que Deus fale bem de você é o que desejo este ano, Esteja sempre ao seu lado, todo dia abençoando.
+Hoje recebi um livro em branco para escrever, A história da minha vida para um dia você ler.
+Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e Ele quer nos ensinar.`,
+      reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã.',
+      inspiration: 'Neste livro em branco, eu escrevo...'
+    },
+    {
+      id: 'p5-7',
+      title: 'A Semeadura da Vida',
+      text: `O sentido da vida você tem que encontrar, Sirva com alegria, isso é o verdadeiro amar.
+É mais fácil amar quem está longe de você, Pois quem está perto ajuda a perceber.
+Que a vida não é fácil, é preciso aprender, Depois a caridade vem, e você se alegra.
+Seja forte e corajoso, o Senhor já te salvou, Um semeia, outro rega, para depois colher.
+A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.`,
+      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa.',
+      inspiration: 'Eu planto sementes de esperança para...'
+    },
+    {
+      id: 'p5-8',
+      title: 'Caminhando na Fé',
+      text: `Olá, com certeza posso te ajudar, Nesta hora, vamos juntos buscar?
+Lutarei até o fim, pois Deus é quem manda, Em conexão com Ele, nossa fé se expanda.
+Lembro-me da conexão que fiz com o Senhor, E hoje novamente, buscarei Sua direção e amor.
+Ele está sempre ao meu lado, pronto a me socorrer, Ensinando-me a perseverar e vencer.
+Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não me sinto inseguro.`,
+      reflection: '"Sua recompensa está chegando, creia e espere". A caminhada de fé não é em vão.',
+      inspiration: 'Eu caminho com fé em direção a...'
+    },
+    {
+      id: 'p5-9',
+      title: 'Semeie a Fé e Colherá Milagres',
+      text: `Se você plantar a fé, também colherá milagres, Jesus Cristo é o Senhor, e essa é a verdade.
+"Frater" significa irmão, cuidar um do outro, Assim como o Pai Nosso nos ensina a perdoar de coração.
+Mas o que é a caridade? É falar de amor, paciência e bondade,
+Devemos praticar essas virtudes com sinceridade, E finalizar com a ajuda de quem traz saudade.
+Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha acreditar.`,
+      reflection: 'A verdadeira fé leva ao desapego, como Abraão com Isaque.',
+      inspiration: 'Eu semeio fé para colher...'
+    },
+    {
+      id: 'p5-10',
+      title: 'Escolhidos para Anunciar',
+      text: `Nós fomos escolhidos para orar e anunciar, O Espírito Divino veio nos acompanhar.
+Abra o seu coração, deixe Deus nele entrar, No livro de Hebreus, o Senhor veio falar.
+Lembre-se daquele dia em que foste iluminado, A glória do Senhor está sempre ao seu lado.
+A luz de Deus entrou, acabou a escuridão, Não viva como escravo, o Senhor te dá a mão.
+Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.`,
+      reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança.',
+      inspiration: 'Eu fui escolhido e anuncio que...'
     }
   ],
   'bloco-2': [
