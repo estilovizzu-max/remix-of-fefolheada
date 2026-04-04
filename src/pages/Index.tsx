@@ -177,7 +177,7 @@ const Index = () => {
             <BookOpen className="h-20 w-20 text-primary mb-10 transition-transform group-hover:scale-110 group-hover:-rotate-6" />
             <h3 className="text-4xl font-black mb-6 text-foreground tracking-tighter leading-none">Sair dessa Prisão <br/><span className="text-primary italic">Hoje</span></h3>
             <p className="text-xl text-muted-foreground leading-relaxed mb-10 font-medium">
-              Inicie sua jornada através das 82 chaves que vão reorganizar sua mente e libertar sua alma da estagnação.
+              Inicie sua jornada através das {totalPoems} chaves que vão reorganizar sua mente e libertar sua alma da estagnação.
             </p>
             <div className="flex items-center text-primary font-black text-2xl group-hover:translate-x-4 transition-transform tracking-tight">
               COMEÇAR MINHA TRANSFORMAÇÃO <span className="ml-3">→</span>
