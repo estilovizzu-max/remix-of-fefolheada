@@ -116,12 +116,20 @@ const Index = () => {
             <Users className="h-12 w-12 text-secondary mb-6 transition-transform group-hover:scale-110" />
             <h3 className="text-2xl font-bold mb-3 text-foreground">Canto do Poeta</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Registre suas reflexões diárias e acompanhe seu crescimento espiritual. Um espaço para sua própria voz.
+              Escreva suas próprias reflexões e diário espiritual. Deixe fluir a voz de Deus no seu coração.
             </p>
             <div className="mt-6 flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
               Minhas reflexões <span className="ml-2">→</span>
             </div>
           </button>
+        </div>
+
+        <div className="bg-primary/5 border border-primary/10 p-10 rounded-[2.5rem] mb-20 text-center max-w-4xl mx-auto shadow-sm backdrop-blur-sm animate-in fade-in zoom-in duration-1000">
+          <h3 className="text-2xl font-bold text-primary mb-4 italic">Seu Caminho de Luz</h3>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Integramos todos os <span className="text-primary font-bold">82 poemas</span> organizados nos 6 Blocos do <span className="italic text-secondary font-semibold">Método Filho da Luz</span>. 
+            Cada bloco foi pensado para sua jornada espiritual. Comece por onde seu coração sentir.
+          </p>
         </div>
 
         <div id="poems-content">
@@ -138,7 +146,7 @@ const Index = () => {
                   value="groups" 
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-3 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
                 >
-                  <Users className="h-4 w-4 mr-2" /> Grupos de Oração
+                  <Users className="h-4 w-4 mr-2" /> Grupos de Oração (RCC)
                 </TabsTrigger>
               </TabsList>
             </div>

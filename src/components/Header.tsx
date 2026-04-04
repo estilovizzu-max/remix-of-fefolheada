@@ -26,7 +26,10 @@ export const Header = () => {
       <h1 className="text-6xl md:text-8xl font-black text-primary mb-4 tracking-tighter drop-shadow-sm">
         Folheando <span className="text-secondary italic">Fé</span>
       </h1>
-      <p className="text-2xl md:text-3xl font-medium text-foreground/80 mb-2">Poesia do Meu Grupo de Oração</p>
+      <p className="text-2xl md:text-3xl font-medium text-foreground/80 mb-1">Poesia do Meu Grupo de Oração</p>
+      <div className="inline-flex items-center px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold mb-4">
+        82 Poemas Implementados • Método Filho da Luz
+      </div>
       <div className="flex items-center justify-center space-x-2 text-muted-foreground">
         <div className="h-px w-8 bg-border" />
         <p className="text-lg font-light tracking-widest uppercase">Por Evaldo Poeta</p>
