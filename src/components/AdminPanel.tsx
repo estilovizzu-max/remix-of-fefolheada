@@ -106,6 +106,20 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
           </div>
 
           <div className="space-y-2">
+            <Label htmlFor="text">Texto do Poema</Label>
+            <Textarea
+              id="text"
+              value={newPoem.text}
+              onChange={(e) => setNewPoem({ ...newPoem, text: e.target.value })}
+              placeholder="Digite o texto do poema aqui..."
+              className="min-h-[300px] font-serif text-base leading-relaxed"
+            />
+            <p className="text-sm text-muted-foreground">
+              Use quebras de linha para separar os versos
+            </p>
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="reflection">Reflexão do Poema</Label>
             <Textarea
               id="reflection"
