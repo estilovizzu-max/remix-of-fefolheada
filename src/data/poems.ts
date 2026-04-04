@@ -287,6 +287,48 @@ Cristo é a verdade viva, veio ao mundo pra salvar.
 Quem Nele crê e O segue, nunca mais irá tombar.`,
       reflection: 'Deus já abriu a porta, mas a decisão de entrar é nossa. O "fogo" do Espírito queima o pecado, mas precisamos lançá-lo no fogo através da confissão.',
       inspiration: 'Diante da porta aberta, eu deixo para trás...'
+    },
+    {
+      id: 'p2-3',
+      title: 'Mensagem do Senhor (Veste Nova)',
+      text: `Eis que estou na porta e bato, já falei para você: revestir da armadura, lute para receber.
+Troque a veste e coloque a nova que preparei; no poder da minha Palavra, esta noite eu te falei.
+Persevera, e todo dia, pra não se contaminar; eu conheço as suas obras, sem mim vai desmoronar.
+Saia dessa timidez, se fortaleça no Senhor; a Palavra foi pregada, ouça a voz do Senhor.
+A Palavra te confronta, o Senhor quer encontrar; Ele busca em você algo para te ajudar.
+Você viu que em Laodicéia o Senhor não encontrou; Ele deu pra a graça, por isso já derramou.
+Meu irmão, tu foste ungido, ser da terra o sabor; volta a rezar agora, para os braços do Senhor.
+Cuidado com esse caminho, volta pro primeiro amor; o Senhor está ensinando, sinta o fogo abrasador.
+Desça desse orgulho, eu espero por você; o Senhor está falando, pare para perceber.
+A sujeira na sua mente você terá que limpar; arrependa-se do pecado se quiser no céu entrar.
+O perdão é exercício, essa faxina é pra deixar o cômodo da sua casa para o Senhor habitar.
+Ele está na porta batendo, filho, eu vim conversar; já tomou o seu remédio? Eu trouxe pra te curar.
+A sujeira dos seus olhos você vai ter que tirar; para enxergar o céu, o perdão terá que liberar.
+Com a veste nupcial, com a santidade vai lavar a sujeira da sua vida, pra no Céu poder entrar.`,
+      reflection: 'Esta poesia fala de uma "faxina" na alma. Não adianta convidar o Rei para entrar se a casa está suja.',
+      inspiration: 'Senhor, eu troco a veste de tristeza por...'
+    },
+    {
+      id: 'p2-4',
+      title: 'A Mudar a Vida',
+      text: `Para minha vida mudar, o que preciso fazer? Se não fosse hoje, então, quando iria ser?
+Você pode conhecer Jesus e nada na sua vida mudar, pois tudo depende de você, é preciso se enxergar.
+Deus sustenta sua vida através da oração, permaneça em Sua graça, Ele cuida do seu coração.
+O Senhor está revelando, chamando a sua atenção. Esteja aberta à Sua palavra, coloque-a em ação.
+Se tu conheceres Jesus e ouvir Sua voz a falar, acolhe Sua palavra e a pratique sem hesitar.
+Através do Seu Espírito, Ele vem para revelar, curar o seu coração e fazer a vida transformar.`,
+      reflection: '"Tudo depende de você". Deus já deu a graça, agora Ele espera a nossa ação.',
+      inspiration: 'Não espero mais pelo amanhã, hoje eu decido...'
+    },
+    {
+      id: 'p2-5',
+      title: 'Não Fique Aí na Tristeza',
+      text: `Permaneça firme, irmão, como fez o servo Jó: O inimigo levou tudo, mas ele nunca esteve só.
+Deus estava sempre com ele, Fortalecendo sua fé. Hoje é o dia da graça — Levante-se! Fique de pé!
+Não fique aí na tristeza — Ela também é tentação. Paulo escreveu com firmeza, nos Chamando à conversão.
+Nunca perca a esperança, Esteja firme em oração. O Senhor é tua fortaleza, Teu refúgio e salvação.`,
+      reflection: 'A tristeza excessiva pode ser uma tentação para nos paralisar. Jó perdeu tudo, mas não perdeu a Deus.',
+      inspiration: 'Mesmo que tudo pareça difícil, eu me levanto e...'
     }
   ],
   'bloco-3': [
