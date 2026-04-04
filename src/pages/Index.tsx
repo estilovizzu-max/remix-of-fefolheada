@@ -224,7 +224,7 @@ const Index = () => {
             {[
               { title: "Módulo 1: O Despertar", desc: "Acesse a linguagem invisível que conecta sua mente ao coração de Deus através da poesia.", icon: "✨" },
               { title: "Módulo 2: O Deserto", desc: "Aprenda a transformar sua dor em prece e cure suas feridas emocionais mais ocultas.", icon: "🌵" },
-              { title: "Módulo 3: O Fortalecimento", desc: "82 Poemas estrategicamente organizados para cada etapa crítica da sua caminhada.", icon: "💪" },
+              { title: "Módulo 3: O Fortalecimento", desc: `${totalPoems} Poemas estrategicamente organizados para cada etapa crítica da sua caminhada.`, icon: "💪" },
               { title: "Módulo 4: O Diário PCH", desc: "Sua ferramenta exclusiva de reflexão e registro para materializar a voz do invisível.", icon: "✍️" },
               { title: "Módulo 5: Os Grupos", desc: "Conexão direta com Grupos de Oração para fortalecer e sustentar sua nova identidade.", icon: "🕊️" },
               { title: "Bônus: Transformação", desc: "Acesso vitalício à plataforma e todas as futuras atualizações do Método PCH.", icon: "💎" }
