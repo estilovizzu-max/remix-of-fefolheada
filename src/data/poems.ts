@@ -11,15 +11,12 @@ export interface PoemsData {
 }
 
 export const themeTitles: { [key: string]: string } = {
-  'fe-esperanca': 'Fé e Esperança',
-  'luta-perseveranca': 'Luta e Perseverança',
-  'oracao-intimidade': 'Oração e Intimidade com Deus',
-  'transformacao-renovacao': 'Transformação e Renovação',
-  'amor-graca': 'Amor e Graça Divina',
-  'chamado-missao': 'Chamado e Missão',
-  'salvacao-vidaeterna': 'Salvação e Vida Eterna',
-  'paz-cura': 'Paz e Cura Interior',
-  'reflexoes-vida': 'Reflexões e Sabedoria'
+  'bloco-1': 'O Despertar da Identidade',
+  'bloco-2': 'A Decisão e o Combate Espiritual',
+  'bloco-3': 'Cura e Restauração',
+  'bloco-4': 'O Poder do Espírito Santo',
+  'bloco-5': 'Esperança, Adoração e Eternidade',
+  'bloco-6': 'Oficina do Poeta (Curso Prático)'
 };
 
 // TODOS os 82 poemas extraídos do arquivo HTML original
