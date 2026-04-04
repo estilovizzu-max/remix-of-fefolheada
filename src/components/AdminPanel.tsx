@@ -73,7 +73,6 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
           </div>
         </footer>
       </DialogTrigger>
-      </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-primary">
