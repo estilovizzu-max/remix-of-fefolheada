@@ -329,6 +329,67 @@ Não fique aí na tristeza — Ela também é tentação. Paulo escreveu com fir
 Nunca perca a esperança, Esteja firme em oração. O Senhor é tua fortaleza, Teu refúgio e salvação.`,
       reflection: 'A tristeza excessiva pode ser uma tentação para nos paralisar. Jó perdeu tudo, mas não perdeu a Deus.',
       inspiration: 'Mesmo que tudo pareça difícil, eu me levanto e...'
+    },
+    {
+      id: 'p3-2',
+      title: 'A Fé que Cura (Bartimeu e a Hemorroísa)',
+      text: `Orai sem cessar, não deixes de clamar, como fez Bartimeu, deixa a capa e vem gritar:
+"Jesus, Filho de Davi, tem piedade de mim, Toca minha vida agora, faz minha visão se abrir!"
+Tenha fé, não desista, confia no Senhor, Como em Betânia, onde Ele derramou Seu amor.
+Quatro dias se passaram, mas Lázaro ressurgiu, E a glória de Deus Pai naquele dia se viu.
+A mulher já padecia, doze anos a sofrer, Buscou ajuda dos homens, mas não pôde se erguer.
+Aproximou-se de Cristo, cheia de esperança, Tocou a orla do manto e recebeu a mudança.
+A fé é fundamento, é a base do cristão, Então creia, meu irmão, com todo o coração.
+Jesus está tocando, basta n’Ele confiar, Pois Seu poder divino veio hoje pra te curar.`,
+      reflection: 'Bartimeu precisou jogar fora sua capa (sua velha identidade de mendigo) para ir até Jesus.',
+      inspiration: 'Jesus, Filho de Davi, olha para a minha...'
+    },
+    {
+      id: 'p3-3',
+      title: 'O Senhor Realiza Milagres (Naamã)',
+      text: `É certeza no meu coração: O Senhor realiza milagres e prodígios, Peça a Ele em oração.
+Deus curou Naamã Pra mostrar para o seu povo, Realizou o milagre E restaurou tudo de novo.
+Ele era leproso, Tinha prestígio diante do rei. Com as minhas qualidades, Ao Senhor adorarei.
+A escrava então disse À mulher de Naamã: “Se ele fosse ver o profeta, A lepra curaria.”
+Ao chegar em Samaria, Ele foi ver Eliseu, Que mandou ir se lavar — Naamã se infureceu.
+Ao ouvir a voz do servo, Naamã obedeceu, Desceu na água sete vezes — A lepra desapareceu.
+A Palavra do Senhor Sua vida quer transformar, Ele age nesta vida E te chama a caminhar.
+Obedeça à voz de Deus, Se aproxime pra ouvir, Ele cura e restaura, Te chama para servir.`,
+      reflection: 'Naamã quase perdeu a cura por orgulho, pois achou o pedido de Eliseu muito simples.',
+      inspiration: 'Mergulho minhas dúvidas nas águas da obediência e...'
+    },
+    {
+      id: 'p3-4',
+      title: 'Transformação - Um Processo Necessário',
+      text: `Para que haja transformação, o ser precisa passar por moldação.
+Lembra da borboleta no casulo apertado? Ali, em silêncio, está sendo transformado.
+Sofre dores que precisa enfrentar, mas logo, em asas, poderá voar.
+Assim também é o ouro, em sua essência, pedra bruta que exige paciência.
+Do sólido ao líquido, o fogo faz derreter — não pode voltar atrás, precisa crescer.
+É um processo árduo, doloroso, essencial, para que o ouro alcance seu valor final.
+Como a argila nas mãos do oleiro, que, antes de vaso, é amassada primeiro.
+Moléculas se unem no sofrimento, um processo doloroso, mas com fundamento.
+A chave está na prontidão do coração, no desejo sincero por transformação.
+Como Jesus, que se entregou sem reclamar, aceitou a dor e escolheu continuar.
+Cada transformação exige aceitação, abrir mão do ego, da própria razão.
+Se queremos ser moldados, renovados, devemos aceitar ser quebrados.
+Seremos amassados, queimados, purificados, até que sejamos transformados.
+O artista é Deus, com mãos de criação, visualiza em nós Sua inspiração.`,
+      reflection: '"Se queremos ser moldados... devemos aceitar ser quebrados". Não existe transformação sem o "fogo".',
+      inspiration: 'Aceito o fogo, aceito o processo, pois quero ser...'
+    },
+    {
+      id: 'p3-5',
+      title: 'O Caminho da Restauração',
+      text: `O Senhor está esperando você se levantar, Com fé no coração, suas feridas vai curar.
+Você se lembra daquele dia que encheu o teu coração, Quando estava perdido, buscando luz na escuridão?
+Ele estava contigo, te mostrando a direção.
+Hoje, estou trabalhando, restaurando tua memória, Colorindo tua vida, reescrevendo tua história.
+Estou cuidando de você... puxe a âncora, vá em frente! Tua barca vai levar minha mensagem e curar muita gente.
+O Senhor está restaurando o leme do teu barco, No mar da tua vida, Eu te pego no teu abraço.
+Agradeço ao Senhor por tudo que Ele já fez, O Espírito renova tua vida mais uma vez.`,
+      reflection: '"O Senhor está restaurando o leme do teu barco". Deus quer devolver a direção da sua vida.',
+      inspiration: 'Puxo a âncora do medo e navego para...'
     }
   ],
   'bloco-3': [
