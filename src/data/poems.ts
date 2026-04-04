@@ -142,7 +142,7 @@ Você é filho da luz, das trevas pode sair;
 Aceite a graça divina, deixe-se conduzir.
 O Espírito te guia, mostrando o caminho a trilhar;
 Siga suas orientações, não deixe de escutar.
-Seja esperto e fique perto do Senhor,`,search:
+Seja esperto e fique perto do Senhor,
 Faça como Bartimeu, grite com fé e fervor:
 "Jesus, tem piedade, transforma meu coração!"
 Então tua vida, certamente, será cheia de alegria,
@@ -158,6 +158,9 @@ Meditando na Palavra, que é luz para o teu ser.
 No passado, éramos trevas, mas agora somos luz;
 O fruto dessa luz é bondade, justiça e verdade,
 Pois Cristo é a Verdade, que nos liberta e conduz.`,
+      reflection: 'O despertar espiritual muitas vezes exige um grito de socorro, como o de Bartimeu. O que te impede de enxergar a luz de Cristo hoje?',
+      inspiration: 'Eu decido despertar e...'
+    },
       reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz. Qual área da minha vida está "morta" ou "prostrada" e precisa despertar? Tenho coragem de gritar por socorro espiritual hoje?',
       inspiration: 'Eu me levanto do chão e grito...'
     },
