@@ -8,97 +8,97 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 0 0% 20%;
+    --background: 210 20% 98%;
+    --foreground: 210 20% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 210 20% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 210 20% 10%;
 
-    --primary: 262 47% 42%;
+    --primary: 210 100% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 262 25% 75%;
-    --secondary-foreground: 262 47% 11%;
+    --secondary: 45 90% 45%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 270 33% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 10% 40%;
 
-    --accent: 270 33% 96%;
-    --accent-foreground: 262 47% 11%;
+    --accent: 45 100% 96%;
+    --accent-foreground: 210 100% 20%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 270 25% 90%;
-    --input: 270 25% 90%;
-    --ring: 262 47% 42%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 20%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
     
-    --poem-bg: 42 100% 99%;
-    --poem-border: 262 33% 72%;
-    --poem-watermark: 262 47% 42%;
-    --progress-bg: 0 0% 88%;
-    --progress-fill: 262 40% 60%;
-    --selection-bg: 262 45% 85%;
+    --poem-bg: 45 100% 99%;
+    --poem-border: 45 90% 45%;
+    --poem-watermark: 210 100% 20%;
+    --progress-bg: 210 20% 90%;
+    --progress-fill: 210 100% 25%;
+    --selection-bg: 45 100% 90%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5% 26%;
-    --sidebar-primary: 240 6% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 5% 96%;
-    --sidebar-accent-foreground: 240 6% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-background: 210 20% 98%;
+    --sidebar-foreground: 210 20% 20%;
+    --sidebar-primary: 210 100% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 95%;
+    --sidebar-accent-foreground: 210 100% 20%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 210 100% 20%;
   }
 
   .dark {
-    --background: 262 47% 5%;
-    --foreground: 0 0% 98%;
+    --background: 210 100% 5%;
+    --foreground: 210 20% 98%;
 
-    --card: 262 47% 5%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 100% 7%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 262 47% 5%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 100% 7%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 262 47% 11%;
+    --primary: 45 90% 45%;
+    --primary-foreground: 210 100% 5%;
 
-    --secondary: 262 33% 18%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 100% 15%;
+    --secondary-foreground: 210 20% 98%;
 
-    --muted: 262 33% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 100% 10%;
+    --muted-foreground: 210 20% 60%;
 
-    --accent: 262 33% 18%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 100% 15%;
+    --accent-foreground: 45 90% 45%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 262 33% 18%;
-    --input: 262 33% 18%;
-    --ring: 212 27% 84%;
+    --border: 210 100% 15%;
+    --input: 210 100% 15%;
+    --ring: 45 90% 45%;
     
-    --poem-bg: 262 47% 8%;
-    --poem-border: 262 33% 35%;
-    --poem-watermark: 262 47% 42%;
-    --progress-bg: 0 0% 20%;
-    --progress-fill: 262 40% 55%;
-    --selection-bg: 262 45% 25%;
+    --poem-bg: 210 100% 3%;
+    --poem-border: 45 90% 35%;
+    --poem-watermark: 45 90% 45%;
+    --progress-bg: 210 100% 10%;
+    --progress-fill: 45 90% 45%;
+    --selection-bg: 45 90% 20%;
     
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 240 5% 96%;
-    --sidebar-primary: 224 76% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4% 16%;
-    --sidebar-accent-foreground: 240 5% 96%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-background: 210 100% 4%;
+    --sidebar-foreground: 210 20% 96%;
+    --sidebar-primary: 45 90% 45%;
+    --sidebar-primary-foreground: 210 100% 5%;
+    --sidebar-accent: 210 100% 10%;
+    --sidebar-accent-foreground: 45 90% 45%;
+    --sidebar-border: 210 100% 10%;
+    --sidebar-ring: 45 90% 45%;
   }
 }
 
@@ -120,35 +120,36 @@ All colors MUST be HSL.
 
 @layer components {
   .poem-container {
-    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-4 border-[hsl(var(--poem-border))] px-8 py-8 shadow-md;
-    background-image: linear-gradient(to bottom, hsl(var(--poem-bg)), hsl(var(--poem-bg)) 95%, hsl(var(--poem-border) / 0.05));
+    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-4 border-secondary px-8 py-10 shadow-lg rounded-r-xl;
+    background-image: 
+      linear-gradient(to right, hsl(var(--secondary) / 0.05) 0%, transparent 10%),
+      linear-gradient(to bottom, transparent 0%, hsl(var(--secondary) / 0.02) 100%);
   }
   
   .poem-text {
-    @apply font-['Lora',serif] whitespace-pre-line leading-[2] text-[1.15rem] text-foreground relative z-10;
-    text-align: justify;
-    text-indent: 0;
+    @apply font-serif whitespace-pre-line leading-relaxed text-lg text-foreground relative z-10;
+    text-align: left;
+    font-style: italic;
   }
   
   .poem-text::selection {
-    @apply bg-[hsl(var(--selection-bg))];
+    @apply bg-secondary/30;
   }
   
   .poem-watermark {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-['Dancing_Script',cursive] text-[6rem] text-[hsl(var(--poem-watermark))] opacity-[0.04] pointer-events-none -z-0 whitespace-nowrap -rotate-[30deg];
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-script text-[8rem] text-primary opacity-[0.03] pointer-events-none -z-0 whitespace-nowrap -rotate-12;
     user-select: none;
   }
   
   .theme-header {
-    @apply text-3xl font-bold text-primary mt-8 mb-4 p-6 border-b-[3px] border-primary/30 scroll-mt-8 transition-all hover:bg-gradient-to-r hover:from-primary/10 hover:to-secondary/10 rounded-t-lg;
-    background: linear-gradient(to right, hsl(var(--muted)), hsl(var(--background)));
+    @apply text-2xl font-bold text-primary mt-12 mb-6 p-6 border-b-2 border-secondary/40 scroll-mt-24 transition-all hover:bg-secondary/5 rounded-xl bg-card shadow-sm;
   }
   
   .progress-bar-bg {
-    @apply bg-[hsl(var(--progress-bg))];
+    @apply bg-muted rounded-full overflow-hidden h-3;
   }
   
   .progress-bar-fill {
-    @apply bg-[hsl(var(--progress-fill))] transition-all duration-500 ease-in-out;
+    @apply bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out h-full;
   }
 }

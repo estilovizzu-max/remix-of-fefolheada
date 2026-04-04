@@ -15,7 +15,7 @@ export const ThemeSection = ({ themeId, title, poems, readPoems, onToggleRead }:
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="theme-section mb-8">
+    <div className="theme-section mb-16 bg-card/40 backdrop-blur-sm rounded-3xl p-2 border border-border/50">
       <h2 
         id={themeId}
         className="theme-header cursor-pointer flex justify-between items-center rounded-t-lg"
