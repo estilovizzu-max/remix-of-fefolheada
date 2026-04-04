@@ -79,18 +79,22 @@ const Index = () => {
       <BackToTop />
 
       <main className="w-full max-w-6xl mx-auto px-4 py-12 sm:px-6 md:py-20">
-        <div className="mb-24 text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <div className="mb-24 text-center space-y-10 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <Header />
-          <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="text-2xl md:text-4xl font-light italic text-muted-foreground leading-relaxed">
-              "A fé que se torna verso, a alma que se torna prece."
+          <div className="max-w-3xl mx-auto space-y-10">
+            <h2 className="text-3xl md:text-5xl font-light italic text-muted-foreground leading-tight tracking-tight px-4">
+              "A fé que se torna verso, a alma que se torna prece. Uma experiência para <span className="text-primary font-bold">acessar o invisível</span>."
             </h2>
-            <div className="h-1.5 w-32 bg-secondary/40 mx-auto rounded-full" />
+            <div className="h-1.5 w-40 bg-secondary/30 mx-auto rounded-full shadow-inner" />
             
-            <div className="flex flex-wrap justify-center gap-4 pt-6">
-              <span className="flex items-center text-sm font-semibold bg-primary/5 px-4 py-2 rounded-full border border-primary/10">✅ 82 Poemas de Transformação</span>
-              <span className="flex items-center text-sm font-semibold bg-secondary/5 px-4 py-2 rounded-full border border-secondary/10">✅ Método Filho da Luz</span>
-              <span className="flex items-center text-sm font-semibold bg-primary/5 px-4 py-2 rounded-full border border-primary/10">✅ Jornada de Oração</span>
+            <div className="pt-4">
+              <Button 
+                onClick={() => document.getElementById('poems-content')?.scrollIntoView({ behavior: 'smooth' })}
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-white font-bold text-xl py-8 px-12 rounded-full shadow-2xl hover:scale-105 transition-all animate-bounce"
+              >
+                QUERO MINHA TRANSFORMAÇÃO
+              </Button>
             </div>
           </div>
         </div>
