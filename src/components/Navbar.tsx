@@ -52,7 +52,7 @@ export const Navbar = () => {
             variant="default" 
             className="rounded-full px-6"
           >
-            Começar Transformação
+            QUERO MINHA TRANSFORMAÇÃO
           </Button>
         </div>
 
@@ -86,7 +86,7 @@ export const Navbar = () => {
             onClick={() => scrollToSection('poems-content')}
             className="w-full rounded-xl"
           >
-            Começar Jornada
+            COMEÇAR MINHA TRANSFORMAÇÃO
           </Button>
         </div>
       )}
