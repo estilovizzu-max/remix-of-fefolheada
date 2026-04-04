@@ -2,6 +2,8 @@ export interface Poem {
   id: string;
   title: string;
   text: string;
+  reflection?: string;
+  inspiration?: string;
 }
 
 export interface PoemsData {
