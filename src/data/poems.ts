@@ -125,7 +125,7 @@ E aqui estou, aceso, no palco da vida, com a luz de Cristo, alma renascida.
 Nada nem ninguém pode me apagar, porque foi Deus quem veio me acender.
 Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
       reflection: '"Ninguém apaga a luz interior se você não entrega o interruptor". Esta é uma verdade poderosa sobre autorresponsabilidade. Para quem eu entreguei o interruptor da minha vida? (Para a opinião dos outros? Para o medo?) Estou pronto para subir no "palco da vida" e assumir meu lugar?',
-      inspiration: 'Eu pego de volta o interruptor and decido...'
+      inspiration: 'Eu pego de volta o interruptor e decido...'
     },
     {
       id: 'p1-5',
