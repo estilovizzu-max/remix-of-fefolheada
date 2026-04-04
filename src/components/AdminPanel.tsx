@@ -60,12 +60,10 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className="flex flex-col items-center justify-center py-12 mt-12 border-t border-border/30">
-          <p className="text-sm text-muted-foreground font-medium tracking-widest opacity-60">
-            CRIADO POR 
-            <button className="ml-1 hover:text-primary transition-colors cursor-default">
-              EVALDO.OS
-            </button>
+        <div className="flex flex-col items-center justify-center py-16 mt-8 border-t border-border/10 bg-gradient-to-t from-background to-transparent">
+          <p className="text-xs text-muted-foreground/40 font-medium tracking-widest uppercase">
+            CRIADO POR EVALDO.OS
+            <button className="w-1 h-1 ml-1 cursor-default bg-transparent focus:outline-none" aria-label="Admin" />
           </p>
         </div>
       </DialogTrigger>
