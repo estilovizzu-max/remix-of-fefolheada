@@ -23,8 +23,9 @@ export const Header = () => {
 
   return (
     <header className="text-center mb-12">
-      <h1 className="text-5xl font-bold text-primary mb-4 whitespace-pre-wrap">Folheando Fé{"\n"}Poesia do Meu Grupo de Oração</h1>
-      <p className="text-xl text-muted-foreground mt-4">Por Evaldo Poeta</p>
+      <h1 className="text-5xl font-bold text-primary mb-2">Folheando Fé</h1>
+      <p className="text-xl font-semibold text-secondary mb-4">Poesia do Meu Grupo de Oração</p>
+      <p className="text-lg text-muted-foreground">Por Evaldo Poeta</p>
       <div className="flex justify-center items-center flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 mt-6 text-sm sm:text-base">
         <a 
           href="https://www.instagram.com/oevaldopoeta" 
