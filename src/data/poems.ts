@@ -1894,7 +1894,7 @@ O amor de Deus cura, transforma e vai libertar, A tua alma o Senhor hoje vem res
 Louvo a ti, ó Deus, abre-me a visão. Deixa tua água lavar minha emoção.
 Entrego-me agora, de corpo e alma, Tua presença é vida, é consolo, é calma.`,
       reflection: '"Mais do que a vida, eu preciso de ti". Essa frase é forte. Eu realmente sinto que preciso de Deus mais do que do ar que respiro? Ao lado de Maria, contemplo a vida de Jesus. Como posso ser mais "mariano" na minha entrega?',
-      inspiration: 'Com Maria, eu digo \'
+      inspiration: 'Com Maria, eu digo Sim.'
     },
     {
       id: 'p5-4',
