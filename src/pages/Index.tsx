@@ -188,8 +188,30 @@ const Index = () => {
             </TabsContent>
 
             <TabsContent value="groups" className="animate-in fade-in-50 duration-700 slide-in-from-bottom-4">
-              <div className="max-w-4xl mx-auto">
-                <GroupSelector />
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                {/* Coluna Esquerda: Progresso e Diário */}
+                <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
+                  <div className="bg-card p-8 rounded-[2.5rem] shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+                    <ProgressSection 
+                      readCount={readPoems.length}
+                      totalPoems={totalPoems}
+                      onOpenModal={() => setIsModalOpen(true)}
+                    />
+                  </div>
+
+                  <div className="bg-card p-8 rounded-[2.5rem] shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+                    <DiarySection
+                      entries={diaryEntries}
+                      onSaveEntry={handleSaveDiaryEntry}
+                      onDeleteEntry={handleDeleteDiaryEntry}
+                    />
+                  </div>
+                </div>
+
+                {/* Coluna Direita: Grupos de Oração */}
+                <div className="lg:col-span-8">
+                  <GroupSelector />
+                </div>
               </div>
             </TabsContent>
           </Tabs>
