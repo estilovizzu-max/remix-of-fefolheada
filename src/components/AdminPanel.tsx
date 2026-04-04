@@ -37,7 +37,8 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
   const [newPoem, setNewPoem] = useState<NewPoem>({
     theme: '',
     title: '',
-    text: ''
+    text: '',
+    reflection: ''
   });
 
   const handleSubmit = () => {
