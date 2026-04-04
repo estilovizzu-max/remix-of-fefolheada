@@ -291,7 +291,7 @@ const Index = () => {
               <ul className="text-left space-y-4 mb-10 max-w-md mx-auto">
                 <li className="flex items-center gap-3 font-bold text-lg">
                   <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
-                  82 Poemas de Reprogramação
+                  {totalPoems} Poemas de Reprogramação
                 </li>
                 <li className="flex items-center gap-3 font-bold text-lg">
                   <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
