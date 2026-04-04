@@ -52,7 +52,7 @@ export const Navbar = () => {
             variant="default" 
             className="rounded-full px-6"
           >
-            Começar Jornada
+            Começar Transformação
           </Button>
         </div>
 
