@@ -105,6 +105,29 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
       <div className="poem-container">
         <div className="poem-watermark">Evaldo Poeta</div>
         <p className="poem-text">{poem.text}</p>
+        
+        {poem.reflection && (
+          <div className="mt-8 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+            <h4 className="flex items-center gap-2 font-bold text-primary mb-2">
+              <span>🔑</span> REFLEXÃO
+            </h4>
+            <p className="text-sm text-foreground/80 leading-relaxed italic">
+              {poem.reflection}
+            </p>
+          </div>
+        )}
+
+        {poem.inspiration && (
+          <div className="mt-4 p-4 bg-secondary/5 rounded-lg border-l-4 border-secondary">
+            <h4 className="flex items-center gap-2 font-bold text-secondary mb-2">
+              <span>✍️</span> ESCREVA SUA POESIA
+            </h4>
+            <p className="text-sm text-foreground/80 leading-relaxed">
+              {poem.inspiration}
+            </p>
+          </div>
+        )}
+
         <div className="mt-6 text-right">
           <p className="text-sm font-['Dancing_Script',cursive] text-primary/60 italic">— Evaldo Poeta</p>
         </div>
