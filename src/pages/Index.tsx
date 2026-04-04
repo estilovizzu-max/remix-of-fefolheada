@@ -235,6 +235,39 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Prova Social Section */}
+        <section className="mb-24 py-16 px-8 rounded-[3.5rem] bg-secondary/5 border border-secondary/10">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter text-center leading-tight">
+              A transformação de quem já acessou a <span className="text-secondary italic">Luz</span>
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { name: "Maria Silva", text: "Nunca imaginei que poesias pudessem mudar tanto minha forma de rezar. Sinto-me renovada.", role: "Participante do Grupo de Oração" },
+                { name: "João Paulo", text: "O Método Filho da Luz me deu a clareza que eu buscava há anos na minha caminhada espiritual.", role: "Leitor Fiel" },
+                { name: "Ana Beatriz", text: "O diário é minha parte favorita. Escrever o que sinto depois de cada verso é libertador.", role: "Membro da Comunidade" }
+              ].map((test, i) => (
+                <div key={i} className="bg-card p-8 rounded-3xl border border-border shadow-sm italic text-muted-foreground relative">
+                  <span className="text-6xl text-primary/20 absolute top-4 left-4 font-serif">"</span>
+                  <p className="relative z-10 pt-4 mb-6 leading-relaxed">
+                    {test.text}
+                  </p>
+                  <div className="flex items-center space-x-3 not-italic">
+                    <div className="h-10 w-10 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                      {test.name.charAt(0)}
+                    </div>
+                    <div>
+                      <p className="font-bold text-foreground text-sm">{test.name}</p>
+                      <p className="text-xs">{test.role}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <div id="poems-content">
           <Tabs defaultValue="poems" className="w-full">
             <div className="flex justify-center mb-16">
