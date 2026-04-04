@@ -200,6 +200,41 @@ const Index = () => {
           </button>
         </div>
 
+        {/* Quebra de Crença Section */}
+        <section className="mb-24 text-center max-w-4xl mx-auto space-y-12 py-16">
+          <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter leading-tight">
+            Por que você ainda não alcançou sua <span className="text-primary italic">paz interior</span>?
+          </h3>
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Muitos buscam a espiritualidade em fórmulas complexas, quando a resposta está na simplicidade da <span className="text-foreground font-bold">linguagem da alma</span>. O Método Filho da Luz destrava o que estava bloqueado pela sua própria mente.
+          </p>
+        </section>
+
+        {/* Módulos do Método */}
+        <div className="mb-24 space-y-16">
+          <div className="text-center space-y-4">
+            <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter">O que você vai receber</h3>
+            <p className="text-xl text-muted-foreground">Sua jornada espiritual organizada e direcionada.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "Módulo 1: O Despertar", desc: "Acesse a linguagem invisível que conecta sua mente ao coração de Deus.", icon: "✨" },
+              { title: "Módulo 2: O Deserto", desc: "Transforme sua dor em prece e cure suas feridas emocionais mais profundas.", icon: "🌵" },
+              { title: "Módulo 3: O Fortalecimento", desc: "82 Poemas estrategicamente organizados para cada etapa da sua fé.", icon: "💪" },
+              { title: "Módulo 4: O Diário", desc: "Sua ferramenta exclusiva de reflexão e registro da voz de Deus.", icon: "✍️" },
+              { title: "Módulo 5: Os Grupos", desc: "Conexão direta com Grupos de Oração para fortalecer sua caminhada.", icon: "🕊️" },
+              { title: "Bônus: Transformação", desc: "Acesso vitalício à plataforma e atualizações constantes do poeta.", icon: "💎" }
+            ].map((mod, i) => (
+              <div key={i} className="bg-card p-10 rounded-[2.5rem] border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+                <div className="text-5xl mb-6">{mod.icon}</div>
+                <h4 className="text-2xl font-bold mb-4 text-primary tracking-tight">{mod.title}</h4>
+                <p className="text-muted-foreground leading-relaxed font-medium">{mod.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div id="poems-content">
           <Tabs defaultValue="poems" className="w-full">
             <div className="flex justify-center mb-16">
