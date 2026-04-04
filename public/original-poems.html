@@ -361,7 +361,9 @@
             // --- POEM POPULATION ---
             function createPoemHTML(poem) {
                 const author = "Evaldo poetaterapeuta";
-                const shareText = `"${poem.title}" por ${author}\n\n${poem.text}`;
+                const safeTitle = escapeHTML(poem.title);
+                const safeText = escapeHTML(poem.text);
+                const shareText = `"${safeTitle}" por ${author}\n\n${safeText}`;
                 const encodedShareText = encodeURIComponent(shareText);
                 const whatsappLink = `https://api.whatsapp.com/send?text=${encodedShareText}`;
                 const twitterLink = `https://twitter.com/intent/tweet?text=${encodedShareText}`;
@@ -371,7 +373,7 @@
                 <article class="poem rounded-lg">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <h3 class="text-xl font-bold text-purple-700">${poem.title}</h3>
+                            <h3 class="text-xl font-bold text-purple-700">${safeTitle}</h3>
                             <p class="text-sm italic text-gray-500 mb-4">por ${author}</p>
                         </div>
                         <button class="speak-btn p-2 rounded-full hover:bg-purple-100 transition flex-shrink-0 ml-4">
