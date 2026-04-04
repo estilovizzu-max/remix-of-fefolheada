@@ -22,10 +22,16 @@ export const Header = () => {
   };
 
   return (
-    <header className="text-center mb-12">
-      <h1 className="text-5xl font-bold text-primary mb-2">Folheando Fé</h1>
-      <p className="text-xl font-semibold text-secondary mb-4">Poesia do Meu Grupo de Oração</p>
-      <p className="text-lg text-muted-foreground">Por Evaldo Poeta</p>
+    <header className="text-center mb-4">
+      <h1 className="text-6xl md:text-8xl font-black text-primary mb-4 tracking-tighter drop-shadow-sm">
+        Folheando <span className="text-secondary italic">Fé</span>
+      </h1>
+      <p className="text-2xl md:text-3xl font-medium text-foreground/80 mb-2">Poesia do Meu Grupo de Oração</p>
+      <div className="flex items-center justify-center space-x-2 text-muted-foreground">
+        <div className="h-px w-8 bg-border" />
+        <p className="text-lg font-light tracking-widest uppercase">Por Evaldo Poeta</p>
+        <div className="h-px w-8 bg-border" />
+      </div>
       <div className="flex justify-center items-center flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 mt-6 text-sm sm:text-base">
         <a 
           href="https://www.instagram.com/oevaldopoeta" 
