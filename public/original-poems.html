@@ -412,7 +412,15 @@
             };
 
             // --- LOCAL STORAGE HELPERS ---
-            const getFromStorage = (key, defaultValue) => JSON.parse(localStorage.getItem(key)) || defaultValue;
+            const getFromStorage = (key, defaultValue) => {
+                try {
+                    const item = localStorage.getItem(key);
+                    return item ? JSON.parse(item) : defaultValue;
+                } catch (e) {
+                    console.error('Error reading from localStorage', e);
+                    return defaultValue;
+                }
+            };
             const saveToStorage = (key, value) => localStorage.setItem(key, JSON.stringify(value));
 
             // --- GAMIFICATION LOGIC ---
