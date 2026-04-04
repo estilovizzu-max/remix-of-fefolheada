@@ -137,7 +137,7 @@ Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
       text: `Desperta agora, meu amigo, ouve a voz do Senhor.
 Levanta-te dentre os mortos, que Cristo já te iluminou.
 Ele te chama para a luz, para a ação e o amor,
-Pois a vontade d\'Ele é que conheças o Senhor.
+Pois a vontade d'Ele é que conheças o Senhor.
 Você é filho da luz, das trevas pode sair;
 Aceite a graça divina, deixe-se conduzir.
 O Espírito te guia, mostrando o caminho a trilhar;
