@@ -497,6 +497,56 @@ A luz de Deus entrou, acabou a escuridão, Não viva como escravo, o Senhor te d
 Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.`,
       reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança.',
       inspiration: 'Eu fui escolhido e anuncio que...'
+    },
+    {
+      id: 'p6-2',
+      title: 'Oficina do Poeta: Tradução Simultânea',
+      text: `A pregação fala à razão (teologia). A poesia fala à emoção (imagem). O seu trabalho é ser o tradutor.
+Enquanto o pregador explica, você traduz para imagens na mesma hora.
+Se ele diz: "Vocês precisam ter fé nas dificuldades", eu escrevo: "Na tempestade da vida, Ele é meu abrigo".
+Não explique, mostre! Existe uma regra que diz: "Show, don't tell".
+Dificuldade = Tempestade, Deserto. Proteção = Abrigo, Escudo.
+Pecado = Sujeira, Lama. Graça = Chuva, Fogo, Óleo.
+Se isso fosse um filme, o que eu estaria vendo?`,
+      reflection: 'A poesia não fala a língua da explicação; ela fala a língua da imaginação.',
+      inspiration: 'Treine ouvir uma frase longa e transformá-la em um verso curto e rimado instantaneamente.'
+    },
+    {
+      id: 'p6-3',
+      title: 'Oficina do Poeta: Escrevendo Sem Borracha',
+      text: `Para entregar a poesia no final do grupo, não dá tempo de apagar ou duvidar.
+Você tem que confiar que o Espírito Santo está guiando a caneta.
+Entre em "Fluxo". Se uma rima não saiu perfeita, continue.
+Se travou numa linha, pule para a próxima. O importante é não parar a caneta.
+A perfeição vem da unção, não da correção.
+Muitas vezes, a frase que você achou "estranha" é a que mais toca alguém no final.`,
+      reflection: 'Muitas vezes a frase que achamos estranha é a que mais toca, porque veio de Deus.',
+      inspiration: 'Tente escrever uma poesia inteira sem tirar a caneta do papel e sem riscar nada.'
+    },
+    {
+      id: 'p6-4',
+      title: 'Oficina do Poeta: O Ponto de Virada',
+      text: `Toda pregação tem um momento de "pico", onde a unção fica mais forte.
+Geralmente no meio para o final, quando o povo começa a orar ou louvar.
+É aí que sua poesia precisa ganhar força.
+Use palavras de poder: Fogo, Glória, Poder, Agora, Milagre.
+Aproveite a energia do ambiente para dar energia às palavras.
+Sua mão escreve no ritmo da música ou da oração.
+A poesia vira uma oração escrita.`,
+      reflection: 'Aproveite a energia do ambiente para dar energia às palavras.',
+      inspiration: 'Observe o momento em que o ambiente "esquenta" na oração. Escreva seus versos mais ousados.'
+    },
+    {
+      id: 'p6-5',
+      title: 'Oficina do Poeta: O Amém Poético',
+      text: `O pregador está caminhando para o fim. Faltam 2 minutos.
+É hora de fechar a poesia para correr e ler.
+Deixe as últimas 2 linhas para uma "conclusão profética".
+Enquanto ele faz a oração final, escreva o desfecho, resumindo tudo em uma promessa de esperança.
+Assim que ele diz "Amém", você coloca o ponto final.
+A tinta ainda está fresca. É pão quentinho, saído do forno.`,
+      reflection: 'A tinta ainda fresca torna a leitura poderosa: é pão quentinho.',
+      inspiration: 'Quando o pregador disser "para terminar...", já esteja escrevendo sua última estrofe.'
     }
   ],
   'bloco-2': [
