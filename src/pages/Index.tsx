@@ -167,20 +167,20 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Hero Selection / Journey Guidance */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+        {/* 🎯 CTA FINAL (FORTE E EMOCIONAL) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-24">
           <button 
             onClick={() => document.getElementById('poems-content')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group relative overflow-hidden p-10 rounded-[3rem] bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500 text-left"
+            className="group relative overflow-hidden p-12 rounded-[4rem] bg-card border border-border shadow-xl hover:shadow-2xl transition-all duration-500 text-left border-b-8 border-primary/20"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-bl-[150px] -z-0 transition-transform group-hover:scale-110" />
-            <BookOpen className="h-16 w-16 text-primary mb-8 transition-transform group-hover:scale-110 group-hover:-rotate-6" />
-            <h3 className="text-3xl font-bold mb-4 text-foreground tracking-tight">Libertar Minha Alma</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Inicie sua jornada através dos poemas que vão reorganizar sua mente e tocar seu coração.
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-bl-[200px] -z-0 transition-transform group-hover:scale-110" />
+            <BookOpen className="h-20 w-20 text-primary mb-10 transition-transform group-hover:scale-110 group-hover:-rotate-6" />
+            <h3 className="text-4xl font-black mb-6 text-foreground tracking-tighter leading-none">Sair dessa Prisão <br/><span className="text-primary italic">Hoje</span></h3>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10 font-medium">
+              Inicie sua jornada através das 82 chaves que vão reorganizar sua mente e libertar sua alma da estagnação.
             </p>
-            <div className="flex items-center text-primary font-bold text-lg group-hover:translate-x-2 transition-transform">
-              Começar transformação <span className="ml-2">→</span>
+            <div className="flex items-center text-primary font-black text-2xl group-hover:translate-x-4 transition-transform tracking-tight">
+              COMEÇAR MINHA TRANSFORMAÇÃO <span className="ml-3">→</span>
             </div>
           </button>
 
@@ -189,16 +189,16 @@ const Index = () => {
               const diarySection = document.getElementById('diary-section');
               diarySection?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="group relative overflow-hidden p-10 rounded-[3rem] bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500 text-left"
+            className="group relative overflow-hidden p-12 rounded-[4rem] bg-card border border-border shadow-xl hover:shadow-2xl transition-all duration-500 text-left border-b-8 border-secondary/20"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-secondary/5 rounded-bl-[150px] -z-0 transition-transform group-hover:scale-110" />
-            <Users className="h-16 w-16 text-secondary mb-8 transition-transform group-hover:scale-110 group-hover:rotate-6" />
-            <h3 className="text-3xl font-bold mb-4 text-foreground tracking-tight">Voz do Coração</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Transforme seus sentimentos em prece. Use o diário espiritual para registrar seu progresso.
+            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-bl-[200px] -z-0 transition-transform group-hover:scale-110" />
+            <Users className="h-20 w-20 text-secondary mb-10 transition-transform group-hover:scale-110 group-hover:rotate-6" />
+            <h3 className="text-4xl font-black mb-6 text-foreground tracking-tighter leading-none">Voz do <br/><span className="text-secondary italic">Coração</span></h3>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10 font-medium">
+              Transforme seus sentimentos em prece materializada. Use o Diário PCH para registrar sua conexão com o invisível.
             </p>
-            <div className="flex items-center text-secondary font-bold text-lg group-hover:translate-x-2 transition-transform">
-              Escrever reflexão <span className="ml-2">→</span>
+            <div className="flex items-center text-secondary font-black text-2xl group-hover:translate-x-4 transition-transform tracking-tight">
+              ESCREVER MINHA REFLEXÃO <span className="ml-3">→</span>
             </div>
           </button>
         </div>
