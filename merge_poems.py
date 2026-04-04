@@ -8,13 +8,15 @@ def parse_html_poems(file_path):
     
     # Get all poemsData script blocks
     # Looking for 'fe-esperanca': [ ... ]
+    # The regex below matches 'key': [ (everything inside) ]
     blocks_raw = re.findall(r"'([^']+)':\s*\[(.*?)\n\s*\]", content, re.DOTALL)
     
     parsed_data = {}
     for block_name, block_content in blocks_raw:
         # Match poems { id: '...', title: '...', text: `...` }
-        # Note the backtick for multi-line text
-        poems = re.findall(r"\{\s*id:\s*'([^']+)',\s*title:\s*'([^']+)',\s*text:\s*`(.*?)`\s*\}", block_content, re.DOTALL)
+        # Note the backtick for multi-line text. We match everything inside the { } block.
+        # This regex is more permissive to handle optional commas and fields.
+        poems = re.findall(r"\{\s*id:\s*'([^']+)',\s*title:\s*'([^']+)',\s*text:\s*`(.*?)`.*?\s*\}", block_content, re.DOTALL)
         parsed_data[block_name] = []
         for pid, title, text in poems:
             parsed_data[block_name].append({
@@ -36,7 +38,6 @@ def parse_ts_poems(file_path):
     data_str = match.group(1)
     
     # Use a more robust way to parse the TS object
-    # For simplicity, we'll split by block keys
     block_pattern = r"'bloco-\d+': \["
     block_keys = re.findall(r"'bloco-\d+'", data_str)
     block_contents = re.split(block_pattern, data_str)[1:] # Skip the first empty part
@@ -46,7 +47,7 @@ def parse_ts_poems(file_path):
         key = block_key.strip("'")
         content_part = block_contents[i]
         
-        # Now find poems within this block
+        # Find poems within this block
         # A poem starts with { and ends with } followed by , or ]
         poem_matches = re.findall(r"\{\s*id:\s*'([^']+)',\s*title:\s*'([^']+)',\s*text:\s*`(.*?)`(.*?)\n\s*\}", content_part, re.DOTALL)
         
@@ -57,12 +58,12 @@ def parse_ts_poems(file_path):
                 'title': title,
                 'text': text.strip()
             }
-            # Reflection (handles both single and double quotes if they were there)
-            ref_match = re.search(r"reflection:\s*'(.*?)'", extra, re.DOTALL)
+            # Reflection (handles both single and double quotes)
+            ref_match = re.search(r"reflection:\s*'((?:\\'|[^'])+)'", extra, re.DOTALL)
             if ref_match: poem['reflection'] = ref_match.group(1).strip()
             
             # Inspiration
-            ins_match = re.search(r"inspiration:\s*'(.*?)'", extra, re.DOTALL)
+            ins_match = re.search(r"inspiration:\s*'((?:\\'|[^'])+)'", extra, re.DOTALL)
             if ins_match: poem['inspiration'] = ins_match.group(1).strip()
             
             parsed_data[key].append(poem)
@@ -101,16 +102,13 @@ def merge():
             current_ts_poems[target_block] = []
         
         for poem in poems:
-            if poem['title'].strip().lower() not in current_titles:
-                # Add default reflection if missing
+            title_clean = poem['title'].strip().lower()
+            if title_clean not in current_titles:
                 current_ts_poems[target_block].append(poem)
-                current_titles.add(poem['title'].strip().lower())
+                current_titles.add(title_clean)
                 merged_count += 1
                 
     print(f"Merged {merged_count} new poems.")
-
-    # Sort each block by ID prefix (p1, p2...) then original-marked if any, then title
-    # (Not strictly necessary, but good)
 
     # Re-generate the poemsData object string
     new_poems_data_str = "export const poemsData: PoemsData = {\n"
@@ -121,16 +119,13 @@ def merge():
             new_poems_data_str += "    {\n"
             new_poems_data_str += f"      id: '{p['id']}',\n"
             new_poems_data_str += f"      title: '{p['title']}',\n"
-            # Replace backticks in text with \` to avoid breaking the template string
             safe_text = p['text'].replace('`', '\\`')
             new_poems_data_str += f"      text: `{safe_text}`"
             
             if 'reflection' in p:
-                safe_ref = p['reflection'].replace("'", "\\'")
-                new_poems_data_str += f",\n      reflection: '{safe_ref}'"
+                new_poems_data_str += f",\n      reflection: '{p['reflection']}'"
             if 'inspiration' in p:
-                safe_ins = p['inspiration'].replace("'", "\\'")
-                new_poems_data_str += f",\n      inspiration: '{safe_ins}'"
+                new_poems_data_str += f",\n      inspiration: '{p['inspiration']}'"
             
             new_poems_data_str += "\n    }"
             if i < len(poems) - 1:
@@ -142,7 +137,6 @@ def merge():
         new_poems_data_str += "\n"
     new_poems_data_str += "};"
 
-    # Replace in full file content
     pattern = r'export const poemsData: PoemsData = \{.*?\n\};'
     final_content = re.sub(pattern, new_poems_data_str, original_full_ts, flags=re.DOTALL)
     
