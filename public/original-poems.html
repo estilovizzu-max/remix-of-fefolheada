@@ -431,8 +431,8 @@
                  return `
                     <div class="achievement-card border-2 rounded-lg p-3 text-center ${isUnlocked ? 'unlocked' : 'locked'}">
                         <div class="text-3xl">${ach.icon}</div>
-                        <div class="font-bold text-sm mt-1">${ach.name}</div>
-                        <div class="text-xs text-gray-500">${ach.desc}</div>
+                        <div class="font-bold text-sm mt-1">${escapeHTML(ach.name)}</div>
+                        <div class="text-xs text-gray-500">${escapeHTML(ach.desc)}</div>
                     </div>
                 `;
             }
