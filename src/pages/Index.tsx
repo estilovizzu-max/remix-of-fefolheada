@@ -99,72 +99,71 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Espelho da Dor (Identification Section) */}
-        <section className="mb-24 py-16 bg-muted/30 rounded-[3rem] px-8 border border-border/50">
-          <div className="max-w-3xl mx-auto text-center space-y-12">
-            <h3 className="text-3xl md:text-4xl font-black text-foreground tracking-tight">
-              Você sente que algo está <span className="text-primary italic">faltando</span> na sua caminhada?
+        {/* 🪞 ESPELHO DA DOR (IDENTIFICAÇÃO PROFUNDA) */}
+        <section className="mb-24 py-20 bg-muted/40 rounded-[3.5rem] px-8 md:px-16 border border-border/50 relative overflow-hidden shadow-sm">
+          <div className="absolute top-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mt-12" />
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mb-16" />
+          
+          <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
+            <h3 className="text-4xl md:text-6xl font-black text-foreground tracking-tighter leading-none">
+              Isso parece <span className="text-primary italic">familiar</span> para você?
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  "Já tentei rezar, mas as palavras parecem vazias..."
-                </p>
-              </div>
-              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  "Sinto que minha fé está estagnada e não sei como avançar..."
-                </p>
-              </div>
-              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  "A correria do dia a dia me afasta da minha essência espiritual."
-                </p>
-              </div>
-              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  "Busco uma conexão real, mas me perco no cansaço emocional."
-                </p>
-              </div>
+              {[
+                { question: "Já tentou rezar, mas as palavras parecem vazias?", icon: "😔" },
+                { question: "Sente que sua fé está estagnada e não sabe como avançar?", icon: "🛑" },
+                { question: "A correria do dia a dia te afasta da sua essência espiritual?", icon: "🏃" },
+                { question: "Busca uma conexão real, mas se perde no cansaço emocional?", icon: "⛈️" }
+              ].map((item, i) => (
+                <div key={i} className="bg-card/80 backdrop-blur-sm p-8 rounded-3xl border border-border/40 shadow-sm hover:scale-[1.02] transition-transform">
+                  <span className="text-4xl mb-4 block">{item.icon}</span>
+                  <p className="text-xl font-medium text-muted-foreground leading-relaxed">
+                    "{item.question}"
+                  </p>
+                </div>
+              ))}
             </div>
 
-            <div className="pt-8">
-              <p className="text-xl font-medium text-primary">
-                O problema não é você. É a falta de um mecanismo que conecte sua linguagem ao seu coração.
+            <div className="pt-12 max-w-2xl mx-auto">
+              <p className="text-2xl md:text-3xl font-black text-primary leading-tight">
+                O problema não é você. O erro está no método que você está usando para se conectar.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Mecanismo Único (The Method) */}
-        <div className="bg-primary/5 border border-primary/10 p-12 md:p-16 rounded-[3.5rem] mb-24 text-center max-w-5xl mx-auto shadow-sm backdrop-blur-sm relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-32 -mt-32 blur-3xl" />
+        {/* 💡 O MECANISMO ÚNICO (MÉTODO PCH) */}
+        <div className="bg-primary border-0 p-12 md:p-24 rounded-[4rem] mb-24 text-center max-w-6xl mx-auto shadow-2xl relative overflow-hidden text-white">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48 blur-3xl animate-pulse" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full -ml-32 -mb-32 blur-2xl" />
           
-          <h3 className="text-3xl md:text-5xl font-black text-primary mb-8 tracking-tighter">
-            O Método <span className="text-secondary">Filho da Luz</span>
-          </h3>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
-            Não é apenas uma coleção de poesias. É uma ferramenta de <span className="font-bold text-foreground">reprogramação espiritual</span>. 
-            Organizamos 82 poemas em 6 blocos estratégicos para guiar sua alma do deserto à plenitude.
-          </p>
+          <div className="relative z-10 space-y-8">
+            <h3 className="text-4xl md:text-7xl font-black tracking-tighter mb-8 text-white leading-[0.85]">
+              Conheça o Método <br/><span className="text-secondary italic">PCH</span>
+            </h3>
+            <p className="text-2xl md:text-3xl font-light leading-relaxed max-w-4xl mx-auto mb-16 opacity-90">
+              Não é sobre ler poesias. É sobre <span className="font-black text-white decoration-secondary underline underline-offset-8">Poesia que Cura o Homem</span>. 
+              Um sistema de 82 chaves que acessam o invisível para uma transformação definitiva.
+            </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-            {[
-              "Conexão com o Invisível",
-              "Cura das Emoções",
-              "Fortalecimento da Fé",
-              "Libertação Interior",
-              "Paz Profunda",
-              "Propósito de Vida"
-            ].map((benefit, i) => (
-              <div key={i} className="flex items-center space-x-3 bg-background/50 p-4 rounded-2xl border border-primary/5 shadow-sm">
-                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                  {i + 1}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+              {[
+                "Conexão com o Invisível",
+                "Cura das Emoções",
+                "Fortalecimento da Fé",
+                "Libertação Interior",
+                "Paz Profunda",
+                "Propósito de Vida"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-center space-x-4 bg-white/10 p-6 rounded-[2rem] border border-white/10 shadow-lg backdrop-blur-md">
+                  <div className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-primary font-black text-lg">
+                    {i + 1}
+                  </div>
+                  <span className="font-black text-xl text-white tracking-tight">{benefit}</span>
                 </div>
-                <span className="font-medium text-foreground">{benefit}</span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
