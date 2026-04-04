@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react';
+import { Navbar } from '@/components/Navbar';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { ProgressSection } from '@/components/ProgressSection';
 import { DiarySection } from '@/components/DiarySection';
 import { ThemeSection } from '@/components/ThemeSection';
@@ -65,7 +67,8 @@ const Index = () => {
   };
 
   return (
-    <div className="w-full min-h-screen scroll-smooth bg-background relative overflow-hidden font-sans">
+    <div className="w-full min-h-screen scroll-smooth bg-background relative overflow-hidden font-sans pt-20">
+      <Navbar />
       {/* Background patterns/shapes for layout change */}
       <div className="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-b from-primary/10 via-primary/5 to-transparent -z-10" />
       <div className="absolute top-[10%] -left-20 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10 animate-pulse" />
@@ -202,6 +205,7 @@ const Index = () => {
         totalPoems={totalPoems}
         diaryCount={diaryEntries.length}
       />
+      <Footer />
     </div>
   );
 };
