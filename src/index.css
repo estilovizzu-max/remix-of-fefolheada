@@ -65,7 +65,7 @@ All colors MUST be HSL.
     --popover: 210 100% 7%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 45 90% 45%;
+    --primary: 265 89% 50%; /* Lighter Purple for dark mode */
     --primary-foreground: 210 100% 5%;
 
     --secondary: 210 100% 15%;
