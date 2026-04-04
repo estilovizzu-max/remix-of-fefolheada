@@ -19,7 +19,7 @@ export const themeTitles: { [key: string]: string } = {
   'bloco-6': 'Oficina do Poeta (Curso Prático)'
 };
 
-export const readingAchievementsList = [
+export const readingAchievementsList: { name: string; desc: string; icon: string; goal: number | 'all' }[] = [
   { name: 'Iniciante', desc: 'Leia 5 poemas', icon: '🌱', goal: 5 },
   { name: 'Caminhante', desc: 'Leia 15 poemas', icon: '🚶', goal: 15 },
   { name: 'Persistente', desc: 'Leia 30 poemas', icon: '⚡', goal: 30 },
