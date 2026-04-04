@@ -156,7 +156,7 @@ O fruto dessa luz é bondade, justiça e verdade,
 Pois Cristo é a Verdade, que nos liberta e conduz.`,
       reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz.',
       inspiration: 'Eu me levanto do chão e grito...'
-    }
+    },
     {
       id: 'p1-15',
       title: 'Pura Graça',
