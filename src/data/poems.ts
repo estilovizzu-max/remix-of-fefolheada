@@ -369,22 +369,28 @@ Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha histó
     {
       id: 'p2-1',
       title: 'Nunca Pare de Lutar',
-      text: `Alguém me tocou... Senti uma força sair,
-Manifestei minha Palavra — a mulher hemorroísa foi curada por não desistir.
-Encontrei-me with Jesus agora posso me salvar, é sair do mundo interno e do pecado se libertar.
-Deus nos escolheu, neste mundo nos colocou, preparou em nossa mãe, que com amor nos cuidou.
-Por amor à humanidade, Jesus morreu e ressuscitou.
-Não duvide pois a Graça se entregue em oração, Ele já manifestou!
-A fonte de salvação, se levante e vá beber. Seja firme, meu irmão!
-Éramos escravos do pecado, mas tudo muda com a decisão.
-Renunciar à impiedade, aos desejos deste mundo vão,
-Pois o tempo está chegando — Jesus virá com a separação: das ovelhas e cordeiros, Ele vai nos separar.
-Pelo batismo, nós morremos, e para o céu que vamos caminhar.
-E se quiser no céu entrar, do pecado há que se arrepender.
-A justiça de Deus não falha — tome cuidado, podes crer!
-Nunca perca a esperança, guarde Jesus no coração.
-Pare de reclamar agora, busque firme a salvação.
-Faça como a mulher que tocou no Salvador, nunca pare de lutar com fé e com fervor.`,
+      text: `Alguém Me tocou... senti uma força sair,
+Minha Palavra se manifestou — a cura veio enfim.
+A mulher de fé não desistiu, quis Me encontrar,
+Pois quem sai do mundo interno, do pecado vem se libertar.
+
+Deus nos escolheu, neste mundo nos colocou,
+Preparou-nos no ventre materno, onde com amor nos guardou.
+Por amor à humanidade, Jesus morreu e ressuscitou,
+Não duvide da Sua graça, ela já se manifestou.
+
+A fonte da salvação está aberta, levante-se e vá beber,
+Seja firme, meu irmão, o pecado você pode vencer.
+A decisão muda tudo, renuncie ao que for vão,
+Pois o tempo está chegando para a grande separação.
+
+Pelo batismo morremos para o mundo, para o Céu caminhar,
+Se queres a Glória eterna, do pecado há que se arrepender.
+A justiça de Deus não falha, vigie o seu proceder,
+Nunca perca a esperança, deixe Jesus em você viver.
+
+Busque firme a salvação, sinta a força do Redentor,
+Faça como aquela mulher, toque com fé e com fervor!`,
       reflection: 'A mulher hemorroísa teve que romper uma multidão para tocar em Jesus. Às vezes, a "multidão" são nossos próprios pensamentos de desânimo ou a opinião alheia. Qual é a "multidão" que está me impedindo de tocar em Jesus hoje? Em qual área da minha vida eu parei de lutar e me acomodei com a "doença"?',
       inspiration: 'Eu rompo a multidão do medo e toco em...'
     },
