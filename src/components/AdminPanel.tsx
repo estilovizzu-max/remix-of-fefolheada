@@ -70,7 +70,6 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
               aria-label="Admin Access"
             />
           </div>
-          </div>
         </footer>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
