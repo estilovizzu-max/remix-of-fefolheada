@@ -7,9 +7,12 @@ import { AchievementsModal } from '@/components/AchievementsModal';
 import { QuickNav } from '@/components/QuickNav';
 import { BackToTop } from '@/components/BackToTop';
 import { AdminPanel } from '@/components/AdminPanel';
+import { GroupSelector } from '@/components/GroupSelector';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { poemsData, themeTitles } from '@/data/poems';
 import { loadCustomPoems, saveCustomPoem, mergePoems, generatePoemId } from '@/utils/poemLoader';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { BookOpen, Users } from "lucide-react";
 
 interface DiaryEntry {
   text: string;
