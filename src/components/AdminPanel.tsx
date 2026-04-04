@@ -25,6 +25,7 @@ interface NewPoem {
   theme: string;
   title: string;
   text: string;
+  reflection: string;
 }
 
 interface AdminPanelProps {
