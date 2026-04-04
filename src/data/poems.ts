@@ -314,12 +314,20 @@ Parei de olhar o que não era para ser meu. Sei que o culpado sou eu, mas não v
     {
       id: 'p1-18',
       title: 'O Tempo e a Transformação',
-      text: `O tempo está passando como o vento a soprar, Não espera por ninguém, não pare de avançar.
-Toda noite, o tempo te dá 24 horas, um novo amanhecer.
-O tempo de Deus é perfeito, você tem que acreditar, Ele está te chamando, vem cá, vamos juntos caminhar.
-O tempo é como um anjo que traz a você, Alegria, emoções, e inteligência para perceber.
-São apenas 24 horas que Deus te dá, Para refletir, mudar e se transformar.
-Parado não dá pra ficar, uma hora o tempo chega, E o que ficará depois que ele for?`,
+      text: `O tempo passa como o vento a soprar,
+Ele não espera, não pare de avançar.
+Toda noite, o Senhor te entrega um novo amanhecer,
+Vinte e quatro horas para você renascer.
+
+O tempo de Deus é perfeito, podes acreditar,
+Ele te chama agora: "Vem, vamos juntos caminhar!"
+O tempo é o mensageiro que traz a você
+Alegria e clareza para o mundo perceber.
+
+São apenas horas que o Pai te concede,
+Para que a mudança em ti se apresse.
+Não fique parado, pois a hora vai chegar —
+O que restará quando o tempo se findar?`,
       reflection: 'O tempo é um recurso não renovável que Deus nos dá diariamente. Como gastei minhas últimas 24 horas? Construindo ou destruindo? Se o tempo "chegasse" hoje, o que eu apresentaria a Deus?',
       inspiration: 'Meu tempo é agora e eu o dedico a...'
     },
