@@ -124,6 +124,14 @@ const Index = () => {
           </button>
         </div>
 
+        <div className="bg-primary/5 border border-primary/10 p-10 rounded-[2.5rem] mb-20 text-center max-w-4xl mx-auto shadow-sm backdrop-blur-sm animate-in fade-in zoom-in duration-1000">
+          <h3 className="text-2xl font-bold text-primary mb-4 italic">Seu Caminho de Luz</h3>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Integramos todos os <span className="text-primary font-bold">82 poemas</span> organizados nos 6 Blocos do <span className="italic text-secondary font-semibold">Método Filho da Luz</span>. 
+            Cada bloco foi pensado para sua jornada espiritual. Comece por onde seu coração sentir.
+          </p>
+        </div>
+
         <div id="poems-content">
           <Tabs defaultValue="poems" className="w-full">
             <div className="flex justify-center mb-16">
