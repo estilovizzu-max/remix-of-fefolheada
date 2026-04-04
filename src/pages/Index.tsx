@@ -146,7 +146,7 @@ const Index = () => {
                   value="groups" 
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-full px-8 py-3 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
                 >
-                  <Users className="h-4 w-4 mr-2" /> Grupos de Oração
+                  <Users className="h-4 w-4 mr-2" /> Grupos de Oração (RCC)
                 </TabsTrigger>
               </TabsList>
             </div>
