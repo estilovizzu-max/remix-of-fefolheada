@@ -55,7 +55,7 @@ export const AchievementsModal = ({
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
             {readingAchievementsList.map((ach) => {
-              const goal = ach.goal === 'all' ? totalPoems : ach.goal;
+              const goal = ach.goal === 'all' ? totalPoems : (ach.goal as number);
               const isUnlocked = readCount >= goal;
               return (
                 <AchievementCard 
