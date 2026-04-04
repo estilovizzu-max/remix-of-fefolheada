@@ -1,4 +1,3 @@
-  title: string;
 A Armadura de Deus
 A Esperança e a Libertação em Cristo
 A Fé de Bartimeu
