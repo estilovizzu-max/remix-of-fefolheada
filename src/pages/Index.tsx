@@ -80,47 +80,66 @@ const Index = () => {
           <Header />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-          {/* Left Column: Progress and Diary */}
-          <div className="md:col-span-4 space-y-8 sticky top-24">
-            <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
-              <ProgressSection 
-                readCount={readPoems.length}
-                totalPoems={totalPoems}
-                onOpenModal={() => setIsModalOpen(true)}
-              />
-            </div>
-
-            <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
-              <DiarySection
-                entries={diaryEntries}
-                onSaveEntry={handleSaveDiaryEntry}
-                onDeleteEntry={handleDeleteDiaryEntry}
-              />
-            </div>
+        <Tabs defaultValue="poems" className="w-full">
+          <div className="flex justify-center mb-10">
+            <TabsList className="grid w-full max-w-md grid-cols-2">
+              <TabsTrigger value="poems" className="gap-2">
+                <BookOpen className="h-4 w-4" /> Poemas
+              </TabsTrigger>
+              <TabsTrigger value="groups" className="gap-2">
+                <Users className="h-4 w-4" /> Grupos de Oração
+              </TabsTrigger>
+            </TabsList>
           </div>
 
-          {/* Right Column: Themes and Poems */}
-          <div className="md:col-span-8 space-y-12">
-            {Object.keys(themeTitles).map((themeKey) => {
-              const poems = allPoems[themeKey];
-              if (!poems || poems.length === 0) return null;
-              
-              const themeId = `theme-${themeKey}`;
-              return (
-                <section key={themeKey} className="scroll-mt-24">
-                  <ThemeSection
-                    themeId={themeId}
-                    title={themeTitles[themeKey]}
-                    poems={poems}
-                    readPoems={readPoems}
-                    onToggleRead={handleToggleRead}
+          <TabsContent value="poems" className="animate-in fade-in-50 duration-500">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              {/* Coluna Esquerda: Progresso e Diário */}
+              <div className="md:col-span-4 space-y-8 sticky top-24">
+                <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+                  <ProgressSection 
+                    readCount={readPoems.length}
+                    totalPoems={totalPoems}
+                    onOpenModal={() => setIsModalOpen(true)}
                   />
-                </section>
-              );
-            })}
-          </div>
-        </div>
+                </div>
+
+                <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+                  <DiarySection
+                    entries={diaryEntries}
+                    onSaveEntry={handleSaveDiaryEntry}
+                    onDeleteEntry={handleDeleteDiaryEntry}
+                  />
+                </div>
+              </div>
+
+              {/* Coluna Direita: Temas e Poemas */}
+              <div className="md:col-span-8 space-y-12">
+                {Object.keys(themeTitles).map((themeKey) => {
+                  const poems = allPoems[themeKey];
+                  if (!poems || poems.length === 0) return null;
+                  
+                  const themeId = `theme-${themeKey}`;
+                  return (
+                    <section key={themeKey} className="scroll-mt-24">
+                      <ThemeSection
+                        themeId={themeId}
+                        title={themeTitles[themeKey]}
+                        poems={poems}
+                        readPoems={readPoems}
+                        onToggleRead={handleToggleRead}
+                      />
+                    </section>
+                  );
+                })}
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="groups" className="animate-in fade-in-50 duration-500">
+            <GroupSelector />
+          </TabsContent>
+        </Tabs>
       </main>
 
       <AdminPanel onAddPoem={handleAddPoem} />
