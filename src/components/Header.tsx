@@ -22,18 +22,21 @@ export const Header = () => {
   };
 
   return (
-    <header className="text-center mb-4">
-      <h1 className="text-6xl md:text-8xl font-black text-primary mb-4 tracking-tighter drop-shadow-sm">
+    <header className="text-center mb-8 animate-in fade-in slide-in-from-top-4 duration-1000">
+      <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-bold mb-6 tracking-wide uppercase">
+        ✨ Experiência Exclusiva • Método Filho da Luz
+      </div>
+      <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-primary mb-6 tracking-tighter leading-[0.9] drop-shadow-sm">
         Folheando <span className="text-secondary italic">Fé</span>
       </h1>
-      <p className="text-2xl md:text-3xl font-medium text-foreground/80 mb-1">Poesia do Meu Grupo de Oração</p>
-      <div className="inline-flex items-center px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold mb-4">
-        82 Poemas Implementados • Método Filho da Luz
-      </div>
-      <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-        <div className="h-px w-8 bg-border" />
-        <p className="text-lg font-light tracking-widest uppercase">Por Evaldo Poeta</p>
-        <div className="h-px w-8 bg-border" />
+      <p className="text-xl md:text-3xl font-medium text-foreground/90 max-w-3xl mx-auto mb-8 leading-tight">
+        Uma jornada que reorganiza sua mente através da <span className="text-primary underline decoration-secondary/30 underline-offset-4">linguagem que acessa o invisível</span>.
+      </p>
+      
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+        <div className="flex items-center space-x-2 text-muted-foreground bg-muted/50 px-4 py-2 rounded-full border border-border/50">
+          <p className="text-sm font-light tracking-widest uppercase">Por Evaldo Poeta</p>
+        </div>
       </div>
       <div className="flex justify-center items-center flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 mt-6 text-sm sm:text-base">
         <a 

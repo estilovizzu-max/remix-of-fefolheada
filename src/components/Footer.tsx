@@ -7,13 +7,24 @@ export const Footer = () => {
     <footer className="bg-card border-t border-border mt-20">
       <div className="max-w-6xl mx-auto px-4 py-12 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="space-y-4">
-            <h3 className="text-2xl font-black text-primary tracking-tighter">
+          <div className="space-y-6">
+            <h3 className="text-3xl font-black text-primary tracking-tighter">
               Folheando <span className="text-secondary italic">Fé</span>
             </h3>
-            <p className="text-muted-foreground leading-relaxed max-w-xs">
-              Uma jornada de espiritualidade e poesia através das palavras de Evaldo Poeta. Fortalecendo a fé através da arte.
+            <p className="text-muted-foreground leading-relaxed max-w-sm">
+              Uma experiência que reorganiza sua mente através da linguagem que acessa o invisível. Transformando dor em prece e fé em verso.
             </p>
+            <div className="flex space-x-4">
+              <a href="https://www.instagram.com/oevaldopoeta" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://wa.me/5511961226754" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+                <Phone className="h-5 w-5" />
+              </a>
+              <a href="mailto:contato@folheandofe.com.br" className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
           </div>
           
           <div className="space-y-4">
