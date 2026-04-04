@@ -349,6 +349,40 @@ Retoma teu caminho, faz melhor do que já fizeste, volta para teu Senhor, faz no
 Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha história vai mudar.`,
       reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo.',
       inspiration: 'Hoje é um novo dia e eu decido...'
+    },
+    {
+      id: 'p3-6',
+      title: 'O Grito de Aflição',
+      text: `Eu ouvi o grito de aflição do meu povo, Senti a ferida em seus corações. Hoje, venho para curar e salvar.
+Assim diz o Senhor, que vem sarar todas as feridas, Pois em Deus reside o amor, Que é puro e o princípio da vida.
+Não busque apenas a cura física, Mas procure Aquele que é a fonte da vida.
+O Senhor te oferece a verdadeira felicidade Para que possas ser salvo e viver plenamente.
+Ele ouve mesmo quando não consegues expressar em palavras, Ele guia teu coração para que não tropeces em Sua presença.`,
+      reflection: '"Ele ouve mesmo quando não consegues expressar em palavras". Às vezes, nossa oração é apenas um gemido.',
+      inspiration: 'Meu grito silencioso pede...'
+    },
+    {
+      id: 'p3-7',
+      title: 'O Espírito da Vida',
+      text: `O Espírito da vida está aqui para te ajudar, Fica aqui na minha casa, para as feridas limpar.
+O Senhor procura o coração verdadeiro, Viva em Cristo todo dia, seja o primeiro.
+Arrependei-vos das mentiras do passado, O Senhor perdoa e está sempre ao seu lado.
+Ele me envia para anunciar Sua palavra, Para restaurar o coração, a nossa vida lavar.
+Deus conhece a sua vida, está sempre ao seu lado, Envia Seu Espírito para te manter ao lado.
+Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele te iluminará.`,
+      reflection: 'O convite é íntimo: "Fica aqui na minha casa". A cura acontece quando convidamos o Espírito para morar.',
+      inspiration: 'Espírito da Vida, entra na minha casa e...'
+    },
+    {
+      id: 'p3-8',
+      title: 'Gratidão e Renovação',
+      text: `Louve a Deus todos os dias com gratidão, Sua água viva cura nossas feridas, traz consolação.
+Não espere por ninguém, o Espírito está a soprar, Ele traz água viva para te transformar.
+Não deixe o medo te paralisar, Abra teu coração, deixe o amor te alcançar.
+O Espírito do Senhor geme em teu interior, Recebe o fogo abrasador, divino e restaurador.
+Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.`,
+      reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior.',
+      inspiration: 'Eu louvo pela minha família e peço...'
     }
   ],
   'bloco-2': [
