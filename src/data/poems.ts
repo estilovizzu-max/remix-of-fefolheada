@@ -137,12 +137,12 @@ Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
       text: `Desperta agora, meu amigo, ouve a voz do Senhor.
 Levanta-te dentre os mortos, que Cristo já te iluminou.
 Ele te chama para a luz, para a ação e o amor,
-Pois a vontade d\'Ele é que conheças o Senhor.
+Pois a vontade d'Ele é que conheças o Senhor.
 Você é filho da luz, das trevas pode sair;
 Aceite a graça divina, deixe-se conduzir.
 O Espírito te guia, mostrando o caminho a trilhar;
 Siga suas orientações, não deixe de escutar.
-Seja esperto e fique perto do Senhor,
+Seja esperto e fique perto do Senhor,`,search:
 Faça como Bartimeu, grite com fé e fervor:
 "Jesus, tem piedade, transforma meu coração!"
 Então tua vida, certamente, será cheia de alegria,
