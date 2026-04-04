@@ -157,6 +157,93 @@ Pois Cristo é a Verdade, que nos liberta e conduz.`,
       reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz.',
       inspiration: 'Eu me levanto do chão e grito...'
     }
+    {
+      id: 'p1-15',
+      title: 'Pura Graça',
+      text: `Jesus, fonte de toda graça, Vivo Sua paz que me abraça, Que se derrama sobre mim.
+Sua misericórdia sem fim, Todos os dias me alcança, Trazendo luz e esperança.
+Recarregando minha energia Com o Teu Espírito, dia após dia.
+Na minha alma, ouço o Teu chamado, Que vem suave, ao meu lado,
+Ajudando-me a me entender, E meu coração, a aquecer.
+Após essa expressão, Eu abro meu coração, E o Senhor vem transformar,
+Minhas emoções equilibrar, Minha visão aprimorar,
+Para que eu possa enxergar Tudo o que preciso mudar.`,
+      reflection: 'A graça de Deus não é um evento único, é um "recarregar" diário. Ela equilibra as emoções e aprimora a visão.',
+      inspiration: 'Tua graça me alcança e equilibra meu...'
+    },
+    {
+      id: 'p1-16',
+      title: 'Pensamento Libertador',
+      text: `Acredite ou não, saiba que você não é obrigado a nada.
+Não é porque as pessoas te pedem algo Que você deve atender sem questionar.
+É necessário aprender a indagar, fazer as perguntas certas.
+Reflexione comigo: Por que devo fazer isso? O pensamento liberta.
+Até quando vai permanecer preso sem pensar? Se alguém é aprisionado, é porque não refletiu.
+O pensamento que faz refletir te leva a relaxar E a resolver o que antes parecia impossível,
+Mantendo seus pensamentos alinhados E intensificando sua alegria.`,
+      reflection: 'A liberdade começa no pensamento. Dizer "no" aos outros pode ser dizer "sim" para a sua paz.',
+      inspiration: 'Eu liberto minha mente e escolho...'
+    },
+    {
+      id: 'p1-17',
+      title: 'Parei de Ficar Parado',
+      text: `Ah! Parei de ficar parado, Com o medo ao meu lado querendo me atrapalhar.
+Parei com toda vergonha, O monstro que é medonho queria me controlar.
+Parei de ficar na rua achando que vou fazer. Parei de esperar que as coisas aconteçam.
+Parei com tudo o que atrapalha, faço o que deve ser feito.
+Pensava que tinha que ser perfeito, parei de me preocupar.
+O certo só é certo porque nunca foi errado. Pare de ficar parado achando que vai acertar.
+Parei de olhar o que não era para ser meu. Sei que o culpado sou eu, mas não vou me preocupar.`,
+      reflection: 'A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito".',
+      inspiration: 'O medo não me para mais, eu avanço para...'
+    },
+    {
+      id: 'p1-18',
+      title: 'O Tempo e a Transformação',
+      text: `O tempo está passando como o vento a soprar, Não espera por ninguém, não pare de avançar.
+Toda noite, o tempo te dá 24 horas, um novo amanhecer.
+O tempo de Deus é perfeito, você tem que acreditar, Ele está te chamando, vem cá, vamos juntos caminhar.
+O tempo é como um anjo que traz a você, Alegria, emoções, e inteligência para perceber.
+São apenas 24 horas que Deus te dá, Para refletir, mudar e se transformar.
+Parado não dá pra ficar, uma hora o tempo chega, E o que ficará depois que ele for?`,
+      reflection: 'O tempo é um recurso não renovável que Deus nos dá diariamente.',
+      inspiration: 'Meu tempo é agora e eu o dedico a...'
+    },
+    {
+      id: 'p1-19',
+      title: 'Imagem Espelhada',
+      text: `Quando se olha no espelho, o que é que você vê? Como se enxerga agora e o que você vai fazer?
+Certamente já parou tantas vezes, pra pensar, Pra resolver o seu problema e disse que não dá.
+Vamos fechar as portas daquela sua prisão, Que estava suja e imunda dentro do seu coração.
+Rancor, ódio e medo, tudo isso vai mudar, Se teu coração se abrir e a prática colocar.
+Lembre daquele espelho que você tanto olhou, Enxergando sua imagem e muito se recordou.
+Como é bom perceber que não é outra pessoa, Não se entrega facilmente, luta com unhas e dentes.`,
+      reflection: 'O espelho reflete o corpo, mas Deus vê o coração. A "prisão" interna (rancor, ódio) distorce nossa imagem.',
+      inspiration: 'No espelho da graça, eu vejo um filho que...'
+    },
+    {
+      id: 'p1-20',
+      title: 'O Chamado de Mateus',
+      text: `Depois que Jesus saiu e viu alguém no balcão,
+O nome dele era Mateus, também chamado de ladrão.
+Ele estava no posto de arrecadação, Jesus parou, fitou os olhos e chamou sua atenção.
+"Segue-me agora", e Levi se levantou, Ele não pediu tempo, logo o acompanhou.
+"Não os que têm saúde precisam de doutor, Mas sim os pecadores", respondeu o meu Senhor.`,
+      reflection: 'Jesus chamou Mateus no seu local de trabalho, no meio de sua rotina e de seus erros.',
+      inspiration: 'Eu me levanto do meu balcão e...'
+    },
+    {
+      id: 'p1-21',
+      title: 'Transformação e Chamado',
+      text: `Eis que faço novas todas as coisas, nosso canto, nossa vida precisa se transformar em canção.
+Deus transforma em meu coração, temos um deserto a atravessar.
+Jesus está vivo em Sua plena glória, com o canto da vitória, Sua graça neste dia ecoa,
+nos tirando desta vida velha, uma vida extraordinária Ele nos dá.
+Retoma teu caminho, faz melhor do que já fizeste, volta para teu Senhor, faz novo outra vez.
+Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha história vai mudar.`,
+      reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo.',
+      inspiration: 'Hoje é um novo dia e eu decido...'
+    }
   ],
   'bloco-2': [
     {
