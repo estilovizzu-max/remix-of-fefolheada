@@ -144,7 +144,7 @@ const Index = () => {
             </h3>
             <p className="text-2xl md:text-3xl font-light leading-relaxed max-w-4xl mx-auto mb-16 opacity-90">
               Não é sobre ler poesias. É sobre <span className="font-black text-white decoration-secondary underline underline-offset-8">Poesia que Cura o Homem</span>. 
-              Um sistema de 82 chaves que acessam o invisível para uma transformação definitiva.
+              Um sistema de {totalPoems} chaves que acessam o invisível para uma transformação definitiva.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
