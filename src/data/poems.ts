@@ -27,7 +27,7 @@ export const readingAchievementsList: { name: string; desc: string; icon: string
   { name: 'Mestre da Luz', desc: 'Leia todos os poemas', icon: '👑', goal: 'all' }
 ];
 
-export const diaryAchievementsList = [
+export const diaryAchievementsList: { name: string; desc: string; icon: string; goal: number }[] = [
   { name: 'Primeiro Passo', desc: 'Primeira anotação', icon: '📝', goal: 1 },
   { name: 'Reflexivo', desc: '5 anotações', icon: '💭', goal: 5 },
   { name: 'Espiritual', desc: '10 anotações', icon: '🙏', goal: 10 }
