@@ -77,71 +77,84 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
   };
 
   return (
-    <article className="bg-card rounded-lg shadow-lg border border-border overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-      <div className="p-4 border-b border-border bg-gradient-to-r from-primary/5 to-secondary/5">
-        <h3 className="text-xl font-bold text-primary mb-3">{poem.title}</h3>
-        <div className="flex items-center gap-2 flex-wrap">
-          <Button
-            onClick={handleSpeak}
-            variant="outline"
-            size="sm"
-            className="gap-2 hover:bg-primary hover:text-primary-foreground transition-colors"
-            title={isSpeaking ? "Parar áudio" : "Ouvir poema"}
-          >
-            {isSpeaking ? (
-              <><Square className="h-4 w-4" /> Parar</>
-            ) : (
-              <><Volume2 className="h-4 w-4" /> Ouvir</>
-            )}
-          </Button>
-          <Button
-            onClick={handleShare}
-            variant="outline"
-            size="sm"
-            className="gap-2 hover:bg-secondary hover:text-secondary-foreground transition-colors"
-            title="Compartilhar poema"
-          >
-            <Share2 className="h-4 w-4" /> Compartilhar
-          </Button>
-          <Label className="flex items-center gap-2 cursor-pointer ml-auto">
-            <Switch
-              checked={isRead}
-              onCheckedChange={(checked) => onToggleRead(poem.id, checked)}
-            />
-            <span className={`text-sm font-medium ${isRead ? 'text-primary' : 'text-muted-foreground'}`}>
-              {isRead ? '✓ Lido' : 'Marcar como lido'}
-            </span>
-          </Label>
+    <article className="bg-card rounded-[2.5rem] shadow-lg border border-border/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+      <div className="p-8 border-b border-border bg-gradient-to-br from-primary/[0.03] to-secondary/[0.03]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <h3 className="text-2xl font-bold text-primary tracking-tight">{poem.title}</h3>
+          
+          <div className="flex items-center gap-3 flex-wrap">
+            <Button
+              onClick={handleSpeak}
+              variant="outline"
+              size="sm"
+              className="rounded-full px-6 hover:bg-primary hover:text-primary-foreground transition-all duration-300 border-primary/20"
+              title={isSpeaking ? "Parar áudio" : "Ouvir poema"}
+            >
+              {isSpeaking ? (
+                <><Square className="h-4 w-4 mr-2" /> Parar</>
+              ) : (
+                <><Volume2 className="h-4 w-4 mr-2" /> Ouvir</>
+              )}
+            </Button>
+            <Button
+              onClick={handleShare}
+              variant="outline"
+              size="sm"
+              className="rounded-full px-6 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 border-secondary/20"
+              title="Compartilhar poema"
+            >
+              <Share2 className="h-4 w-4 mr-2" /> Partilhar
+            </Button>
+            
+            <div className="flex items-center gap-2 bg-muted/50 px-4 py-2 rounded-full border border-border/50">
+              <Switch
+                id={`read-${poem.id}`}
+                checked={isRead}
+                onCheckedChange={(checked) => onToggleRead(poem.id, checked)}
+                className="data-[state=checked]:bg-primary"
+              />
+              <Label htmlFor={`read-${poem.id}`} className={`text-xs font-bold uppercase tracking-widest cursor-pointer ${isRead ? 'text-primary' : 'text-muted-foreground'}`}>
+                {isRead ? 'Lido' : 'Marcar'}
+              </Label>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="poem-container">
-        <div className="poem-watermark">Evaldo Poeta</div>
-        <p className="poem-text">{poem.text}</p>
+
+      <div className="poem-container relative p-10 md:p-14">
+        <div className="poem-watermark text-primary/5">Evaldo Poeta</div>
+        <p className="poem-text text-xl md:text-2xl leading-relaxed italic font-serif text-foreground/90">
+          {poem.text}
+        </p>
         
-        {poem.reflection && (
-          <div className="mt-8 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
-            <h4 className="flex items-center gap-2 font-bold text-primary mb-2">
-              <span>🔑</span> REFLEXÃO
-            </h4>
-            <p className="text-sm text-foreground/80 leading-relaxed italic">
-              {poem.reflection}
-            </p>
-          </div>
-        )}
+        <div className="mt-12 space-y-6">
+          {poem.reflection && (
+            <div className="p-6 bg-primary/[0.02] rounded-3xl border border-primary/10 relative overflow-hidden group">
+              <div className="absolute top-0 left-0 w-1 h-full bg-primary/40" />
+              <h4 className="flex items-center gap-2 font-bold text-primary mb-3 text-sm uppercase tracking-widest">
+                <span className="text-xl">✨</span> Reflexão da Alma
+              </h4>
+              <p className="text-base text-foreground/80 leading-relaxed italic">
+                "{poem.reflection}"
+              </p>
+            </div>
+          )}
 
-        {poem.inspiration && (
-          <div className="mt-4 p-4 bg-secondary/5 rounded-lg border-l-4 border-secondary">
-            <h4 className="flex items-center gap-2 font-bold text-secondary mb-2">
-              <span>✍️</span> ESCREVA SUA POESIA
-            </h4>
-            <p className="text-sm text-foreground/80 leading-relaxed">
-              {poem.inspiration}
-            </p>
-          </div>
-        )}
+          {poem.inspiration && (
+            <div className="p-6 bg-secondary/[0.02] rounded-3xl border border-secondary/10 relative overflow-hidden group">
+              <div className="absolute top-0 left-0 w-1 h-full bg-secondary/40" />
+              <h4 className="flex items-center gap-2 font-bold text-secondary mb-3 text-sm uppercase tracking-widest">
+                <span className="text-xl">✍️</span> Convite ao Poeta
+              </h4>
+              <p className="text-base text-foreground/80 leading-relaxed">
+                {poem.inspiration}
+              </p>
+            </div>
+          )}
+        </div>
 
-        <div className="mt-6 text-right">
-          <p className="text-sm font-['Dancing_Script',cursive] text-primary/60 italic">— Evaldo Poeta</p>
+        <div className="mt-10 pt-6 border-t border-border/30 flex justify-end">
+          <p className="text-lg font-serif italic text-primary/40">— Evaldo Poeta</p>
         </div>
       </div>
     </article>
