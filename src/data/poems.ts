@@ -349,204 +349,6 @@ Retoma teu caminho, faz melhor do que já fizeste, volta para teu Senhor, faz no
 Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha história vai mudar.`,
       reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo.',
       inspiration: 'Hoje é um novo dia e eu decido...'
-    },
-    {
-      id: 'p3-6',
-      title: 'O Grito de Aflição',
-      text: `Eu ouvi o grito de aflição do meu povo, Senti a ferida em seus corações. Hoje, venho para curar e salvar.
-Assim diz o Senhor, que vem sarar todas as feridas, Pois em Deus reside o amor, Que é puro e o princípio da vida.
-Não busque apenas a cura física, Mas procure Aquele que é a fonte da vida.
-O Senhor te oferece a verdadeira felicidade Para que possas ser salvo e viver plenamente.
-Ele ouve mesmo quando não consegues expressar em palavras, Ele guia teu coração para que não tropeces em Sua presença.`,
-      reflection: '"Ele ouve mesmo quando não consegues expressar em palavras". Às vezes, nossa oração é apenas um gemido.',
-      inspiration: 'Meu grito silencioso pede...'
-    },
-    {
-      id: 'p3-7',
-      title: 'O Espírito da Vida',
-      text: `O Espírito da vida está aqui para te ajudar, Fica aqui na minha casa, para as feridas limpar.
-O Senhor procura o coração verdadeiro, Viva em Cristo todo dia, seja o primeiro.
-Arrependei-vos das mentiras do passado, O Senhor perdoa e está sempre ao seu lado.
-Ele me envia para anunciar Sua palavra, Para restaurar o coração, a nossa vida lavar.
-Deus conhece a sua vida, está sempre ao seu lado, Envia Seu Espírito para te manter ao lado.
-Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele te iluminará.`,
-      reflection: 'O convite é íntimo: "Fica aqui na minha casa". A cura acontece quando convidamos o Espírito para morar.',
-      inspiration: 'Espírito da Vida, entra na minha casa e...'
-    },
-    {
-      id: 'p3-8',
-      title: 'Gratidão e Renovação',
-      text: `Louve a Deus todos os dias com gratidão, Sua água viva cura nossas feridas, traz consolação.
-Não espere por ninguém, o Espírito está a soprar, Ele traz água viva para te transformar.
-Não deixe o medo te paralisar, Abra teu coração, deixe o amor te alcançar.
-O Espírito do Senhor geme em teu interior, Recebe o fogo abrasador, divino e restaurador.
-Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.`,
-      reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior.',
-      inspiration: 'Eu louvo pela minha família e peço...'
-    },
-    {
-      id: 'p4-5',
-      title: 'Vivendo o Mesmo Carisma',
-      text: `Vivendo o mesmo carisma, Além de se reunir, Dinâmico com o movimento, Com o Espírito Santo servir.
-Sou profeta, corrente de graça, A moção do carisma anunciar. O grupo de oração é momento de celebrar.
-O rei Davi separou os levitas, Quatro mil, para o Senhor louvar.
-Foram duzentos e oitenta e oito escolhidos Também para tocar e cantar.
-Meus irmãos, na manhã deste dia, Ao Senhor quero agradecer, Pela graça que foi derramada.`,
-      reflection: 'O carisma não é para ficar guardado, é para servir.',
-      inspiration: 'Eu renovo meu carisma e me ofereço para…'
-    },
-    {
-      id: 'p4-6',
-      title: 'Renovação Espiritual (Nicodemos)',
-      text: `Seja um homem novo, é hora de nascer, da água e do Espírito, Jesus trouxe, vem beber.
-Nicodemos foi falar: com Jesus conversar, o mestre o ensinou a verdade:
-"Quem não nascer do Espírito, o Reino de Deus não verá".
-Eu te digo em verdade, é preciso renascer da água e do Espírito.
-Quem nascer da carne é carne, sempre será um canal, mas quem nascer do Espírito, esse é espiritual.
-De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua de fogo apareceu.`,
-      reflection: 'Nicodemos tinha conhecimento, mas não tinha vida nova. O batismo no Espírito é um "nascer de novo".',
-      inspiration: 'Eu quero nascer de novo para...'
-    },
-    {
-      id: 'p4-7',
-      title: 'Luz e Graça Divina',
-      text: `Jesus Cristo, Tua luz ilumina meu caminho, Confio nas promessas que se cumprirão no tempo divino.
-Com Jesus ao meu lado, alinhado com Sua vontade, Nada me angustia, estou em Sua fidelidade.
-O Espírito Divino me batiza e guia, Conduzindo-me com sabedoria, dia após dia.
-Vinde, Espírito Santo, ajuda-me a louvar, Entregando minha vida a Jesus, meu Salvador.
-Agradeço por transformar minha vida, A luz do Espírito abre portas com força viva.`,
-      reflection: '"O Espírito Divino me batiza e guia". O batismo é uma experiência de guia diária.',
-      inspiration: 'Espírito Santo, alinha meus passos com...'
-    },
-    {
-      id: 'p4-8',
-      title: 'Clamor e Louvor',
-      text: `Peço esclarecimento, Senhor, em meu coração, Recebo com louvor e adoração a Sua graça e paixão.
-Tu és soberano, nosso Deus e Salvador, Por meio do Seu Espírito, sinto agora Teu amor.
-Não desperdice teu tempo com o que não traz luz, Busca compreender ouvindo a voz de Jesus.
-Recita diariamente, salmodia para Deus, Nos cantos de louvor, oferece graças espirituais.
-A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.`,
-      reflection: '"Seja um missionário em teu próprio lar". A primeira missão é dentro de casa.',
-      inspiration: 'Minha casa servirá ao Senhor e eu...'
-    },
-    {
-      id: 'p5-5',
-      title: 'Obra Divina (O Grande Final)',
-      text: `Deus fez uma obra na sua vida, ah! Já está concluída, viu? Se alegre no Senhor, a porta do céu abriu.
-A boa notícia é que Ele é a melhor notícia pra você.
-O mundo apresenta dificuldade e problemas para se perder.
-A solução é Jesus Cristo, Ele veio te dizer.
-O mundo quer te oprimir, mas Deus traz para você:
-Tenha ânimo e esperança, a palavra que foi pregada é para você viver.
-Sua história, sua vida, Deus não esquece de você.
-Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida.`,
-      reflection: '"Já está concluída". A obra de Deus em mim não é um "talvez", é um fato consumado na Cruz.',
-      inspiration: 'A obra está feita. Eu me levanto e entro...'
-    },
-    {
-      id: 'p5-6',
-      title: 'O Novo Começo',
-      text: `A nova história começou em primeiro de janeiro, Pois no dia derradeiro, o passado aniquilou,
-Acabando com aquilo que antes me derrotou.
-Que Deus fale bem de você é o que desejo este ano, Esteja sempre ao seu lado, todo dia abençoando.
-Hoje recebi um livro em branco para escrever, A história da minha vida para um dia você ler.
-Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e Ele quer nos ensinar.`,
-      reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã.',
-      inspiration: 'Neste livro em branco, eu escrevo...'
-    },
-    {
-      id: 'p5-7',
-      title: 'A Semeadura da Vida',
-      text: `O sentido da vida você tem que encontrar, Sirva com alegria, isso é o verdadeiro amar.
-É mais fácil amar quem está longe de você, Pois quem está perto ajuda a perceber.
-Que a vida não é fácil, é preciso aprender, Depois a caridade vem, e você se alegra.
-Seja forte e corajoso, o Senhor já te salvou, Um semeia, outro rega, para depois colher.
-A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.`,
-      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa.',
-      inspiration: 'Eu planto sementes de esperança para...'
-    },
-    {
-      id: 'p5-8',
-      title: 'Caminhando na Fé',
-      text: `Olá, com certeza posso te ajudar, Nesta hora, vamos juntos buscar?
-Lutarei até o fim, pois Deus é quem manda, Em conexão com Ele, nossa fé se expanda.
-Lembro-me da conexão que fiz com o Senhor, E hoje novamente, buscarei Sua direção e amor.
-Ele está sempre ao meu lado, pronto a me socorrer, Ensinando-me a perseverar e vencer.
-Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não me sinto inseguro.`,
-      reflection: '"Sua recompensa está chegando, creia e espere". A caminhada de fé não é em vão.',
-      inspiration: 'Eu caminho com fé em direção a...'
-    },
-    {
-      id: 'p5-9',
-      title: 'Semeie a Fé e Colherá Milagres',
-      text: `Se você plantar a fé, também colherá milagres, Jesus Cristo é o Senhor, e essa é a verdade.
-"Frater" significa irmão, cuidar um do outro, Assim como o Pai Nosso nos ensina a perdoar de coração.
-Mas o que é a caridade? É falar de amor, paciência e bondade,
-Devemos praticar essas virtudes com sinceridade, E finalizar com a ajuda de quem traz saudade.
-Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha acreditar.`,
-      reflection: 'A verdadeira fé leva ao desapego, como Abraão com Isaque.',
-      inspiration: 'Eu semeio fé para colher...'
-    },
-    {
-      id: 'p5-10',
-      title: 'Escolhidos para Anunciar',
-      text: `Nós fomos escolhidos para orar e anunciar, O Espírito Divino veio nos acompanhar.
-Abra o seu coração, deixe Deus nele entrar, No livro de Hebreus, o Senhor veio falar.
-Lembre-se daquele dia em que foste iluminado, A glória do Senhor está sempre ao seu lado.
-A luz de Deus entrou, acabou a escuridão, Não viva como escravo, o Senhor te dá a mão.
-Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.`,
-      reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança.',
-      inspiration: 'Eu fui escolhido e anuncio que...'
-    },
-    {
-      id: 'p6-2',
-      title: 'Oficina do Poeta: Tradução Simultânea',
-      text: `A pregação fala à razão (teologia). A poesia fala à emoção (imagem). O seu trabalho é ser o tradutor.
-Enquanto o pregador explica, você traduz para imagens na mesma hora.
-Se ele diz: "Vocês precisam ter fé nas dificuldades", eu escrevo: "Na tempestade da vida, Ele é meu abrigo".
-Não explique, mostre! Existe uma regra que diz: "Show, don't tell".
-Dificuldade = Tempestade, Deserto. Proteção = Abrigo, Escudo.
-Pecado = Sujeira, Lama. Graça = Chuva, Fogo, Óleo.
-Se isso fosse um filme, o que eu estaria vendo?`,
-      reflection: 'A poesia não fala a língua da explicação; ela fala a língua da imaginação.',
-      inspiration: 'Treine ouvir uma frase longa e transformá-la em um verso curto e rimado instantaneamente.'
-    },
-    {
-      id: 'p6-3',
-      title: 'Oficina do Poeta: Escrevendo Sem Borracha',
-      text: `Para entregar a poesia no final do grupo, não dá tempo de apagar ou duvidar.
-Você tem que confiar que o Espírito Santo está guiando a caneta.
-Entre em "Fluxo". Se uma rima não saiu perfeita, continue.
-Se travou numa linha, pule para a próxima. O importante é não parar a caneta.
-A perfeição vem da unção, não da correção.
-Muitas vezes, a frase que você achou "estranha" é a que mais toca alguém no final.`,
-      reflection: 'Muitas vezes a frase que achamos estranha é a que mais toca, porque veio de Deus.',
-      inspiration: 'Tente escrever uma poesia inteira sem tirar a caneta do papel e sem riscar nada.'
-    },
-    {
-      id: 'p6-4',
-      title: 'Oficina do Poeta: O Ponto de Virada',
-      text: `Toda pregação tem um momento de "pico", onde a unção fica mais forte.
-Geralmente no meio para o final, quando o povo começa a orar ou louvar.
-É aí que sua poesia precisa ganhar força.
-Use palavras de poder: Fogo, Glória, Poder, Agora, Milagre.
-Aproveite a energia do ambiente para dar energia às palavras.
-Sua mão escreve no ritmo da música ou da oração.
-A poesia vira uma oração escrita.`,
-      reflection: 'Aproveite a energia do ambiente para dar energia às palavras.',
-      inspiration: 'Observe o momento em que o ambiente "esquenta" na oração. Escreva seus versos mais ousados.'
-    },
-    {
-      id: 'p6-5',
-      title: 'Oficina do Poeta: O Amém Poético',
-      text: `O pregador está caminhando para o fim. Faltam 2 minutos.
-É hora de fechar a poesia para correr e ler.
-Deixe as últimas 2 linhas para uma "conclusão profética".
-Enquanto ele faz a oração final, escreva o desfecho, resumindo tudo em uma promessa de esperança.
-Assim que ele diz "Amém", você coloca o ponto final.
-A tinta ainda está fresca. É pão quentinho, saído do forno.`,
-      reflection: 'A tinta ainda fresca torna a leitura poderosa: é pão quentinho.',
-      inspiration: 'Quando o pregador disser "para terminar...", já esteja escrevendo sua última estrofe.'
     }
   ],
   'bloco-2': [
@@ -633,6 +435,28 @@ Não fique aí na tristeza — Ela também é tentação. Paulo escreveu com fir
 Nunca perca a esperança, Esteja firme em oração. O Senhor é tua fortaleza, Teu refúgio e salvação.`,
       reflection: 'A tristeza excessiva pode ser uma tentação para nos paralisar. Jó perdeu tudo, mas não perdeu a Deus.',
       inspiration: 'Mesmo que tudo pareça difícil, eu me levanto e...'
+    }
+  ],
+  'bloco-3': [
+    {
+      id: 'p3-1',
+      title: 'Deus Cura as Feridas',
+      text: `Deus cura as feridas, derrama o óleo pra limpar,
+Cuida com carinho, no Seu tempo vai curar.
+Persevere, não desista, siga firme em oração,
+Viva em Deus todos os dias, sinta a paz no coração.
+O Espírito de Deus agora vem te revestir,
+Viva n’Ele como Maria, Jesus Cristo está aqui.
+O eterno se fez homem, por amor e compaixão,
+Ele é o Salvador, a Verdade e a Salvação.
+O Pai envia o Espírito, vem te encher de amor,
+Cobre-te com Seu manto, poder restaurador.
+Quem conhece essa graça deseja compartilhar,
+O Espírito que desce vem pra te transformar.
+Deixe o óleo descer, deixe a cura acontecer,
+Pois o toque do Senhor faz a alma renascer.`,
+      reflection: 'Muitas vezes queremos uma cura imediata, mas o texto diz: "no Seu tempo vai curar". O processo de cicatrização exige que deixemos o "óleo" agir.',
+      inspiration: 'Senhor, onde dói em mim, eu peço que Teu óleo...'
     },
     {
       id: 'p3-2',
@@ -696,6 +520,65 @@ Agradeço ao Senhor por tudo que Ele já fez, O Espírito renova tua vida mais u
       inspiration: 'Puxo a âncora do medo e navego para...'
     },
     {
+      id: 'p3-6',
+      title: 'O Grito de Aflição',
+      text: `Eu ouvi o grito de aflição do meu povo, Senti a ferida em seus corações. Hoje, venho para curar e salvar.
+Assim diz o Senhor, que vem sarar todas as feridas, Pois em Deus reside o amor, Que é puro e o princípio da vida.
+Não busque apenas a cura física, Mas procure Aquele que é a fonte da vida.
+O Senhor te oferece a verdadeira felicidade Para que possas ser salvo e viver plenamente.
+Ele ouve mesmo quando não consegues expressar em palavras, Ele guia teu coração para que não tropeces em Sua presença.`,
+      reflection: '"Ele ouve mesmo quando não consegues expressar em palavras". Às vezes, nossa oração é apenas um gemido.',
+      inspiration: 'Meu grito silencioso pede...'
+    },
+    {
+      id: 'p3-7',
+      title: 'O Espírito da Vida',
+      text: `O Espírito da vida está aqui para te ajudar, Fica aqui na minha casa, para as feridas limpar.
+O Senhor procura o coração verdadeiro, Viva em Cristo todo dia, seja o primeiro.
+Arrependei-vos das mentiras do passado, O Senhor perdoa e está sempre ao seu lado.
+Ele me envia para anunciar Sua palavra, Para restaurar o coração, a nossa vida lavar.
+Deus conhece a sua vida, está sempre ao seu lado, Envia Seu Espírito para te manter ao lado.
+Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele te iluminará.`,
+      reflection: 'O convite é íntimo: "Fica aqui na minha casa". A cura acontece quando convidamos o Espírito para morar.',
+      inspiration: 'Espírito da Vida, entra na minha casa e...'
+    },
+    {
+      id: 'p3-8',
+      title: 'Gratidão e Renovação',
+      text: `Louve a Deus todos os dias com gratidão, Sua água viva cura nossas feridas, traz consolação.
+Não espere por ninguém, o Espírito está a soprar, Ele traz água viva para te transformar.
+Não deixe o medo te paralisar, Abra teu coração, deixe o amor te alcançar.
+O Espírito do Senhor geme em teu interior, Recebe o fogo abrasador, divino e restaurador.
+Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.`,
+      reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior.',
+      inspiration: 'Eu louvo pela minha família e peço...'
+    }
+  ],
+  'bloco-4': [
+    {
+      id: 'p4-1',
+      title: 'O Espírito Soprou',
+      text: `O Espírito soprou, Como vento aqui chegou.
+Com a força da Palavra, O medo se afastou.
+O Espírito desceu, Encheu este lugar,
+Veio como fogo, Um vento a soprar.
+Sinta como brisa, Suave a tocar,
+Aquecendo a sua alma E seu coração a abrasar.
+Experimentamos hoje Sua graça e poder —
+Louvado seja Deus, De joelhos a dizer:
+Bendito seja Deus Pelo poder renovador.
+Com Sua misericórdia, O Espírito do Senhor
+Derrama sobre nós Sua força e Seu amor.
+O Espírito é, pra mim, Um chamado a anunciar.
+Ele exorta os seus filhos: Comece logo a proclamar.
+Sem a graça não és nada, Ele quer te encorajar,
+Te dá força e coragem Para não desanimar.
+Deixe o Espírito adentrar Aí no seu coração.
+Receba os dons nesta hora E coloque em ação.`,
+      reflection: '"Sem a graça não és nada". Muitas vezes tentamos fazer a obra de Deus apenas com nossas forças humanas e nos cansamos. O Espírito Santo é o combustível.',
+      inspiration: 'Espírito Santo, sopra sobre o meu medo e...'
+    },
+    {
       id: 'p4-2',
       title: 'Sopro de Paz',
       text: `Soprou sobre nós teu Espírito, a paz com ele chegou.
@@ -740,6 +623,71 @@ Voltai ao caminho, Ele vem te buscar. Com a graça do Espírito, Ela vai te salv
       inspiration: 'Não sou mais escravo, sou amigo do Espírito e...'
     },
     {
+      id: 'p4-5',
+      title: 'Vivendo o Mesmo Carisma',
+      text: `Vivendo o mesmo carisma, Além de se reunir, Dinâmico com o movimento, Com o Espírito Santo servir.
+Sou profeta, corrente de graça, A moção do carisma anunciar. O grupo de oração é momento de celebrar.
+O rei Davi separou os levitas, Quatro mil, para o Senhor louvar.
+Foram duzentos e oitenta e oito escolhidos Também para tocar e cantar.
+Meus irmãos, na manhã deste dia, Ao Senhor quero agradecer, Pela graça que foi derramada.`,
+      reflection: 'O carisma não é para ficar guardado, é para servir.',
+      inspiration: 'Eu renovo meu carisma e me ofereço para…'
+    },
+    {
+      id: 'p4-6',
+      title: 'Renovação Espiritual (Nicodemos)',
+      text: `Seja um homem novo, é hora de nascer, da água e do Espírito, Jesus trouxe, vem beber.
+Nicodemos foi falar: com Jesus conversar, o mestre o ensinou a verdade:
+"Quem não nascer do Espírito, o Reino de Deus não verá".
+Eu te digo em verdade, é preciso renascer da água e do Espírito.
+Quem nascer da carne é carne, sempre será um canal, mas quem nascer do Espírito, esse é espiritual.
+De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua de fogo apareceu.`,
+      reflection: 'Nicodemos tinha conhecimento, mas não tinha vida nova. O batismo no Espírito é um "nascer de novo".',
+      inspiration: 'Eu quero nascer de novo para...'
+    },
+    {
+      id: 'p4-7',
+      title: 'Luz e Graça Divina',
+      text: `Jesus Cristo, Tua luz ilumina meu caminho, Confio nas promessas que se cumprirão no tempo divino.
+Com Jesus ao meu lado, alinhado com Sua vontade, Nada me angustia, estou em Sua fidelidade.
+O Espírito Divino me batiza e guia, Conduzindo-me com sabedoria, dia após dia.
+Vinde, Espírito Santo, ajuda-me a louvar, Entregando minha vida a Jesus, meu Salvador.
+Agradeço por transformar minha vida, A luz do Espírito abre portas com força viva.`,
+      reflection: '"O Espírito Divino me batiza e guia". O batismo é uma experiência de guia diária.',
+      inspiration: 'Espírito Santo, alinha meus passos com...'
+    },
+    {
+      id: 'p4-8',
+      title: 'Clamor e Louvor',
+      text: `Peço esclarecimento, Senhor, em meu coração, Recebo com louvor e adoração a Sua graça e paixão.
+Tu és soberano, nosso Deus e Salvador, Por meio do Seu Espírito, sinto agora Teu amor.
+Não desperdice teu tempo com o que não traz luz, Busca compreender ouvindo a voz de Jesus.
+Recita diariamente, salmodia para Deus, Nos cantos de louvor, oferece graças espirituais.
+A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.`,
+      reflection: '"Seja um missionário em teu próprio lar". A primeira missão é dentro de casa.',
+      inspiration: 'Minha casa servirá ao Senhor e eu...'
+    }
+  ],
+  'bloco-5': [
+    {
+      id: 'p5-1',
+      title: 'Brilhe a Luz do Senhor',
+      text: `Mais um ano já passou, o Senhor te sustentou.
+Acredite no Seu amor, o tempo ainda não acabou.
+O Dono da vida te ajuda, Ele vai te levantar.
+Como está seu coração? Segue firme a esperar?
+Jesus trouxe a luz, Sua verdade conduz.
+Ele é teu Salvador, tu és filho da luz.
+Levante-se para brilhar, não deixe a chama apagar.
+Se a lâmpada estiver quebrada, é hora de consertar.
+Não espere mais um dia, na escuridão, faça brilhar.
+Uma luz rompeu as trevas, Cristo veio pra salvar.
+Vigia tua conduta, o Senhor logo virá.
+Sua vinda é gloriosa, Ele vem para separar.`,
+      reflection: '"O tempo ainda não acabou". O que eu preciso consertar na minha "lâmpada" antes que o Senhor venha?',
+      inspiration: 'Enquanto espero a Tua volta, eu mantenho minha chama...'
+    },
+    {
       id: 'p5-2',
       title: 'Juízo Final',
       text: `Quando Ele voltar, em glória se assentará, No trono majestoso, o novo se revelará.
@@ -776,73 +724,75 @@ Eis que estou à porta e bato, O banquete preparei. Deixa Eu entrar em tua casa,
 Entre agora, meu Senhor, Eu preciso conversar. Sei que pode, nesta hora, Minha ferida curar.`,
       reflection: 'O banquete já está pronto. Jesus está batendo. A única coisa que falta é eu girar a maçaneta.',
       inspiration: 'A porta está destrancada, Senhor. Entra e ceia com...'
-    }
-  ],
-  'bloco-3': [
+    },
     {
-      id: 'p3-1',
-      title: 'Deus Cura as Feridas',
-      text: `Deus cura as feridas, derrama o óleo pra limpar,
-Cuida com carinho, no Seu tempo vai curar.
-Persevere, não desista, siga firme em oração,
-Viva em Deus todos os dias, sinta a paz no coração.
-O Espírito de Deus agora vem te revestir,
-Viva n’Ele como Maria, Jesus Cristo está aqui.
-O eterno se fez homem, por amor e compaixão,
-Ele é o Salvador, a Verdade e a Salvação.
-O Pai envia o Espírito, vem te encher de amor,
-Cobre-te com Seu manto, poder restaurador.
-Quem conhece essa graça deseja compartilhar,
-O Espírito que desce vem pra te transformar.
-Deixe o óleo descer, deixe a cura acontecer,
-Pois o toque do Senhor faz a alma renascer.`,
-      reflection: 'Muitas vezes queremos uma cura imediata, mas o texto diz: "no Seu tempo vai curar". O processo de cicatrização exige que deixemos o "óleo" agir.',
-      inspiration: 'Senhor, onde dói em mim, eu peço que Teu óleo...'
-    }
-  ],
-  'bloco-4': [
+      id: 'p5-5',
+      title: 'Obra Divina (O Grande Final)',
+      text: `Deus fez uma obra na sua vida, ah! Já está concluída, viu? Se alegre no Senhor, a porta do céu abriu.
+A boa notícia é que Ele é a melhor notícia pra você.
+O mundo apresenta dificuldade e problemas para se perder.
+A solução é Jesus Cristo, Ele veio te dizer.
+O mundo quer te oprimir, mas Deus traz para você:
+Tenha ânimo e esperança, a palavra que foi pregada é para você viver.
+Sua história, sua vida, Deus não esquece de você.
+Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida.`,
+      reflection: '"Já está concluída". A obra de Deus em mim não é um "talvez", é um fato consumado na Cruz.',
+      inspiration: 'A obra está feita. Eu me levanto e entro...'
+    },
     {
-      id: 'p4-1',
-      title: 'O Espírito Soprou',
-      text: `O Espírito soprou, Como vento aqui chegou.
-Com a força da Palavra, O medo se afastou.
-O Espírito desceu, Encheu este lugar,
-Veio como fogo, Um vento a soprar.
-Sinta como brisa, Suave a tocar,
-Aquecendo a sua alma E seu coração a abrasar.
-Experimentamos hoje Sua graça e poder —
-Louvado seja Deus, De joelhos a dizer:
-Bendito seja Deus Pelo poder renovador.
-Com Sua misericórdia, O Espírito do Senhor
-Derrama sobre nós Sua força e Seu amor.
-O Espírito é, pra mim, Um chamado a anunciar.
-Ele exorta os seus filhos: Comece logo a proclamar.
-Sem a graça não és nada, Ele quer te encorajar,
-Te dá força e coragem Para não desanimar.
-Deixe o Espírito adentrar Aí no seu coração.
-Receba os dons nesta hora E coloque em ação.`,
-      reflection: '"Sem a graça não és nada". Muitas vezes tentamos fazer a obra de Deus apenas com nossas forças humanas e nos cansamos. O Espírito Santo é o combustível.',
-      inspiration: 'Espírito Santo, sopra sobre o meu medo e...'
-    }
-  ],
-  'bloco-5': [
+      id: 'p5-6',
+      title: 'O Novo Começo',
+      text: `A nova história começou em primeiro de janeiro, Pois no dia derradeiro, o passado aniquilou,
+Acabando com aquilo que antes me derrotou.
+Que Deus fale bem de você é o que desejo este ano, Esteja sempre ao seu lado, todo dia abençoando.
+Hoje recebi um livro em branco para escrever, A história da minha vida para um dia você ler.
+Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e Ele quer nos ensinar.`,
+      reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã.',
+      inspiration: 'Neste livro em branco, eu escrevo...'
+    },
     {
-      id: 'p5-1',
-      title: 'Brilhe a Luz do Senhor',
-      text: `Mais um ano já passou, o Senhor te sustentou.
-Acredite no Seu amor, o tempo ainda não acabou.
-O Dono da vida te ajuda, Ele vai te levantar.
-Como está seu coração? Segue firme a esperar?
-Jesus trouxe a luz, Sua verdade conduz.
-Ele é teu Salvador, tu és filho da luz.
-Levante-se para brilhar, não deixe a chama apagar.
-Se a lâmpada estiver quebrada, é hora de consertar.
-Não espere mais um dia, na escuridão, faça brilhar.
-Uma luz rompeu as trevas, Cristo veio pra salvar.
-Vigia tua conduta, o Senhor logo virá.
-Sua vinda é gloriosa, Ele vem para separar.`,
-      reflection: '"O tempo ainda não acabou". O que eu preciso consertar na minha "lâmpada" antes que o Senhor venha?',
-      inspiration: 'Enquanto espero a Tua volta, eu mantenho minha chama...'
+      id: 'p5-7',
+      title: 'A Semeadura da Vida',
+      text: `O sentido da vida você tem que encontrar, Sirva com alegria, isso é o verdadeiro amar.
+É mais fácil amar quem está longe de você, Pois quem está perto ajuda a perceber.
+Que a vida não é fácil, é preciso aprender, Depois a caridade vem, e você se alegra.
+Seja forte e corajoso, o Senhor já te salvou, Um semeia, outro rega, para depois colher.
+A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.`,
+      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa.',
+      inspiration: 'Eu planto sementes de esperança para...'
+    },
+    {
+      id: 'p5-8',
+      title: 'Caminhando na Fé',
+      text: `Olá, com certeza posso te ajudar, Nesta hora, vamos juntos buscar?
+Lutarei até o fim, pois Deus é quem manda, Em conexão com Ele, nossa fé se expanda.
+Lembro-me da conexão que fiz com o Senhor, E hoje novamente, buscarei Sua direção e amor.
+Ele está sempre ao meu lado, pronto a me socorrer, Ensinando-me a perseverar e vencer.
+Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não me sinto inseguro.`,
+      reflection: '"Sua recompensa está chegando, creia e espere". A caminhada de fé não é em vão.',
+      inspiration: 'Eu caminho com fé em direção a...'
+    },
+    {
+      id: 'p5-9',
+      title: 'Semeie a Fé e Colherá Milagres',
+      text: `Se você plantar a fé, também colherá milagres, Jesus Cristo é o Senhor, e essa é a verdade.
+"Frater" significa irmão, cuidar um do outro, Assim como o Pai Nosso nos ensina a perdoar de coração.
+Mas o que é a caridade? É falar de amor, paciência e bondade,
+Devemos praticar essas virtudes com sinceridade, E finalizar com a ajuda de quem traz saudade.
+Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha acreditar.`,
+      reflection: 'A verdadeira fé leva ao desapego, como Abraão com Isaque.',
+      inspiration: 'Eu semeio fé para colher...'
+    },
+    {
+      id: 'p5-10',
+      title: 'Escolhidos para Anunciar',
+      text: `Nós fomos escolhidos para orar e anunciar, O Espírito Divino veio nos acompanhar.
+Abra o seu coração, deixe Deus nele entrar, No livro de Hebreus, o Senhor veio falar.
+Lembre-se daquele dia em que foste iluminado, A glória do Senhor está sempre ao seu lado.
+A luz de Deus entrou, acabou a escuridão, Não viva como escravo, o Senhor te dá a mão.
+Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.`,
+      reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança.',
+      inspiration: 'Eu fui escolhido e anuncio que...'
     }
   ],
   'bloco-6': [
@@ -859,6 +809,56 @@ Vença o medo da página em branco nos primeiros 5 minutos.
 Escreva dois versos simples. Não apague. Não risque. Deixe nascer.`,
       reflection: 'A técnica é apenas o vaso; o Espírito Santo é a água. Use esse conhecimento não para se exaltar, mas para servir.',
       inspiration: 'No próximo encontro, anote 3 Palavras de Fogo e escreva seus primeiros 2 versos.'
+    },
+    {
+      id: 'p6-2',
+      title: 'Oficina do Poeta: Tradução Simultânea',
+      text: `A pregação fala à razão (teologia). A poesia fala à emoção (imagem). O seu trabalho é ser o tradutor.
+Enquanto o pregador explica, você traduz para imagens na mesma hora.
+Se ele diz: "Vocês precisam ter fé nas dificuldades", eu escrevo: "Na tempestade da vida, Ele é meu abrigo".
+Não explique, mostre! Existe uma regra que diz: "Show, don't tell".
+Dificuldade = Tempestade, Deserto. Proteção = Abrigo, Escudo.
+Pecado = Sujeira, Lama. Graça = Chuva, Fogo, Óleo.
+Se isso fosse um filme, o que eu estaria vendo?`,
+      reflection: 'A poesia não fala a língua da explicação; ela fala a língua da imaginação.',
+      inspiration: 'Treine ouvir uma frase longa e transformá-la em um verso curto e rimado instantaneamente.'
+    },
+    {
+      id: 'p6-3',
+      title: 'Oficina do Poeta: Escrevendo Sem Borracha',
+      text: `Para entregar a poesia no final do grupo, não dá tempo de apagar ou duvidar.
+Você tem que confiar que o Espírito Santo está guiando a caneta.
+Entre em "Fluxo". Se uma rima não saiu perfeita, continue.
+Se travou numa linha, pule para a próxima. O importante é não parar a caneta.
+A perfeição vem da unção, não da correção.
+Muitas vezes, a frase que você achou "estranha" é a que mais toca alguém no final.`,
+      reflection: 'Muitas vezes a frase que achamos estranha é a que mais toca, porque veio de Deus.',
+      inspiration: 'Tente escrever uma poesia inteira sem tirar a caneta do papel e sem riscar nada.'
+    },
+    {
+      id: 'p6-4',
+      title: 'Oficina do Poeta: O Ponto de Virada',
+      text: `Toda pregação tem um momento de "pico", onde a unção fica mais forte.
+Geralmente no meio para o final, quando o povo começa a orar ou louvar.
+É aí que sua poesia precisa ganhar força.
+Use palavras de poder: Fogo, Glória, Poder, Agora, Milagre.
+Aproveite a energia do ambiente para dar energia às palavras.
+Sua mão escreve no ritmo da música ou da oração.
+A poesia vira uma oração escrita.`,
+      reflection: 'Aproveite a energia do ambiente para dar energia às palavras.',
+      inspiration: 'Observe o momento em que o ambiente "esquenta" na oração. Escreva seus versos mais ousados.'
+    },
+    {
+      id: 'p6-5',
+      title: 'Oficina do Poeta: O Amém Poético',
+      text: `O pregador está caminhando para o fim. Faltam 2 minutos.
+É hora de fechar a poesia para correr e ler.
+Deixe as últimas 2 linhas para uma "conclusão profética".
+Enquanto ele faz a oração final, escreva o desfecho, resumindo tudo em uma promessa de esperança.
+Assim que ele diz "Amém", você coloca o ponto final.
+A tinta ainda está fresca. É pão quentinho, saído do forno.`,
+      reflection: 'A tinta ainda fresca torna a leitura poderosa: é pão quentinho.',
+      inspiration: 'Quando o pregador disser "para terminar...", já esteja escrevendo sua última estrofe.'
     }
   ]
 };
