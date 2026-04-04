@@ -86,7 +86,7 @@ export const Navbar = () => {
             onClick={() => scrollToSection('poems-content')}
             className="w-full rounded-xl"
           >
-            Começar Jornada
+            COMEÇAR MINHA TRANSFORMAÇÃO
           </Button>
         </div>
       )}
