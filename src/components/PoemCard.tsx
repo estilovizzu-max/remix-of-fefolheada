@@ -29,9 +29,21 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
     }
 
     const utterance = new SpeechSynthesisUtterance(poem.text);
+    
+    // Get all available voices
+    const voices = window.speechSynthesis.getVoices();
+    // Try to find a better Brazilian Portuguese voice (Google is usually more natural)
+    const preferredVoice = voices.find(v => v.lang.includes('pt-BR') && v.name.includes('Google')) || 
+                           voices.find(v => v.lang.includes('pt-BR')) ||
+                           voices.find(v => v.lang.includes('pt'));
+    
+    if (preferredVoice) {
+      utterance.voice = preferredVoice;
+    }
+    
     utterance.lang = 'pt-BR';
-    utterance.rate = 0.9;
-    utterance.pitch = 1.0;
+    utterance.rate = 0.95; // Slightly faster for natural rhythm
+    utterance.pitch = 1.05; // Slightly higher pitch for more "human" feel
     utterance.onstart = () => setIsSpeaking(true);
     utterance.onend = () => setIsSpeaking(false);
     utterance.onerror = () => setIsSpeaking(false);
