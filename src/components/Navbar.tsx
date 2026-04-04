@@ -52,7 +52,7 @@ export const Navbar = () => {
             variant="default" 
             className="rounded-full px-6"
           >
-            Começar Transformação
+            QUERO MINHA TRANSFORMAÇÃO
           </Button>
         </div>
 
