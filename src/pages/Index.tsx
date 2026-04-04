@@ -61,43 +61,61 @@ const Index = () => {
   };
 
   return (
-    <div className="w-full scroll-smooth">
+    <div className="w-full min-h-screen scroll-smooth bg-background relative overflow-hidden">
+      {/* Background patterns/shapes for layout change */}
+      <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-primary/5 to-transparent -z-10" />
+      <div className="absolute top-40 -left-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-40 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl -z-10" />
+
       <AdminPanel onAddPoem={handleAddPoem} />
       <QuickNav />
       <BackToTop />
 
-      <main className="w-full max-w-4xl mx-auto p-6 sm:p-8 md:p-12">
-        <Header />
+      <main className="w-full max-w-5xl mx-auto px-4 py-8 sm:px-6 md:py-16">
+        <div className="mb-12 text-center">
+          <Header />
+        </div>
 
-        <ProgressSection 
-          readCount={readPoems.length}
-          totalPoems={totalPoems}
-          onOpenModal={() => setIsModalOpen(true)}
-        />
-
-        <DiarySection
-          entries={diaryEntries}
-          onSaveEntry={handleSaveDiaryEntry}
-          onDeleteEntry={handleDeleteDiaryEntry}
-        />
-
-        <div className="space-y-4">
-          {Object.keys(themeTitles).map((themeKey) => {
-            const poems = allPoems[themeKey];
-            if (!poems || poems.length === 0) return null;
-            
-            const themeId = `theme-${themeKey}`;
-            return (
-              <ThemeSection
-                key={themeKey}
-                themeId={themeId}
-                title={themeTitles[themeKey]}
-                poems={poems}
-                readPoems={readPoems}
-                onToggleRead={handleToggleRead}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          {/* Left Column: Progress and Diary */}
+          <div className="md:col-span-4 space-y-8 sticky top-24">
+            <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+              <ProgressSection 
+                readCount={readPoems.length}
+                totalPoems={totalPoems}
+                onOpenModal={() => setIsModalOpen(true)}
               />
-            );
-          })}
+            </div>
+
+            <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+              <DiarySection
+                entries={diaryEntries}
+                onSaveEntry={handleSaveDiaryEntry}
+                onDeleteEntry={handleDeleteDiaryEntry}
+              />
+            </div>
+          </div>
+
+          {/* Right Column: Themes and Poems */}
+          <div className="md:col-span-8 space-y-12">
+            {Object.keys(themeTitles).map((themeKey) => {
+              const poems = allPoems[themeKey];
+              if (!poems || poems.length === 0) return null;
+              
+              const themeId = `theme-${themeKey}`;
+              return (
+                <section key={themeKey} className="scroll-mt-24">
+                  <ThemeSection
+                    themeId={themeId}
+                    title={themeTitles[themeKey]}
+                    poems={poems}
+                    readPoems={readPoems}
+                    onToggleRead={handleToggleRead}
+                  />
+                </section>
+              );
+            })}
+          </div>
         </div>
       </main>
 
