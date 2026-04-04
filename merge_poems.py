@@ -6,9 +6,8 @@ def parse_html_poems(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Simple regex to get block contents
-    # Use a more flexible regex for JavaScript-style objects
-    # It finds 'fe-esperanca': [ { id: 'fe-1', ... } ]
+    # Get all poemsData script blocks
+    # Looking for 'fe-esperanca': [ ... ]
     blocks_raw = re.findall(r"'([^']+)':\s*\[(.*?)\n\s*\]", content, re.DOTALL)
     
     parsed_data = {}
@@ -36,30 +35,37 @@ def parse_ts_poems(file_path):
     
     data_str = match.group(1)
     
-    # Each block is like 'bloco-1': [ ... ]
-    blocks_raw = re.findall(r"'([^']+)':\s*\[(.*?)\n\s*\]", data_str, re.DOTALL)
+    # Use a more robust way to parse the TS object
+    # For simplicity, we'll split by block keys
+    block_pattern = r"'bloco-\d+': \["
+    block_keys = re.findall(r"'bloco-\d+'", data_str)
+    block_contents = re.split(block_pattern, data_str)[1:] # Skip the first empty part
     
     parsed_data = {}
-    for block_name, block_content in blocks_raw:
-        # Use a simpler match for poems and manually split them if needed
-        # Poems start with { and end with },
-        poem_matches = re.findall(r"\{\s*id:\s*'([^']+)',\s*title:\s*'([^']+)',\s*text:\s*`(.*?)`(.*?)\s*\}", block_content, re.DOTALL)
-        parsed_data[block_name] = []
-        for pid, title, text, rest in poem_matches:
+    for i, block_key in enumerate(block_keys):
+        key = block_key.strip("'")
+        content_part = block_contents[i]
+        
+        # Now find poems within this block
+        # A poem starts with { and ends with } followed by , or ]
+        poem_matches = re.findall(r"\{\s*id:\s*'([^']+)',\s*title:\s*'([^']+)',\s*text:\s*`(.*?)`(.*?)\n\s*\}", content_part, re.DOTALL)
+        
+        parsed_data[key] = []
+        for pid, title, text, extra in poem_matches:
             poem = {
                 'id': pid,
                 'title': title,
                 'text': text.strip()
             }
-            # Reflection
-            ref_match = re.search(r"reflection:\s*'([^']+)'", rest)
+            # Reflection (handles both single and double quotes if they were there)
+            ref_match = re.search(r"reflection:\s*'(.*?)'", extra, re.DOTALL)
             if ref_match: poem['reflection'] = ref_match.group(1).strip()
             
             # Inspiration
-            ins_match = re.search(r"inspiration:\s*'([^']+)'", rest)
+            ins_match = re.search(r"inspiration:\s*'(.*?)'", extra, re.DOTALL)
             if ins_match: poem['inspiration'] = ins_match.group(1).strip()
             
-            parsed_data[block_name].append(poem)
+            parsed_data[key].append(poem)
             
     return parsed_data, content
 
@@ -96,16 +102,15 @@ def merge():
         
         for poem in poems:
             if poem['title'].strip().lower() not in current_titles:
-                # Add default reflection if missing, just for consistency
-                # Actually, original poems don't have reflection, let's keep them as is
+                # Add default reflection if missing
                 current_ts_poems[target_block].append(poem)
                 current_titles.add(poem['title'].strip().lower())
                 merged_count += 1
                 
     print(f"Merged {merged_count} new poems.")
 
-    # Sort each block to maintain some order (optional, but let's keep it tidy)
-    # Actually, order might matter, so let's keep them as added.
+    # Sort each block by ID prefix (p1, p2...) then original-marked if any, then title
+    # (Not strictly necessary, but good)
 
     # Re-generate the poemsData object string
     new_poems_data_str = "export const poemsData: PoemsData = {\n"
@@ -116,12 +121,16 @@ def merge():
             new_poems_data_str += "    {\n"
             new_poems_data_str += f"      id: '{p['id']}',\n"
             new_poems_data_str += f"      title: '{p['title']}',\n"
-            new_poems_data_str += f"      text: `{p['text']}`"
+            # Replace backticks in text with \` to avoid breaking the template string
+            safe_text = p['text'].replace('`', '\\`')
+            new_poems_data_str += f"      text: `{safe_text}`"
             
             if 'reflection' in p:
-                new_poems_data_str += f",\n      reflection: '{p['reflection']}'"
+                safe_ref = p['reflection'].replace("'", "\\'")
+                new_poems_data_str += f",\n      reflection: '{safe_ref}'"
             if 'inspiration' in p:
-                new_poems_data_str += f",\n      inspiration: '{p['inspiration']}'"
+                safe_ins = p['inspiration'].replace("'", "\\'")
+                new_poems_data_str += f",\n      inspiration: '{safe_ins}'"
             
             new_poems_data_str += "\n    }"
             if i < len(poems) - 1:
