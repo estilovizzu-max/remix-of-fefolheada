@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react';
+import { Navbar } from '@/components/Navbar';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { ProgressSection } from '@/components/ProgressSection';
 import { DiarySection } from '@/components/DiarySection';
 import { ThemeSection } from '@/components/ThemeSection';
