@@ -62,14 +62,14 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
       <DialogTrigger asChild>
         <footer className="w-full flex flex-col items-center justify-center py-24 mt-12 border-t border-border/10 bg-gradient-to-b from-transparent to-muted/20">
           <div className="relative group">
-            <p className="text-[10px] sm:text-xs text-muted-foreground/40 font-light tracking-[0.5em] uppercase select-none transition-all duration-700 hover:text-muted-foreground/60 hover:tracking-[0.6em]">
+            <p className="text-[10px] sm:text-xs text-muted-foreground/30 font-light tracking-[0.5em] uppercase select-none transition-all duration-700">
               CRIADO POR EVALDO.OS
             </p>
             <button 
               className="absolute inset-0 w-full h-full cursor-default focus:outline-none z-10" 
               aria-label="Admin Access"
             />
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-primary/20 transition-all duration-700 group-hover:w-full opacity-0 group-hover:opacity-100" />
+          </div>
           </div>
         </footer>
       </DialogTrigger>
