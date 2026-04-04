@@ -4,8 +4,8 @@ import { toast } from 'sonner';
 export const Header = () => {
   const handleShare = async () => {
     const shareData = {
-      title: 'Folheando Fé - Por Evaldo Poeta',
-      text: 'Uma coleção de poemas espirituais por Evaldo Poeta.',
+      title: 'Folheando Fé Poesia do Meu Grupo de Oração',
+      text: 'Uma coleção de poemas espirituais do grupo de oração.',
       url: window.location.href
     };
 
@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <header className="text-center mb-12">
-      <h1 className="text-5xl font-bold text-primary mb-4">Folheando Fé</h1>
+      <h1 className="text-5xl font-bold text-primary mb-4 whitespace-pre-wrap">Folheando Fé{"\n"}Poesia do Meu Grupo de Oração</h1>
       <p className="text-xl text-muted-foreground mt-4">Por Evaldo Poeta</p>
       <div className="flex justify-center items-center flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 mt-6 text-sm sm:text-base">
         <a 
