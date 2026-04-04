@@ -421,39 +421,39 @@ const Index = () => {
           </Tabs>
         </div>
 
-        {/* Garantia e CTA Final */}
-        <section className="mt-32 mb-16 py-16 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-[3.5rem] px-8 text-center border border-primary/10 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white rounded-full blur-[120px]" />
+        {/* 🚀 CTA FINAL (FORTE E EMOCIONAL) */}
+        <section className="mt-32 mb-16 py-20 bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/10 rounded-[4rem] px-8 text-center border border-primary/20 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-40">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-white rounded-full blur-[150px]" />
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-10">
-            <div className="inline-block p-4 bg-background rounded-2xl shadow-sm border border-border mb-4">
-              <ShieldCheck className="h-12 w-12 text-primary mx-auto" />
-              <p className="mt-2 font-bold text-sm uppercase tracking-widest text-primary">Sua Paz Garantida</p>
+          <div className="max-w-4xl mx-auto space-y-12">
+            <div className="inline-block p-6 bg-background rounded-3xl shadow-xl border border-border/50 mb-6">
+              <ShieldCheck className="h-16 w-16 text-primary mx-auto" />
+              <p className="mt-4 font-black text-lg uppercase tracking-widest text-primary">Sua Paz Blindada</p>
             </div>
 
-            <h3 className="text-4xl md:text-5xl font-black text-foreground tracking-tight leading-tight">
-              A jornada que você <span className="text-primary underline decoration-secondary/30">precisa</span> para o controle que você <span className="italic text-secondary">merece</span>.
+            <h3 className="text-4xl md:text-7xl font-black text-foreground tracking-tighter leading-tight">
+              A jornada que você <span className="text-primary underline decoration-secondary/30 underline-offset-8">precisa</span> para a liberdade que você <span className="italic text-secondary">merece</span>.
             </h3>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Experimente o Método Filho da Luz sem riscos. Se em 7 dias você não sentir sua alma mais leve e sua mente mais organizada, nossa prece continua por você. O acesso é seu, o risco é nosso.
+            <p className="text-2xl text-muted-foreground leading-relaxed font-light max-w-2xl mx-auto">
+              Experimente o Método PCH sem riscos. Se em 7 dias você não sentir sua alma mais livre e sua mente mais organizada, devolvemos seu investimento integralmente.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-10">
               <Button 
                 onClick={() => document.getElementById('poems-content')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg" 
-                className="w-full sm:w-auto text-xl px-12 py-8 rounded-full shadow-xl shadow-primary/20 hover:shadow-2xl transition-all duration-300 font-black tracking-tight"
+                className="w-full sm:w-auto text-3xl px-16 py-12 rounded-[2.5rem] shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-all duration-500 font-black tracking-tighter hover:scale-105"
               >
-                COMEÇAR MINHA TRANSFORMAÇÃO AGORA
+                QUERO COMEÇAR MINHA TRANSFORMAÇÃO
               </Button>
             </div>
 
-            <div className="flex items-center justify-center space-x-4 pt-4 text-muted-foreground font-medium">
-              <span className="flex items-center"><CheckCircle2 className="h-4 w-4 mr-2 text-primary" /> Acesso imediato</span>
-              <span className="flex items-center"><CheckCircle2 className="h-4 w-4 mr-2 text-primary" /> 82 Poemas Inclusos</span>
+            <div className="flex items-center justify-center space-x-8 pt-8 text-muted-foreground font-black text-lg uppercase tracking-widest opacity-80">
+              <span className="flex items-center"><CheckCircle2 className="h-6 w-6 mr-3 text-secondary" /> Acesso Imediato</span>
+              <span className="flex items-center"><CheckCircle2 className="h-6 w-6 mr-3 text-secondary" /> 100% Seguro</span>
             </div>
           </div>
         </section>
