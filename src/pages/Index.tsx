@@ -78,30 +78,105 @@ const Index = () => {
       <BackToTop />
 
       <main className="w-full max-w-6xl mx-auto px-4 py-12 sm:px-6 md:py-20">
-        <div className="mb-20 text-center space-y-6">
+        <div className="mb-24 text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <Header />
-          <div className="max-w-2xl mx-auto space-y-4">
-            <h2 className="text-2xl md:text-3xl font-light italic text-muted-foreground leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6">
+            <h2 className="text-2xl md:text-4xl font-light italic text-muted-foreground leading-relaxed">
               "A fé que se torna verso, a alma que se torna prece."
             </h2>
-            <div className="h-1 w-24 bg-secondary mx-auto rounded-full" />
+            <div className="h-1.5 w-32 bg-secondary/40 mx-auto rounded-full" />
+            
+            <div className="flex flex-wrap justify-center gap-4 pt-6">
+              <span className="flex items-center text-sm font-semibold bg-primary/5 px-4 py-2 rounded-full border border-primary/10">✅ 82 Poemas de Transformação</span>
+              <span className="flex items-center text-sm font-semibold bg-secondary/5 px-4 py-2 rounded-full border border-secondary/10">✅ Método Filho da Luz</span>
+              <span className="flex items-center text-sm font-semibold bg-primary/5 px-4 py-2 rounded-full border border-primary/10">✅ Jornada de Oração</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Espelho da Dor (Identification Section) */}
+        <section className="mb-24 py-16 bg-muted/30 rounded-[3rem] px-8 border border-border/50">
+          <div className="max-w-3xl mx-auto text-center space-y-12">
+            <h3 className="text-3xl md:text-4xl font-black text-foreground tracking-tight">
+              Você sente que algo está <span className="text-primary italic">faltando</span> na sua caminhada?
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  "Já tentei rezar, mas as palavras parecem vazias..."
+                </p>
+              </div>
+              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  "Sinto que minha fé está estagnada e não sei como avançar..."
+                </p>
+              </div>
+              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  "A correria do dia a dia me afasta da minha essência espiritual."
+                </p>
+              </div>
+              <div className="bg-card p-6 rounded-2xl border border-border/40 shadow-sm">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  "Busco uma conexão real, mas me perco no cansaço emocional."
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-8">
+              <p className="text-xl font-medium text-primary">
+                O problema não é você. É a falta de um mecanismo que conecte sua linguagem ao seu coração.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Mecanismo Único (The Method) */}
+        <div className="bg-primary/5 border border-primary/10 p-12 md:p-16 rounded-[3.5rem] mb-24 text-center max-w-5xl mx-auto shadow-sm backdrop-blur-sm relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-32 -mt-32 blur-3xl" />
+          
+          <h3 className="text-3xl md:text-5xl font-black text-primary mb-8 tracking-tighter">
+            O Método <span className="text-secondary">Filho da Luz</span>
+          </h3>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
+            Não é apenas uma coleção de poesias. É uma ferramenta de <span className="font-bold text-foreground">reprogramação espiritual</span>. 
+            Organizamos 82 poemas em 6 blocos estratégicos para guiar sua alma do deserto à plenitude.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+            {[
+              "Conexão com o Invisível",
+              "Cura das Emoções",
+              "Fortalecimento da Fé",
+              "Libertação Interior",
+              "Paz Profunda",
+              "Propósito de Vida"
+            ].map((benefit, i) => (
+              <div key={i} className="flex items-center space-x-3 bg-background/50 p-4 rounded-2xl border border-primary/5 shadow-sm">
+                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
+                  {i + 1}
+                </div>
+                <span className="font-medium text-foreground">{benefit}</span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Hero Selection / Journey Guidance */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
           <button 
             onClick={() => document.getElementById('poems-content')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group relative overflow-hidden p-8 rounded-3xl bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-300 text-left"
+            className="group relative overflow-hidden p-10 rounded-[3rem] bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500 text-left"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -z-0 transition-transform group-hover:scale-110" />
-            <BookOpen className="h-12 w-12 text-primary mb-6 transition-transform group-hover:scale-110" />
-            <h3 className="text-2xl font-bold mb-3 text-foreground">Jornada do Leitor</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Explore uma coleção de poemas que tocam a alma e fortalecem a fé. Deixe-se inspirar pelas palavras de Evaldo Poeta.
+            <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-bl-[150px] -z-0 transition-transform group-hover:scale-110" />
+            <BookOpen className="h-16 w-16 text-primary mb-8 transition-transform group-hover:scale-110 group-hover:-rotate-6" />
+            <h3 className="text-3xl font-bold mb-4 text-foreground tracking-tight">Libertar Minha Alma</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              Inicie sua jornada através dos poemas que vão reorganizar sua mente e tocar seu coração.
             </p>
-            <div className="mt-6 flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform">
-              Começar a ler <span className="ml-2">→</span>
+            <div className="flex items-center text-primary font-bold text-lg group-hover:translate-x-2 transition-transform">
+              Começar transformação <span className="ml-2">→</span>
             </div>
           </button>
 
@@ -110,26 +185,18 @@ const Index = () => {
               const diarySection = document.getElementById('diary-section');
               diarySection?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="group relative overflow-hidden p-8 rounded-3xl bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-300 text-left"
+            className="group relative overflow-hidden p-10 rounded-[3rem] bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500 text-left"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-[100px] -z-0 transition-transform group-hover:scale-110" />
-            <Users className="h-12 w-12 text-secondary mb-6 transition-transform group-hover:scale-110" />
-            <h3 className="text-2xl font-bold mb-3 text-foreground">Canto do Poeta</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Escreva suas próprias reflexões e diário espiritual. Deixe fluir a voz de Deus no seu coração.
+            <div className="absolute top-0 right-0 w-48 h-48 bg-secondary/5 rounded-bl-[150px] -z-0 transition-transform group-hover:scale-110" />
+            <Users className="h-16 w-16 text-secondary mb-8 transition-transform group-hover:scale-110 group-hover:rotate-6" />
+            <h3 className="text-3xl font-bold mb-4 text-foreground tracking-tight">Voz do Coração</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              Transforme seus sentimentos em prece. Use o diário espiritual para registrar seu progresso.
             </p>
-            <div className="mt-6 flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
-              Minhas reflexões <span className="ml-2">→</span>
+            <div className="flex items-center text-secondary font-bold text-lg group-hover:translate-x-2 transition-transform">
+              Escrever reflexão <span className="ml-2">→</span>
             </div>
           </button>
-        </div>
-
-        <div className="bg-primary/5 border border-primary/10 p-10 rounded-[2.5rem] mb-20 text-center max-w-4xl mx-auto shadow-sm backdrop-blur-sm animate-in fade-in zoom-in duration-1000">
-          <h3 className="text-2xl font-bold text-primary mb-4 italic">Seu Caminho de Luz</h3>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Integramos todos os <span className="text-primary font-bold">82 poemas</span> organizados nos 6 Blocos do <span className="italic text-secondary font-semibold">Método Filho da Luz</span>. 
-            Cada bloco foi pensado para sua jornada espiritual. Comece por onde seu coração sentir.
-          </p>
         </div>
 
         <div id="poems-content">
