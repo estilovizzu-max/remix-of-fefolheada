@@ -402,6 +402,13 @@
                 `;
             }
 
+            // --- SECURITY HELPERS ---
+            const escapeHTML = (str) => {
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            };
+
             // --- LOCAL STORAGE HELPERS ---
             const getFromStorage = (key, defaultValue) => JSON.parse(localStorage.getItem(key)) || defaultValue;
             const saveToStorage = (key, value) => localStorage.setItem(key, JSON.stringify(value));
