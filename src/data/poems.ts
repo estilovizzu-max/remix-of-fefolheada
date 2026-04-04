@@ -53,33 +53,36 @@ Derramando a Minha graça sobre quem soube confiar.`,
     {
       id: 'p1-2',
       title: 'Filho da Luz (O Discípulo)',
-      text: `Quando eu cheguei na tua casa, os meus pés não me lavou;
-esta mulher lavou com lágrimas, e com os cabelos enxugou.
-Para ser o meu discípulo, minha voz deve escutar;
-tem que colocar em prática tudo o que eu vim te ensinar.
-E para o teu crescimento, o que acabo de dizer:
-se concentre em minha voz, se você quer aprender.
-Pois a luz do meu Espírito acendeu pra te guiar;
-o cego não guia outro — tá na hora de brilhar.
-Veja agora com clareza o que mostro pra você;
-irmãos, pra ser discípulo, escute o que vou dizer:
-O Espírito te guia onde você deve ir;
-se entregue no caminho, se levante pra seguir.
-Reconheça seu pecado, o Senhor quer perdoar;
-faça como a mulher, se coloque pra adorar.
-Aceite o Senhor Jesus, Ele veio te salvar;
-pois a Sua misericórdia é graça pra te dar.
-Pegue a bênção nesta noite, se converta pra Jesus;
-nosso grupo de oração se chama Filho da Luz.
-Sua luz resplandeceu, Cristo veio acender;
-Sua luz está brilhando, já parou pra perceber?
-O que queres que te faça, o Senhor tá perguntando —
-“Que eu veja, meu Senhor!”
+      text: `Quando cheguei em Tua casa, os meus pés não Me lavou;
+Mas esta mulher com lágrimas, com seus cabelos enxugou.
+Para ser o Meu discípulo, Minha voz deves escutar,
+E colocar em prática tudo o que Eu vim te ensinar.
+
+Para o teu crescimento, ouça o que acabo de dizer:
+Concentra-te em Minha voz, se queres realmente aprender.
+A luz do Meu Espírito acendeu para te guiar,
+Um cego não guia outro — está na hora de brilhar.
+
+Veja agora com clareza o que mostro para você,
+Para ser um verdadeiro discípulo, escute o que vou dizer:
+O Espírito te conduz para onde deves ir,
+Entregue-se ao caminho, levante-se para seguir.
+
+Reconheça o teu pecado, o Senhor quer perdoar;
+Faça como aquela mulher, coloque-se a adorar.
+Aceite o Senhor Jesus, Ele veio te salvar,
+Sua misericórdia é graça pura para te dar.
+
+Receba a bênção nesta noite, converta-se a Jesus;
+O nosso grupo de oração chama-se "Filho da Luz".
+Sua luz resplandeceu, Cristo veio te acender,
+Sua luz está brilhando, já parou para perceber?
+
+"O que queres que Eu te faça?", o Senhor está perguntando...
+— "Que eu veja, meu Senhor!"
 Sinta: Ele está te curando.
-A Sua misericórdia reacende Sua luz;
-o Senhor cura a cegueira — olhe agora para a Cruz.
-Enxergue o que precisa, saia dessa escuridão;
-o Senhor está tocando, curando sua visão.`,
+Sua misericórdia reacende a tua luz,
+O Senhor cura a cegueira — olhe agora para a Cruz.`,
       reflection: 'A mulher pecadora lavou os pés de Jesus com lágrimas porque reconheceu quem Ele era. O discipulado começa na humildade e na escuta. Tenho sido um discípulo que escuta ou apenas um ouvinte distraído? Se Jesus me perguntasse agora "O que queres que eu te faça?", qual seria minha resposta sincera?',
       inspiration: 'Mestre, lava meus olhos para que eu veja...'
     },
