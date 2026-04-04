@@ -158,9 +158,6 @@ Meditando na Palavra, que é luz para o teu ser.
 No passado, éramos trevas, mas agora somos luz;
 O fruto dessa luz é bondade, justiça e verdade,
 Pois Cristo é a Verdade, que nos liberta e conduz.`,
-      reflection: 'O despertar espiritual muitas vezes exige um grito de socorro, como o de Bartimeu. O que te impede de enxergar a luz de Cristo hoje?',
-      inspiration: 'Eu decido despertar e...'
-    },
       reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz. Qual área da minha vida está "morta" ou "prostrada" e precisa despertar? Tenho coragem de gritar por socorro espiritual hoje?',
       inspiration: 'Eu me levanto do chão e grito...'
     },
