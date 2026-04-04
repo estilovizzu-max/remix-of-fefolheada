@@ -383,6 +383,51 @@ O Espírito do Senhor geme em teu interior, Recebe o fogo abrasador, divino e re
 Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.`,
       reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior.',
       inspiration: 'Eu louvo pela minha família e peço...'
+    },
+    {
+      id: 'p4-5',
+      title: 'Vivendo o Mesmo Carisma',
+      text: `Vivendo o mesmo carisma, Além de se reunir, Dinâmico com o movimento, Com o Espírito Santo servir.
+Sou profeta, corrente de graça, A moção do carisma anunciar. O grupo de oração é momento de celebrar.
+O rei Davi separou os levitas, Quatro mil, para o Senhor louvar.
+Foram duzentos e oitenta e oito escolhidos Também para tocar e cantar.
+Meus irmãos, na manhã deste dia, Ao Senhor quero agradecer, Pela graça que foi derramada.`,
+      reflection: 'O carisma não é para ficar guardado, é para servir.',
+      inspiration: 'Eu renovo meu carisma e me ofereço para…'
+    },
+    {
+      id: 'p4-6',
+      title: 'Renovação Espiritual (Nicodemos)',
+      text: `Seja um homem novo, é hora de nascer, da água e do Espírito, Jesus trouxe, vem beber.
+Nicodemos foi falar: com Jesus conversar, o mestre o ensinou a verdade:
+"Quem não nascer do Espírito, o Reino de Deus não verá".
+Eu te digo em verdade, é preciso renascer da água e do Espírito.
+Quem nascer da carne é carne, sempre será um canal, mas quem nascer do Espírito, esse é espiritual.
+De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua de fogo apareceu.`,
+      reflection: 'Nicodemos tinha conhecimento, mas não tinha vida nova. O batismo no Espírito é um "nascer de novo".',
+      inspiration: 'Eu quero nascer de novo para...'
+    },
+    {
+      id: 'p4-7',
+      title: 'Luz e Graça Divina',
+      text: `Jesus Cristo, Tua luz ilumina meu caminho, Confio nas promessas que se cumprirão no tempo divino.
+Com Jesus ao meu lado, alinhado com Sua vontade, Nada me angustia, estou em Sua fidelidade.
+O Espírito Divino me batiza e guia, Conduzindo-me com sabedoria, dia após dia.
+Vinde, Espírito Santo, ajuda-me a louvar, Entregando minha vida a Jesus, meu Salvador.
+Agradeço por transformar minha vida, A luz do Espírito abre portas com força viva.`,
+      reflection: '"O Espírito Divino me batiza e guia". O batismo é uma experiência de guia diária.',
+      inspiration: 'Espírito Santo, alinha meus passos com...'
+    },
+    {
+      id: 'p4-8',
+      title: 'Clamor e Louvor',
+      text: `Peço esclarecimento, Senhor, em meu coração, Recebo com louvor e adoração a Sua graça e paixão.
+Tu és soberano, nosso Deus e Salvador, Por meio do Seu Espírito, sinto agora Teu amor.
+Não desperdice teu tempo com o que não traz luz, Busca compreender ouvindo a voz de Jesus.
+Recita diariamente, salmodia para Deus, Nos cantos de louvor, oferece graças espirituais.
+A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.`,
+      reflection: '"Seja um missionário em teu próprio lar". A primeira missão é dentro de casa.',
+      inspiration: 'Minha casa servirá ao Senhor e eu...'
     }
   ],
   'bloco-2': [
