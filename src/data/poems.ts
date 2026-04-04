@@ -39,13 +39,14 @@ export const poemsData: PoemsData = {
       id: 'p1-1',
       title: 'Sou Filho da Luz',
       text: `Deixe sua luz brilhar, você precisará acender
-o que está te impedindo terá que logo resolver.
-Eu sou luz. Nasci para brilhar.
-Filho, eu te amo, Pare um pouco para escutar.
-Eu vim ao mundo em amor, Para a liberdade dar.
-Deixa as prisões para trás, Venha agora me encontrar.
-Sou teu Deus, estou contigo, Sempre perto a te guiar.
-Derramando a minha graça Sobre quem soube confiar.`,
+O que te impede, terá que logo resolver.
+Eu sou luz. Nasci para o mundo iluminar.
+Filho amado, pare um pouco para Me escutar.
+
+Eu vim ao mundo em amor, para a liberdade entregar.
+Deixe as prisões para trás, venha agora Me encontrar.
+Sou teu Deus, estou contigo, sempre pronto a te guiar,
+Derramando a Minha graça sobre quem soube confiar.`,
       reflection: 'Muitas vezes, sabemos que temos uma luz, mas algo a impede de brilhar: medo, vergonha ou feridas do passado. Deus hoje te convida a resolver o que te impede. O que está cobrindo a minha luz hoje? Estou disposto a parar tudo agora apenas para escutar o amor de Deus?',
       inspiration: 'Senhor, eu retiro a barreira do...'
     },
