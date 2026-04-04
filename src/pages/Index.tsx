@@ -120,6 +120,8 @@ const Index = () => {
         </div>
       </main>
 
+      <AdminPanel onAddPoem={handleAddPoem} />
+
       <AchievementsModal
         open={isModalOpen}
         onOpenChange={setIsModalOpen}
