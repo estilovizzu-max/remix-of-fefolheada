@@ -68,7 +68,7 @@ const Index = () => {
       <div className="absolute top-40 -left-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-40 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl -z-10" />
 
-      <AdminPanel onAddPoem={handleAddPoem} />
+      
       <QuickNav />
       <BackToTop />
 
@@ -119,6 +119,8 @@ const Index = () => {
           </div>
         </div>
       </main>
+
+      <AdminPanel onAddPoem={handleAddPoem} />
 
       <AchievementsModal
         open={isModalOpen}

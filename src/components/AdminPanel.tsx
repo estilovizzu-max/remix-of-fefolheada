@@ -60,13 +60,17 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button 
-          className="fixed bottom-6 left-6 z-20 bg-primary hover:bg-primary/90 shadow-lg"
-          size="lg"
-        >
-          <Plus className="h-5 w-5 mr-2" />
-          Adicionar Poema
-        </Button>
+        <footer className="w-full flex flex-col items-center justify-center py-24 mt-12 border-t border-border/10 bg-gradient-to-b from-transparent to-muted/20">
+          <div className="relative group">
+            <p className="text-[10px] sm:text-xs text-muted-foreground/30 font-light tracking-[0.5em] uppercase select-none transition-all duration-700">
+              CRIADO POR EVALDO.OS
+            </p>
+            <button 
+              className="absolute inset-0 w-full h-full cursor-default focus:outline-none z-10" 
+              aria-label="Admin Access"
+            />
+          </div>
+        </footer>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
