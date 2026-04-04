@@ -48,13 +48,13 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
     }
 
     onAddPoem(newPoem);
-    setNewPoem({ theme: '', title: '', text: '' });
+    setNewPoem({ theme: '', title: '', text: '', reflection: '' });
     setIsOpen(false);
     toast.success('Poema adicionado com sucesso!');
   };
 
   const handleReset = () => {
-    setNewPoem({ theme: '', title: '', text: '' });
+    setNewPoem({ theme: '', title: '', text: '', reflection: '' });
   };
 
   return (
