@@ -60,12 +60,19 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className="flex flex-col items-center justify-center py-16 mt-8 border-t border-border/10 bg-gradient-to-t from-background to-transparent">
-          <p className="text-xs text-muted-foreground/40 font-medium tracking-widest uppercase">
-            CRIADO POR EVALDO.OS
-            <button className="w-1 h-1 ml-1 cursor-default bg-transparent focus:outline-none" aria-label="Admin" />
-          </p>
-        </div>
+        <footer className="w-full flex flex-col items-center justify-center py-24 mt-12 border-t border-border/10 bg-gradient-to-b from-transparent to-muted/20">
+          <div className="relative group">
+            <p className="text-[10px] sm:text-xs text-muted-foreground/40 font-light tracking-[0.5em] uppercase select-none transition-all duration-700 hover:text-muted-foreground/60 hover:tracking-[0.6em]">
+              CRIADO POR EVALDO.OS
+            </p>
+            <button 
+              className="absolute inset-0 w-full h-full cursor-default focus:outline-none z-10" 
+              aria-label="Admin Access"
+            />
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-primary/20 transition-all duration-700 group-hover:w-full opacity-0 group-hover:opacity-100" />
+          </div>
+        </footer>
+      </DialogTrigger>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
