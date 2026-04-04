@@ -205,6 +205,7 @@ const Index = () => {
         totalPoems={totalPoems}
         diaryCount={diaryEntries.length}
       />
+      <Footer />
     </div>
   );
 };
