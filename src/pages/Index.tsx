@@ -116,7 +116,7 @@ const Index = () => {
             <Users className="h-12 w-12 text-secondary mb-6 transition-transform group-hover:scale-110" />
             <h3 className="text-2xl font-bold mb-3 text-foreground">Canto do Poeta</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Registre suas reflexões diárias e acompanhe seu crescimento espiritual. Um espaço para sua própria voz.
+              Escreva suas próprias reflexões e diário espiritual. Deixe fluir a voz de Deus no seu coração.
             </p>
             <div className="mt-6 flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
               Minhas reflexões <span className="ml-2">→</span>
