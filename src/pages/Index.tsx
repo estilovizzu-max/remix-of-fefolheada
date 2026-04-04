@@ -203,70 +203,127 @@ const Index = () => {
           </button>
         </div>
 
-        {/* Quebra de Crença Section */}
-        <section className="mb-24 text-center max-w-4xl mx-auto space-y-12 py-16">
-          <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter leading-tight">
-            Por que você ainda não alcançou sua <span className="text-primary italic">paz interior</span>?
+        {/* 🔥 QUEBRA DE CRENÇA */}
+        <section className="mb-24 text-center max-w-5xl mx-auto space-y-12 py-20 px-4">
+          <h3 className="text-4xl md:text-7xl font-black text-foreground tracking-tighter leading-[0.85]">
+            Por que sua paz interior ainda parece <span className="text-primary italic">distante</span>?
           </h3>
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Muitos buscam a espiritualidade em fórmulas complexas, quando a resposta está na simplicidade da <span className="text-foreground font-bold">linguagem da alma</span>. O Método Filho da Luz destrava o que estava bloqueado pela sua própria mente.
+          <p className="text-2xl md:text-3xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-light">
+            Muitos buscam a espiritualidade em fórmulas complexas e rituais vazios, quando a resposta está na simplicidade da <span className="text-foreground font-black underline decoration-secondary decoration-4 underline-offset-8">linguagem da alma</span>. O Método PCH destrava o que estava bloqueado pela sua própria mente racional.
           </p>
         </section>
 
-        {/* Módulos do Método */}
-        <div className="mb-24 space-y-16">
-          <div className="text-center space-y-4">
-            <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter">O que você vai receber</h3>
-            <p className="text-xl text-muted-foreground">Sua jornada espiritual organizada e direcionada.</p>
+        {/* 🧱 O QUE VOCÊ VAI RECEBER (CONTEÚDO) */}
+        <div className="mb-24 space-y-20">
+          <div className="text-center space-y-6">
+            <h3 className="text-4xl md:text-7xl font-black text-foreground tracking-tighter">O que você vai receber</h3>
+            <p className="text-2xl text-muted-foreground font-light max-w-2xl mx-auto">Sua jornada espiritual organizada, estratégica e profundamente emocionante.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { title: "Módulo 1: O Despertar", desc: "Acesse a linguagem invisível que conecta sua mente ao coração de Deus.", icon: "✨" },
-              { title: "Módulo 2: O Deserto", desc: "Transforme sua dor em prece e cure suas feridas emocionais mais profundas.", icon: "🌵" },
-              { title: "Módulo 3: O Fortalecimento", desc: "82 Poemas estrategicamente organizados para cada etapa da sua fé.", icon: "💪" },
-              { title: "Módulo 4: O Diário", desc: "Sua ferramenta exclusiva de reflexão e registro da voz de Deus.", icon: "✍️" },
-              { title: "Módulo 5: Os Grupos", desc: "Conexão direta com Grupos de Oração para fortalecer sua caminhada.", icon: "🕊️" },
-              { title: "Bônus: Transformação", desc: "Acesso vitalício à plataforma e atualizações constantes do poeta.", icon: "💎" }
+              { title: "Módulo 1: O Despertar", desc: "Acesse a linguagem invisível que conecta sua mente ao coração de Deus através da poesia.", icon: "✨" },
+              { title: "Módulo 2: O Deserto", desc: "Aprenda a transformar sua dor em prece e cure suas feridas emocionais mais ocultas.", icon: "🌵" },
+              { title: "Módulo 3: O Fortalecimento", desc: "82 Poemas estrategicamente organizados para cada etapa crítica da sua caminhada.", icon: "💪" },
+              { title: "Módulo 4: O Diário PCH", desc: "Sua ferramenta exclusiva de reflexão e registro para materializar a voz do invisível.", icon: "✍️" },
+              { title: "Módulo 5: Os Grupos", desc: "Conexão direta com Grupos de Oração para fortalecer e sustentar sua nova identidade.", icon: "🕊️" },
+              { title: "Bônus: Transformação", desc: "Acesso vitalício à plataforma e todas as futuras atualizações do Método PCH.", icon: "💎" }
             ].map((mod, i) => (
-              <div key={i} className="bg-card p-10 rounded-[2.5rem] border border-border shadow-sm hover:shadow-lg transition-all duration-300">
-                <div className="text-5xl mb-6">{mod.icon}</div>
-                <h4 className="text-2xl font-bold mb-4 text-primary tracking-tight">{mod.title}</h4>
-                <p className="text-muted-foreground leading-relaxed font-medium">{mod.desc}</p>
+              <div key={i} className="bg-card p-12 rounded-[3rem] border border-border/50 shadow-sm hover:shadow-2xl transition-all duration-500 group">
+                <div className="text-6xl mb-8 group-hover:scale-110 transition-transform">{mod.icon}</div>
+                <h4 className="text-3xl font-black mb-6 text-primary tracking-tight leading-none">{mod.title}</h4>
+                <p className="text-lg text-muted-foreground leading-relaxed font-medium">{mod.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Prova Social Section */}
-        <section className="mb-24 py-16 px-8 rounded-[3.5rem] bg-secondary/5 border border-secondary/10">
-          <div className="max-w-4xl mx-auto space-y-12">
-            <h3 className="text-3xl md:text-5xl font-black text-foreground tracking-tighter text-center leading-tight">
-              A transformação de quem já acessou a <span className="text-secondary italic">Luz</span>
+        {/* 👥 PROVA SOCIAL (DEPOIMENTOS) */}
+        <section className="mb-24 py-24 px-8 rounded-[4rem] bg-secondary/10 border border-secondary/20 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32" />
+          
+          <div className="max-w-6xl mx-auto space-y-20 relative z-10">
+            <h3 className="text-4xl md:text-7xl font-black text-foreground tracking-tighter text-center leading-none">
+              A transformação de quem já acessou o <span className="text-secondary italic">Invisível</span>
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {[
-                { name: "Maria Silva", text: "Nunca imaginei que poesias pudessem mudar tanto minha forma de rezar. Sinto-me renovada.", role: "Participante do Grupo de Oração" },
-                { name: "João Paulo", text: "O Método Filho da Luz me deu a clareza que eu buscava há anos na minha caminhada espiritual.", role: "Leitor Fiel" },
-                { name: "Ana Beatriz", text: "O diário é minha parte favorita. Escrever o que sinto depois de cada verso é libertador.", role: "Membro da Comunidade" }
+                { name: "Maria Silva", text: "Nunca imaginei que poesias pudessem mudar tanto minha forma de rezar. Sinto-me renovada e conectada como nunca.", role: "Participante do Grupo de Oração" },
+                { name: "João Paulo", text: "O Método PCH me deu a clareza que eu buscava há anos. Finalmente entendi como falar com Deus pelo coração.", role: "Leitor Fiel" },
+                { name: "Ana Beatriz", text: "O diário é minha parte favorita. Escrever o que sinto depois de cada verso é verdadeiramente libertador.", role: "Membro da Comunidade" }
               ].map((test, i) => (
-                <div key={i} className="bg-card p-8 rounded-3xl border border-border shadow-sm italic text-muted-foreground relative">
-                  <span className="text-6xl text-primary/20 absolute top-4 left-4 font-serif">"</span>
-                  <p className="relative z-10 pt-4 mb-6 leading-relaxed">
+                <div key={i} className="bg-card/90 backdrop-blur-sm p-10 rounded-[2.5rem] border border-border/50 shadow-lg italic text-muted-foreground relative group hover:-translate-y-2 transition-transform">
+                  <span className="text-7xl text-primary/10 absolute top-4 left-4 font-serif group-hover:text-primary/20 transition-colors">"</span>
+                  <p className="relative z-10 pt-6 mb-8 text-xl leading-relaxed">
                     {test.text}
                   </p>
-                  <div className="flex items-center space-x-3 not-italic">
-                    <div className="h-10 w-10 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                  <div className="flex items-center space-x-4 not-italic">
+                    <div className="h-14 w-14 rounded-full bg-secondary/30 flex items-center justify-center font-black text-secondary text-xl shadow-inner">
                       {test.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-bold text-foreground text-sm">{test.name}</p>
-                      <p className="text-xs">{test.role}</p>
+                      <p className="font-black text-foreground text-lg tracking-tight">{test.name}</p>
+                      <p className="text-sm font-bold text-primary/70">{test.role}</p>
                     </div>
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ⏳ OFERTA IRRESISTÍVEL + GARANTIA */}
+        <section className="mb-24 py-24 bg-primary rounded-[4rem] text-white text-center px-8 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent opacity-50" />
+          
+          <div className="max-w-4xl mx-auto relative z-10 space-y-12">
+            <h3 className="text-4xl md:text-7xl font-black tracking-tighter leading-none mb-4">
+              Comece sua Jornada <br/><span className="text-secondary italic">Hoje Mesmo</span>
+            </h3>
+            
+            <div className="bg-white/10 backdrop-blur-xl p-12 rounded-[3rem] border border-white/20 shadow-2xl inline-block w-full max-w-2xl">
+              <p className="text-xl font-bold uppercase tracking-[0.2em] mb-4 opacity-80">Acesso Vitalício ao Método PCH</p>
+              <div className="flex items-center justify-center gap-4 mb-8">
+                <span className="text-3xl line-through opacity-50">R$ 197,00</span>
+                <span className="text-6xl md:text-8xl font-black text-secondary drop-shadow-lg">R$ 97</span>
+              </div>
+              <ul className="text-left space-y-4 mb-10 max-w-md mx-auto">
+                <li className="flex items-center gap-3 font-bold text-lg">
+                  <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
+                  82 Poemas de Reprogramação
+                </li>
+                <li className="flex items-center gap-3 font-bold text-lg">
+                  <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
+                  Módulo de Cura das Emoções
+                </li>
+                <li className="flex items-center gap-3 font-bold text-lg">
+                  <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
+                  Diário Espiritual Interativo
+                </li>
+                <li className="flex items-center gap-3 font-bold text-lg">
+                  <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
+                  Acesso aos Grupos VIP
+                </li>
+              </ul>
+              
+              <Button 
+                onClick={() => document.getElementById('poems-content')?.scrollIntoView({ behavior: 'smooth' })}
+                size="lg"
+                className="w-full bg-secondary hover:bg-secondary/90 text-primary font-black text-2xl py-10 rounded-[2rem] shadow-2xl hover:scale-[1.02] transition-all"
+              >
+                QUERO MEU ACESSO AGORA
+              </Button>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-8">
+              <div className="flex items-center gap-4 text-left">
+                <ShieldCheck className="h-16 w-16 text-secondary" />
+                <div>
+                  <p className="font-black text-xl">Garantia Blindada</p>
+                  <p className="opacity-80">7 dias para testar sem riscos. Se não sentir a transformação, devolvemos cada centavo.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
