@@ -390,6 +390,50 @@ O Senhor está restaurando o leme do teu barco, No mar da tua vida, Eu te pego n
 Agradeço ao Senhor por tudo que Ele já fez, O Espírito renova tua vida mais uma vez.`,
       reflection: '"O Senhor está restaurando o leme do teu barco". Deus quer devolver a direção da sua vida.',
       inspiration: 'Puxo a âncora do medo e navego para...'
+    },
+    {
+      id: 'p4-2',
+      title: 'Sopro de Paz',
+      text: `Soprou sobre nós teu Espírito, a paz com ele chegou.
+Todo medo se desfez, a dúvida se dissipou.
+O Espírito desceu, trouxe paz neste lugar.
+Como o Pai me enviou, eu vos envio a anunciar.
+Acalme seu coração, toda manhã, por favor,
+pare agora, sinta o ar, comece a orar com o Senhor.
+Pois renovo em você, sua paz e alegria,
+então, só assim vai perceber, a paz em expansão.`,
+      reflection: 'A ansiedade tem roubado nosso fôlego. O exercício proposto é fisiológico e espiritual: sentir o ar.',
+      inspiration: 'Eu inspiro a Tua paz e expiro a minha...'
+    },
+    {
+      id: 'p4-3',
+      title: 'Com o Óleo da Fé',
+      text: `O Senhor está libertando dessa tristeza, meu irmão, Permaneça no caminho, sinta a paz no coração.
+Preencha esse vazio, acenda no seu interior, Pois o poder de Deus agora reacende com amor.
+O fogo do Espírito te tira da escuridão, Com a lâmpada acesa, saia já dessa prisão.
+Procure no coração teu guarda e teu farol, Ele é tua proteção, teu escudo, teu sol.
+Abre-te ao que te sustenta, tira essa preocupação, Se encha do óleo santo, mantenha viva a paixão.
+Com o fogo do Espírito, não se deixe apagar, Pois é com poder e serviço que Ele vem te ungir e enviar.
+Não seja imprudente, leve o óleo da compaixão, O óleo do amor, da fé e também o do perdão.
+Acredite no Senhor, o Noivo está a chegar, A festa se aproxima — só os prontos vão entrar.
+Nesta noite santa, você pode escutar, Conhecer melhor o Senhor, se preparar para entrar.
+O banquete está posto, Ele é teu Salvador, Se quiser sair da escuridão, leve o óleo do amor.`,
+      reflection: 'A parábola das virgens prudentes nos lembra que o óleo não pode ser emprestado. A intimidade é intransferível.',
+      inspiration: 'Senhor, enche minha cumbuca vazia com...'
+    },
+    {
+      id: 'p4-4',
+      title: 'O Espírito Está Aqui',
+      text: `Você não está sozinho, o Espírito com você está.
+A graça está sendo derramada, és chamado a experimentar.
+O Deus poderoso vem em ti habitar, com a força do Espírito para libertar.
+Usou com justiça o homem em missão, pra libertar o Seu povo e curar o coração.
+É o Senhor sem rival, ninguém igual a Ti. À frente do homem, quem irá resistir?
+Acima de todos, a tudo formou — És o Soberano, o Deus Salvador.
+Usou o instrumento: a mim e a você. Confia n’Ele hoje, Ele é o teu Senhor.
+Voltai ao caminho, Ele vem te buscar. Com a graça do Espírito, Ela vai te salvar.`,
+      reflection: 'Deus está disponível: o Espírito de Deus. Amigo e companheiro, se entregue em oração.',
+      inspiration: 'Não sou mais escravo, sou amigo do Espírito e...'
     }
   ],
   'bloco-3': [
