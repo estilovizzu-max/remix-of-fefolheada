@@ -434,6 +434,44 @@ Usou o instrumento: a mim e a você. Confia n’Ele hoje, Ele é o teu Senhor.
 Voltai ao caminho, Ele vem te buscar. Com a graça do Espírito, Ela vai te salvar.`,
       reflection: 'Deus está disponível: o Espírito de Deus. Amigo e companheiro, se entregue em oração.',
       inspiration: 'Não sou mais escravo, sou amigo do Espírito e...'
+    },
+    {
+      id: 'p5-2',
+      title: 'Juízo Final',
+      text: `Quando Ele voltar, em glória se assentará, No trono majestoso, o novo se revelará.
+As nações diante d’Ele, em temor se prostrarão, Ouça agora a voz do Pastor, sinta sua direção.
+Ele cuida das ovelhas, está aqui pra te ajudar, Esteja pronto em oração, é tempo de despertar.
+O Senhor já proclamou no momento de oração: "O novo estou fazendo, entre agora em ação."
+Até quando ficará sem tomar a decisão? Lembra-se da palavra dita na pregação?
+Persevere, meu irmão, fique firme no Senhor, Não desista nem desanime, Deus te cerca de amor.
+Hoje ressoa a verdade, a palavra do Senhor, Cristo é a vida eterna, teu único Salvador.`,
+      reflection: '"O novo estou fazendo, entre agora em ação". Deus não quer apenas que eu espere sentado.',
+      inspiration: 'Não temo o trono, pois conheço o Pastor. Hoje eu decido...'
+    },
+    {
+      id: 'p5-3',
+      title: 'Oração de Entrega e Adoração',
+      text: `Na missão de desvendar os mistérios da tua vida, Agora vou contemplar, junto com a Virgem Maria.
+Ao Senhor, vou entregar minha vida, sem hesitar, No início da oração, pelo Santo Terço, vou clamar.
+Ó Senhor, eu não mereço, Mas todo dia, venho e peço: vem me amar.
+Minha vida em tua vida hoje quero depositar. Santa Mãe de Deus, Maria, Neste dia, nesta hora, contemplarei com alegria
+A vida do meu Senhor, teu Filho Jesus Cristo, Que por nós se entregou — puro e infinito amor.
+Ao nome soberano, que está acima de todos, Jesus Cristo, amoroso, adoremos com corações abertos.
+Não há nome como este para se exaltar, Entregue-se ao Senhor, venha com fé adorar.
+Aquele que está no trono, glorioso e exaltado, Jesus Cristo, Rei amado, Está ao teu lado com o Espírito Consolador,
+Chamando-te com ternura, com poder e amor.`,
+      reflection: '"Mais do que a vida, eu preciso de ti". Ao lado de Maria, contemplo a vida de Jesus.',
+      inspiration: 'Com Maria, eu digo \'sim\' e me entrego...'
+    },
+    {
+      id: 'p5-4',
+      title: 'Eis que Estou à Porta',
+      text: `Esteja com o coração aberto Para receber Jesus Cristo — É o Salvador, Que em breve vai nascer.
+Depois que Ele nascer, Morada irá fazer. Como disse na Palavra, Contigo irá viver.
+Eis que estou à porta e bato, O banquete preparei. Deixa Eu entrar em tua casa, E contigo cearei.
+Entre agora, meu Senhor, Eu preciso conversar. Sei que pode, nesta hora, Minha ferida curar.`,
+      reflection: 'O banquete já está pronto. Jesus está batendo. A única coisa que falta é eu girar a maçaneta.',
+      inspiration: 'A porta está destrancada, Senhor. Entra e ceia com...'
     }
   ],
   'bloco-3': [
