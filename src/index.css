@@ -120,35 +120,36 @@ All colors MUST be HSL.
 
 @layer components {
   .poem-container {
-    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-4 border-[hsl(var(--poem-border))] px-8 py-8 shadow-md;
-    background-image: linear-gradient(to bottom, hsl(var(--poem-bg)), hsl(var(--poem-bg)) 95%, hsl(var(--poem-border) / 0.05));
+    @apply relative overflow-hidden bg-[hsl(var(--poem-bg))] border-l-4 border-secondary px-8 py-10 shadow-lg rounded-r-xl;
+    background-image: 
+      linear-gradient(to right, hsl(var(--secondary) / 0.05) 0%, transparent 10%),
+      linear-gradient(to bottom, transparent 0%, hsl(var(--secondary) / 0.02) 100%);
   }
   
   .poem-text {
-    @apply font-['Lora',serif] whitespace-pre-line leading-[2] text-[1.15rem] text-foreground relative z-10;
-    text-align: justify;
-    text-indent: 0;
+    @apply font-serif whitespace-pre-line leading-relaxed text-lg text-foreground relative z-10;
+    text-align: left;
+    font-style: italic;
   }
   
   .poem-text::selection {
-    @apply bg-[hsl(var(--selection-bg))];
+    @apply bg-secondary/30;
   }
   
   .poem-watermark {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-['Dancing_Script',cursive] text-[6rem] text-[hsl(var(--poem-watermark))] opacity-[0.04] pointer-events-none -z-0 whitespace-nowrap -rotate-[30deg];
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-script text-[8rem] text-primary opacity-[0.03] pointer-events-none -z-0 whitespace-nowrap -rotate-12;
     user-select: none;
   }
   
   .theme-header {
-    @apply text-3xl font-bold text-primary mt-8 mb-4 p-6 border-b-[3px] border-primary/30 scroll-mt-8 transition-all hover:bg-gradient-to-r hover:from-primary/10 hover:to-secondary/10 rounded-t-lg;
-    background: linear-gradient(to right, hsl(var(--muted)), hsl(var(--background)));
+    @apply text-2xl font-bold text-primary mt-12 mb-6 p-6 border-b-2 border-secondary/40 scroll-mt-24 transition-all hover:bg-secondary/5 rounded-xl bg-card shadow-sm;
   }
   
   .progress-bar-bg {
-    @apply bg-[hsl(var(--progress-bg))];
+    @apply bg-muted rounded-full overflow-hidden h-3;
   }
   
   .progress-bar-fill {
-    @apply bg-[hsl(var(--progress-fill))] transition-all duration-500 ease-in-out;
+    @apply bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out h-full;
   }
 }
