@@ -158,6 +158,112 @@ Pois Cristo é a Verdade, que nos liberta e conduz.`,
       inspiration: 'Eu me levanto do chão e grito...'
     },
     {
+      id: 'p1-6',
+      title: 'Seu Talento',
+      text: `Cada um recebe um dom Para a Igreja edificar.
+Vou mostrar-te o caminho, Para que possas caminhar.
+Quanto tempo ainda tens? O Senhor quer te ensinar.
+O amor é paciente, Para e vem analisar.
+Como o bronze que ressoa, Ou o címbalo a tocar,
+Sem amor, dons são vazios, Nada podem transformar.
+Ainda que fales línguas, Ou profetizes sem cessar,
+Se não houver caridade, Nada disso há de contar.`,
+      reflection: 'Talento sem amor é barulho ("bronze que ressoa"). O dom não é para minha vaidade, é para edificar o outro.',
+      inspiration: 'Meu talento é um presente para...'
+    },
+    {
+      id: 'p1-7',
+      title: 'O Milagre da Escrita',
+      text: `Tantos passam sem perceber, mas ao escrever, o milagre começa a florescer.
+No silêncio da mente, um pensamento se eleva, e no ato de escrever, algo novo se revela.
+O presente se torna eternidade, e as palavras, ao nascer, ganham liberdade.
+Sinta, cada frase que brota do coração, é a criação de um novo caminho, uma nova canção.
+Do pensamento ao sentimento, surge a emoção que transforma o momento.
+Ao escrever, você vê mais claro, o milagre da escrita, tão simples e tão raro.`,
+      reflection: 'A escrita é uma forma de materializar a alma. Quando escrevemos, tiramos o caos da mente.',
+      inspiration: 'Hoje minhas palavras ganham asas e...'
+    },
+    {
+      id: 'p1-8',
+      title: 'Chamado à Santificação',
+      text: `Hoje é o dia da graça se revelar, meu Senhor me chama para me santificar.
+Sou escolhido para falar, anunciar o evangelho, e em Cristo, adorar.
+Teu nome exalto com devoção, glorifico Teu Reino, e com fé, sigo a Tua direção.
+O Cordeiro está no trono, em Seu brilho divino, e eu sou chamado para seguir Seu caminho.
+Sou separado para adorar, para morar junto de Cristo, e Sua luz irradiar.
+O pecado não tem mais domínio sobre mim, pois em Jesus, encontrei meu verdadeiro fim.`,
+      reflection: 'Santificar-se significa "separar-se". Não é ser perfeito, é ser reservado para Deus.',
+      inspiration: 'Eu me separo do mundo para...'
+    },
+    {
+      id: 'p1-9',
+      title: 'As Vozes que Ouvimos',
+      text: `Quais são as vozes que falam em tua mente? Qual delas te chama e qual te faz desistir?
+São muitas, mas há uma que se destaca, uma voz suave, que traz paz e esperança.
+Ela te envolve com suavidade, fazendo com que te sintas em serenidade.
+O medo vai embora, e com ele a timidez, pois essa voz traz calma, e alivia a sua rigidez.
+Sinta o vento leve e a respiração tranquila, deixe a voz que te chama acalmar tua agitação.`,
+      reflection: 'O inimigo grita, acusa e agita. O Espírito Santo sussurra, acalma e encoraja.',
+      inspiration: 'Eu calo o barulho para ouvir...'
+    },
+    {
+      id: 'p1-10',
+      title: 'Chamado e Luz',
+      text: `Tens um chamado, um caminho a seguir. Perdoa nesta jornada, o Espírito está aqui.
+Faz de ti um modelo vivo, a paz que vem do amor, em resposta à oração, dons Deus derramou.
+Eu consolo tua vida, sê luz em meio à dor. Teu nome tem história, consagra o teu amor.
+Abre agora teus ouvidos, tua boca para falar. O Espírito Divino está aqui para te escutar.`,
+      reflection: '"Teu nome tem história". Deus não te chamou por acaso.',
+      inspiration: 'Minha história é um testemunho de...'
+    },
+    {
+      id: 'p1-11',
+      title: 'Deixe Marcas de Santidade',
+      text: `Deixe marcas de santidade, o céu é seu lugar. O relógio não para, pare para observar.
+Qual é o seu legado? O que irá deixar? Faça como Maria, pare para escutar.
+O Senhor está chamando, não há por que temer. Ansiedade e tristeza, Ele pode dissolver.
+Qual tem sido a escolha? Onde você está? Ouvindo a voz de Cristo, sua casa irá mudar.`,
+      reflection: 'Não levaremos bens materiais, mas levaremos o amor que demos.',
+      inspiration: 'Eu escolho deixar marcas de...'
+    },
+    {
+      id: 'p1-12',
+      title: 'Fluindo com Fé: Identidade',
+      text: `Resgate sua identidade, deixe fluir no interior. Não desista de si mesmo; continue e faça com amor.
+Descanse bem e depois prossiga; a vida é como uma semente que você terá que plantar.
+Acredite que irá colher o fruto; esforce-se para se alimentar do fruto que terá que colher.
+Existe o tempo certo para a semente germinar; Deus lhe deu a vida para cuidar.
+Sua palavra poderosa completará em você; Deus não faz nada pela metade, Ele te ajudará.
+Aquilo que veio para destruir é uma ponte para te conectar. Não o rejeite, pois o Senhor veio para te curar.`,
+      reflection: '"Aquilo que veio para destruir é uma ponte para te conectar". Transformar a crise em altar.',
+      inspiration: 'Minha dor se torna ponte quando...'
+    },
+    {
+      id: 'p1-13',
+      title: 'O Poder da Mente e do Amor Próprio',
+      text: `Quem pensa, enriquece, Pois o Senhor não esquece Daquele a quem prometeu: "Se creres, farás obras maiores do que Eu."
+Não saia da Sua presença, Aumente sua fé, sua crença Naquele que criou e te formou — Teu Senhor, teu Deus, teu Salvador.
+Tua mente é poderosa, Mas se mal direcionar, Pensarás que não consegue, E hoje não irá triunfar.
+Viva agora, no presente, Sinta o sopro do ar, Esse sopro é divino, é o Senhor A te ensinar a despertar.
+O ser que habita em ti, Só floresce com amor. Depende do teu cuidado, Do reconhecimento do teu valor.
+Deus é contigo, sempre será, Essa verdade não se apagará. Mas para viver em paz, com sucesso, Uma coisa só te peço:
+Nunca se esqueça de você, Pois é o amor próprio que te faz florescer.`,
+      reflection: 'Amar ao próximo como a si mesmo. Se você não se ama, não reconhece o valor da obra que Deus criou: você.',
+      inspiration: 'Eu me amo porque Deus...'
+    },
+    {
+      id: 'p1-14',
+      title: 'Volte Para Minha Presença',
+      text: `Antes que fosse gerado, já era amado. Eu te conhecia, e te consagrei.
+Volte para a Minha presença, te espero com ardor. Volte o teu coração — Sou teu Deus e Salvador.
+Não se prenda mais ao erro, tira a dúvida do coração. Se volte para Mim, na presença, tome agora a decisão.
+Eu sei das tuas fraquezas, também das limitações. Estou sempre preparado para te libertar das prisões.
+O centro da tua vida, o sentido e a razão, não se perca com pessoas que te levam à depressão.
+Sou o Deus da misericórdia, e também da compaixão. Mais uma vez Eu te falo: Saia já desta prisão!`,
+      reflection: 'Deus não olha para o seu erro, Ele olha para a sua volta.',
+      inspiration: 'Eu volto para casa e deixo para trás...'
+    },
+    {
       id: 'p1-15',
       title: 'Pura Graça',
       text: `Jesus, fonte de toda graça, Vivo Sua paz que me abraça, Que se derrama sobre mim.
