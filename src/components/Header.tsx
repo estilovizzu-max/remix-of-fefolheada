@@ -36,7 +36,7 @@ export const Header = () => {
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         <div className="flex items-center space-x-2 text-primary bg-primary/5 px-4 py-2 rounded-full border border-primary/10 shadow-sm">
           <CheckCircle2 className="h-4 w-4 text-secondary" />
-          <span className="text-sm font-bold uppercase tracking-wider">82 Poemas de Poder</span>
+          <span className="text-sm font-bold uppercase tracking-wider">Poemas de Poder</span>
         </div>
         <div className="flex items-center space-x-2 text-primary bg-primary/5 px-4 py-2 rounded-full border border-primary/10 shadow-sm">
           <CheckCircle2 className="h-4 w-4 text-secondary" />

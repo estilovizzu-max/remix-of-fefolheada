@@ -144,7 +144,7 @@ const Index = () => {
             </h3>
             <p className="text-2xl md:text-3xl font-light leading-relaxed max-w-4xl mx-auto mb-16 opacity-90">
               Não é sobre ler poesias. É sobre <span className="font-black text-white decoration-secondary underline underline-offset-8">Poesia que Cura o Homem</span>. 
-              Um sistema de 82 chaves que acessam o invisível para uma transformação definitiva.
+              Um sistema de {totalPoems} chaves que acessam o invisível para uma transformação definitiva.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
@@ -177,7 +177,7 @@ const Index = () => {
             <BookOpen className="h-20 w-20 text-primary mb-10 transition-transform group-hover:scale-110 group-hover:-rotate-6" />
             <h3 className="text-4xl font-black mb-6 text-foreground tracking-tighter leading-none">Sair dessa Prisão <br/><span className="text-primary italic">Hoje</span></h3>
             <p className="text-xl text-muted-foreground leading-relaxed mb-10 font-medium">
-              Inicie sua jornada através das 82 chaves que vão reorganizar sua mente e libertar sua alma da estagnação.
+              Inicie sua jornada através das {totalPoems} chaves que vão reorganizar sua mente e libertar sua alma da estagnação.
             </p>
             <div className="flex items-center text-primary font-black text-2xl group-hover:translate-x-4 transition-transform tracking-tight">
               COMEÇAR MINHA TRANSFORMAÇÃO <span className="ml-3">→</span>
@@ -224,7 +224,7 @@ const Index = () => {
             {[
               { title: "Módulo 1: O Despertar", desc: "Acesse a linguagem invisível que conecta sua mente ao coração de Deus através da poesia.", icon: "✨" },
               { title: "Módulo 2: O Deserto", desc: "Aprenda a transformar sua dor em prece e cure suas feridas emocionais mais ocultas.", icon: "🌵" },
-              { title: "Módulo 3: O Fortalecimento", desc: "82 Poemas estrategicamente organizados para cada etapa crítica da sua caminhada.", icon: "💪" },
+              { title: "Módulo 3: O Fortalecimento", desc: `${totalPoems} Poemas estrategicamente organizados para cada etapa crítica da sua caminhada.`, icon: "💪" },
               { title: "Módulo 4: O Diário PCH", desc: "Sua ferramenta exclusiva de reflexão e registro para materializar a voz do invisível.", icon: "✍️" },
               { title: "Módulo 5: Os Grupos", desc: "Conexão direta com Grupos de Oração para fortalecer e sustentar sua nova identidade.", icon: "🕊️" },
               { title: "Bônus: Transformação", desc: "Acesso vitalício à plataforma e todas as futuras atualizações do Método PCH.", icon: "💎" }
@@ -291,7 +291,7 @@ const Index = () => {
               <ul className="text-left space-y-4 mb-10 max-w-md mx-auto">
                 <li className="flex items-center gap-3 font-bold text-lg">
                   <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
-                  82 Poemas de Reprogramação
+                  {totalPoems} Poemas de Reprogramação
                 </li>
                 <li className="flex items-center gap-3 font-bold text-lg">
                   <CheckCircle2 className="text-secondary h-6 w-6 shrink-0" />
