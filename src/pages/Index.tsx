@@ -14,7 +14,8 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { poemsData, themeTitles } from '@/data/poems';
 import { loadCustomPoems, saveCustomPoem, mergePoems, generatePoemId } from '@/utils/poemLoader';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BookOpen, Users } from "lucide-react";
+import { BookOpen, Users, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface DiaryEntry {
   text: string;
