@@ -25,6 +25,7 @@ interface NewPoem {
   theme: string;
   title: string;
   text: string;
+  reflection: string;
 }
 
 interface AdminPanelProps {
@@ -36,7 +37,8 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
   const [newPoem, setNewPoem] = useState<NewPoem>({
     theme: '',
     title: '',
-    text: ''
+    text: '',
+    reflection: ''
   });
 
   const handleSubmit = () => {
@@ -46,13 +48,13 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
     }
 
     onAddPoem(newPoem);
-    setNewPoem({ theme: '', title: '', text: '' });
+    setNewPoem({ theme: '', title: '', text: '', reflection: '' });
     setIsOpen(false);
     toast.success('Poema adicionado com sucesso!');
   };
 
   const handleReset = () => {
-    setNewPoem({ theme: '', title: '', text: '' });
+    setNewPoem({ theme: '', title: '', text: '', reflection: '' });
   };
 
   return (
@@ -116,6 +118,21 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
               Use quebras de linha para separar os versos
             </p>
           </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="reflection">Reflexão do Poema</Label>
+            <Textarea
+              id="reflection"
+              value={newPoem.reflection}
+              onChange={(e) => setNewPoem({ ...newPoem, reflection: e.target.value })}
+              placeholder="Digite a reflexão do poema aqui..."
+              className="min-h-[150px] text-base"
+            />
+            <p className="text-sm text-muted-foreground">
+              Uma breve reflexão ou ensinamento sobre o poema
+            </p>
+          </div>
+
 
           <div className="flex gap-3 justify-end pt-4">
             <Button

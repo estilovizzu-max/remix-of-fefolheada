@@ -29,12 +29,13 @@ const Index = () => {
     return Object.values(allPoems).reduce((sum, poems) => sum + poems.length, 0);
   }, [allPoems]);
 
-  const handleAddPoem = (newPoem: { theme: string; title: string; text: string }) => {
+  const handleAddPoem = (newPoem: { theme: string; title: string; text: string; reflection: string }) => {
     const poemId = generatePoemId(newPoem.theme);
     const poem = {
       id: poemId,
       title: newPoem.title,
-      text: newPoem.text
+      text: newPoem.text,
+      reflection: newPoem.reflection
     };
     
     saveCustomPoem(newPoem.theme, poem);
