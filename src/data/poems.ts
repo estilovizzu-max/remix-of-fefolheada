@@ -46,7 +46,7 @@ Eu vim ao mundo em amor, Para a liberdade dar.
 Deixa as prisões para trás, Venha agora me encontrar.
 Sou teu Deus, estou contigo, Sempre perto a te guiar.
 Derramando a minha graça Sobre quem soube confiar.`,
-      reflection: 'Muitas vezes, sabemos que temos uma luz, mas algo a impede de brilhar: medo, vergonha ou feridas do passado. Deus hoje te convida a resolver o que te impede.',
+      reflection: 'Muitas vezes, sabemos que temos uma luz, mas algo a impede de brilhar: medo, vergonha ou feridas do passado. Deus hoje te convida a resolver o que te impede. O que está cobrindo a minha luz hoje? Estou disposto a parar tudo agora apenas para escutar o amor de Deus?',
       inspiration: 'Senhor, eu retiro a barreira do...'
     },
     {
@@ -79,7 +79,7 @@ A Sua misericórdia reacende Sua luz;
 o Senhor cura a cegueira — olhe agora para a Cruz.
 Enxergue o que precisa, saia dessa escuridão;
 o Senhor está tocando, curando sua visão.`,
-      reflection: 'A mulher pecadora lavou os pés de Jesus com lágrimas porque reconheceu quem Ele era. O discipulado começa na humildade e na escuta.',
+      reflection: 'A mulher pecadora lavou os pés de Jesus com lágrimas porque reconheceu quem Ele era. O discipulado começa na humildade e na escuta. Tenho sido um discípulo que escuta ou apenas um ouvinte distraído? Se Jesus me perguntasse agora "O que queres que eu te faça?", qual seria minha resposta sincera?',
       inspiration: 'Mestre, lava meus olhos para que eu veja...'
     },
     {
@@ -97,7 +97,7 @@ Encontra o remédio da dor.
 Através desta poesia,
 Sinta a paz e a alegria
 Que vêm de Jesus, Salvador.`,
-      reflection: 'Existe um "trono iluminado" dentro de você, onde Deus habita. Às vezes, a dor do mundo coloca um véu sobre esse brilho.',
+      reflection: 'Existe um "trono iluminado" dentro de você, onde Deus habita. Às vezes, a dor do mundo coloca um véu sobre esse brilho. Qual é o "tesouro" interno que eu tenho esquecido que possuo? Como posso tornar essa sensação de paz mais "permanente" no meu dia a dia?',
       inspiration: 'Dentro de mim habita um tesouro que...'
     },
     {
@@ -124,7 +124,7 @@ Até que um dia, alguém mostrou o processo, eu abracei a coragem, superei o reg
 E aqui estou, aceso, no palco da vida, com a luz de Cristo, alma renascida.
 Nada nem ninguém pode me apagar, porque foi Deus quem veio me acender.
 Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
-      reflection: '"Ninguém apaga a luz interior se você não entrega o interruptor". Esta é uma verdade poderosa sobre autorresponsabilidade.',
+      reflection: '"Ninguém apaga a luz interior se você não entrega o interruptor". Esta é uma verdade poderosa sobre autorresponsabilidade. Para quem eu entreguei o interruptor da minha vida? (Para a opinião dos outros? Para o medo?) Estou pronto para subir no "palco da vida" e assumir meu lugar?',
       inspiration: 'Eu pego de volta o interruptor e decido...'
     },
     {
@@ -133,7 +133,7 @@ Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
       text: `Desperta agora, meu amigo, ouve a voz do Senhor.
 Levanta-te dentre os mortos, que Cristo já te iluminou.
 Ele te chama para a luz, para a ação e o amor,
-Pois a vontade d'Ele é que conheças o Senhor.
+Pois a vontade d\'Ele é que conheças o Senhor.
 Você é filho da luz, das trevas pode sair;
 Aceite a graça divina, deixe-se conduzir.
 O Espírito te guia, mostrando o caminho a trilhar;
@@ -154,7 +154,7 @@ Meditando na Palavra, que é luz para o teu ser.
 No passado, éramos trevas, mas agora somos luz;
 O fruto dessa luz é bondade, justiça e verdade,
 Pois Cristo é a Verdade, que nos liberta e conduz.`,
-      reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz.',
+      reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz. Qual área da minha vida está "morta" ou "prostrada" e precisa despertar? Tenho coragem de gritar por socorro espiritual hoje?',
       inspiration: 'Eu me levanto do chão e grito...'
     },
     {
@@ -167,8 +167,12 @@ O amor é paciente, Para e vem analisar.
 Como o bronze que ressoa, Ou o címbalo a tocar,
 Sem amor, dons são vazios, Nada podem transformar.
 Ainda que fales línguas, Ou profetizes sem cessar,
-Se não houver caridade, Nada disso há de contar.`,
-      reflection: 'Talento sem amor é barulho ("bronze que ressoa"). O dom não é para minha vaidade, é para edificar o outro.',
+Se não houver caridade, Nada disso há de contar.
+Espera no Senhor, Ele tudo vai te dar.
+Com fé amadurecida, Segue firme a caminhar.
+Acolhe os teus irmãos, A quem tanto precisar.
+Persevera todo dia, Na promessa a se firmar.`,
+      reflection: 'Talento sem amor é barulho ("bronze que ressoa"). O dom não é para minha vaidade, é para edificar o outro. Qual talento Deus me deu que eu tenho guardado? Faço as coisas com amor ou apenas por obrigação?',
       inspiration: 'Meu talento é um presente para...'
     },
     {
@@ -180,7 +184,7 @@ O presente se torna eternidade, e as palavras, ao nascer, ganham liberdade.
 Sinta, cada frase que brota do coração, é a criação de um novo caminho, uma nova canção.
 Do pensamento ao sentimento, surge a emoção que transforma o momento.
 Ao escrever, você vê mais claro, o milagre da escrita, tão simples e tão raro.`,
-      reflection: 'A escrita é uma forma de materializar a alma. Quando escrevemos, tiramos o caos da mente.',
+      reflection: 'A escrita é uma forma de materializar a alma. Quando escrevemos, tiramos o caos da mente e damos forma ao que Deus está falando.',
       inspiration: 'Hoje minhas palavras ganham asas e...'
     },
     {
@@ -192,7 +196,7 @@ Teu nome exalto com devoção, glorifico Teu Reino, e com fé, sigo a Tua direç
 O Cordeiro está no trono, em Seu brilho divino, e eu sou chamado para seguir Seu caminho.
 Sou separado para adorar, para morar junto de Cristo, e Sua luz irradiar.
 O pecado não tem mais domínio sobre mim, pois em Jesus, encontrei meu verdadeiro fim.`,
-      reflection: 'Santificar-se significa "separar-se". Não é ser perfeito, é ser reservado para Deus.',
+      reflection: 'Santificar-se significa "separar-se". Não é ser perfeito, é ser reservado para Deus. O pecado perde o domínio quando entendemos nosso propósito.',
       inspiration: 'Eu me separo do mundo para...'
     },
     {
@@ -203,7 +207,7 @@ São muitas, mas há uma que se destaca, uma voz suave, que traz paz e esperanç
 Ela te envolve com suavidade, fazendo com que te sintas em serenidade.
 O medo vai embora, e com ele a timidez, pois essa voz traz calma, e alivia a sua rigidez.
 Sinta o vento leve e a respiração tranquila, deixe a voz que te chama acalmar tua agitação.`,
-      reflection: 'O inimigo grita, acusa e agita. O Espírito Santo sussurra, acalma e encoraja.',
+      reflection: 'O inimigo grita, acusa e agita. O Espírito Santo sussurra, acalma e encoraja. Qual voz você tem alimentado?',
       inspiration: 'Eu calo o barulho para ouvir...'
     },
     {
@@ -213,7 +217,7 @@ Sinta o vento leve e a respiração tranquila, deixe a voz que te chama acalmar 
 Faz de ti um modelo vivo, a paz que vem do amor, em resposta à oração, dons Deus derramou.
 Eu consolo tua vida, sê luz em meio à dor. Teu nome tem história, consagra o teu amor.
 Abre agora teus ouvidos, tua boca para falar. O Espírito Divino está aqui para te escutar.`,
-      reflection: '"Teu nome tem história". Deus não te chamou por acaso.',
+      reflection: '"Teu nome tem história". Deus não te chamou por acaso, Ele conhece cada capítulo da sua vida e quer usar sua história como luz.',
       inspiration: 'Minha história é um testemunho de...'
     },
     {
@@ -223,7 +227,7 @@ Abre agora teus ouvidos, tua boca para falar. O Espírito Divino está aqui para
 Qual é o seu legado? O que irá deixar? Faça como Maria, pare para escutar.
 O Senhor está chamando, não há por que temer. Ansiedade e tristeza, Ele pode dissolver.
 Qual tem sido a escolha? Onde você está? Ouvindo a voz de Cristo, sua casa irá mudar.`,
-      reflection: 'Não levaremos bens materiais, mas levaremos o amor que demos.',
+      reflection: 'Não levaremos bens materiais, mas levaremos o amor que demos. Nossa casa muda quando nossa audição espiritual muda.',
       inspiration: 'Eu escolho deixar marcas de...'
     },
     {
@@ -235,7 +239,7 @@ Acredite que irá colher o fruto; esforce-se para se alimentar do fruto que ter�
 Existe o tempo certo para a semente germinar; Deus lhe deu a vida para cuidar.
 Sua palavra poderosa completará em você; Deus não faz nada pela metade, Ele te ajudará.
 Aquilo que veio para destruir é uma ponte para te conectar. Não o rejeite, pois o Senhor veio para te curar.`,
-      reflection: '"Aquilo que veio para destruir é uma ponte para te conectar". Transformar a crise em altar.',
+      reflection: '"Aquilo que veio para destruir é uma ponte para te conectar". Deus tem o poder de transformar a maior crise em um altar de adoração.',
       inspiration: 'Minha dor se torna ponte quando...'
     },
     {
@@ -248,7 +252,7 @@ Viva agora, no presente, Sinta o sopro do ar, Esse sopro é divino, é o Senhor 
 O ser que habita em ti, Só floresce com amor. Depende do teu cuidado, Do reconhecimento do teu valor.
 Deus é contigo, sempre será, Essa verdade não se apagará. Mas para viver em paz, com sucesso, Uma coisa só te peço:
 Nunca se esqueça de você, Pois é o amor próprio que te faz florescer.`,
-      reflection: 'Amar ao próximo como a si mesmo. Se você não se ama, não reconhece o valor da obra que Deus criou: você.',
+      reflection: 'Amar ao próximo como a si mesmo. Se você não se ama, não reconhece o valor da obra que Deus criou: você. O cuidado com a mente é uma forma de honrar ao Criador.',
       inspiration: 'Eu me amo porque Deus...'
     },
     {
@@ -260,7 +264,7 @@ Não se prenda mais ao erro, tira a dúvida do coração. Se volte para Mim, na 
 Eu sei das tuas fraquezas, também das limitações. Estou sempre preparado para te libertar das prisões.
 O centro da tua vida, o sentido e a razão, não se perca com pessoas que te levam à depressão.
 Sou o Deus da misericórdia, e também da compaixão. Mais uma vez Eu te falo: Saia já desta prisão!`,
-      reflection: 'Deus não olha para o seu erro, Ele olha para a sua volta.',
+      reflection: 'Deus não olha para o seu erro, Ele olha para a sua volta. Ele te amou antes mesmo de você existir. Saia da prisão do passado.',
       inspiration: 'Eu volto para casa e deixo para trás...'
     },
     {
@@ -274,7 +278,7 @@ Ajudando-me a me entender, E meu coração, a aquecer.
 Após essa expressão, Eu abro meu coração, E o Senhor vem transformar,
 Minhas emoções equilibrar, Minha visão aprimorar,
 Para que eu possa enxergar Tudo o que preciso mudar.`,
-      reflection: 'A graça de Deus não é um evento único, é um "recarregar" diário. Ela equilibra as emoções e aprimora a visão.',
+      reflection: 'A graça de Deus não é um evento único, é um "recarregar" diário. Ela equilibra as emoções e aprimora a visão para vermos o que precisa mudar.',
       inspiration: 'Tua graça me alcança e equilibra meu...'
     },
     {
@@ -287,7 +291,7 @@ Reflexione comigo: Por que devo fazer isso? O pensamento liberta.
 Até quando vai permanecer preso sem pensar? Se alguém é aprisionado, é porque não refletiu.
 O pensamento que faz refletir te leva a relaxar E a resolver o que antes parecia impossível,
 Mantendo seus pensamentos alinhados E intensificando sua alegria.`,
-      reflection: 'A liberdade começa no pensamento. Dizer "no" aos outros pode ser dizer "sim" para a sua paz.',
+      reflection: 'A liberdade começa no pensamento. Dizer "não" aos outros pode ser dizer "sim" para a sua paz e para a vontade de Deus.',
       inspiration: 'Eu liberto minha mente e escolho...'
     },
     {
@@ -300,7 +304,7 @@ Parei com tudo o que atrapalha, faço o que deve ser feito.
 Pensava que tinha que ser perfeito, parei de me preocupar.
 O certo só é certo porque nunca foi errado. Pare de ficar parado achando que vai acertar.
 Parei de olhar o que não era para ser meu. Sei que o culpado sou eu, mas não vou me preocupar.`,
-      reflection: 'A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito".',
+      reflection: 'A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito". O medo se alimenta da nossa inércia.',
       inspiration: 'O medo não me para mais, eu avanço para...'
     },
     {
@@ -312,7 +316,7 @@ O tempo de Deus é perfeito, você tem que acreditar, Ele está te chamando, vem
 O tempo é como um anjo que traz a você, Alegria, emoções, e inteligência para perceber.
 São apenas 24 horas que Deus te dá, Para refletir, mudar e se transformar.
 Parado não dá pra ficar, uma hora o tempo chega, E o que ficará depois que ele for?`,
-      reflection: 'O tempo é um recurso não renovável que Deus nos dá diariamente.',
+      reflection: 'O tempo é um recurso não renovável que Deus nos dá diariamente. Como gastei minhas últimas 24 horas? Construindo ou destruindo? Se o tempo "chegasse" hoje, o que eu apresentaria a Deus?',
       inspiration: 'Meu tempo é agora e eu o dedico a...'
     },
     {
@@ -324,18 +328,17 @@ Vamos fechar as portas daquela sua prisão, Que estava suja e imunda dentro do s
 Rancor, ódio e medo, tudo isso vai mudar, Se teu coração se abrir e a prática colocar.
 Lembre daquele espelho que você tanto olhou, Enxergando sua imagem e muito se recordou.
 Como é bom perceber que não é outra pessoa, Não se entrega facilmente, luta com unhas e dentes.`,
-      reflection: 'O espelho reflete o corpo, mas Deus vê o coração. A "prisão" interna (rancor, ódio) distorce nossa imagem.',
+      reflection: 'O espelho reflete o corpo, mas Deus vê o coração. A "prisão" interna (rancor, ódio) distorce nossa imagem. Eu gosto de quem eu vejo no espelho ou vejo apenas meus erros? Qual porta da "prisão interna" eu fecho hoje?',
       inspiration: 'No espelho da graça, eu vejo um filho que...'
     },
     {
       id: 'p1-20',
       title: 'O Chamado de Mateus',
-      text: `Depois que Jesus saiu e viu alguém no balcão,
-O nome dele era Mateus, também chamado de ladrão.
+      text: `Depois que Jesus saiu e viu alguém no balcão, O nome dele era Mateus, também chamado de ladrão.
 Ele estava no posto de arrecadação, Jesus parou, fitou os olhos e chamou sua atenção.
 "Segue-me agora", e Levi se levantou, Ele não pediu tempo, logo o acompanhou.
 "Não os que têm saúde precisam de doutor, Mas sim os pecadores", respondeu o meu Senhor.`,
-      reflection: 'Jesus chamou Mateus no seu local de trabalho, no meio de sua rotina e de seus erros.',
+      reflection: 'Jesus chamou Mateus no seu local de trabalho, no meio de sua rotina e de seus erros. Sinto que preciso estar "pronto" para ser chamado, ou aceito que Jesus me chama como estou? Qual é o meu "balcão" que preciso deixar para seguir a Jesus?',
       inspiration: 'Eu me levanto do meu balcão e...'
     },
     {
@@ -343,11 +346,10 @@ Ele estava no posto de arrecadação, Jesus parou, fitou os olhos e chamou sua a
       title: 'Transformação e Chamado',
       text: `Eis que faço novas todas as coisas, nosso canto, nossa vida precisa se transformar em canção.
 Deus transforma em meu coração, temos um deserto a atravessar.
-Jesus está vivo em Sua plena glória, com o canto da vitória, Sua graça neste dia ecoa,
-nos tirando desta vida velha, uma vida extraordinária Ele nos dá.
+Jesus está vivo em Sua plena glória, com o canto da vitória, Sua graça neste dia ecoa, nos tirando desta vida velha, uma vida extraordinária Ele nos dá.
 Retoma teu caminho, faz melhor do que já fizeste, volta para teu Senhor, faz novo outra vez.
 Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha história vai mudar.`,
-      reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo.',
+      reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo. Estou vivendo a vida extraordinária que Ele preparou ou a vida velha? O que eu posso fazer "melhor do que já fiz" para Deus hoje?',
       inspiration: 'Hoje é um novo dia e eu decido...'
     }
   ],
@@ -357,7 +359,7 @@ Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha histó
       title: 'Nunca Pare de Lutar',
       text: `Alguém me tocou... Senti uma força sair,
 Manifestei minha Palavra — a mulher hemorroísa foi curada por não desistir.
-Encontrei-me com Jesus agora posso me salvar, é sair do mundo interno e do pecado se libertar.
+Encontrei-me with Jesus agora posso me salvar, é sair do mundo interno e do pecado se libertar.
 Deus nos escolheu, neste mundo nos colocou, preparou em nossa mãe, que com amor nos cuidou.
 Por amor à humanidade, Jesus morreu e ressuscitou.
 Não duvide pois a Graça se entregue em oração, Ele já manifestou!
@@ -371,7 +373,7 @@ A justiça de Deus não falha — tome cuidado, podes crer!
 Nunca perca a esperança, guarde Jesus no coração.
 Pare de reclamar agora, busque firme a salvação.
 Faça como a mulher que tocou no Salvador, nunca pare de lutar com fé e com fervor.`,
-      reflection: 'A mulher hemorroísa teve que romper uma multidão para tocar em Jesus. Às vezes, a "multidão" são nossos próprios pensamentos de desânimo ou a opinião alheia.',
+      reflection: 'A mulher hemorroísa teve que romper uma multidão para tocar em Jesus. Às vezes, a "multidão" são nossos próprios pensamentos de desânimo ou a opinião alheia. Qual é a "multidão" que está me impedindo de tocar em Jesus hoje? Em qual área da minha vida eu parei de lutar e me acomodei com a "doença"?',
       inspiration: 'Eu rompo a multidão do medo e toco em...'
     },
     {
@@ -391,7 +393,7 @@ A coragem vem do alto, pede agora, Ele te dá.
 Mesmo em meio às provações, nunca deixe de adorar.
 Cristo é a verdade viva, veio ao mundo pra salvar.
 Quem Nele crê e O segue, nunca mais irá tombar.`,
-      reflection: 'Deus já abriu a porta, mas a decisão de entrar é nossa. O "fogo" do Espírito queima o pecado, mas precisamos lançá-lo no fogo através da confissão.',
+      reflection: 'Deus já abriu a porta, mas a decisão de entrar é nossa. O "fogo" do Espírito queima o pecado, mas precisamos lançá-lo no fogo através da confissão. O que eu preciso "lançar no fogo" hoje para me sentir livre? Tenho mantido a porta do meu coração aberta ou trancada por mágoas?',
       inspiration: 'Diante da porta aberta, eu deixo para trás...'
     },
     {
@@ -410,8 +412,10 @@ A sujeira na sua mente você terá que limpar; arrependa-se do pecado se quiser 
 O perdão é exercício, essa faxina é pra deixar o cômodo da sua casa para o Senhor habitar.
 Ele está na porta batendo, filho, eu vim conversar; já tomou o seu remédio? Eu trouxe pra te curar.
 A sujeira dos seus olhos você vai ter que tirar; para enxergar o céu, o perdão terá que liberar.
-Com a veste nupcial, com a santidade vai lavar a sujeira da sua vida, pra no Céu poder entrar.`,
-      reflection: 'Esta poesia fala de uma "faxina" na alma. Não adianta convidar o Rei para entrar se a casa está suja.',
+Com a veste nupcial, com a santidade vai lavar a sujeira da sua vida, pra no Céu poder entrar.
+Gratidão ao meu Senhor por você estar aqui; irmão, ouça a Palavra — Jesus virá em glória, te convida pra servir.
+Finalizo esta poesia: é mensagem do Senhor. Jesus Cristo é o remédio, Ele é teu Salvador.`,
+      reflection: 'Esta poesia fala de uma "faxina" na alma. Não adianta convidar o Rei para entrar se a casa (mente) está suja com mágoas e orgulho. Que "veste velha" (hábito ou vício) eu ainda insisto em usar? Qual cômodo da minha alma precisa de uma faxina urgente hoje?',
       inspiration: 'Senhor, eu troco a veste de tristeza por...'
     },
     {
@@ -422,8 +426,9 @@ Você pode conhecer Jesus e nada na sua vida mudar, pois tudo depende de você, 
 Deus sustenta sua vida através da oração, permaneça em Sua graça, Ele cuida do seu coração.
 O Senhor está revelando, chamando a sua atenção. Esteja aberta à Sua palavra, coloque-a em ação.
 Se tu conheceres Jesus e ouvir Sua voz a falar, acolhe Sua palavra e a pratique sem hesitar.
-Através do Seu Espírito, Ele vem para revelar, curar o seu coração e fazer a vida transformar.`,
-      reflection: '"Tudo depende de você". Deus já deu a graça, agora Ele espera a nossa ação.',
+Através do Seu Espírito, Ele vem para revelar, curar o seu coração e fazer a vida transformar.
+Jesus sempre está presente, Ele vem para cuidar, está te incomodando, Deus te abençoe a caminhar.`,
+      reflection: '"Tudo depende de você". Deus já deu a graça, agora Ele espera a nossa ação. Conhecer a Bíblia não muda a vida; o que muda é praticar o que se conhece. Tenho esperado Deus fazer a minha parte? Qual pequena atitude prática eu posso tomar hoje para mudar minha vida?',
       inspiration: 'Não espero mais pelo amanhã, hoje eu decido...'
     },
     {
@@ -433,7 +438,7 @@ Através do Seu Espírito, Ele vem para revelar, curar o seu coração e fazer a
 Deus estava sempre com ele, Fortalecendo sua fé. Hoje é o dia da graça — Levante-se! Fique de pé!
 Não fique aí na tristeza — Ela também é tentação. Paulo escreveu com firmeza, nos Chamando à conversão.
 Nunca perca a esperança, Esteja firme em oração. O Senhor é tua fortaleza, Teu refúgio e salvação.`,
-      reflection: 'A tristeza excessiva pode ser uma tentação para nos paralisar. Jó perdeu tudo, mas não perdeu a Deus.',
+      reflection: 'A tristeza excessiva pode ser uma tentação para nos paralisar. Jó perdeu tudo, mas não perdeu a Deus, e isso foi o suficiente para ele se reerguer. A tristeza tem sido um lugar de morada ou apenas de passagem na minha vida? Como posso louvar a Deus mesmo em meio às minhas perdas atuais?',
       inspiration: 'Mesmo que tudo pareça difícil, eu me levanto e...'
     }
   ],
@@ -455,7 +460,7 @@ Quem conhece essa graça deseja compartilhar,
 O Espírito que desce vem pra te transformar.
 Deixe o óleo descer, deixe a cura acontecer,
 Pois o toque do Senhor faz a alma renascer.`,
-      reflection: 'Muitas vezes queremos uma cura imediata, mas o texto diz: "no Seu tempo vai curar". O processo de cicatrização exige que deixemos o "óleo" agir.',
+      reflection: 'Muitas vezes queremos uma cura imediata, mas o texto diz: "no Seu tempo vai curar". O processo de cicatrização exige que deixemos o "óleo" (o Espírito Santo) agir sem ficarmos tocando na ferida com incredulidade. Qual ferida emocional eu tenho impedido de cicatrizar por ficar remoendo o passado? Estou disposto a esperar o tempo de Deus para a minha restauração completa?',
       inspiration: 'Senhor, onde dói em mim, eu peço que Teu óleo...'
     },
     {
@@ -469,7 +474,7 @@ A mulher já padecia, doze anos a sofrer, Buscou ajuda dos homens, mas não pôd
 Aproximou-se de Cristo, cheia de esperança, Tocou a orla do manto e recebeu a mudança.
 A fé é fundamento, é a base do cristão, Então creia, meu irmão, com todo o coração.
 Jesus está tocando, basta n’Ele confiar, Pois Seu poder divino veio hoje pra te curar.`,
-      reflection: 'Bartimeu precisou jogar fora sua capa (sua velha identidade de mendigo) para ir até Jesus.',
+      reflection: 'Bartimeu precisou jogar fora sua capa (sua velha identidade de mendigo) para ir até Jesus. A mulher hemorroísa precisou vencer a vergonha para tocar no manto. A fé exige movimento. Qual "capa" velha eu preciso jogar fora hoje para correr até Jesus? Tenho buscado ajuda apenas "nos homens" ou já toquei na orla de Jesus com fé?',
       inspiration: 'Jesus, Filho de Davi, olha para a minha...'
     },
     {
@@ -483,12 +488,12 @@ Ao chegar em Samaria, Ele foi ver Eliseu, Que mandou ir se lavar — Naamã se i
 Ao ouvir a voz do servo, Naamã obedeceu, Desceu na água sete vezes — A lepra desapareceu.
 A Palavra do Senhor Sua vida quer transformar, Ele age nesta vida E te chama a caminhar.
 Obedeça à voz de Deus, Se aproxime pra ouvir, Ele cura e restaura, Te chama para servir.`,
-      reflection: 'Naamã quase perdeu a cura por orgulho, pois achou o pedido de Eliseu muito simples.',
+      reflection: 'Naamã quase perdeu a cura por orgulho, pois achou o pedido de Eliseu (lavar-se no rio Jordão) muito simples e humilhante para um general. Às vezes, a cura está na obediência às coisas simples. O que Deus está me pedindo hoje que parece "simples demais", mas exige minha humildade? O meu orgulho ou status tem me impedido de "descer às águas" da cura?',
       inspiration: 'Mergulho minhas dúvidas nas águas da obediência e...'
     },
     {
       id: 'p3-4',
-      title: 'Transformação - Um Processo Necessário',
+      title: 'Transformação — Um Processo Necessário',
       text: `Para que haja transformação, o ser precisa passar por moldação.
 Lembra da borboleta no casulo apertado? Ali, em silêncio, está sendo transformado.
 Sofre dores que precisa enfrentar, mas logo, em asas, poderá voar.
@@ -503,7 +508,7 @@ Cada transformação exige aceitação, abrir mão do ego, da própria razão.
 Se queremos ser moldados, renovados, devemos aceitar ser quebrados.
 Seremos amassados, queimados, purificados, até que sejamos transformados.
 O artista é Deus, com mãos de criação, visualiza em nós Sua inspiração.`,
-      reflection: '"Se queremos ser moldados... devemos aceitar ser quebrados". Não existe transformação sem o "fogo".',
+      reflection: '"Se queremos ser moldados... devemos aceitar ser quebrados". Não existe transformação sem o "fogo" ou sem o "amassar" do barro. A dor não é punição, é preparação. Estou fugindo do processo de Deus ou aceito ser moldado pelo Oleiro? Qual parte do meu ego precisa ser quebrada para que o "vaso novo" apareça?',
       inspiration: 'Aceito o fogo, aceito o processo, pois quero ser...'
     },
     {
@@ -516,7 +521,7 @@ Hoje, estou trabalhando, restaurando tua memória, Colorindo tua vida, reescreve
 Estou cuidando de você... puxe a âncora, vá em frente! Tua barca vai levar minha mensagem e curar muita gente.
 O Senhor está restaurando o leme do teu barco, No mar da tua vida, Eu te pego no teu abraço.
 Agradeço ao Senhor por tudo que Ele já fez, O Espírito renova tua vida mais uma vez.`,
-      reflection: '"O Senhor está restaurando o leme do teu barco". Deus quer devolver a direção da sua vida.',
+      reflection: '"O Senhor está restaurando o leme do teu barco". Deus não quer apenas curar sua dor, Ele quer devolver a direção da sua vida para que você navegue com propósito. Para onde minha vida estava indo sem o leme? E para onde Deus quer me levar agora? Deus quer restaurar as boas memórias. O que preciso relembrar hoje para ter esperança?',
       inspiration: 'Puxo a âncora do medo e navego para...'
     },
     {
@@ -526,8 +531,9 @@ Agradeço ao Senhor por tudo que Ele já fez, O Espírito renova tua vida mais u
 Assim diz o Senhor, que vem sarar todas as feridas, Pois em Deus reside o amor, Que é puro e o princípio da vida.
 Não busque apenas a cura física, Mas procure Aquele que é a fonte da vida.
 O Senhor te oferece a verdadeira felicidade Para que possas ser salvo e viver plenamente.
-Ele ouve mesmo quando não consegues expressar em palavras, Ele guia teu coração para que não tropeces em Sua presença.`,
-      reflection: '"Ele ouve mesmo quando não consegues expressar em palavras". Às vezes, nossa oração é apenas um gemido.',
+Ele ouve mesmo quando não consegues expressar em palavras, Ele guia teu coração para que não tropeces em Sua presença.
+Pergunte ao Senhor celestial qual é o sinal do coração. Pois Deus te fez à Sua imagem e semelhança.`,
+      reflection: '"Ele ouve mesmo quando não consegues expressar em palavras". Às vezes, nossa oração é apenas um gemido ou uma lágrima, e Deus entende perfeitamente essa linguagem. Qual dor eu não consigo colocar em palavras hoje, mas preciso que Deus ouça? Estou buscando apenas o alívio físico ou a "Fonte da Vida"?',
       inspiration: 'Meu grito silencioso pede...'
     },
     {
@@ -538,8 +544,10 @@ O Senhor procura o coração verdadeiro, Viva em Cristo todo dia, seja o primeir
 Arrependei-vos das mentiras do passado, O Senhor perdoa e está sempre ao seu lado.
 Ele me envia para anunciar Sua palavra, Para restaurar o coração, a nossa vida lavar.
 Deus conhece a sua vida, está sempre ao seu lado, Envia Seu Espírito para te manter ao lado.
-Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele te iluminará.`,
-      reflection: 'O convite é íntimo: "Fica aqui na minha casa". A cura acontece quando convidamos o Espírito para morar.',
+Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele te iluminará.
+O Espírito Divino desceu e aqui agiu, Com línguas de fogo, em nós repousou e sorriu.
+Beba água da vida que o Senhor te dá, Toda árvore precisa plantar para frutificar.`,
+      reflection: 'O convite é íntimo: "Fica aqui na minha casa". A cura acontece quando convidamos o Espírito não para uma visita, mas para morar e limpar as feridas diariamente. Minha casa interior está limpa para receber o Espírito ou há "mentiras do passado" ocupando espaço? Tenho bebido da Água da Vida ou de cisternas vazias?',
       inspiration: 'Espírito da Vida, entra na minha casa e...'
     },
     {
@@ -549,8 +557,11 @@ Você nunca está sozinho, o anjo te acordará, Para os caminhos do Senhor, Ele 
 Não espere por ninguém, o Espírito está a soprar, Ele traz água viva para te transformar.
 Não deixe o medo te paralisar, Abra teu coração, deixe o amor te alcançar.
 O Espírito do Senhor geme em teu interior, Recebe o fogo abrasador, divino e restaurador.
-Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.`,
-      reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior.',
+Quando parecer que não podes prosseguir, Lembre-se que o Senhor está a te acolher.
+Ele deseja encher-te de alegria e amor, E te oferece descanso em Seu Salvador.
+Tua casa e tua família Ele deseja restaurar, Pelo poder do Seu amor que não cessará.
+Aceite Seu jugo, suave e leve ao coração, Nele encontramos alívio, descanso e direção.`,
+      reflection: 'Muitas vezes, a cura da família começa na nossa própria cura interior. "Tua casa e tua família Ele deseja restaurar". Qual área da minha família precisa de restauração hoje? O medo tem me paralisado ou a gratidão tem me movido?',
       inspiration: 'Eu louvo pela minha família e peço...'
     }
   ],
@@ -575,7 +586,7 @@ Sem a graça não és nada, Ele quer te encorajar,
 Te dá força e coragem Para não desanimar.
 Deixe o Espírito adentrar Aí no seu coração.
 Receba os dons nesta hora E coloque em ação.`,
-      reflection: '"Sem a graça não és nada". Muitas vezes tentamos fazer a obra de Deus apenas com nossas forças humanas e nos cansamos. O Espírito Santo é o combustível.',
+      reflection: '"Sem a graça não és nada". Muitas vezes tentamos fazer a obra de Deus apenas com nossas forças humanas e nos cansamos. O Espírito Santo é o combustível para a missão e o remédio para o desânimo.',
       inspiration: 'Espírito Santo, sopra sobre o meu medo e...'
     },
     {
@@ -589,7 +600,7 @@ Acalme seu coração, toda manhã, por favor,
 pare agora, sinta o ar, comece a orar com o Senhor.
 Pois renovo em você, sua paz e alegria,
 então, só assim vai perceber, a paz em expansão.`,
-      reflection: 'A ansiedade tem roubado nosso fôlego. O exercício proposto é fisiológico e espiritual: sentir o ar.',
+      reflection: 'A ansiedade tem roubado nosso fôlego. O exercício proposto é fisiológico e espiritual: sentir o ar e reconhecer nele a presença renovadora do Espírito. A paz de Cristo é contagiosa ("em expansão").',
       inspiration: 'Eu inspiro a Tua paz e expiro a minha...'
     },
     {
@@ -604,8 +615,9 @@ Com o fogo do Espírito, não se deixe apagar, Pois é com poder e serviço que 
 Não seja imprudente, leve o óleo da compaixão, O óleo do amor, da fé e também o do perdão.
 Acredite no Senhor, o Noivo está a chegar, A festa se aproxima — só os prontos vão entrar.
 Nesta noite santa, você pode escutar, Conhecer melhor o Senhor, se preparar para entrar.
-O banquete está posto, Ele é teu Salvador, Se quiser sair da escuridão, leve o óleo do amor.`,
-      reflection: 'A parábola das virgens prudentes nos lembra que o óleo não pode ser emprestado. A intimidade é intransferível.',
+O banquete está posto, Ele é teu Salvador, Se quiser sair da escuridão, leve o óleo do amor.
+Tenha sempre consciência: o Céu foi feito pra você.`,
+      reflection: 'A parábola das virgens prudentes nos lembra que o óleo não pode ser emprestado. A intimidade com Deus é intransferível. Minha lâmpada está acesa ou apenas fumegando? O que é o "óleo" que preciso repor urgentemente hoje? (Paciência, perdão, oração?)',
       inspiration: 'Senhor, enche minha cumbuca vazia com...'
     },
     {
@@ -618,31 +630,48 @@ Usou com justiça o homem em missão, pra libertar o Seu povo e curar o coraçã
 É o Senhor sem rival, ninguém igual a Ti. À frente do homem, quem irá resistir?
 Acima de todos, a tudo formou — És o Soberano, o Deus Salvador.
 Usou o instrumento: a mim e a você. Confia n’Ele hoje, Ele é o teu Senhor.
-Voltai ao caminho, Ele vem te buscar. Com a graça do Espírito, Ela vai te salvar.`,
-      reflection: 'Deus está disponível: o Espírito de Deus. Amigo e companheiro, se entregue em oração.',
+Voltai ao caminho, Ele vem te buscar. Com a graça do Espírito, Ela vai te salvar.
+Faça a vontade, confie no Senhor, ouça a voz que fala: É Ele, o Redentor.
+Confie, irmãos, o Espírito está aqui, derramando Sua graça, te chamando a seguir.
+Espere o tempo, escute o Senhor. Tenha esperança, Ele age com amor.
+Persevere, obedeça, acolha com fé — É Ele quem restaura, te coloca em pé.
+Ele está disponível: o Espírito de Deus. Coloque o coração, Ele é santo, é teu Deus.
+Amigo e companheiro, se entregue em oração, te ajuda e liberta de toda escravidão.
+Adore o Senhor, teu Deus, saia já da servidão. Se coloque em vigilância, se coloque em oração.
+Alegrai o coração, deixe a idolatria! O Senhor é teu Deus, adore-O neste dia.
+Não vacile em sua fé, tenha força, venha ver. Não esqueça do Senhor, pra confiança permanecer.
+O nosso Deus é amor e também salvação. Todo tempo Ele age, nos livrando da prisão.
+A graça foi derramada, tome posse com a fé. No propósito de Deus, Ele coloca você de pé.
+A Palavra te sustenta, é viva e eficaz. Transforma tua vida, restaura tua paz.
+Ele é teu Salvador, tome posse do Senhor. Pra viver a liberdade, seja inteiro no amor.
+Agora que estás ouvindo, pare para escutar. O Senhor está falando, pronto pra te libertar.
+A poesia não acaba, começa a se manifestar: quando você confia, o Senhor vem todo dia Sua graça derramar.`,
+      reflection: '"A poesia não acaba, começa a se manifestar". A verdadeira adoração não acontece apenas na igreja, mas na vida diária. Quando você sai da oração, a poesia continua nas suas atitudes. Como posso transformar minha vida em uma poesia viva do Espírito Santo? Qual "idolatria" (apego excessivo a algo ou alguém) preciso deixar para adorar somente a Deus?',
       inspiration: 'Não sou mais escravo, sou amigo do Espírito e...'
     },
     {
       id: 'p4-5',
       title: 'Vivendo o Mesmo Carisma',
       text: `Vivendo o mesmo carisma, Além de se reunir, Dinâmico com o movimento, Com o Espírito Santo servir.
-Sou profeta, corrente de graça, A moção do carisma anunciar. O grupo de oração é momento de celebrar.
+Sou profeta, corrente de graça, A moção do carisma anunciar.
+O grupo de oração é momento De celebrar, com o Espírito Santo celebrar.
 O rei Davi separou os levitas, Quatro mil, para o Senhor louvar.
 Foram duzentos e oitenta e oito escolhidos Também para tocar e cantar.
-Meus irmãos, na manhã deste dia, Ao Senhor quero agradecer, Pela graça que foi derramada.`,
-      reflection: 'O carisma não é para ficar guardado, é para servir.',
+Meus irmãos, na manhã deste dia, Ao Senhor quero agradecer, Pela graça que foi derramada, Nunca mais irei esquecer.`,
+      reflection: 'O carisma não é para ficar guardado, é para servir. Davi separou milhares apenas para o louvor, mostrando a importância de se dedicar a Deus com excelência. Eu vivo o carisma apenas "reunido" (na igreja) ou sou "dinâmico" no movimento (na vida)? Tenho usado meus dons para servir, como os levitas de Davi, ou estou escondendo o talento?',
       inspiration: 'Eu renovo meu carisma e me ofereço para…'
     },
     {
       id: 'p4-6',
       title: 'Renovação Espiritual (Nicodemos)',
       text: `Seja um homem novo, é hora de nascer, da água e do Espírito, Jesus trouxe, vem beber.
-Nicodemos foi falar: com Jesus conversar, o mestre o ensinou a verdade:
-"Quem não nascer do Espírito, o Reino de Deus não verá".
+Nicodemos foi falar: com Jesus conversar, o mestre o ensinou a verdade e eu vos digo: "Quem não nascer do Espírito, o Reino de Deus não verá".
+Como pode um homem velho no ventre materno voltar? Não dá para nascer outra vez, o Senhor pode explicar?
 Eu te digo em verdade, é preciso renascer da água e do Espírito.
 Quem nascer da carne é carne, sempre será um canal, mas quem nascer do Espírito, esse é espiritual.
-De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua de fogo apareceu.`,
-      reflection: 'Nicodemos tinha conhecimento, mas não tinha vida nova. O batismo no Espírito é um "nascer de novo".',
+De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua de fogo apareceu.
+Muita alegria, eu te peço, desce divina luz. Teu nome é lindo, vou seguir a Ti, Jesus.`,
+      reflection: 'Nicodemos tinha conhecimento, mas não tinha vida nova. O batismo no Espírito não é uma teoria, é um "nascer de novo". Eu nasci apenas da carne ou já experimentei o nascimento no Espírito? O que precisa "nascer de novo" em mim? (Minha esperança? Minha alegria?)',
       inspiration: 'Eu quero nascer de novo para...'
     },
     {
@@ -652,8 +681,11 @@ De repente o céu abriu, o Espírito desceu, estava no quarto de cima, a língua
 Com Jesus ao meu lado, alinhado com Sua vontade, Nada me angustia, estou em Sua fidelidade.
 O Espírito Divino me batiza e guia, Conduzindo-me com sabedoria, dia após dia.
 Vinde, Espírito Santo, ajuda-me a louvar, Entregando minha vida a Jesus, meu Salvador.
-Agradeço por transformar minha vida, A luz do Espírito abre portas com força viva.`,
-      reflection: '"O Espírito Divino me batiza e guia". O batismo é uma experiência de guia diária.',
+Agradeço por transformar minha vida, A luz do Espírito abre portas com força viva.
+Tu és o centro que alinha minha vida, Caminho ao Teu lado, buscando cura e saída.
+O sopro do Espírito preenche este lugar, Guiando tua vida para a cura alcançar.
+Renovando tua confiança para a libertação, Ele te resgata com graça e salvação.`,
+      reflection: '"O Espírito Divino me batiza e guia". O batismo não é algo que aconteceu apenas no passado; é uma experiência de guia diária. Tenho permitido que o Espírito me guie nas pequenas decisões do dia a dia? Minha vida está "alinhada" com a vontade Dele?',
       inspiration: 'Espírito Santo, alinha meus passos com...'
     },
     {
@@ -663,8 +695,10 @@ Agradeço por transformar minha vida, A luz do Espírito abre portas com força 
 Tu és soberano, nosso Deus e Salvador, Por meio do Seu Espírito, sinto agora Teu amor.
 Não desperdice teu tempo com o que não traz luz, Busca compreender ouvindo a voz de Jesus.
 Recita diariamente, salmodia para Deus, Nos cantos de louvor, oferece graças espirituais.
-A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.`,
-      reflection: '"Seja um missionário em teu próprio lar". A primeira missão é dentro de casa.',
+A palavra do Senhor restaura tua família e tua casa, Reconstruindo tua morada, e tudo se refaz.
+Aquele que é sábio ouve a palavra anunciada, E constrói sua vida sobre a rocha firme, a fé é sua estrada.
+Seja um missionário em teu próprio lar, Atento à voz do Senhor, deixa o coração se aquecer, Pelo fogo do Espírito Santo, o verdadeiro libertador.`,
+      reflection: '"Seja um missionário em teu próprio lar". A primeira missão do cheio do Espírito é dentro de casa. Meu lar tem sido um lugar de louvor ou de reclamação? Estou desperdiçando tempo com o que "não traz luz"?',
       inspiration: 'Minha casa servirá ao Senhor e eu...'
     }
   ],
@@ -684,7 +718,7 @@ Não espere mais um dia, na escuridão, faça brilhar.
 Uma luz rompeu as trevas, Cristo veio pra salvar.
 Vigia tua conduta, o Senhor logo virá.
 Sua vinda é gloriosa, Ele vem para separar.`,
-      reflection: '"O tempo ainda não acabou". O que eu preciso consertar na minha "lâmpada" antes que o Senhor venha?',
+      reflection: '"O tempo ainda não acabou". O que eu preciso consertar na minha "lâmpada" antes que o Senhor venha? Estou vivendo como quem espera alguém importante chegar? O que preciso consertar hoje para minha luz brilhar mais forte?',
       inspiration: 'Enquanto espero a Tua volta, eu mantenho minha chama...'
     },
     {
@@ -696,8 +730,11 @@ Ele cuida das ovelhas, está aqui pra te ajudar, Esteja pronto em oração, é t
 O Senhor já proclamou no momento de oração: "O novo estou fazendo, entre agora em ação."
 Até quando ficará sem tomar a decisão? Lembra-se da palavra dita na pregação?
 Persevere, meu irmão, fique firme no Senhor, Não desista nem desanime, Deus te cerca de amor.
-Hoje ressoa a verdade, a palavra do Senhor, Cristo é a vida eterna, teu único Salvador.`,
-      reflection: '"O novo estou fazendo, entre agora em ação". Deus não quer apenas que eu espere sentado.',
+Hoje ressoa a verdade, a palavra do Senhor, Cristo é a vida eterna, teu único Salvador.
+Acredite, tenha fé, o fogo já abrasou, É a graça de Deus Pai, que aqui se derramou.
+Desapegue deste mundo, ouça a voz do Pastor, Alimente-se da Palavra, viva forte esse amor.
+O Senhor está chamando, inflamando o coração, Nesta noite, Ele espera por ti na oração.`,
+      reflection: '"O novo estou fazendo, entre agora em ação". Deus não quer apenas que eu espere sentado, mas que eu aja. Qual é a minha ação para o Reino hoje? Tenho medo do Juízo ou esperança no encontro com o Pastor?',
       inspiration: 'Não temo o trono, pois conheço o Pastor. Hoje eu decido...'
     },
     {
@@ -711,8 +748,19 @@ A vida do meu Senhor, teu Filho Jesus Cristo, Que por nós se entregou — puro 
 Ao nome soberano, que está acima de todos, Jesus Cristo, amoroso, adoremos com corações abertos.
 Não há nome como este para se exaltar, Entregue-se ao Senhor, venha com fé adorar.
 Aquele que está no trono, glorioso e exaltado, Jesus Cristo, Rei amado, Está ao teu lado com o Espírito Consolador,
-Chamando-te com ternura, com poder e amor.`,
-      reflection: '"Mais do que a vida, eu preciso de ti". Ao lado de Maria, contemplo a vida de Jesus.',
+Chamando-te com ternura, com poder e amor.
+Neste dia Ele te fala: "É tempo de decidir." Se deseja segui-Lo, Ele vai te conduzir, A superar as dores e, um dia, no céu, ressurgir.
+Mais do que a vida, eu preciso de ti, Senhor, Que geras vida eterna e derramas amor.
+Reconheço: Tu és meu Salvador, Entrego minha vida sem resistência ou temor.
+Se você aqui chegou, escute com atenção: É Deus que está falando, sinta agora essa unção.
+Levanto minhas mãos em sincera adoração, E clamo: restaura, Senhor, o meu coração.
+Ao erguer minhas mãos, rendo-me em devoção. Quero habitar em ti — és minha direção.
+Ouça a voz que te chama, que insiste em falar: “Abre teu coração, deixa o Espírito te tocar.”
+Como Jó, que caiu, mas foi levantado, Toda depressão se dissolva, todo vício seja quebrado.
+O amor de Deus cura, transforma e vai libertar, A tua alma o Senhor hoje vem resgatar.
+Louvo a ti, ó Deus, abre-me a visão. Deixa tua água lavar minha emoção.
+Entrego-me agora, de corpo e alma, Tua presença é vida, é consolo, é calma.`,
+      reflection: '"Mais do que a vida, eu preciso de ti". Essa frase é forte. Eu realmente sinto que preciso de Deus mais do que do ar que respiro? Ao lado de Maria, contemplo a vida de Jesus. Como posso ser mais "mariano" na minha entrega?',
       inspiration: 'Com Maria, eu digo \'sim\' e me entrego...'
     },
     {
@@ -722,7 +770,7 @@ Chamando-te com ternura, com poder e amor.`,
 Depois que Ele nascer, Morada irá fazer. Como disse na Palavra, Contigo irá viver.
 Eis que estou à porta e bato, O banquete preparei. Deixa Eu entrar em tua casa, E contigo cearei.
 Entre agora, meu Senhor, Eu preciso conversar. Sei que pode, nesta hora, Minha ferida curar.`,
-      reflection: 'O banquete já está pronto. Jesus está batendo. A única coisa que falta é eu girar a maçaneta.',
+      reflection: 'O banquete já está pronto. Jesus está batendo. A única coisa que falta é eu girar a maçaneta. Vou deixá-Lo na sala de visitas ou vou convidá-Lo para a mesa da minha vida?',
       inspiration: 'A porta está destrancada, Senhor. Entra e ceia com...'
     },
     {
@@ -735,8 +783,18 @@ A solução é Jesus Cristo, Ele veio te dizer.
 O mundo quer te oprimir, mas Deus traz para você:
 Tenha ânimo e esperança, a palavra que foi pregada é para você viver.
 Sua história, sua vida, Deus não esquece de você.
-Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida.`,
-      reflection: '"Já está concluída". A obra de Deus em mim não é um "talvez", é um fato consumado na Cruz.',
+Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida, acredite no poder.
+Deus é Deus e te abençoa, não tenha medo, apenas crê.
+Tire a angústia e esse medo, a ansiedade controlar; irmão, tenha coragem, o Senhor veio te dar.
+Nesta noite, a esperança não vá embora sem pegar.
+Na escuridão a alma fica presa sem saber onde está o candeeiro para sua luz acender.
+Vá com medo mesmo, não se entregue, meu irmão; Jesus é a notícia que nasce no coração.
+A porta foi aberta, se prepare pra sair deste mundo tenebroso e o Pastor Jesus seguir.
+Ele mostra a direção por onde tem que passar; mesmo se tiver doente, Ele vai te ajudar.
+Ele cura a ferida e é pro redil Ele trará.
+Acalma sua vida, não tem que se preocupar; a palavra de agora foi lavrada pra te guiar.
+Termino essa mensagem com o propósito de te lembrar: a porta já está aberta, se levante para entrar.`,
+      reflection: '"Já está concluída". A obra de Deus em mim não é um "talvez", é um fato consumado na Cruz. Eu termino este livro saindo pela porta aberta?',
       inspiration: 'A obra está feita. Eu me levanto e entro...'
     },
     {
@@ -746,8 +804,11 @@ Teu clamor subiu ao céu, alegre venha viver; essa causa não tá perdida.`,
 Acabando com aquilo que antes me derrotou.
 Que Deus fale bem de você é o que desejo este ano, Esteja sempre ao seu lado, todo dia abençoando.
 Hoje recebi um livro em branco para escrever, A história da minha vida para um dia você ler.
-Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e Ele quer nos ensinar.`,
-      reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã.',
+Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e Ele quer nos ensinar
+Que depende de você, todo dia, algo fazer Para sua história mudar e o futuro florescer.
+Eu deixei lá no passado, resolvi as convicções Que me prenderam antigamente, pois agora,
+Na minha mente, vivo em paz com as emoções.`,
+      reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã. O que eu vou escrever na página em branco de hoje? Quais "convicções antigas" eu preciso deixar no ano que passou?',
       inspiration: 'Neste livro em branco, eu escrevo...'
     },
     {
@@ -757,8 +818,11 @@ Como é bom perceber que a alegria não se apaga, Pois em Deus nada se acaba e E
 É mais fácil amar quem está longe de você, Pois quem está perto ajuda a perceber.
 Que a vida não é fácil, é preciso aprender, Depois a caridade vem, e você se alegra.
 Seja forte e corajoso, o Senhor já te salvou, Um semeia, outro rega, para depois colher.
-A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.`,
-      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa.',
+A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.
+Na prateleira da vida, é preciso escolher, Tente arregaçar a mente para um dia florescer.
+Escolha assertiva a semente que plantou, Pois o que sai da sua boca desperta a motivação.
+Reveja a semente que planta no chão, Escolha com sabedoria a direção do coração.`,
+      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa. O que plantamos hoje (palavras, ações) nascerá amanhã. Quais sementes tenho plantado com a minha boca ultimamente? Tenho paciência para esperar o tempo da colheita?',
       inspiration: 'Eu planto sementes de esperança para...'
     },
     {
@@ -768,8 +832,11 @@ A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai apr
 Lutarei até o fim, pois Deus é quem manda, Em conexão com Ele, nossa fé se expanda.
 Lembro-me da conexão que fiz com o Senhor, E hoje novamente, buscarei Sua direção e amor.
 Ele está sempre ao meu lado, pronto a me socorrer, Ensinando-me a perseverar e vencer.
-Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não me sinto inseguro.`,
-      reflection: '"Sua recompensa está chegando, creia e espere". A caminhada de fé não é em vão.',
+Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não me sinto inseguro.
+Homem de pouca fé, Deus cuida de você, Sua recompensa está chegando, creia e espere.
+Deus sonhou com minha família, Ele tem um propósito, A prova é um caminho, uma oportunidade de crescimento.
+Plantando com fé, colherei os frutos no futuro, A caridade, o amor, são princípios puros.`,
+      reflection: '"Sua recompensa está chegando, creia e espere". A caminhada de fé não é em vão. Deus tem um sonho para sua família. Eu acredito que Deus tem um propósito para minha família, mesmo nas dificuldades? Como posso "lutar até o fim" sem perder a ternura?',
       inspiration: 'Eu caminho com fé em direção a...'
     },
     {
@@ -779,8 +846,11 @@ Na tempestade da vida, Ele é meu refúgio seguro, Confiando em Sua graça, não
 "Frater" significa irmão, cuidar um do outro, Assim como o Pai Nosso nos ensina a perdoar de coração.
 Mas o que é a caridade? É falar de amor, paciência e bondade,
 Devemos praticar essas virtudes com sinceridade, E finalizar com a ajuda de quem traz saudade.
-Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha acreditar.`,
-      reflection: 'A verdadeira fé leva ao desapego, como Abraão com Isaque.',
+Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha acreditar.
+Ame primeiro a Deus, depois a mim, a você, e então, ame o irmão.
+Conquiste a salvação, pois é assim que deve ser, Abraão é o pai da fé, pois ele se desapegou e sacrificou Isaque.
+Assim, Deus o provou e seu exemplo devemos reconhecer.`,
+      reflection: 'A verdadeira fé leva ao desapego, como Abraão com Isaque. E a verdadeira caridade leva ao cuidado com o irmão ("Frater"). O que é o "Isaque" (algo muito precioso) que Deus pode estar me pedindo para entregar? Tenho cuidado dos meus irmãos ou apenas de mim mesmo?',
       inspiration: 'Eu semeio fé para colher...'
     },
     {
@@ -790,8 +860,12 @@ Quando o perfeito vier, o imperfeito sumirá, Deus espera que você Nele venha a
 Abra o seu coração, deixe Deus nele entrar, No livro de Hebreus, o Senhor veio falar.
 Lembre-se daquele dia em que foste iluminado, A glória do Senhor está sempre ao seu lado.
 A luz de Deus entrou, acabou a escuridão, Não viva como escravo, o Senhor te dá a mão.
-Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.`,
-      reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança.',
+Nos momentos mais difíceis, a graça te fortalece, O Filho se sente amado, todo dia agradece.
+Perceba no caminho, não desista do Senhor, Pois o Pai te ama tanto, sente agora o Seu amor.
+O justo não justifica, ele é justificado, Ele tem convicção, o Senhor está ao seu lado.
+Jesus é a ponte para unir o homem a Deus, É a manifestação salvadora do Filho de Deus.
+Não somos de perder o ânimo para não nos arruinar, Mas mantemos a fé, pois o Senhor vem nos salvar.`,
+      reflection: '"Não somos de perder o ânimo". O cristão é, por definição, um ser de esperança. Fomos escolhidos não para o fracasso, mas para anunciar a Luz. Eu tenho vivido como um escolhido ou como um esquecido? Que anúncio minha vida está fazendo para o mundo hoje?',
       inspiration: 'Eu fui escolhido e anuncio que...'
     }
   ],
@@ -807,7 +881,7 @@ Identifique as "Palavras de Fogo" (Rhema).
 Geralmente aparecem quando o pregador altera o tom de voz ou repete a mesma ideia.
 Vença o medo da página em branco nos primeiros 5 minutos.
 Escreva dois versos simples. Não apague. Não risque. Deixe nascer.`,
-      reflection: 'A técnica é apenas o vaso; o Espírito Santo é a água. Use esse conhecimento não para se exaltar, mas para servir.',
+      reflection: 'A técnica é apenas o vaso; o Espírito Santo é a água. Use esse conhecimento não para se exaltar, mas para servir. Não espere entender o tema completo para começar.',
       inspiration: 'No próximo encontro, anote 3 Palavras de Fogo e escreva seus primeiros 2 versos.'
     },
     {
@@ -820,7 +894,7 @@ Não explique, mostre! Existe uma regra que diz: "Show, don't tell".
 Dificuldade = Tempestade, Deserto. Proteção = Abrigo, Escudo.
 Pecado = Sujeira, Lama. Graça = Chuva, Fogo, Óleo.
 Se isso fosse um filme, o que eu estaria vendo?`,
-      reflection: 'A poesia não fala a língua da explicação; ela fala a língua da imaginação.',
+      reflection: 'A poesia não fala a língua da explicação; ela fala a língua da imaginação. O Espírito Santo não apenas "explica"; Ele mostra.',
       inspiration: 'Treine ouvir uma frase longa e transformá-la em um verso curto e rimado instantaneamente.'
     },
     {
@@ -832,7 +906,7 @@ Entre em "Fluxo". Se uma rima não saiu perfeita, continue.
 Se travou numa linha, pule para a próxima. O importante é não parar a caneta.
 A perfeição vem da unção, não da correção.
 Muitas vezes, a frase que você achou "estranha" é a que mais toca alguém no final.`,
-      reflection: 'Muitas vezes a frase que achamos estranha é a que mais toca, porque veio de Deus.',
+      reflection: 'Muitas vezes a frase que achamos estranha é a que mais toca, porque veio de Deus. A perfeição vem da unção, não da correção humana.',
       inspiration: 'Tente escrever uma poesia inteira sem tirar a caneta do papel e sem riscar nada.'
     },
     {
@@ -845,7 +919,7 @@ Use palavras de poder: Fogo, Glória, Poder, Agora, Milagre.
 Aproveite a energia do ambiente para dar energia às palavras.
 Sua mão escreve no ritmo da música ou da oração.
 A poesia vira uma oração escrita.`,
-      reflection: 'Aproveite a energia do ambiente para dar energia às palavras.',
+      reflection: 'Aproveite a energia do ambiente para dar energia às palavras. No pico da oração, a mente está aberta e receptiva.',
       inspiration: 'Observe o momento em que o ambiente "esquenta" na oração. Escreva seus versos mais ousados.'
     },
     {
@@ -854,11 +928,24 @@ A poesia vira uma oração escrita.`,
       text: `O pregador está caminhando para o fim. Faltam 2 minutos.
 É hora de fechar a poesia para correr e ler.
 Deixe as últimas 2 linhas para uma "conclusão profética".
+As poesias PCH devem sempre terminar na Esperança e na Vitória.
 Enquanto ele faz a oração final, escreva o desfecho, resumindo tudo em uma promessa de esperança.
 Assim que ele diz "Amém", você coloca o ponto final.
 A tinta ainda está fresca. É pão quentinho, saído do forno.`,
-      reflection: 'A tinta ainda fresca torna a leitura poderosa: é pão quentinho.',
+      reflection: 'A tinta ainda fresca torna a leitura poderosa. A poesia nunca deve terminar na dor, mas sempre na esperança profética.',
       inspiration: 'Quando o pregador disser "para terminar...", já esteja escrevendo sua última estrofe.'
+    },
+    {
+      id: 'p6-6',
+      title: 'Encerramento: A Missão Continua',
+      text: `Meus irmãos, chegamos ao fim da nossa Oficina.
+Você aprendeu a: Ligar a Antena, Fazer a Tradução Simultânea, Escrever no Fluxo, Capturar o Fogo e Fazer o Fechamento de Ouro.
+Agora, a caneta está na sua mão. O Espírito Santo é a tinta. O coração do seu irmão é o papel.
+Não tenha medo. Não enterre seu talento. O mundo precisa de poetas que profetizam, e a Igreja precisa da sua voz.
+Vá e escreva a história de Deus na vida das pessoas.
+Você nasceu para brilhar.`,
+      reflection: 'A técnica é apenas o vaso; o Espírito Santo é a água. Use esse conhecimento para servir e curar feridas na alma alheia.',
+      inspiration: 'Vá e brilhe. Sua voz é necessária para a Igreja e para o mundo.'
     }
   ]
 };
