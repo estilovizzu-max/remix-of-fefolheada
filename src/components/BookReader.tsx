@@ -37,8 +37,8 @@ const CoverPage = forwardRef<HTMLDivElement>((_, ref) => (
     >
       <div className="absolute inset-4 border border-[hsl(var(--book-gold-soft))]/40 pointer-events-none" />
       <div className="mt-16">
-        <p className="text-[10px] tracking-[0.5em] text-[hsl(var(--book-gold-soft))] mb-4">
-          E V A L D O   P O E T A
+        <p className="text-[10px] tracking-[0.4em] text-[hsl(var(--book-gold-soft))] mb-4 whitespace-nowrap">
+          EVALDO&nbsp;POETA
         </p>
         <div className="h-px w-16 bg-[hsl(var(--book-gold-soft))]/60 mx-auto" />
       </div>
@@ -619,15 +619,18 @@ export const BookReader = () => {
           <ChevronLeft className="h-8 w-8" />
         </button>
 
-        <div className="shadow-[0_25px_80px_-15px_rgba(0,0,0,0.6)]">
+        <div
+          className="shadow-[0_25px_80px_-15px_rgba(0,0,0,0.6)]"
+          style={{ width: 'min(92vw, 900px)', height: 'min(78vh, 640px)' }}
+        >
           <HTMLFlipBook
             ref={bookRef}
             width={420}
             height={620}
-            minWidth={280}
-            maxWidth={520}
-            minHeight={420}
-            maxHeight={780}
+            minWidth={315}
+            maxWidth={480}
+            minHeight={460}
+            maxHeight={720}
             size="stretch"
             drawShadow
             flippingTime={700}
