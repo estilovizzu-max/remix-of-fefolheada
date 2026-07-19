@@ -29,15 +29,32 @@
       })();
     </script>
     <style>
-      html.hide-lovable-badge #lovable-badge {
+      /* Seletores robustos: cobre re-inserções com wrappers diferentes,
+         variações de id/classe/data-attr e o link direto para lovable.dev. */
+      html.hide-lovable-badge #lovable-badge,
+      html.hide-lovable-badge [id="lovable-badge"],
+      html.hide-lovable-badge [id^="lovable-badge"],
+      html.hide-lovable-badge [id*="lovable-badge"],
+      html.hide-lovable-badge [class*="lovable-badge"],
+      html.hide-lovable-badge [data-lovable-badge],
+      html.hide-lovable-badge [data-testid="lovable-badge"],
+      html.hide-lovable-badge a[href*="lovable.dev"][target="_blank"] {
         position: fixed !important;
+        left: -9999px !important;
+        top: -9999px !important;
         display: none !important;
         visibility: hidden !important;
+        opacity: 0 !important;
         width: 0 !important;
         height: 0 !important;
+        max-width: 0 !important;
+        max-height: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
+        border: 0 !important;
         pointer-events: none !important;
+        user-select: none !important;
+        -webkit-tap-highlight-color: transparent !important;
         contain: strict;
       }
     </style>
