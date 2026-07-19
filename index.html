@@ -19,10 +19,17 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <!-- Oculta o badge da Lovable antes do primeiro paint para evitar salto de layout no mobile.
-         Fica fora do fluxo (position:fixed + display:none), então não reserva espaço. -->
+    <!-- Marca o <html> antes do primeiro paint quando não estivermos em localhost,
+         para que o CSS oculte o badge sem causar salto de layout no mobile. -->
+    <script>
+      (function () {
+        var h = location.hostname;
+        var isDev = h === "localhost" || h === "127.0.0.1" || h.endsWith(".local");
+        if (!isDev) document.documentElement.classList.add("hide-lovable-badge");
+      })();
+    </script>
     <style>
-      #lovable-badge {
+      html.hide-lovable-badge #lovable-badge {
         position: fixed !important;
         display: none !important;
         visibility: hidden !important;
