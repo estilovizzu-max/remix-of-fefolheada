@@ -127,9 +127,15 @@ async def click_no_badge_hits(page: Page, ctx: str) -> None:
 
 async def next_page_locator(page: Page):
     for sel in NEXT_SELECTORS:
-        loc = page.locator(sel).first
-        if await loc.count() and await loc.is_visible():
-            return loc
+        loc = page.locator(sel)
+        count = await loc.count()
+        for i in range(count):
+            item = loc.nth(i)
+            try:
+                if await item.is_visible():
+                    return item
+            except Exception:
+                continue
     return None
 
 
