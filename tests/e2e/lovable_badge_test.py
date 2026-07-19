@@ -172,6 +172,67 @@ async def capture_failure_artifacts(page: Page, context, out_dir: Path, label: s
     (out_dir / f"{label}_error.txt").write_text(f"{label}\n{error}\n", encoding="utf-8")
 
 
+async def debug_capture(page: Page, out_dir: Path, label: str, step: str) -> None:
+    """Modo debug: registra print + HTML do DOM em cada passo, mesmo em sucesso.
+
+    Artefatos ficam em `<viewport>/debug/NN_step.{png,html}` para inspeção
+    posterior no CI quando uma tentativa passar mas houver interesse em auditar
+    o comportamento intermediário (ex.: instabilidade entre retries).
+    """
+    if not DEBUG:
+        return
+    debug_dir = out_dir / "debug"
+    debug_dir.mkdir(parents=True, exist_ok=True)
+    # Prefixo numérico preserva ordem cronológica no filesystem.
+    idx = getattr(debug_capture, "_counters", {}).setdefault(str(debug_dir), 0) + 1
+    if not hasattr(debug_capture, "_counters"):
+        debug_capture._counters = {}
+    debug_capture._counters[str(debug_dir)] = idx
+    prefix = f"{idx:02d}_{step}"
+    try:
+        await page.screenshot(path=str(debug_dir / f"{prefix}.png"))
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] screenshot: {exc}")
+    try:
+        html = await page.content()
+        (debug_dir / f"{prefix}.html").write_text(html, encoding="utf-8")
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] html: {exc}")
+    try:
+        info = await page.evaluate(
+            """(sel) => {
+              const els = Array.from(document.querySelectorAll(sel));
+              return {
+                url: location.href,
+                cls: window.__cls || 0,
+                badgeCount: els.length,
+                badges: els.slice(0, 5).map((el) => {
+                  const s = getComputedStyle(el);
+                  const r = el.getBoundingClientRect();
+                  return {
+                    tag: el.tagName,
+                    id: el.id || null,
+                    cls: (el.className || '').toString().slice(0, 120),
+                    display: s.display,
+                    visibility: s.visibility,
+                    opacity: s.opacity,
+                    rect: { w: r.width, h: r.height, x: r.x, y: r.y },
+                    inert: el.hasAttribute('inert'),
+                    tabindex: el.getAttribute('tabindex'),
+                  };
+                }),
+              };
+            }""",
+            BADGE_SELECTOR,
+        )
+        import json as _json
+        (debug_dir / f"{prefix}.json").write_text(
+            _json.dumps(info, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] state: {exc}")
+
+
 async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool) -> None:
     ctx = f"{label} {width}x{height}"
     viewport_dir = ARTIFACTS_DIR / label
