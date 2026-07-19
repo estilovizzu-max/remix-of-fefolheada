@@ -303,8 +303,9 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
         await capture_failure_artifacts(page, context, viewport_dir, label, str(exc))
         print(f"FAIL [{ctx}] artefatos em {viewport_dir}")
     finally:
+        keep_trace = failure is not None or DEBUG
         try:
-            trace_path = viewport_dir / "trace.zip" if failure else None
+            trace_path = viewport_dir / "trace.zip" if keep_trace else None
             await context.tracing.stop(path=str(trace_path) if trace_path else None)
         except Exception:
             pass
@@ -316,7 +317,8 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
             video_path = None
         await context.close()
         await browser.close()
-        if failure and video_path:
+        keep_video = failure is not None or DEBUG
+        if keep_video and video_path:
             try:
                 dest = viewport_dir / "video.webm"
                 Path(video_path).replace(dest)
@@ -324,7 +326,7 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
             except Exception:
                 pass
         elif video_path:
-            # Sucesso: descarta o vídeo para não poluir artefatos.
+            # Sucesso sem debug: descarta o vídeo para não poluir artefatos.
             try:
                 Path(video_path).unlink(missing_ok=True)
             except Exception:
