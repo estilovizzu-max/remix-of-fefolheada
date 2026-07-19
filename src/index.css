@@ -37,7 +37,17 @@ All colors MUST be HSL.
     --ring: 210 100% 20%;
 
     --radius: 1rem;
-    
+
+    /* Book tokens */
+    --book-purple: 265 60% 22%;
+    --book-purple-deep: 265 65% 14%;
+    --book-gold: 40 55% 48%;
+    --book-gold-soft: 40 55% 68%;
+    --paper: 42 42% 94%;
+    --paper-ink: 265 35% 12%;
+    --paper-muted: 265 12% 42%;
+    --paper-rule: 40 30% 68%;
+
     --poem-bg: 45 100% 99%;
     --poem-border: 45 90% 45%;
     --poem-watermark: 210 100% 20%;
