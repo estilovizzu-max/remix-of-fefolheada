@@ -90,6 +90,7 @@ jobs:
           name: lovable-badge-e2e-artifacts
           path: |
             test-artifacts/lovable-badge/**
+            test-artifacts/lovable-badge-attempt-*/**
             /tmp/vite.log
           if-no-files-found: ignore
           retention-days: 14
