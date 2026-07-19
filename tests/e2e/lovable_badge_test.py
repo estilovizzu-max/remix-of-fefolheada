@@ -260,15 +260,19 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
     cls = 0.0
     try:
         await page.goto(BASE_URL, wait_until="networkidle")
+        await debug_capture(page, viewport_dir, label, "load")
 
         # 1) Carregamento inicial.
         await assert_badge_hidden(page, f"{ctx} inicial")
+        await debug_capture(page, viewport_dir, label, "after_initial_assert")
 
         # 2) Varredura Tab completa: nenhum elemento do badge recebe foco.
         await tab_sweep_no_badge_focus(page, ctx)
+        await debug_capture(page, viewport_dir, label, "after_tab_sweep")
 
         # 3) Clique programático em elementos do badge não dispara handler.
         await click_no_badge_hits(page, ctx)
+        await debug_capture(page, viewport_dir, label, "after_click_sweep")
 
         # 4) Navegação: clica em "Próxima página" e valida ocultação + CLS.
         await page.evaluate(RESET_CLS)
@@ -278,11 +282,13 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
                 loc = page.locator('button[aria-label="Próxima página"]').first
                 if not (await loc.count() and await loc.is_visible()):
                     break
+            await debug_capture(page, viewport_dir, label, f"nav{i+1:02d}_before")
             try:
                 await loc.click()
             except Exception:
                 break
             await page.wait_for_timeout(350)
+            await debug_capture(page, viewport_dir, label, f"nav{i+1:02d}_after")
             await assert_badge_hidden(page, f"{ctx} após navegação #{i+1}")
             advanced += 1
 
