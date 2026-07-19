@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-#lovable-badge { display: none !important; }
+/* Oculta o badge da Lovable apenas em produção (classe aplicada em <html> via main.tsx).
+   Cobre todas as larguras de tela, estados de carregamento e navegação SPA. */
+html.hide-lovable-badge #lovable-badge,
+html.hide-lovable-badge [id="lovable-badge"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 9999px) {
+  html.hide-lovable-badge #lovable-badge { display: none !important; }
+}
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
