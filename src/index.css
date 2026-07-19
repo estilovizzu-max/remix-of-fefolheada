@@ -166,11 +166,35 @@ All colors MUST be HSL.
   .book-page {
     background-image:
       radial-gradient(hsl(var(--paper-rule) / 0.08) 1px, transparent 1px),
-      linear-gradient(to bottom right, hsl(var(--paper)) 0%, hsl(40 40% 91%) 100%);
+      linear-gradient(to bottom right, hsl(var(--paper)) 0%, hsl(var(--paper-tint, 40 40% 91%)) 100%);
     background-size: 24px 24px, 100% 100%;
     box-shadow: inset 0 0 60px hsl(var(--book-purple) / 0.06);
   }
   .poem-scroll::-webkit-scrollbar { width: 4px; }
   .poem-scroll::-webkit-scrollbar-thumb { background: hsl(var(--paper-rule) / 0.5); border-radius: 2px; }
   .poem-scroll { scrollbar-width: thin; scrollbar-color: hsl(var(--paper-rule) / 0.5) transparent; }
+
+  /* Reader themes — override paper tokens inside the reader root */
+  .book-reader-root { --reader-font-scale: 1; --reader-line: 1.85; }
+  .book-reader-root[data-theme="light"] {
+    --paper: 40 40% 98%; --paper-tint: 40 30% 95%;
+    --paper-ink: 260 30% 12%; --paper-muted: 260 12% 42%; --paper-rule: 40 20% 78%;
+  }
+  .book-reader-root[data-theme="sepia"] {
+    --paper: 42 42% 94%; --paper-tint: 40 40% 91%;
+    --paper-ink: 265 35% 12%; --paper-muted: 265 12% 42%; --paper-rule: 40 30% 68%;
+  }
+  .book-reader-root[data-theme="dark"] {
+    --paper: 260 20% 12%; --paper-tint: 265 25% 8%;
+    --paper-ink: 40 40% 92%; --paper-muted: 40 20% 65%; --paper-rule: 40 20% 40%;
+    --book-purple: 40 55% 68%;
+  }
+  .book-reader-root[data-theme="dark"] .book-page {
+    box-shadow: inset 0 0 60px hsl(0 0% 0% / 0.4);
+  }
+
+  .poem-verse {
+    font-size: calc(0.98rem * var(--reader-font-scale));
+    line-height: var(--reader-line);
+  }
 }
