@@ -20,6 +20,7 @@ from playwright.async_api import async_playwright, Page
 BASE_URL = os.environ.get("E2E_BASE_URL", "http://localhost:8080")
 CLS_LIMIT = float(os.environ.get("E2E_CLS_LIMIT", "0.1"))
 ARTIFACTS_DIR = Path(os.environ.get("E2E_ARTIFACTS_DIR", "test-artifacts/lovable-badge"))
+DEBUG = os.environ.get("E2E_DEBUG", "").lower() in ("1", "true", "yes", "on")
 
 
 BADGE_SELECTOR = ",".join([
@@ -171,6 +172,67 @@ async def capture_failure_artifacts(page: Page, context, out_dir: Path, label: s
     (out_dir / f"{label}_error.txt").write_text(f"{label}\n{error}\n", encoding="utf-8")
 
 
+async def debug_capture(page: Page, out_dir: Path, label: str, step: str) -> None:
+    """Modo debug: registra print + HTML do DOM em cada passo, mesmo em sucesso.
+
+    Artefatos ficam em `<viewport>/debug/NN_step.{png,html}` para inspeção
+    posterior no CI quando uma tentativa passar mas houver interesse em auditar
+    o comportamento intermediário (ex.: instabilidade entre retries).
+    """
+    if not DEBUG:
+        return
+    debug_dir = out_dir / "debug"
+    debug_dir.mkdir(parents=True, exist_ok=True)
+    # Prefixo numérico preserva ordem cronológica no filesystem.
+    idx = getattr(debug_capture, "_counters", {}).setdefault(str(debug_dir), 0) + 1
+    if not hasattr(debug_capture, "_counters"):
+        debug_capture._counters = {}
+    debug_capture._counters[str(debug_dir)] = idx
+    prefix = f"{idx:02d}_{step}"
+    try:
+        await page.screenshot(path=str(debug_dir / f"{prefix}.png"))
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] screenshot: {exc}")
+    try:
+        html = await page.content()
+        (debug_dir / f"{prefix}.html").write_text(html, encoding="utf-8")
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] html: {exc}")
+    try:
+        info = await page.evaluate(
+            """(sel) => {
+              const els = Array.from(document.querySelectorAll(sel));
+              return {
+                url: location.href,
+                cls: window.__cls || 0,
+                badgeCount: els.length,
+                badges: els.slice(0, 5).map((el) => {
+                  const s = getComputedStyle(el);
+                  const r = el.getBoundingClientRect();
+                  return {
+                    tag: el.tagName,
+                    id: el.id || null,
+                    cls: (el.className || '').toString().slice(0, 120),
+                    display: s.display,
+                    visibility: s.visibility,
+                    opacity: s.opacity,
+                    rect: { w: r.width, h: r.height, x: r.x, y: r.y },
+                    inert: el.hasAttribute('inert'),
+                    tabindex: el.getAttribute('tabindex'),
+                  };
+                }),
+              };
+            }""",
+            BADGE_SELECTOR,
+        )
+        import json as _json
+        (debug_dir / f"{prefix}.json").write_text(
+            _json.dumps(info, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+    except Exception as exc:
+        print(f"WARN [debug {label} {step}] state: {exc}")
+
+
 async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool) -> None:
     ctx = f"{label} {width}x{height}"
     viewport_dir = ARTIFACTS_DIR / label
@@ -198,15 +260,19 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
     cls = 0.0
     try:
         await page.goto(BASE_URL, wait_until="networkidle")
+        await debug_capture(page, viewport_dir, label, "load")
 
         # 1) Carregamento inicial.
         await assert_badge_hidden(page, f"{ctx} inicial")
+        await debug_capture(page, viewport_dir, label, "after_initial_assert")
 
         # 2) Varredura Tab completa: nenhum elemento do badge recebe foco.
         await tab_sweep_no_badge_focus(page, ctx)
+        await debug_capture(page, viewport_dir, label, "after_tab_sweep")
 
         # 3) Clique programático em elementos do badge não dispara handler.
         await click_no_badge_hits(page, ctx)
+        await debug_capture(page, viewport_dir, label, "after_click_sweep")
 
         # 4) Navegação: clica em "Próxima página" e valida ocultação + CLS.
         await page.evaluate(RESET_CLS)
@@ -216,11 +282,13 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
                 loc = page.locator('button[aria-label="Próxima página"]').first
                 if not (await loc.count() and await loc.is_visible()):
                     break
+            await debug_capture(page, viewport_dir, label, f"nav{i+1:02d}_before")
             try:
                 await loc.click()
             except Exception:
                 break
             await page.wait_for_timeout(350)
+            await debug_capture(page, viewport_dir, label, f"nav{i+1:02d}_after")
             await assert_badge_hidden(page, f"{ctx} após navegação #{i+1}")
             advanced += 1
 
@@ -235,8 +303,9 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
         await capture_failure_artifacts(page, context, viewport_dir, label, str(exc))
         print(f"FAIL [{ctx}] artefatos em {viewport_dir}")
     finally:
+        keep_trace = failure is not None or DEBUG
         try:
-            trace_path = viewport_dir / "trace.zip" if failure else None
+            trace_path = viewport_dir / "trace.zip" if keep_trace else None
             await context.tracing.stop(path=str(trace_path) if trace_path else None)
         except Exception:
             pass
@@ -248,7 +317,8 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
             video_path = None
         await context.close()
         await browser.close()
-        if failure and video_path:
+        keep_video = failure is not None or DEBUG
+        if keep_video and video_path:
             try:
                 dest = viewport_dir / "video.webm"
                 Path(video_path).replace(dest)
@@ -256,7 +326,7 @@ async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool)
             except Exception:
                 pass
         elif video_path:
-            # Sucesso: descarta o vídeo para não poluir artefatos.
+            # Sucesso sem debug: descarta o vídeo para não poluir artefatos.
             try:
                 Path(video_path).unlink(missing_ok=True)
             except Exception:
