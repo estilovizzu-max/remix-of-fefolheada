@@ -1,5 +1,5 @@
 import { forwardRef, useMemo, useRef, useState, useEffect } from 'react';
-// @ts-expect-error react-pageflip has no types
+// @ts-ignore -- react-pageflip has no types
 import HTMLFlipBook from 'react-pageflip';
 import { BookPage } from './book/BookPage';
 import { poemsData, themeTitles, Poem } from '@/data/poems';
@@ -505,9 +505,9 @@ export const BookReader = () => {
     seq.push(
       <SectionPage key="prog" title="Sua Jornada" runningHead="PROGRESSO" folio={seq.length + 1}>
         <ProgressSection
-          readPoemsCount={readPoems.length}
+          readCount={readPoems.length}
           totalPoems={totalPoems}
-          onOpenAchievements={() => {}}
+          onOpenModal={() => {}}
         />
       </SectionPage>
     );
