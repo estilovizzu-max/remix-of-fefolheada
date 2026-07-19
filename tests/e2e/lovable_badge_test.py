@@ -14,10 +14,13 @@ Códigos de saída: 0 = ok, 1 = falha de asserção.
 import asyncio
 import os
 import sys
+from pathlib import Path
 from playwright.async_api import async_playwright, Page
 
 BASE_URL = os.environ.get("E2E_BASE_URL", "http://localhost:8080")
 CLS_LIMIT = float(os.environ.get("E2E_CLS_LIMIT", "0.1"))
+ARTIFACTS_DIR = Path(os.environ.get("E2E_ARTIFACTS_DIR", "test-artifacts/lovable-badge"))
+
 
 BADGE_SELECTOR = ",".join([
     "#lovable-badge",
