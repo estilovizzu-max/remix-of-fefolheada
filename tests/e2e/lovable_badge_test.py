@@ -142,61 +142,132 @@ async def next_page_locator(page: Page):
     return None
 
 
+async def capture_failure_artifacts(page: Page, context, out_dir: Path, label: str, error: str) -> None:
+    """Salva screenshot, HTML e destaque do badge para inspeção rápida."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    try:
+        await page.screenshot(path=str(out_dir / f"{label}_failure.png"))
+    except Exception as exc:
+        print(f"WARN não foi possível capturar screenshot: {exc}")
+    try:
+        html = await page.content()
+        (out_dir / f"{label}_dom.html").write_text(html, encoding="utf-8")
+    except Exception as exc:
+        print(f"WARN não foi possível salvar HTML: {exc}")
+    try:
+        # Destaca o badge para tornar o problema visível no screenshot anotado.
+        await page.evaluate(
+            """(sel) => {
+              document.querySelectorAll(sel).forEach((el) => {
+                el.style.setProperty('outline', '4px solid #ff0055', 'important');
+                el.style.setProperty('outline-offset', '2px', 'important');
+              });
+            }""",
+            BADGE_SELECTOR,
+        )
+        await page.screenshot(path=str(out_dir / f"{label}_failure_annotated.png"))
+    except Exception:
+        pass
+    (out_dir / f"{label}_error.txt").write_text(f"{label}\n{error}\n", encoding="utf-8")
+
+
 async def run_viewport(pw, label: str, width: int, height: int, is_mobile: bool) -> None:
     ctx = f"{label} {width}x{height}"
+    viewport_dir = ARTIFACTS_DIR / label
+    video_dir = viewport_dir / "video"
+    video_dir.mkdir(parents=True, exist_ok=True)
+
     browser = await pw.chromium.launch(headless=True)
     context = await browser.new_context(
         viewport={"width": width, "height": height},
         device_scale_factor=2 if is_mobile else 1,
         is_mobile=is_mobile,
         has_touch=is_mobile,
+        record_video_dir=str(video_dir),
+        record_video_size={"width": width, "height": height},
     )
+    await context.tracing.start(screenshots=True, snapshots=True, sources=True)
     await context.add_init_script(CLS_INIT)
     await context.add_init_script(
         "document.documentElement.classList.add('hide-lovable-badge');"
     )
 
     page = await context.new_page()
-    await page.goto(BASE_URL, wait_until="networkidle")
-
-    # 1) Carregamento inicial.
-    await assert_badge_hidden(page, f"{ctx} inicial")
-
-    # 2) Varredura Tab completa: nenhum elemento do badge recebe foco.
-    await tab_sweep_no_badge_focus(page, ctx)
-
-    # 3) Clique programático em elementos do badge não dispara handler.
-    await click_no_badge_hits(page, ctx)
-
-    # 4) Navegação: clica em "Próxima página" e valida ocultação + CLS.
-    await page.evaluate(RESET_CLS)
+    failure: Exception | None = None
     advanced = 0
-    for i in range(6):
-        loc = await next_page_locator(page)
-        if not loc:
-            # Em mobile, o botão pode estar no footer — tenta o segundo botão next.
-            loc = page.locator('button[aria-label="Próxima página"]').first
-            if not (await loc.count() and await loc.is_visible()):
+    cls = 0.0
+    try:
+        await page.goto(BASE_URL, wait_until="networkidle")
+
+        # 1) Carregamento inicial.
+        await assert_badge_hidden(page, f"{ctx} inicial")
+
+        # 2) Varredura Tab completa: nenhum elemento do badge recebe foco.
+        await tab_sweep_no_badge_focus(page, ctx)
+
+        # 3) Clique programático em elementos do badge não dispara handler.
+        await click_no_badge_hits(page, ctx)
+
+        # 4) Navegação: clica em "Próxima página" e valida ocultação + CLS.
+        await page.evaluate(RESET_CLS)
+        for i in range(6):
+            loc = await next_page_locator(page)
+            if not loc:
+                loc = page.locator('button[aria-label="Próxima página"]').first
+                if not (await loc.count() and await loc.is_visible()):
+                    break
+            try:
+                await loc.click()
+            except Exception:
                 break
+            await page.wait_for_timeout(350)
+            await assert_badge_hidden(page, f"{ctx} após navegação #{i+1}")
+            advanced += 1
+
+        cls = await page.evaluate("window.__cls || 0")
+        check(
+            cls < CLS_LIMIT,
+            f"[{ctx}] CLS {cls:.4f} acima do limite ({CLS_LIMIT})",
+        )
+        print(f"OK [{ctx}] — {advanced} navegações; CLS={cls:.4f}")
+    except Exception as exc:
+        failure = exc
+        await capture_failure_artifacts(page, context, viewport_dir, label, str(exc))
+        print(f"FAIL [{ctx}] artefatos em {viewport_dir}")
+    finally:
         try:
-            await loc.click()
+            trace_path = viewport_dir / "trace.zip" if failure else None
+            await context.tracing.stop(path=str(trace_path) if trace_path else None)
         except Exception:
-            break
-        await page.wait_for_timeout(350)
-        await assert_badge_hidden(page, f"{ctx} após navegação #{i+1}")
-        advanced += 1
+            pass
+        video_path = None
+        try:
+            if page.video:
+                video_path = await page.video.path()
+        except Exception:
+            video_path = None
+        await context.close()
+        await browser.close()
+        if failure and video_path:
+            try:
+                dest = viewport_dir / "video.webm"
+                Path(video_path).replace(dest)
+                print(f"  vídeo: {dest}")
+            except Exception:
+                pass
+        elif video_path:
+            # Sucesso: descarta o vídeo para não poluir artefatos.
+            try:
+                Path(video_path).unlink(missing_ok=True)
+            except Exception:
+                pass
 
-    cls = await page.evaluate("window.__cls || 0")
-    check(
-        cls < CLS_LIMIT,
-        f"[{ctx}] CLS {cls:.4f} acima do limite ({CLS_LIMIT})",
-    )
-
-    print(f"OK [{ctx}] — {advanced} navegações; CLS={cls:.4f}")
-    await browser.close()
+    if failure:
+        raise failure
 
 
 async def main() -> int:
+    ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
         for label, w, h, mobile in VIEWPORTS:
             await run_viewport(pw, label, w, h, mobile)
@@ -208,4 +279,10 @@ if __name__ == "__main__":
         sys.exit(asyncio.run(main()))
     except AssertionFail as exc:
         print(f"FAIL — {exc}")
+        print(f"Artefatos disponíveis em: {ARTIFACTS_DIR}")
         sys.exit(1)
+    except Exception as exc:
+        print(f"ERROR — {exc}")
+        print(f"Artefatos disponíveis em: {ARTIFACTS_DIR}")
+        sys.exit(1)
+
