@@ -49,8 +49,22 @@ jobs:
           echo "server failed to start"; cat /tmp/vite.log; exit 1
 
       - name: Run E2E — badge hidden + CLS budget
+        env:
+          E2E_ARTIFACTS_DIR: test-artifacts/lovable-badge
         run: python tests/e2e/lovable_badge_test.py
+
+      - name: Upload E2E failure artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lovable-badge-e2e-artifacts
+          path: |
+            test-artifacts/lovable-badge/**
+            /tmp/vite.log
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Stop preview server
         if: always()
         run: kill "$(cat /tmp/vite.pid)" 2>/dev/null || true
+
