@@ -1,0 +1,56 @@
+name: E2E - Lovable badge
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lovable-badge-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      E2E_BASE_URL: http://localhost:8080
+      E2E_CLS_LIMIT: "0.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install app dependencies
+        run: npm ci
+
+      - name: Install Playwright (Python) + Chromium
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "playwright==1.47.0"
+          python -m playwright install --with-deps chromium
+
+      - name: Build app
+        run: npm run build
+
+      - name: Start preview server
+        run: |
+          npx vite preview --host 127.0.0.1 --port 8080 > /tmp/vite.log 2>&1 &
+          echo $! > /tmp/vite.pid
+          for i in $(seq 1 40); do
+            if curl -sf http://127.0.0.1:8080 > /dev/null; then
+              echo "server up"; exit 0
+            fi
+            sleep 0.5
+          done
+          echo "server failed to start"; cat /tmp/vite.log; exit 1
+
+      - name: Run E2E — badge hidden + CLS budget
+        run: python tests/e2e/lovable_badge_test.py
+
+      - name: Stop preview server
+        if: always()
+        run: kill "$(cat /tmp/vite.pid)" 2>/dev/null || true

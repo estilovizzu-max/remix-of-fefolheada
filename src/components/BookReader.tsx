@@ -1062,10 +1062,10 @@ export const BookReader = () => {
       {/* Footer */}
       <footer className="w-full max-w-5xl mt-4 px-4 md:px-8 flex items-center justify-between text-[hsl(var(--paper))]/60">
         <div className="flex items-center gap-2 md:hidden">
-          <button onClick={flipPrev} className="h-9 w-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5">
+          <button onClick={flipPrev} aria-label="Página anterior" className="h-9 w-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5">
             <ChevronLeft className="h-4 w-4" />
           </button>
-          <button onClick={flipNext} className="h-9 w-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5">
+          <button onClick={flipNext} aria-label="Próxima página" className="h-9 w-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5">
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
