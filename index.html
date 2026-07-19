@@ -18,6 +18,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Oculta o badge da Lovable antes do primeiro paint para evitar salto de layout no mobile.
+         Fica fora do fluxo (position:fixed + display:none), então não reserva espaço. -->
+    <style>
+      #lovable-badge {
+        position: fixed !important;
+        display: none !important;
+        visibility: hidden !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        pointer-events: none !important;
+        contain: strict;
+      }
+    </style>
   </head>
 
   <body>
