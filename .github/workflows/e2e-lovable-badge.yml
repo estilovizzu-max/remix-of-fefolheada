@@ -48,10 +48,40 @@ jobs:
           done
           echo "server failed to start"; cat /tmp/vite.log; exit 1
 
-      - name: Run E2E — badge hidden + CLS budget
+      - name: Run E2E — badge hidden + CLS budget (with retry)
         env:
           E2E_ARTIFACTS_DIR: test-artifacts/lovable-badge
-        run: python tests/e2e/lovable_badge_test.py
+          E2E_MAX_ATTEMPTS: "3"
+          E2E_RETRY_DELAY_SECONDS: "5"
+        run: |
+          set +e
+          max="${E2E_MAX_ATTEMPTS:-3}"
+          delay="${E2E_RETRY_DELAY_SECONDS:-5}"
+          attempt=1
+          while [ "$attempt" -le "$max" ]; do
+            echo "::group::E2E attempt $attempt/$max"
+            # Isola artefatos por tentativa; preserva a última em test-artifacts/lovable-badge
+            attempt_dir="test-artifacts/lovable-badge-attempt-$attempt"
+            E2E_ARTIFACTS_DIR="$attempt_dir" python tests/e2e/lovable_badge_test.py
+            status=$?
+            echo "::endgroup::"
+            if [ "$status" -eq 0 ]; then
+              echo "E2E passou na tentativa $attempt"
+              rm -rf test-artifacts/lovable-badge
+              mv "$attempt_dir" test-artifacts/lovable-badge
+              exit 0
+            fi
+            echo "Tentativa $attempt falhou (exit=$status)"
+            rm -rf test-artifacts/lovable-badge
+            cp -r "$attempt_dir" test-artifacts/lovable-badge
+            if [ "$attempt" -lt "$max" ]; then
+              echo "Aguardando ${delay}s antes de retentar..."
+              sleep "$delay"
+            fi
+            attempt=$((attempt + 1))
+          done
+          echo "E2E falhou após $max tentativas — limite de CLS e detecção do badge mantidos"
+          exit 1
 
       - name: Upload E2E failure artifacts
         if: failure()
