@@ -89,12 +89,17 @@ jobs:
           fi
           exit "$final_status"
 
+      - name: Build HTML report (always)
+        if: always()
+        run: python tests/e2e/build_report.py --root test-artifacts --out test-artifacts/report.html || true
+
       - name: Upload E2E debug artifacts (always)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: lovable-badge-e2e-debug
           path: |
+            test-artifacts/report.html
             test-artifacts/lovable-badge/**
             test-artifacts/lovable-badge-attempt-*/**
             /tmp/vite.log
