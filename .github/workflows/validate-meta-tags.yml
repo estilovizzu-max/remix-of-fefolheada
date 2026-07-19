@@ -1,0 +1,22 @@
+name: Validate Meta Tags
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "scripts/validate-meta-tags.mjs"
+      - ".github/workflows/validate-meta-tags.yml"
+  push:
+    branches: [main]
+
+jobs:
+  validate-meta-tags:
+    name: Open Graph & Twitter Card
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run meta tag validation
+        run: node scripts/validate-meta-tags.mjs index.html
