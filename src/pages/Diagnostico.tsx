@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 import { getConsoleBuffer, clearConsoleBuffer, type ConsoleLogEntry } from "@/utils/consoleBuffer";
 import {
   redactWithStats,
