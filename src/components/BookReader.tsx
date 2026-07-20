@@ -329,26 +329,43 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
             )}
 
             {isPending && (
-              <div
-                className="mt-4 pt-3 border-t border-dashed border-[hsl(var(--book-gold))]/50"
+              <aside
+                className="mt-4 rounded-sm border-l-4 border-[hsl(var(--book-gold))] bg-[hsl(var(--book-gold))]/5 pl-4 pr-3 py-3"
                 role="note"
-                aria-label="Reflexão em preparação"
+                aria-labelledby={`pending-tag-${poem.id}`}
               >
-                <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
-                  ✦ Reflexão em preparação
+                <h4
+                  id={`pending-tag-${poem.id}`}
+                  className="text-[10px] tracking-[0.28em] font-semibold uppercase text-[hsl(var(--book-purple))] mb-2"
+                >
+                  Reflexão em preparação
+                </h4>
+                <p className="text-xs font-serif leading-relaxed text-[hsl(var(--paper-ink))]">
+                  <span
+                    className="not-italic font-sans font-semibold uppercase tracking-[0.15em] text-[hsl(var(--book-purple))] text-[9px] mr-1.5"
+                    aria-hidden="true"
+                  >
+                    Prévia
+                  </span>
+                  <span className="italic">
+                    <span className="sr-only">Prévia: </span>{pendingText}
+                  </span>
                 </p>
-                <p className="text-xs italic font-serif leading-relaxed text-[hsl(var(--paper-ink))]/85">
-                  {pendingText}
+                <p className="mt-2 text-[11px] font-serif leading-relaxed text-[hsl(var(--paper-muted))]">
+                  A meditação pastoral e o convite ao poeta estão sendo
+                  escritos. Enquanto isso, ore com o poema e anote o verso que
+                  mais tocar você.
                 </p>
                 {onJumpToPending && (
                   <button
                     onClick={onJumpToPending}
-                    className="mt-2 text-[10px] tracking-[0.25em] uppercase text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))] transition-colors underline underline-offset-4"
+                    className="mt-2 text-[10px] tracking-[0.25em] uppercase text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))] transition-colors underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--book-purple))] rounded-sm"
+                    aria-label={`Ver a lista completa de reflexões pendentes (a partir de ${poem.title})`}
                   >
                     Ver todas as reflexões pendentes →
                   </button>
                 )}
-              </div>
+              </aside>
             )}
 
             {note && (
@@ -507,15 +524,33 @@ const NoteToReaderPage = forwardRef<HTMLDivElement, { onJumpToPending: () => voi
             lugar da reflexão, um cartão discreto:
           </p>
 
-          <div className="rounded border border-dashed border-[hsl(var(--book-gold))]/60 bg-[hsl(var(--book-gold))]/5 px-4 py-3">
-            <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
-              ✦ Reflexão em preparação
+          <aside
+            className="rounded-sm border-l-4 border-[hsl(var(--book-gold))] bg-[hsl(var(--book-gold))]/5 pl-4 pr-3 py-3"
+            role="note"
+            aria-labelledby="pending-example-tag"
+          >
+            <h3
+              id="pending-example-tag"
+              className="text-[10px] tracking-[0.28em] font-semibold uppercase text-[hsl(var(--book-purple))] mb-2"
+            >
+              Reflexão em preparação
+            </h3>
+            <p className="text-xs font-serif leading-relaxed text-[hsl(var(--paper-ink))]">
+              <span
+                className="not-italic font-sans font-semibold uppercase tracking-[0.15em] text-[hsl(var(--book-purple))] text-[9px] mr-1.5"
+                aria-hidden="true"
+              >
+                Prévia
+              </span>
+              <span className="italic">
+                <span className="sr-only">Prévia: </span>
+                Uma frase-chave que orienta a leitura.
+              </span>
             </p>
-            <p className="text-xs italic text-[hsl(var(--paper-ink))]/85">
-              Uma meditação sobre a alma do poema, ainda a ser escrita —
-              nasce da escuta orante.
+            <p className="mt-2 text-[11px] font-serif leading-relaxed text-[hsl(var(--paper-muted))]">
+              Reflexão pastoral completa em breve.
             </p>
-          </div>
+          </aside>
 
           <p>
             Ao final do livro, a seção{' '}
