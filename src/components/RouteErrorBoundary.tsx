@@ -15,6 +15,63 @@ interface State {
   error: Error | null;
   errorInfo: ErrorInfo | null;
   logs: LogEntry[];
+  history: ErrorHistoryEntry[];
+}
+
+export interface ErrorHistoryEntry {
+  time: string;
+  name: string;
+  message: string;
+  stackHead?: string;
+  url: string;
+  userAgent: string;
+}
+
+const HISTORY_KEY_PREFIX = "route-error-history:";
+const MAX_HISTORY = 20;
+
+function loadHistory(routeName: string): ErrorHistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(HISTORY_KEY_PREFIX + routeName);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.slice(0, MAX_HISTORY) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(routeName: string, history: ErrorHistoryEntry[]) {
+  try {
+    window.localStorage.setItem(
+      HISTORY_KEY_PREFIX + routeName,
+      JSON.stringify(history.slice(0, MAX_HISTORY)),
+    );
+  } catch {
+    /* ignore quota */
+  }
+}
+
+function clearHistory(routeName: string) {
+  try {
+    window.localStorage.removeItem(HISTORY_KEY_PREFIX + routeName);
+  } catch {
+    /* ignore */
+  }
+}
+
+function formatDelta(fromIso: string, toIso: string): string {
+  const ms = new Date(toIso).getTime() - new Date(fromIso).getTime();
+  if (!isFinite(ms) || ms < 0) return "";
+  const s = Math.floor(ms / 1000);
+  if (s < 60) return `${s}s`;
+  const m = Math.floor(s / 60);
+  if (m < 60) return `${m}min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h${m % 60 ? ` ${m % 60}min` : ""}`;
+  const d = Math.floor(h / 24);
+  return `${d}d${h % 24 ? ` ${h % 24}h` : ""}`;
 }
 
 const MAX_LOGS = 100;
