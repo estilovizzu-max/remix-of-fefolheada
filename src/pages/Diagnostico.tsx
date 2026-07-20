@@ -135,6 +135,7 @@ export default function Diagnostico() {
   const [adminPwd2, setAdminPwd2] = useState("");
   const [adminErr, setAdminErr] = useState<string | null>(null);
   const [needsSetup, setNeedsSetup] = useState(false);
+  const [audit, setAudit] = useState<AuditEntry[]>([]);
 
   const refresh = () => {
     setErrors(loadErrors());
