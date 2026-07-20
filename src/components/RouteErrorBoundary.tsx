@@ -164,12 +164,16 @@ export class RouteErrorBoundary extends Component<Props, State> {
   };
 
   handleCopy = () => {
-    const { error, errorInfo, logs } = this.state;
+    const { error, errorInfo, logs, history } = this.state;
     const payload = [
       `Rota: ${this.props.routeName}`,
       `Erro: ${error?.name}: ${error?.message}`,
       `Stack:\n${error?.stack ?? "(sem stack)"}`,
       `Component stack:${errorInfo?.componentStack ?? "\n(sem info)"}`,
+      `\nHistórico (${history.length}):`,
+      ...history.map(
+        (h, i) => `#${i + 1} [${h.time}] ${h.name}: ${h.message} @ ${h.url}`,
+      ),
       `\nLogs do console (${logs.length}):`,
       ...logs.map((l) => `[${l.time}] [${l.level}] ${l.message}`),
     ].join("\n");
