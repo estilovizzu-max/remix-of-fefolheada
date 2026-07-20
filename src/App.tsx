@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Revisao from "./pages/Revisao";
 import NotFound from "./pages/NotFound";
 import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
+import { GlobalErrorReporter } from "./components/GlobalErrorReporter";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <GlobalErrorReporter />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
