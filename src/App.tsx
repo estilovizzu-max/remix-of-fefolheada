@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Revisao from "./pages/Revisao";
 import NotFound from "./pages/NotFound";
+import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/revisao" element={<Revisao />} />
+          <Route
+            path="/revisao"
+            element={
+              <RouteErrorBoundary routeName="revisao">
+                <Revisao />
+              </RouteErrorBoundary>
+            }
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
