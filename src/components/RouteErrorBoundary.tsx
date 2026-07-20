@@ -15,6 +15,63 @@ interface State {
   error: Error | null;
   errorInfo: ErrorInfo | null;
   logs: LogEntry[];
+  history: ErrorHistoryEntry[];
+}
+
+export interface ErrorHistoryEntry {
+  time: string;
+  name: string;
+  message: string;
+  stackHead?: string;
+  url: string;
+  userAgent: string;
+}
+
+const HISTORY_KEY_PREFIX = "route-error-history:";
+const MAX_HISTORY = 20;
+
+function loadHistory(routeName: string): ErrorHistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(HISTORY_KEY_PREFIX + routeName);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.slice(0, MAX_HISTORY) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(routeName: string, history: ErrorHistoryEntry[]) {
+  try {
+    window.localStorage.setItem(
+      HISTORY_KEY_PREFIX + routeName,
+      JSON.stringify(history.slice(0, MAX_HISTORY)),
+    );
+  } catch {
+    /* ignore quota */
+  }
+}
+
+function clearHistory(routeName: string) {
+  try {
+    window.localStorage.removeItem(HISTORY_KEY_PREFIX + routeName);
+  } catch {
+    /* ignore */
+  }
+}
+
+function formatDelta(fromIso: string, toIso: string): string {
+  const ms = new Date(toIso).getTime() - new Date(fromIso).getTime();
+  if (!isFinite(ms) || ms < 0) return "";
+  const s = Math.floor(ms / 1000);
+  if (s < 60) return `${s}s`;
+  const m = Math.floor(s / 60);
+  if (m < 60) return `${m}min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h${m % 60 ? ` ${m % 60}min` : ""}`;
+  const d = Math.floor(h / 24);
+  return `${d}d${h % 24 ? ` ${h % 24}h` : ""}`;
 }
 
 const MAX_LOGS = 100;
@@ -71,7 +128,12 @@ function patchConsole() {
 patchConsole();
 
 export class RouteErrorBoundary extends Component<Props, State> {
-  state: State = { error: null, errorInfo: null, logs: [] };
+  state: State = {
+    error: null,
+    errorInfo: null,
+    logs: [],
+    history: loadHistory(this.props.routeName),
+  };
 
   static getDerivedStateFromError(error: Error): Partial<State> {
     return { error };
@@ -79,20 +141,39 @@ export class RouteErrorBoundary extends Component<Props, State> {
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error(`[RouteErrorBoundary:${this.props.routeName}]`, error, errorInfo);
-    this.setState({ errorInfo, logs: [...consoleBuffer] });
+    const entry: ErrorHistoryEntry = {
+      time: new Date().toISOString(),
+      name: error.name,
+      message: error.message,
+      stackHead: error.stack?.split("\n").slice(0, 3).join("\n"),
+      url: typeof window !== "undefined" ? window.location.href : "",
+      userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "",
+    };
+    const history = [entry, ...this.state.history].slice(0, MAX_HISTORY);
+    saveHistory(this.props.routeName, history);
+    this.setState({ errorInfo, logs: [...consoleBuffer], history });
   }
 
   handleReset = () => {
     this.setState({ error: null, errorInfo: null, logs: [] });
   };
 
+  handleClearHistory = () => {
+    clearHistory(this.props.routeName);
+    this.setState({ history: [] });
+  };
+
   handleCopy = () => {
-    const { error, errorInfo, logs } = this.state;
+    const { error, errorInfo, logs, history } = this.state;
     const payload = [
       `Rota: ${this.props.routeName}`,
       `Erro: ${error?.name}: ${error?.message}`,
       `Stack:\n${error?.stack ?? "(sem stack)"}`,
       `Component stack:${errorInfo?.componentStack ?? "\n(sem info)"}`,
+      `\nHistórico (${history.length}):`,
+      ...history.map(
+        (h, i) => `#${i + 1} [${h.time}] ${h.name}: ${h.message} @ ${h.url}`,
+      ),
       `\nLogs do console (${logs.length}):`,
       ...logs.map((l) => `[${l.time}] [${l.level}] ${l.message}`),
     ].join("\n");
@@ -104,7 +185,10 @@ export class RouteErrorBoundary extends Component<Props, State> {
   render() {
     if (!this.state.error) return this.props.children;
 
-    const { error, errorInfo, logs } = this.state;
+    const { error, errorInfo, logs, history } = this.state;
+    const first = history[history.length - 1];
+    const last = history[0];
+    const span = first && last && first !== last ? formatDelta(first.time, last.time) : "";
     return (
       <div
         role="alert"
@@ -129,9 +213,26 @@ export class RouteErrorBoundary extends Component<Props, State> {
           >
             Falha ao carregar a rota /{this.props.routeName}
           </h1>
-          <p style={{ opacity: 0.8, marginBottom: "1.5rem" }}>
+          <p style={{ opacity: 0.8, marginBottom: "1rem" }}>
             Ocorreu um erro ao renderizar esta página. Detalhes abaixo para diagnóstico.
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "0.75rem",
+              flexWrap: "wrap",
+              marginBottom: "1.5rem",
+              fontSize: "0.85rem",
+            }}
+          >
+            <Badge label="Total de falhas" value={String(history.length)} />
+            {last && <Badge label="Última" value={new Date(last.time).toLocaleString("pt-BR")} />}
+            {span && <Badge label="Janela observada" value={span} />}
+            {history.length >= 3 && (
+              <Badge label="Padrão" value="intermitente (≥3)" highlight />
+            )}
+          </div>
 
           <div style={{ display: "flex", gap: "0.75rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
             <button
@@ -152,6 +253,14 @@ export class RouteErrorBoundary extends Component<Props, State> {
             >
               Copiar diagnóstico
             </button>
+            {history.length > 0 && (
+              <button
+                onClick={this.handleClearHistory}
+                style={btnStyle("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
+              >
+                Limpar histórico
+              </button>
+            )}
             <a
               href="/"
               style={{
@@ -163,6 +272,52 @@ export class RouteErrorBoundary extends Component<Props, State> {
               Voltar ao início
             </a>
           </div>
+
+          <Section title={`Histórico de falhas (${history.length})`}>
+            {history.length === 0 ? (
+              <p style={{ opacity: 0.7 }}>Sem falhas anteriores registradas.</p>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                {history.map((h, i) => (
+                  <div
+                    key={h.time + i}
+                    style={{
+                      background: "rgba(0,0,0,0.3)",
+                      border: "1px solid rgba(193,153,53,0.25)",
+                      borderRadius: 6,
+                      padding: "0.6rem 0.75rem",
+                      fontSize: "0.82rem",
+                    }}
+                  >
+                    <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+                      <strong style={{ color: "#c19935" }}>#{history.length - i}</strong>
+                      <span style={{ opacity: 0.75 }}>
+                        {new Date(h.time).toLocaleString("pt-BR")}
+                        {i < history.length - 1 && (
+                          <> · há {formatDelta(h.time, new Date().toISOString())}</>
+                        )}
+                      </span>
+                    </div>
+                    <div style={{ marginTop: 4, color: "#ffb4a2" }}>
+                      {h.name}: {h.message}
+                    </div>
+                    {h.stackHead && (
+                      <pre
+                        style={{
+                          ...preStyle,
+                          maxHeight: 100,
+                          marginTop: 6,
+                          fontSize: "0.75rem",
+                        }}
+                      >
+                        {h.stackHead}
+                      </pre>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </Section>
 
           <Section title="Mensagem de erro">
             <code style={codeStyle}>
@@ -217,6 +372,25 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
       </h2>
       {children}
     </section>
+  );
+}
+
+function Badge({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 6,
+        padding: "0.35rem 0.65rem",
+        borderRadius: 999,
+        background: highlight ? "rgba(193,153,53,0.18)" : "rgba(0,0,0,0.3)",
+        border: `1px solid ${highlight ? "#c19935" : "rgba(243,236,219,0.2)"}`,
+      }}
+    >
+      <span style={{ opacity: 0.7 }}>{label}:</span>
+      <strong style={{ color: highlight ? "#c19935" : "#f3ecdb" }}>{value}</strong>
+    </span>
   );
 }
 
