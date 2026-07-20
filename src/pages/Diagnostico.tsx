@@ -141,6 +141,11 @@ export default function Diagnostico() {
     setErrors(loadErrors());
     setLogs(getConsoleBuffer());
     setEnv(getEnvInfo());
+    setAudit(loadAudit());
+  };
+
+  const logAudit = (event: AuditEventType, detail?: string) => {
+    setAudit(appendAudit(event, detail));
   };
 
   useEffect(() => {
