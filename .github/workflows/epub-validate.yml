@@ -1,0 +1,92 @@
+name: EPUB Validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/downloads/folheando-fe.epub'
+      - '.github/workflows/epub-validate.yml'
+  pull_request:
+    paths:
+      - 'public/downloads/folheando-fe.epub'
+      - '.github/workflows/epub-validate.yml'
+  workflow_dispatch:
+
+jobs:
+  epubcheck:
+    name: epubcheck (EPUB 3)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install epubcheck
+        run: |
+          set -euo pipefail
+          VERSION=5.1.0
+          curl -fsSL -o epubcheck.zip \
+            "https://github.com/w3c/epubcheck/releases/download/v${VERSION}/epubcheck-${VERSION}.zip"
+          unzip -q epubcheck.zip
+          echo "EPUBCHECK_JAR=$PWD/epubcheck-${VERSION}/epubcheck.jar" >> "$GITHUB_ENV"
+
+      - name: Run epubcheck (JSON report)
+        run: |
+          set -euo pipefail
+          java -jar "$EPUBCHECK_JAR" \
+            public/downloads/folheando-fe.epub \
+            --json epubcheck-report.json || true
+
+      - name: Upload epubcheck report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: epubcheck-report
+          path: epubcheck-report.json
+
+      - name: Fail on errors or relevant warnings
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, sys
+          with open("epubcheck-report.json", encoding="utf-8") as f:
+              report = json.load(f)
+          checker = report.get("checker", {})
+          n_fatal = checker.get("nFatal", 0)
+          n_error = checker.get("nError", 0)
+          n_warning = checker.get("nWarning", 0)
+
+          # Warnings tratados como não relevantes (ruído comum e inofensivo).
+          IGNORED_WARN_IDS = {
+              "PKG-010",  # non-standard file name characters (falso-positivo em pt-BR)
+              "OPF-055",  # dc:date recommendation
+          }
+
+          messages = report.get("messages", [])
+          relevant_warnings = [
+              m for m in messages
+              if m.get("severity", "").upper() == "WARNING"
+              and m.get("ID") not in IGNORED_WARN_IDS
+          ]
+          errors = [m for m in messages if m.get("severity", "").upper() in {"ERROR", "FATAL"}]
+
+          print(f"epubcheck: fatal={n_fatal} error={n_error} warning={n_warning} relevant_warnings={len(relevant_warnings)}")
+
+          def fmt(m):
+              loc = m.get("locations", [{}])[0]
+              return f"  [{m.get('severity')}] {m.get('ID')} {m.get('message')} @ {loc.get('path')}:{loc.get('line')}"
+
+          if errors:
+              print("Errors:")
+              for m in errors: print(fmt(m))
+          if relevant_warnings:
+              print("Relevant warnings:")
+              for m in relevant_warnings: print(fmt(m))
+
+          if n_fatal or n_error or relevant_warnings:
+              sys.exit(1)
+          PY
