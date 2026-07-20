@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 import { getConsoleBuffer, clearConsoleBuffer, type ConsoleLogEntry } from "@/utils/consoleBuffer";
 import {
   redactWithStats,
@@ -25,6 +26,52 @@ interface CapturedError {
 const ERROR_STORAGE_KEY = "global-error-reports";
 const ADMIN_HASH_KEY = "diagnostico-admin-hash";
 const ADMIN_SALT_KEY = "diagnostico-admin-salt";
+const ADMIN_AUDIT_KEY = "diagnostico-admin-audit";
+
+type AuditEventType = "setup" | "success" | "failure" | "logout" | "reset";
+
+interface AuditEntry {
+  id: string;
+  time: string;
+  event: AuditEventType;
+  detail?: string;
+}
+
+const AUDIT_LABEL: Record<AuditEventType, string> = {
+  setup: "Senha definida",
+  success: "Validação bem-sucedida",
+  failure: "Falha de senha",
+  logout: "Saída do modo admin",
+  reset: "Senha redefinida",
+};
+
+function loadAudit(): AuditEntry[] {
+  try {
+    const raw = window.localStorage.getItem(ADMIN_AUDIT_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function appendAudit(event: AuditEventType, detail?: string): AuditEntry[] {
+  const list = loadAudit();
+  const entry: AuditEntry = {
+    id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    time: new Date().toISOString(),
+    event,
+    detail,
+  };
+  const next = [entry, ...list].slice(0, 100);
+  try {
+    window.localStorage.setItem(ADMIN_AUDIT_KEY, JSON.stringify(next));
+  } catch {
+    /* ignore */
+  }
+  return next;
+}
 
 function loadErrors(): CapturedError[] {
   try {
@@ -88,11 +135,17 @@ export default function Diagnostico() {
   const [adminPwd2, setAdminPwd2] = useState("");
   const [adminErr, setAdminErr] = useState<string | null>(null);
   const [needsSetup, setNeedsSetup] = useState(false);
+  const [audit, setAudit] = useState<AuditEntry[]>([]);
 
   const refresh = () => {
     setErrors(loadErrors());
     setLogs(getConsoleBuffer());
     setEnv(getEnvInfo());
+    setAudit(loadAudit());
+  };
+
+  const logAudit = (event: AuditEventType, detail?: string) => {
+    setAudit(appendAudit(event, detail));
   };
 
   useEffect(() => {
@@ -197,6 +250,7 @@ export default function Diagnostico() {
         ? logs.map((l) => ({ ...l, message: redactWithStats(l.message).text }))
         : logs,
       payloadText,
+      adminAudit: audit,
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
@@ -245,6 +299,7 @@ export default function Diagnostico() {
       window.localStorage.setItem(ADMIN_HASH_KEY, hash);
       setAdminUnlocked(true);
       setAdminPromptOpen(false);
+      logAudit("setup", "Senha inicial definida e sessão admin aberta");
       return;
     }
     const salt = window.localStorage.getItem(ADMIN_SALT_KEY) ?? "";
@@ -253,8 +308,10 @@ export default function Diagnostico() {
     if (hash === expected) {
       setAdminUnlocked(true);
       setAdminPromptOpen(false);
+      logAudit("success");
     } else {
       setAdminErr("Senha incorreta.");
+      logAudit("failure", `Tentativa com ${adminPwd.length} caracteres`);
     }
   };
 
@@ -265,6 +322,31 @@ export default function Diagnostico() {
     setAdminUnlocked(false);
     setNeedsSetup(true);
     setAdminErr("Senha removida. Defina uma nova para continuar.");
+    logAudit("reset");
+  };
+
+  const copyPreview = async () => {
+    try {
+      await navigator.clipboard.writeText(payloadText);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = payloadText;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    toast.success("Prévia copiada", {
+      description: `${payloadText.length.toLocaleString("pt-BR")} caracteres · ${
+        effectiveMask ? "mascarado" : "modo admin"
+      }`,
+    });
+  };
+
+  const clearAudit = () => {
+    if (!window.confirm("Limpar log de auditoria do modo admin?")) return;
+    window.localStorage.removeItem(ADMIN_AUDIT_KEY);
+    setAudit([]);
   };
 
   return (
@@ -336,7 +418,10 @@ export default function Diagnostico() {
           </button>
           {adminUnlocked ? (
             <button
-              onClick={() => setAdminUnlocked(false)}
+              onClick={() => {
+                setAdminUnlocked(false);
+                logAudit("logout");
+              }}
               style={btn("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
             >
               Sair do modo admin
@@ -404,13 +489,92 @@ export default function Diagnostico() {
 
         {showPreview && (
           <Section title="Prévia do que será copiado/baixado">
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
+              <button onClick={copyPreview} style={btn("#c19935", "#1a0f3d")}>
+                Copiar do preview
+              </button>
+              <span style={{ opacity: 0.7, fontSize: "0.8rem", alignSelf: "center" }}>
+                {payloadText.length.toLocaleString("pt-BR")} caracteres ·{" "}
+                {effectiveMask ? "mascarado" : "modo admin"}
+              </span>
+            </div>
             <pre style={pre}>{payloadText}</pre>
           </Section>
         )}
 
+        <Section title={`Log de auditoria admin (${audit.length})`}>
+          <div style={card}>
+            <p style={{ opacity: 0.8, margin: "0 0 8px", fontSize: "0.82rem" }}>
+              Registro local de tentativas e validações do modo admin. Últimas 100 entradas ficam salvas
+              neste navegador e vão junto no `.json` exportado.
+            </p>
+            {audit.length === 0 ? (
+              <p style={{ opacity: 0.7, margin: 0 }}>Sem eventos registrados.</p>
+            ) : (
+              <>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>
+                  {(["success", "failure", "setup", "reset", "logout"] as AuditEventType[]).map((t) => {
+                    const n = audit.filter((a) => a.event === t).length;
+                    if (!n) return null;
+                    const color =
+                      t === "failure" ? "#ffb4a2" : t === "success" ? "#a8e6a3" : "#ffe7a1";
+                    return (
+                      <span
+                        key={t}
+                        style={{
+                          background: "rgba(193,153,53,0.15)",
+                          border: `1px solid ${color}`,
+                          color,
+                          padding: "3px 8px",
+                          borderRadius: 999,
+                          fontSize: "0.78rem",
+                        }}
+                      >
+                        {AUDIT_LABEL[t]} · {n}
+                      </span>
+                    );
+                  })}
+                </div>
+                <div style={{ maxHeight: 260, overflow: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.82rem" }}>
+                    <tbody>
+                      {audit.map((a) => (
+                        <tr key={a.id} style={{ borderBottom: "1px solid rgba(193,153,53,0.15)" }}>
+                          <td style={{ padding: "6px 8px", opacity: 0.75, whiteSpace: "nowrap" }}>
+                            {new Date(a.time).toLocaleString("pt-BR")}
+                          </td>
+                          <td
+                            style={{
+                              padding: "6px 8px",
+                              color: a.event === "failure" ? "#ffb4a2" : "#ffe7a1",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {AUDIT_LABEL[a.event]}
+                          </td>
+                          <td style={{ padding: "6px 8px", opacity: 0.85 }}>{a.detail ?? ""}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div style={{ marginTop: 8 }}>
+                  <button
+                    onClick={clearAudit}
+                    style={btn("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
+                  >
+                    Limpar log de auditoria
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        </Section>
+
         <Section title="Último erro">
           {last ? (
             <div style={card}>
+
               <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
                 <strong style={{ color: "#c19935" }}>{last.type}</strong>
                 <span style={{ opacity: 0.7, fontSize: "0.82rem" }}>
