@@ -275,7 +275,7 @@ export default function Diagnostico() {
               {logs
                 .map(
                   (l) =>
-                    `[${l.time.split("T")[1]?.replace("Z", "")}] [${l.level.toUpperCase()}] ${l.message}`,
+                    `[${l.time.split("T")[1]?.replace("Z", "")}] [${l.level.toUpperCase()}] ${m(l.message)}`,
                 )
                 .join("\n")}
             </pre>
