@@ -239,7 +239,7 @@ export default function Diagnostico() {
                 {Object.entries(env).map(([k, v]) => (
                   <tr key={k} style={{ borderBottom: "1px solid rgba(193,153,53,0.15)" }}>
                     <td style={{ padding: "6px 8px", opacity: 0.7, verticalAlign: "top" }}>{k}</td>
-                    <td style={{ padding: "6px 8px", wordBreak: "break-all" }}>{String(v)}</td>
+                    <td style={{ padding: "6px 8px", wordBreak: "break-all" }}>{m(String(v))}</td>
                   </tr>
                 ))}
               </tbody>
