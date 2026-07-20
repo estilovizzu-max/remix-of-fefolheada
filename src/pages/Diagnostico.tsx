@@ -418,7 +418,10 @@ export default function Diagnostico() {
           </button>
           {adminUnlocked ? (
             <button
-              onClick={() => setAdminUnlocked(false)}
+              onClick={() => {
+                setAdminUnlocked(false);
+                logAudit("logout");
+              }}
               style={btn("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
             >
               Sair do modo admin
