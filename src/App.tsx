@@ -29,6 +29,14 @@ const App = () => (
               </RouteErrorBoundary>
             }
           />
+          <Route
+            path="/diagnostico"
+            element={
+              <RouteErrorBoundary routeName="diagnostico">
+                <Diagnostico />
+              </RouteErrorBoundary>
+            }
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
