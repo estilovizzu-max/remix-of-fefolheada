@@ -482,6 +482,104 @@ const SectionPage = forwardRef<HTMLDivElement, SectionPageProps>(
 );
 SectionPage.displayName = 'SectionPage';
 
+/* ---------- Nota ao leitor (folio v) ---------- */
+
+const NoteToReaderPage = forwardRef<HTMLDivElement, { onJumpToPending: () => void }>(
+  ({ onJumpToPending }, ref) => (
+    <BookPage ref={ref} folio="v">
+      <div className="h-full flex flex-col px-8 pt-14 pb-10">
+        <h2
+          className="text-2xl font-serif text-[hsl(var(--book-purple))] text-center"
+          style={{ fontFamily: 'Lora, serif' }}
+        >
+          Nota ao leitor
+        </h2>
+        <div className="h-px w-12 bg-[hsl(var(--book-gold))] mx-auto mt-3 mb-5" />
+
+        <div className="flex-1 overflow-y-auto min-h-0 poem-scroll space-y-4 text-[13px] font-serif leading-relaxed text-[hsl(var(--paper-ink))]/90">
+          <p>
+            Cada poema deste livro é acompanhado, sempre que possível, por uma
+            breve <em>Reflexão</em> ou <em>Convite ao poeta</em> — palavras que
+            propõem uma respiração meditativa após a leitura.
+          </p>
+          <p>
+            Alguns poemas ainda estão em processo de meditação e trazem, no
+            lugar da reflexão, um cartão discreto:
+          </p>
+
+          <div className="rounded border border-dashed border-[hsl(var(--book-gold))]/60 bg-[hsl(var(--book-gold))]/5 px-4 py-3">
+            <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
+              ✦ Reflexão em preparação
+            </p>
+            <p className="text-xs italic text-[hsl(var(--paper-ink))]/85">
+              Uma meditação sobre a alma do poema, ainda a ser escrita —
+              nasce da escuta orante.
+            </p>
+          </div>
+
+          <p>
+            Ao final do livro, a seção{' '}
+            <button
+              onClick={onJumpToPending}
+              className="italic underline underline-offset-4 text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))]"
+            >
+              Reflexões pendentes
+            </button>{' '}
+            reúne todos esses poemas em um único índice, para que você possa
+            acompanhar o que ainda está por florescer.
+          </p>
+        </div>
+      </div>
+    </BookPage>
+  ),
+);
+NoteToReaderPage.displayName = 'NoteToReaderPage';
+
+/* ---------- Índice: Reflexões pendentes ---------- */
+
+interface PendingEntry {
+  id: string; title: string; blockLabel: string; page: number;
+}
+const PendingIndexPage = forwardRef<
+  HTMLDivElement,
+  { entries: PendingEntry[]; folio: number; onJump: (p: number) => void }
+>(({ entries, folio, onJump }, ref) => (
+  <BookPage ref={ref} runningHead="REFLEXÕES PENDENTES" folio={folio}>
+    <div className="h-full flex flex-col px-8 pt-14 pb-10">
+      <h2
+        className="text-2xl font-serif text-[hsl(var(--book-purple))] text-center"
+        style={{ fontFamily: 'Lora, serif' }}
+      >
+        Reflexões pendentes
+      </h2>
+      <div className="h-px w-12 bg-[hsl(var(--book-gold))] mx-auto mt-3 mb-4" />
+      <p className="text-center text-[11px] italic font-serif text-[hsl(var(--paper-muted))] mb-4">
+        {entries.length} poemas aguardam meditação escrita.
+      </p>
+      <div className="flex-1 overflow-y-auto min-h-0 poem-scroll pr-1 space-y-1">
+        {entries.map((e) => (
+          <button
+            key={e.id}
+            onClick={() => onJump(e.page)}
+            className="w-full text-left flex items-baseline gap-3 py-1.5 group border-b border-dotted border-[hsl(var(--paper-rule))]/40"
+          >
+            <span className="flex-1 font-serif text-sm text-[hsl(var(--paper-ink))] group-hover:underline">
+              {e.title}
+              <span className="block text-[10px] italic text-[hsl(var(--paper-muted))]">
+                {e.blockLabel}
+              </span>
+            </span>
+            <span className="text-[hsl(var(--book-gold))] font-serif text-xs">
+              {e.page + 1}
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  </BookPage>
+));
+PendingIndexPage.displayName = 'PendingIndexPage';
+
 const ColophonPage = forwardRef<HTMLDivElement, { onOpenAdmin: () => void }>(
   ({ onOpenAdmin }, ref) => (
     <BookPage ref={ref} variant="cover">
