@@ -170,7 +170,19 @@ export default function Diagnostico() {
           }}
         >
           <button onClick={copyAll} style={btn("#c19935", "#1a0f3d")}>
-            {copied ? "Copiado ✓" : "Copiar diagnóstico"}
+            {copied ? "Copiado ✓" : mask ? "Copiar diagnóstico (mascarado)" : "Copiar diagnóstico"}
+          </button>
+          <button
+            onClick={() => setMask((v) => !v)}
+            style={btn(
+              mask ? "#c19935" : "transparent",
+              mask ? "#1a0f3d" : "#f3ecdb",
+              mask ? "none" : "1px solid #c19935",
+            )}
+            aria-pressed={mask}
+            title="Mascara emails, tokens, JWT, cookies, chaves e IPs antes de copiar/exportar."
+          >
+            {mask ? "Mascarar dados: ON" : "Mascarar dados: OFF"}
           </button>
           <button onClick={refresh} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
             Atualizar
