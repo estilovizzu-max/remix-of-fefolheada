@@ -228,6 +228,7 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
     {
       poem, runningHead, marker, folio,
       isRead, isBookmarked, note,
+      pendingText, onJumpToPending,
       onToggleRead, onToggleBookmark, onSaveNote,
     },
     ref,
