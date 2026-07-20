@@ -375,6 +375,25 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
+function Badge({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 6,
+        padding: "0.35rem 0.65rem",
+        borderRadius: 999,
+        background: highlight ? "rgba(193,153,53,0.18)" : "rgba(0,0,0,0.3)",
+        border: `1px solid ${highlight ? "#c19935" : "rgba(243,236,219,0.2)"}`,
+      }}
+    >
+      <span style={{ opacity: 0.7 }}>{label}:</span>
+      <strong style={{ color: highlight ? "#c19935" : "#f3ecdb" }}>{value}</strong>
+    </span>
+  );
+}
+
 const codeStyle: React.CSSProperties = {
   display: "block",
   background: "rgba(0,0,0,0.35)",
