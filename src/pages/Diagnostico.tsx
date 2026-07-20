@@ -260,7 +260,7 @@ export default function Diagnostico() {
                       {new Date(e.time).toLocaleString("pt-BR")}
                     </span>
                   </div>
-                  <div style={{ marginTop: 4, color: "#ffb4a2" }}>{e.message}</div>
+                  <div style={{ marginTop: 4, color: "#ffb4a2" }}>{m(e.message)}</div>
                 </div>
               ))}
             </div>
