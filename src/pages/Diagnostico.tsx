@@ -55,6 +55,7 @@ export default function Diagnostico() {
   const [logs, setLogs] = useState<ConsoleLogEntry[]>([]);
   const [env, setEnv] = useState(getEnvInfo);
   const [copied, setCopied] = useState(false);
+  const [mask, setMask] = useState(true);
 
   const refresh = () => {
     setErrors(loadErrors());
