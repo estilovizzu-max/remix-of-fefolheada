@@ -221,37 +221,39 @@ export default function Diagnostico() {
     window.setTimeout(() => setCopied(false), 1800);
   };
 
+  const buildJsonPayload = () => ({
+    generatedAt: new Date().toISOString(),
+    masked: effectiveMask,
+    redactionCounts: effectiveMask ? counts : {},
+    env: effectiveMask
+      ? Object.fromEntries(
+          Object.entries(env).map(([k, v]) => [k, redactWithStats(String(v)).text]),
+        )
+      : env,
+    lastError: last
+      ? effectiveMask
+        ? {
+            ...last,
+            message: redactWithStats(last.message).text,
+            source: last.source ? redactWithStats(last.source).text : last.source,
+            url: redactWithStats(last.url).text,
+            stack: last.stack ? redactWithStats(last.stack).text : last.stack,
+            userAgent: redactWithStats(last.userAgent).text,
+          }
+        : last
+      : null,
+    errors: effectiveMask
+      ? errors.map((e) => ({ ...e, message: redactWithStats(e.message).text }))
+      : errors,
+    logs: effectiveMask
+      ? logs.map((l) => ({ ...l, message: redactWithStats(l.message).text }))
+      : logs,
+    payloadText,
+    adminAudit: audit,
+  });
+
   const downloadJson = () => {
-    const payload = {
-      generatedAt: new Date().toISOString(),
-      masked: effectiveMask,
-      redactionCounts: effectiveMask ? counts : {},
-      env: effectiveMask
-        ? Object.fromEntries(
-            Object.entries(env).map(([k, v]) => [k, redactWithStats(String(v)).text]),
-          )
-        : env,
-      lastError: last
-        ? effectiveMask
-          ? {
-              ...last,
-              message: redactWithStats(last.message).text,
-              source: last.source ? redactWithStats(last.source).text : last.source,
-              url: redactWithStats(last.url).text,
-              stack: last.stack ? redactWithStats(last.stack).text : last.stack,
-              userAgent: redactWithStats(last.userAgent).text,
-            }
-          : last
-        : null,
-      errors: effectiveMask
-        ? errors.map((e) => ({ ...e, message: redactWithStats(e.message).text }))
-        : errors,
-      logs: effectiveMask
-        ? logs.map((l) => ({ ...l, message: redactWithStats(l.message).text }))
-        : logs,
-      payloadText,
-      adminAudit: audit,
-    };
+    const payload = buildJsonPayload();
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -262,6 +264,25 @@ export default function Diagnostico() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  };
+
+  const copyJson = async () => {
+    const text = JSON.stringify(buildJsonPayload(), null, 2);
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    toast.success("JSON copiado", {
+      description: `${text.length.toLocaleString("pt-BR")} caracteres · ${
+        effectiveMask ? "mascarado" : "modo admin"
+      }`,
+    });
   };
 
   const clearAll = () => {
@@ -391,6 +412,9 @@ export default function Diagnostico() {
           </button>
           <button onClick={downloadJson} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
             Baixar .json
+          </button>
+          <button onClick={copyJson} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
+            Copiar JSON {effectiveMask ? "(mascarado)" : "(admin)"}
           </button>
           <button
             onClick={() => setShowPreview((v) => !v)}
