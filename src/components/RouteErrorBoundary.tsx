@@ -253,6 +253,14 @@ export class RouteErrorBoundary extends Component<Props, State> {
             >
               Copiar diagnóstico
             </button>
+            {history.length > 0 && (
+              <button
+                onClick={this.handleClearHistory}
+                style={btnStyle("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
+              >
+                Limpar histórico
+              </button>
+            )}
             <a
               href="/"
               style={{
@@ -264,6 +272,52 @@ export class RouteErrorBoundary extends Component<Props, State> {
               Voltar ao início
             </a>
           </div>
+
+          <Section title={`Histórico de falhas (${history.length})`}>
+            {history.length === 0 ? (
+              <p style={{ opacity: 0.7 }}>Sem falhas anteriores registradas.</p>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                {history.map((h, i) => (
+                  <div
+                    key={h.time + i}
+                    style={{
+                      background: "rgba(0,0,0,0.3)",
+                      border: "1px solid rgba(193,153,53,0.25)",
+                      borderRadius: 6,
+                      padding: "0.6rem 0.75rem",
+                      fontSize: "0.82rem",
+                    }}
+                  >
+                    <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+                      <strong style={{ color: "#c19935" }}>#{history.length - i}</strong>
+                      <span style={{ opacity: 0.75 }}>
+                        {new Date(h.time).toLocaleString("pt-BR")}
+                        {i < history.length - 1 && (
+                          <> · há {formatDelta(h.time, new Date().toISOString())}</>
+                        )}
+                      </span>
+                    </div>
+                    <div style={{ marginTop: 4, color: "#ffb4a2" }}>
+                      {h.name}: {h.message}
+                    </div>
+                    {h.stackHead && (
+                      <pre
+                        style={{
+                          ...preStyle,
+                          maxHeight: 100,
+                          marginTop: 6,
+                          fontSize: "0.75rem",
+                        }}
+                      >
+                        {h.stackHead}
+                      </pre>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </Section>
 
           <Section title="Mensagem de erro">
             <code style={codeStyle}>
