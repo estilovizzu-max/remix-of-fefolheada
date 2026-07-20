@@ -489,13 +489,92 @@ export default function Diagnostico() {
 
         {showPreview && (
           <Section title="Prévia do que será copiado/baixado">
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
+              <button onClick={copyPreview} style={btn("#c19935", "#1a0f3d")}>
+                Copiar do preview
+              </button>
+              <span style={{ opacity: 0.7, fontSize: "0.8rem", alignSelf: "center" }}>
+                {payloadText.length.toLocaleString("pt-BR")} caracteres ·{" "}
+                {effectiveMask ? "mascarado" : "modo admin"}
+              </span>
+            </div>
             <pre style={pre}>{payloadText}</pre>
           </Section>
         )}
 
+        <Section title={`Log de auditoria admin (${audit.length})`}>
+          <div style={card}>
+            <p style={{ opacity: 0.8, margin: "0 0 8px", fontSize: "0.82rem" }}>
+              Registro local de tentativas e validações do modo admin. Últimas 100 entradas ficam salvas
+              neste navegador e vão junto no `.json` exportado.
+            </p>
+            {audit.length === 0 ? (
+              <p style={{ opacity: 0.7, margin: 0 }}>Sem eventos registrados.</p>
+            ) : (
+              <>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>
+                  {(["success", "failure", "setup", "reset", "logout"] as AuditEventType[]).map((t) => {
+                    const n = audit.filter((a) => a.event === t).length;
+                    if (!n) return null;
+                    const color =
+                      t === "failure" ? "#ffb4a2" : t === "success" ? "#a8e6a3" : "#ffe7a1";
+                    return (
+                      <span
+                        key={t}
+                        style={{
+                          background: "rgba(193,153,53,0.15)",
+                          border: `1px solid ${color}`,
+                          color,
+                          padding: "3px 8px",
+                          borderRadius: 999,
+                          fontSize: "0.78rem",
+                        }}
+                      >
+                        {AUDIT_LABEL[t]} · {n}
+                      </span>
+                    );
+                  })}
+                </div>
+                <div style={{ maxHeight: 260, overflow: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.82rem" }}>
+                    <tbody>
+                      {audit.map((a) => (
+                        <tr key={a.id} style={{ borderBottom: "1px solid rgba(193,153,53,0.15)" }}>
+                          <td style={{ padding: "6px 8px", opacity: 0.75, whiteSpace: "nowrap" }}>
+                            {new Date(a.time).toLocaleString("pt-BR")}
+                          </td>
+                          <td
+                            style={{
+                              padding: "6px 8px",
+                              color: a.event === "failure" ? "#ffb4a2" : "#ffe7a1",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {AUDIT_LABEL[a.event]}
+                          </td>
+                          <td style={{ padding: "6px 8px", opacity: 0.85 }}>{a.detail ?? ""}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div style={{ marginTop: 8 }}>
+                  <button
+                    onClick={clearAudit}
+                    style={btn("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
+                  >
+                    Limpar log de auditoria
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        </Section>
+
         <Section title="Último erro">
           {last ? (
             <div style={card}>
+
               <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
                 <strong style={{ color: "#c19935" }}>{last.type}</strong>
                 <span style={{ opacity: 0.7, fontSize: "0.82rem" }}>
