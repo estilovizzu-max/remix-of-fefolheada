@@ -299,6 +299,7 @@ export default function Diagnostico() {
       window.localStorage.setItem(ADMIN_HASH_KEY, hash);
       setAdminUnlocked(true);
       setAdminPromptOpen(false);
+      logAudit("setup", "Senha inicial definida e sessão admin aberta");
       return;
     }
     const salt = window.localStorage.getItem(ADMIN_SALT_KEY) ?? "";
@@ -307,8 +308,10 @@ export default function Diagnostico() {
     if (hash === expected) {
       setAdminUnlocked(true);
       setAdminPromptOpen(false);
+      logAudit("success");
     } else {
       setAdminErr("Senha incorreta.");
+      logAudit("failure", `Tentativa com ${adminPwd.length} caracteres`);
     }
   };
 
@@ -319,6 +322,31 @@ export default function Diagnostico() {
     setAdminUnlocked(false);
     setNeedsSetup(true);
     setAdminErr("Senha removida. Defina uma nova para continuar.");
+    logAudit("reset");
+  };
+
+  const copyPreview = async () => {
+    try {
+      await navigator.clipboard.writeText(payloadText);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = payloadText;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    toast.success("Prévia copiada", {
+      description: `${payloadText.length.toLocaleString("pt-BR")} caracteres · ${
+        effectiveMask ? "mascarado" : "modo admin"
+      }`,
+    });
+  };
+
+  const clearAudit = () => {
+    if (!window.confirm("Limpar log de auditoria do modo admin?")) return;
+    window.localStorage.removeItem(ADMIN_AUDIT_KEY);
+    setAudit([]);
   };
 
   return (
