@@ -216,6 +216,8 @@ interface PoemPageProps {
   isRead: boolean;
   isBookmarked: boolean;
   note: string;
+  pendingText?: string;
+  onJumpToPending?: () => void;
   onToggleRead: (id: string, v: boolean) => void;
   onToggleBookmark: (id: string) => void;
   onSaveNote: (id: string, note: string) => void;
