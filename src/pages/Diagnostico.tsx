@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getConsoleBuffer, clearConsoleBuffer, type ConsoleLogEntry } from "@/utils/consoleBuffer";
+import { redact } from "@/utils/redact";
 
 interface CapturedError {
   id: string;
@@ -55,6 +56,7 @@ export default function Diagnostico() {
   const [logs, setLogs] = useState<ConsoleLogEntry[]>([]);
   const [env, setEnv] = useState(getEnvInfo);
   const [copied, setCopied] = useState(false);
+  const [mask, setMask] = useState(true);
 
   const refresh = () => {
     setErrors(loadErrors());
@@ -70,23 +72,26 @@ export default function Diagnostico() {
 
   const last = errors[0];
 
+  const m = (s: string | undefined | null) => (mask ? redact(String(s ?? "")) : String(s ?? ""));
+
   const buildPayload = () => {
     return [
       `Diagnóstico Folheando Fé — ${new Date().toLocaleString("pt-BR")}`,
+      `Mascaramento: ${mask ? "ATIVADO" : "DESATIVADO"}`,
       "",
       "== Ambiente ==",
-      ...Object.entries(env).map(([k, v]) => `${k}: ${String(v)}`),
+      ...Object.entries(env).map(([k, v]) => `${k}: ${m(String(v))}`),
       "",
       "== Último erro ==",
       last
         ? [
             `Tipo: ${last.type}`,
             `Quando: ${last.time}`,
-            `Mensagem: ${last.message}`,
-            last.source ? `Local: ${last.source}:${last.lineno}:${last.colno}` : "",
-            `URL: ${last.url}`,
+            `Mensagem: ${m(last.message)}`,
+            last.source ? `Local: ${m(last.source)}:${last.lineno}:${last.colno}` : "",
+            `URL: ${m(last.url)}`,
             "Stack:",
-            last.stack ?? "(sem stack)",
+            m(last.stack ?? "(sem stack)"),
           ]
             .filter(Boolean)
             .join("\n")
@@ -94,13 +99,14 @@ export default function Diagnostico() {
       "",
       `== Histórico de erros (${errors.length}) ==`,
       ...errors.map(
-        (e, i) => `#${i + 1} [${e.time}] (${e.type}) ${e.message}`,
+        (e, i) => `#${i + 1} [${e.time}] (${e.type}) ${m(e.message)}`,
       ),
       "",
       `== Console (${logs.length}) ==`,
-      ...logs.map((l) => `[${l.time}] [${l.level.toUpperCase()}] ${l.message}`),
+      ...logs.map((l) => `[${l.time}] [${l.level.toUpperCase()}] ${m(l.message)}`),
     ].join("\n");
   };
+
 
   const copyAll = async () => {
     const text = buildPayload();
@@ -164,7 +170,19 @@ export default function Diagnostico() {
           }}
         >
           <button onClick={copyAll} style={btn("#c19935", "#1a0f3d")}>
-            {copied ? "Copiado ✓" : "Copiar diagnóstico"}
+            {copied ? "Copiado ✓" : mask ? "Copiar diagnóstico (mascarado)" : "Copiar diagnóstico"}
+          </button>
+          <button
+            onClick={() => setMask((v) => !v)}
+            style={btn(
+              mask ? "#c19935" : "transparent",
+              mask ? "#1a0f3d" : "#f3ecdb",
+              mask ? "none" : "1px solid #c19935",
+            )}
+            aria-pressed={mask}
+            title="Mascara emails, tokens, JWT, cookies, chaves e IPs antes de copiar/exportar."
+          >
+            {mask ? "Mascarar dados: ON" : "Mascarar dados: OFF"}
           </button>
           <button onClick={refresh} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
             Atualizar
@@ -193,19 +211,19 @@ export default function Diagnostico() {
                   {new Date(last.time).toLocaleString("pt-BR")}
                 </span>
               </div>
-              <div style={{ marginTop: 6, color: "#ffb4a2", wordBreak: "break-word" }}>{last.message}</div>
+              <div style={{ marginTop: 6, color: "#ffb4a2", wordBreak: "break-word" }}>{m(last.message)}</div>
               {last.source && (
                 <div style={{ opacity: 0.75, fontSize: "0.78rem", marginTop: 4 }}>
-                  {last.source}:{last.lineno}:{last.colno}
+                  {m(last.source)}:{last.lineno}:{last.colno}
                 </div>
               )}
               <div style={{ opacity: 0.65, fontSize: "0.78rem", marginTop: 4, wordBreak: "break-all" }}>
-                URL: {last.url}
+                URL: {m(last.url)}
               </div>
               {last.stack && (
                 <>
                   <h3 style={subTitle}>Stack</h3>
-                  <pre style={pre}>{last.stack}</pre>
+                  <pre style={pre}>{m(last.stack)}</pre>
                 </>
               )}
             </div>
@@ -221,7 +239,7 @@ export default function Diagnostico() {
                 {Object.entries(env).map(([k, v]) => (
                   <tr key={k} style={{ borderBottom: "1px solid rgba(193,153,53,0.15)" }}>
                     <td style={{ padding: "6px 8px", opacity: 0.7, verticalAlign: "top" }}>{k}</td>
-                    <td style={{ padding: "6px 8px", wordBreak: "break-all" }}>{String(v)}</td>
+                    <td style={{ padding: "6px 8px", wordBreak: "break-all" }}>{m(String(v))}</td>
                   </tr>
                 ))}
               </tbody>
@@ -242,7 +260,7 @@ export default function Diagnostico() {
                       {new Date(e.time).toLocaleString("pt-BR")}
                     </span>
                   </div>
-                  <div style={{ marginTop: 4, color: "#ffb4a2" }}>{e.message}</div>
+                  <div style={{ marginTop: 4, color: "#ffb4a2" }}>{m(e.message)}</div>
                 </div>
               ))}
             </div>
@@ -257,7 +275,7 @@ export default function Diagnostico() {
               {logs
                 .map(
                   (l) =>
-                    `[${l.time.split("T")[1]?.replace("Z", "")}] [${l.level.toUpperCase()}] ${l.message}`,
+                    `[${l.time.split("T")[1]?.replace("Z", "")}] [${l.level.toUpperCase()}] ${m(l.message)}`,
                 )
                 .join("\n")}
             </pre>
