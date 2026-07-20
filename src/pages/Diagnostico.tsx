@@ -211,19 +211,19 @@ export default function Diagnostico() {
                   {new Date(last.time).toLocaleString("pt-BR")}
                 </span>
               </div>
-              <div style={{ marginTop: 6, color: "#ffb4a2", wordBreak: "break-word" }}>{last.message}</div>
+              <div style={{ marginTop: 6, color: "#ffb4a2", wordBreak: "break-word" }}>{m(last.message)}</div>
               {last.source && (
                 <div style={{ opacity: 0.75, fontSize: "0.78rem", marginTop: 4 }}>
-                  {last.source}:{last.lineno}:{last.colno}
+                  {m(last.source)}:{last.lineno}:{last.colno}
                 </div>
               )}
               <div style={{ opacity: 0.65, fontSize: "0.78rem", marginTop: 4, wordBreak: "break-all" }}>
-                URL: {last.url}
+                URL: {m(last.url)}
               </div>
               {last.stack && (
                 <>
                   <h3 style={subTitle}>Stack</h3>
-                  <pre style={pre}>{last.stack}</pre>
+                  <pre style={pre}>{m(last.stack)}</pre>
                 </>
               )}
             </div>
