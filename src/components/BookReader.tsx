@@ -26,6 +26,7 @@ import { DiarySection } from '@/components/DiarySection';
 import { ProgressSection } from '@/components/ProgressSection';
 import { AdminPanel } from '@/components/AdminPanel';
 import { saveCustomPoem, generatePoemId } from '@/utils/poemLoader';
+import { pendingPreview } from '@/utils/pendingPreview';
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 const BLOCKS = ['bloco-1', 'bloco-2', 'bloco-3', 'bloco-4', 'bloco-5', 'bloco-6'];
@@ -215,6 +216,8 @@ interface PoemPageProps {
   isRead: boolean;
   isBookmarked: boolean;
   note: string;
+  pendingText?: string;
+  onJumpToPending?: () => void;
   onToggleRead: (id: string, v: boolean) => void;
   onToggleBookmark: (id: string) => void;
   onSaveNote: (id: string, note: string) => void;
@@ -225,6 +228,7 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
     {
       poem, runningHead, marker, folio,
       isRead, isBookmarked, note,
+      pendingText, onJumpToPending,
       onToggleRead, onToggleBookmark, onSaveNote,
     },
     ref,
@@ -265,6 +269,7 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
     };
 
     const hasExtra = poem.reflection || poem.inspiration;
+    const isPending = !hasExtra && !!pendingText;
 
     return (
       <BookPage ref={ref} runningHead={runningHead + ` · ${marker}`} folio={folio}>
@@ -319,6 +324,29 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
                       </div>
                     )}
                   </>
+                )}
+              </div>
+            )}
+
+            {isPending && (
+              <div
+                className="mt-4 pt-3 border-t border-dashed border-[hsl(var(--book-gold))]/50"
+                role="note"
+                aria-label="Reflexão em preparação"
+              >
+                <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
+                  ✦ Reflexão em preparação
+                </p>
+                <p className="text-xs italic font-serif leading-relaxed text-[hsl(var(--paper-ink))]/85">
+                  {pendingText}
+                </p>
+                {onJumpToPending && (
+                  <button
+                    onClick={onJumpToPending}
+                    className="mt-2 text-[10px] tracking-[0.25em] uppercase text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))] transition-colors underline underline-offset-4"
+                  >
+                    Ver todas as reflexões pendentes →
+                  </button>
                 )}
               </div>
             )}
@@ -454,6 +482,104 @@ const SectionPage = forwardRef<HTMLDivElement, SectionPageProps>(
 );
 SectionPage.displayName = 'SectionPage';
 
+/* ---------- Nota ao leitor (folio v) ---------- */
+
+const NoteToReaderPage = forwardRef<HTMLDivElement, { onJumpToPending: () => void }>(
+  ({ onJumpToPending }, ref) => (
+    <BookPage ref={ref} folio="v">
+      <div className="h-full flex flex-col px-8 pt-14 pb-10">
+        <h2
+          className="text-2xl font-serif text-[hsl(var(--book-purple))] text-center"
+          style={{ fontFamily: 'Lora, serif' }}
+        >
+          Nota ao leitor
+        </h2>
+        <div className="h-px w-12 bg-[hsl(var(--book-gold))] mx-auto mt-3 mb-5" />
+
+        <div className="flex-1 overflow-y-auto min-h-0 poem-scroll space-y-4 text-[13px] font-serif leading-relaxed text-[hsl(var(--paper-ink))]/90">
+          <p>
+            Cada poema deste livro é acompanhado, sempre que possível, por uma
+            breve <em>Reflexão</em> ou <em>Convite ao poeta</em> — palavras que
+            propõem uma respiração meditativa após a leitura.
+          </p>
+          <p>
+            Alguns poemas ainda estão em processo de meditação e trazem, no
+            lugar da reflexão, um cartão discreto:
+          </p>
+
+          <div className="rounded border border-dashed border-[hsl(var(--book-gold))]/60 bg-[hsl(var(--book-gold))]/5 px-4 py-3">
+            <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
+              ✦ Reflexão em preparação
+            </p>
+            <p className="text-xs italic text-[hsl(var(--paper-ink))]/85">
+              Uma meditação sobre a alma do poema, ainda a ser escrita —
+              nasce da escuta orante.
+            </p>
+          </div>
+
+          <p>
+            Ao final do livro, a seção{' '}
+            <button
+              onClick={onJumpToPending}
+              className="italic underline underline-offset-4 text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))]"
+            >
+              Reflexões pendentes
+            </button>{' '}
+            reúne todos esses poemas em um único índice, para que você possa
+            acompanhar o que ainda está por florescer.
+          </p>
+        </div>
+      </div>
+    </BookPage>
+  ),
+);
+NoteToReaderPage.displayName = 'NoteToReaderPage';
+
+/* ---------- Índice: Reflexões pendentes ---------- */
+
+interface PendingEntry {
+  id: string; title: string; blockLabel: string; page: number;
+}
+const PendingIndexPage = forwardRef<
+  HTMLDivElement,
+  { entries: PendingEntry[]; folio: number; onJump: (p: number) => void }
+>(({ entries, folio, onJump }, ref) => (
+  <BookPage ref={ref} runningHead="REFLEXÕES PENDENTES" folio={folio}>
+    <div className="h-full flex flex-col px-8 pt-14 pb-10">
+      <h2
+        className="text-2xl font-serif text-[hsl(var(--book-purple))] text-center"
+        style={{ fontFamily: 'Lora, serif' }}
+      >
+        Reflexões pendentes
+      </h2>
+      <div className="h-px w-12 bg-[hsl(var(--book-gold))] mx-auto mt-3 mb-4" />
+      <p className="text-center text-[11px] italic font-serif text-[hsl(var(--paper-muted))] mb-4">
+        {entries.length} poemas aguardam meditação escrita.
+      </p>
+      <div className="flex-1 overflow-y-auto min-h-0 poem-scroll pr-1 space-y-1">
+        {entries.map((e) => (
+          <button
+            key={e.id}
+            onClick={() => onJump(e.page)}
+            className="w-full text-left flex items-baseline gap-3 py-1.5 group border-b border-dotted border-[hsl(var(--paper-rule))]/40"
+          >
+            <span className="flex-1 font-serif text-sm text-[hsl(var(--paper-ink))] group-hover:underline">
+              {e.title}
+              <span className="block text-[10px] italic text-[hsl(var(--paper-muted))]">
+                {e.blockLabel}
+              </span>
+            </span>
+            <span className="text-[hsl(var(--book-gold))] font-serif text-xs">
+              {e.page + 1}
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  </BookPage>
+));
+PendingIndexPage.displayName = 'PendingIndexPage';
+
 const ColophonPage = forwardRef<HTMLDivElement, { onOpenAdmin: () => void }>(
   ({ onOpenAdmin }, ref) => (
     <BookPage ref={ref} variant="cover">
@@ -554,15 +680,26 @@ export const BookReader = () => {
     setDiaryEntries((p) => p.filter((_, x) => x !== i));
 
   // Build page sequence + search index
-  const { pages, blockStarts, groupsPage, diaryPage, progressPage, searchIndex } = useMemo(() => {
+  const {
+    pages, blockStarts, groupsPage, diaryPage, progressPage,
+    notePage, pendingPage, searchIndex,
+  } = useMemo(() => {
     const seq: React.ReactNode[] = [];
     const idx: { title: string; block: string; blockLabel: string; page: number; id: string }[] = [];
+    const pending: PendingEntry[] = [];
+
     seq.push(<CoverPage key="cover" />);
     seq.push(<CopyrightPage key="copy" />);
     seq.push(<EpigraphPage key="epi" />);
     const tocIndex = seq.length;
     seq.push(<div key="toc-placeholder" />);
+    const noteIndex = seq.length;
+    seq.push(<div key="note-placeholder" />);
+
     const bStarts: number[] = [];
+    // Placeholder for pendingPage number — patched below after we know it.
+    const jumpPendingRef = { current: 0 };
+    const jumpToPending = () => bookRef.current?.pageFlip()?.flip(jumpPendingRef.current);
 
     BLOCKS.forEach((bk, i) => {
       bStarts.push(seq.length);
@@ -584,6 +721,14 @@ export const BookReader = () => {
           page: pageNum,
           id: poem.id,
         });
+        const hasExtra = poem.reflection || poem.inspiration;
+        const preview = hasExtra ? undefined : pendingPreview(poem.title, bk, pi);
+        if (!hasExtra) {
+          pending.push({
+            id: poem.id, title: poem.title,
+            blockLabel: themeTitles[bk], page: pageNum,
+          });
+        }
         seq.push(
           <PoemPage
             key={poem.id}
@@ -594,6 +739,8 @@ export const BookReader = () => {
             isRead={readPoems.includes(poem.id)}
             isBookmarked={bookmarks.includes(poem.id)}
             note={notes[poem.id] ?? ''}
+            pendingText={preview}
+            onJumpToPending={preview ? jumpToPending : undefined}
             onToggleRead={handleToggleRead}
             onToggleBookmark={handleToggleBookmark}
             onSaveNote={handleSaveNote}
@@ -634,8 +781,27 @@ export const BookReader = () => {
         />
       </SectionPage>,
     );
+
+    const pendingPageIdx = seq.length;
+    jumpPendingRef.current = pendingPageIdx;
+    seq.push(
+      <PendingIndexPage
+        key="pending"
+        entries={pending}
+        folio={pendingPageIdx + 1}
+        onJump={(p) => bookRef.current?.pageFlip()?.flip(p)}
+      />,
+    );
+
     seq.push(
       <ColophonPage key="colo" onOpenAdmin={() => setAdminHiddenTrigger((v) => v + 1)} />,
+    );
+
+    seq[noteIndex] = (
+      <NoteToReaderPage
+        key="note"
+        onJumpToPending={() => bookRef.current?.pageFlip()?.flip(pendingPageIdx)}
+      />
     );
 
     seq[tocIndex] = (
@@ -644,9 +810,11 @@ export const BookReader = () => {
         onJump={(p) => { bookRef.current?.pageFlip()?.flip(p); setTocOpen(false); }}
         blockStarts={bStarts}
         extras={[
+          { label: 'Nota ao leitor', page: noteIndex },
           { label: 'Grupos de Oração', page: gPage },
           { label: 'Diário Espiritual', page: dPage },
           { label: 'Sua Jornada', page: pPage },
+          { label: `Reflexões pendentes (${pending.length})`, page: pendingPageIdx },
         ]}
       />
     );
@@ -657,6 +825,8 @@ export const BookReader = () => {
       groupsPage: gPage,
       diaryPage: dPage,
       progressPage: pPage,
+      notePage: noteIndex,
+      pendingPage: pendingPageIdx,
       searchIndex: idx,
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -933,6 +1103,12 @@ export const BookReader = () => {
                     ))}
                     <div className="h-px bg-[hsl(var(--paper-rule))]/60 my-3" />
                     <button
+                      onClick={() => jumpTo(notePage)}
+                      className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
+                    >
+                      <StickyNote className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Nota ao leitor
+                    </button>
+                    <button
                       onClick={() => jumpTo(groupsPage)}
                       className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
                     >
@@ -949,6 +1125,12 @@ export const BookReader = () => {
                       className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
                     >
                       <BookMarked className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Sua Jornada
+                    </button>
+                    <button
+                      onClick={() => jumpTo(pendingPage)}
+                      className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
+                    >
+                      <Bookmark className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Reflexões pendentes
                     </button>
                   </div>
 
