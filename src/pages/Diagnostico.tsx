@@ -72,23 +72,26 @@ export default function Diagnostico() {
 
   const last = errors[0];
 
+  const m = (s: string | undefined | null) => (mask ? redact(String(s ?? "")) : String(s ?? ""));
+
   const buildPayload = () => {
     return [
       `Diagnóstico Folheando Fé — ${new Date().toLocaleString("pt-BR")}`,
+      `Mascaramento: ${mask ? "ATIVADO" : "DESATIVADO"}`,
       "",
       "== Ambiente ==",
-      ...Object.entries(env).map(([k, v]) => `${k}: ${String(v)}`),
+      ...Object.entries(env).map(([k, v]) => `${k}: ${m(String(v))}`),
       "",
       "== Último erro ==",
       last
         ? [
             `Tipo: ${last.type}`,
             `Quando: ${last.time}`,
-            `Mensagem: ${last.message}`,
-            last.source ? `Local: ${last.source}:${last.lineno}:${last.colno}` : "",
-            `URL: ${last.url}`,
+            `Mensagem: ${m(last.message)}`,
+            last.source ? `Local: ${m(last.source)}:${last.lineno}:${last.colno}` : "",
+            `URL: ${m(last.url)}`,
             "Stack:",
-            last.stack ?? "(sem stack)",
+            m(last.stack ?? "(sem stack)"),
           ]
             .filter(Boolean)
             .join("\n")
@@ -96,13 +99,14 @@ export default function Diagnostico() {
       "",
       `== Histórico de erros (${errors.length}) ==`,
       ...errors.map(
-        (e, i) => `#${i + 1} [${e.time}] (${e.type}) ${e.message}`,
+        (e, i) => `#${i + 1} [${e.time}] (${e.type}) ${m(e.message)}`,
       ),
       "",
       `== Console (${logs.length}) ==`,
-      ...logs.map((l) => `[${l.time}] [${l.level.toUpperCase()}] ${l.message}`),
+      ...logs.map((l) => `[${l.time}] [${l.level.toUpperCase()}] ${m(l.message)}`),
     ].join("\n");
   };
+
 
   const copyAll = async () => {
     const text = buildPayload();
