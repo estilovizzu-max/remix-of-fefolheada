@@ -26,6 +26,7 @@ import { DiarySection } from '@/components/DiarySection';
 import { ProgressSection } from '@/components/ProgressSection';
 import { AdminPanel } from '@/components/AdminPanel';
 import { saveCustomPoem, generatePoemId } from '@/utils/poemLoader';
+import { pendingPreview } from '@/utils/pendingPreview';
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 const BLOCKS = ['bloco-1', 'bloco-2', 'bloco-3', 'bloco-4', 'bloco-5', 'bloco-6'];
