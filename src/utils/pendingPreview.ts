@@ -52,8 +52,12 @@ function keyword(title: string): string {
   return 'estes versos';
 }
 
+export const PENDING_FALLBACK =
+  'Meditação em preparação — leia o poema no silêncio da oração.';
+
 export function pendingPreview(title: string, block: string, index: number): string {
   const templates = BLOCK_HINTS[block as BlockKey] ?? BLOCK_HINTS['bloco-1'];
   const tpl = templates[index % templates.length];
-  return tpl.replace('{kw}', keyword(title));
+  const out = tpl?.replace('{kw}', keyword(title))?.trim();
+  return out && out.length > 0 ? out : PENDING_FALLBACK;
 }
