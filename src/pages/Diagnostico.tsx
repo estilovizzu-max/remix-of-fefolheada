@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getConsoleBuffer, clearConsoleBuffer, type ConsoleLogEntry } from "@/utils/consoleBuffer";
+import { redact } from "@/utils/redact";
 
 interface CapturedError {
   id: string;
