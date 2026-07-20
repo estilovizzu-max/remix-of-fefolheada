@@ -25,6 +25,52 @@ interface CapturedError {
 const ERROR_STORAGE_KEY = "global-error-reports";
 const ADMIN_HASH_KEY = "diagnostico-admin-hash";
 const ADMIN_SALT_KEY = "diagnostico-admin-salt";
+const ADMIN_AUDIT_KEY = "diagnostico-admin-audit";
+
+type AuditEventType = "setup" | "success" | "failure" | "logout" | "reset";
+
+interface AuditEntry {
+  id: string;
+  time: string;
+  event: AuditEventType;
+  detail?: string;
+}
+
+const AUDIT_LABEL: Record<AuditEventType, string> = {
+  setup: "Senha definida",
+  success: "Validação bem-sucedida",
+  failure: "Falha de senha",
+  logout: "Saída do modo admin",
+  reset: "Senha redefinida",
+};
+
+function loadAudit(): AuditEntry[] {
+  try {
+    const raw = window.localStorage.getItem(ADMIN_AUDIT_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function appendAudit(event: AuditEventType, detail?: string): AuditEntry[] {
+  const list = loadAudit();
+  const entry: AuditEntry = {
+    id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    time: new Date().toISOString(),
+    event,
+    detail,
+  };
+  const next = [entry, ...list].slice(0, 100);
+  try {
+    window.localStorage.setItem(ADMIN_AUDIT_KEY, JSON.stringify(next));
+  } catch {
+    /* ignore */
+  }
+  return next;
+}
 
 function loadErrors(): CapturedError[] {
   try {
