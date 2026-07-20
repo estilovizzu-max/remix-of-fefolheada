@@ -185,7 +185,10 @@ export class RouteErrorBoundary extends Component<Props, State> {
   render() {
     if (!this.state.error) return this.props.children;
 
-    const { error, errorInfo, logs } = this.state;
+    const { error, errorInfo, logs, history } = this.state;
+    const first = history[history.length - 1];
+    const last = history[0];
+    const span = first && last && first !== last ? formatDelta(first.time, last.time) : "";
     return (
       <div
         role="alert"
@@ -210,9 +213,26 @@ export class RouteErrorBoundary extends Component<Props, State> {
           >
             Falha ao carregar a rota /{this.props.routeName}
           </h1>
-          <p style={{ opacity: 0.8, marginBottom: "1.5rem" }}>
+          <p style={{ opacity: 0.8, marginBottom: "1rem" }}>
             Ocorreu um erro ao renderizar esta página. Detalhes abaixo para diagnóstico.
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "0.75rem",
+              flexWrap: "wrap",
+              marginBottom: "1.5rem",
+              fontSize: "0.85rem",
+            }}
+          >
+            <Badge label="Total de falhas" value={String(history.length)} />
+            {last && <Badge label="Última" value={new Date(last.time).toLocaleString("pt-BR")} />}
+            {span && <Badge label="Janela observada" value={span} />}
+            {history.length >= 3 && (
+              <Badge label="Padrão" value="intermitente (≥3)" highlight />
+            )}
+          </div>
 
           <div style={{ display: "flex", gap: "0.75rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
             <button
