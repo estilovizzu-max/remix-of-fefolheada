@@ -1,6 +1,9 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import { initConsoleBuffer } from "./utils/consoleBuffer";
+
+initConsoleBuffer();
 
 // Ambiente: dev mantém o badge visível; qualquer outro contexto oculta.
 const isDev =

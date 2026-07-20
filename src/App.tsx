@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Revisao from "./pages/Revisao";
+import Diagnostico from "./pages/Diagnostico";
 import NotFound from "./pages/NotFound";
 import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
 import { GlobalErrorReporter } from "./components/GlobalErrorReporter";
@@ -25,6 +26,14 @@ const App = () => (
             element={
               <RouteErrorBoundary routeName="revisao">
                 <Revisao />
+              </RouteErrorBoundary>
+            }
+          />
+          <Route
+            path="/diagnostico"
+            element={
+              <RouteErrorBoundary routeName="diagnostico">
+                <Diagnostico />
               </RouteErrorBoundary>
             }
           />
