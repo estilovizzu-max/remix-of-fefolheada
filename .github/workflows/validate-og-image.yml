@@ -1,0 +1,22 @@
+name: Validate og:image
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "scripts/validate-og-image.mjs"
+      - ".github/workflows/validate-og-image.yml"
+  push:
+    branches: [main]
+
+jobs:
+  validate-og-image:
+    name: og:image (1200x630, JPG/PNG)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validar og:image
+        run: node scripts/validate-og-image.mjs index.html
