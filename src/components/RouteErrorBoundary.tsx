@@ -128,7 +128,12 @@ function patchConsole() {
 patchConsole();
 
 export class RouteErrorBoundary extends Component<Props, State> {
-  state: State = { error: null, errorInfo: null, logs: [] };
+  state: State = {
+    error: null,
+    errorInfo: null,
+    logs: [],
+    history: loadHistory(this.props.routeName),
+  };
 
   static getDerivedStateFromError(error: Error): Partial<State> {
     return { error };
@@ -136,11 +141,26 @@ export class RouteErrorBoundary extends Component<Props, State> {
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error(`[RouteErrorBoundary:${this.props.routeName}]`, error, errorInfo);
-    this.setState({ errorInfo, logs: [...consoleBuffer] });
+    const entry: ErrorHistoryEntry = {
+      time: new Date().toISOString(),
+      name: error.name,
+      message: error.message,
+      stackHead: error.stack?.split("\n").slice(0, 3).join("\n"),
+      url: typeof window !== "undefined" ? window.location.href : "",
+      userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "",
+    };
+    const history = [entry, ...this.state.history].slice(0, MAX_HISTORY);
+    saveHistory(this.props.routeName, history);
+    this.setState({ errorInfo, logs: [...consoleBuffer], history });
   }
 
   handleReset = () => {
     this.setState({ error: null, errorInfo: null, logs: [] });
+  };
+
+  handleClearHistory = () => {
+    clearHistory(this.props.routeName);
+    this.setState({ history: [] });
   };
 
   handleCopy = () => {
