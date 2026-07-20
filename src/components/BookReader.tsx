@@ -1103,6 +1103,12 @@ export const BookReader = () => {
                     ))}
                     <div className="h-px bg-[hsl(var(--paper-rule))]/60 my-3" />
                     <button
+                      onClick={() => jumpTo(notePage)}
+                      className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
+                    >
+                      <StickyNote className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Nota ao leitor
+                    </button>
+                    <button
                       onClick={() => jumpTo(groupsPage)}
                       className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
                     >
@@ -1119,6 +1125,12 @@ export const BookReader = () => {
                       className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
                     >
                       <BookMarked className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Sua Jornada
+                    </button>
+                    <button
+                      onClick={() => jumpTo(pendingPage)}
+                      className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-sm font-serif italic text-[hsl(var(--paper-ink))] flex items-center gap-2"
+                    >
+                      <Bookmark className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Reflexões pendentes
                     </button>
                   </div>
 
