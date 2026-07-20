@@ -413,6 +413,9 @@ export default function Diagnostico() {
           <button onClick={downloadJson} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
             Baixar .json
           </button>
+          <button onClick={copyJson} style={btn("transparent", "#f3ecdb", "1px solid #c19935")}>
+            Copiar JSON {effectiveMask ? "(mascarado)" : "(admin)"}
+          </button>
           <button
             onClick={() => setShowPreview((v) => !v)}
             style={btn("transparent", "#f3ecdb", "1px solid rgba(243,236,219,0.3)")}
