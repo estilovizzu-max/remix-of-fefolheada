@@ -250,6 +250,7 @@ export default function Diagnostico() {
         ? logs.map((l) => ({ ...l, message: redactWithStats(l.message).text }))
         : logs,
       payloadText,
+      adminAudit: audit,
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
