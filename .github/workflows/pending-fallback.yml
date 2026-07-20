@@ -1,0 +1,35 @@
+name: Pending Fallback Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  web-fallback:
+    name: Vitest (web fallback)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run pending fallback unit tests
+        run: npm run test:pending-fallback
+      - name: Run full Vitest suite
+        run: npm test
+
+  epub-fallback:
+    name: EPUB fallback (Python)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run EPUB pending fallback test
+        run: python scripts/test_epub_pending_fallback.py
