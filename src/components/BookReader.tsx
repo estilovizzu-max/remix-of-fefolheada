@@ -269,6 +269,7 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
     };
 
     const hasExtra = poem.reflection || poem.inspiration;
+    const isPending = !hasExtra && !!pendingText;
 
     return (
       <BookPage ref={ref} runningHead={runningHead + ` · ${marker}`} folio={folio}>
@@ -323,6 +324,29 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
                       </div>
                     )}
                   </>
+                )}
+              </div>
+            )}
+
+            {isPending && (
+              <div
+                className="mt-4 pt-3 border-t border-dashed border-[hsl(var(--book-gold))]/50"
+                role="note"
+                aria-label="Reflexão em preparação"
+              >
+                <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
+                  ✦ Reflexão em preparação
+                </p>
+                <p className="text-xs italic font-serif leading-relaxed text-[hsl(var(--paper-ink))]/85">
+                  {pendingText}
+                </p>
+                {onJumpToPending && (
+                  <button
+                    onClick={onJumpToPending}
+                    className="mt-2 text-[10px] tracking-[0.25em] uppercase text-[hsl(var(--book-purple))] hover:text-[hsl(var(--book-gold))] transition-colors underline underline-offset-4"
+                  >
+                    Ver todas as reflexões pendentes →
+                  </button>
                 )}
               </div>
             )}
