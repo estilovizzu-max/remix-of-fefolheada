@@ -680,15 +680,26 @@ export const BookReader = () => {
     setDiaryEntries((p) => p.filter((_, x) => x !== i));
 
   // Build page sequence + search index
-  const { pages, blockStarts, groupsPage, diaryPage, progressPage, searchIndex } = useMemo(() => {
+  const {
+    pages, blockStarts, groupsPage, diaryPage, progressPage,
+    notePage, pendingPage, searchIndex,
+  } = useMemo(() => {
     const seq: React.ReactNode[] = [];
     const idx: { title: string; block: string; blockLabel: string; page: number; id: string }[] = [];
+    const pending: PendingEntry[] = [];
+
     seq.push(<CoverPage key="cover" />);
     seq.push(<CopyrightPage key="copy" />);
     seq.push(<EpigraphPage key="epi" />);
     const tocIndex = seq.length;
     seq.push(<div key="toc-placeholder" />);
+    const noteIndex = seq.length;
+    seq.push(<div key="note-placeholder" />);
+
     const bStarts: number[] = [];
+    // Placeholder for pendingPage number — patched below after we know it.
+    const jumpPendingRef = { current: 0 };
+    const jumpToPending = () => bookRef.current?.pageFlip()?.flip(jumpPendingRef.current);
 
     BLOCKS.forEach((bk, i) => {
       bStarts.push(seq.length);
@@ -710,6 +721,14 @@ export const BookReader = () => {
           page: pageNum,
           id: poem.id,
         });
+        const hasExtra = poem.reflection || poem.inspiration;
+        const preview = hasExtra ? undefined : pendingPreview(poem.title, bk, pi);
+        if (!hasExtra) {
+          pending.push({
+            id: poem.id, title: poem.title,
+            blockLabel: themeTitles[bk], page: pageNum,
+          });
+        }
         seq.push(
           <PoemPage
             key={poem.id}
@@ -720,6 +739,8 @@ export const BookReader = () => {
             isRead={readPoems.includes(poem.id)}
             isBookmarked={bookmarks.includes(poem.id)}
             note={notes[poem.id] ?? ''}
+            pendingText={preview}
+            onJumpToPending={preview ? jumpToPending : undefined}
             onToggleRead={handleToggleRead}
             onToggleBookmark={handleToggleBookmark}
             onSaveNote={handleSaveNote}
@@ -760,8 +781,27 @@ export const BookReader = () => {
         />
       </SectionPage>,
     );
+
+    const pendingPageIdx = seq.length;
+    jumpPendingRef.current = pendingPageIdx;
+    seq.push(
+      <PendingIndexPage
+        key="pending"
+        entries={pending}
+        folio={pendingPageIdx + 1}
+        onJump={(p) => bookRef.current?.pageFlip()?.flip(p)}
+      />,
+    );
+
     seq.push(
       <ColophonPage key="colo" onOpenAdmin={() => setAdminHiddenTrigger((v) => v + 1)} />,
+    );
+
+    seq[noteIndex] = (
+      <NoteToReaderPage
+        key="note"
+        onJumpToPending={() => bookRef.current?.pageFlip()?.flip(pendingPageIdx)}
+      />
     );
 
     seq[tocIndex] = (
@@ -770,9 +810,11 @@ export const BookReader = () => {
         onJump={(p) => { bookRef.current?.pageFlip()?.flip(p); setTocOpen(false); }}
         blockStarts={bStarts}
         extras={[
+          { label: 'Nota ao leitor', page: noteIndex },
           { label: 'Grupos de Oração', page: gPage },
           { label: 'Diário Espiritual', page: dPage },
           { label: 'Sua Jornada', page: pPage },
+          { label: `Reflexões pendentes (${pending.length})`, page: pendingPageIdx },
         ]}
       />
     );
@@ -783,6 +825,8 @@ export const BookReader = () => {
       groupsPage: gPage,
       diaryPage: dPage,
       progressPage: pPage,
+      notePage: noteIndex,
+      pendingPage: pendingPageIdx,
       searchIndex: idx,
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
