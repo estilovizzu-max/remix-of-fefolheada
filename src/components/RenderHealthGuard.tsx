@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
+import { captureRenderFailure } from "@/lib/sentry";
 
 /**
  * Detecta falha de renderização (container principal com altura 0)
  * após a hidratação e exibe um fallback amigável com botão de recarregar.
  *
- * Também persiste um marcador em localStorage para o /status e o /diagnostico.
+ * Também persiste um marcador em localStorage para o /status e o /diagnostico
+ * e reporta o evento ao Sentry (se configurado).
  */
 const CHECK_DELAY_MS = 4000;
 const MIN_HEIGHT_PX = 40;
 const FLAG_KEY = "render-health-last-failure";
+
 
 function markFailure(reason: string) {
   try {
