@@ -29,20 +29,20 @@
       (function () {
         var h = location.hostname;
         var isDev = h === "localhost" || h === "127.0.0.1" || h.endsWith(".local");
-        if (!isDev) document.documentElement.classList.add("hide-lovable-badge");
+        if (!isDev) document.documentElement.classList.add("production-ui-clean");
       })();
     </script>
     <style>
       /* Seletores robustos: cobre re-inserções com wrappers diferentes,
          variações de id/classe/data-attr e o link direto para lovable.dev. */
-      html.hide-lovable-badge #lovable-badge,
-      html.hide-lovable-badge [id="lovable-badge"],
-      html.hide-lovable-badge [id^="lovable-badge"],
-      html.hide-lovable-badge [id*="lovable-badge"],
-      html.hide-lovable-badge [class*="lovable-badge"],
-      html.hide-lovable-badge [data-lovable-badge],
-      html.hide-lovable-badge [data-testid="lovable-badge"],
-      html.hide-lovable-badge a[href*="lovable.dev"][target="_blank"] {
+      html.production-ui-clean #lovable-badge,
+      html.production-ui-clean [id="lovable-badge"],
+      html.production-ui-clean [id^="lovable-badge"],
+      html.production-ui-clean [id*="lovable-badge"],
+      html.production-ui-clean [class*="lovable-badge"],
+      html.production-ui-clean [data-lovable-badge],
+      html.production-ui-clean [data-testid="lovable-badge"],
+      html.production-ui-clean a[href*="lovable.dev"][target="_blank"] {
         position: fixed !important;
         left: -9999px !important;
         top: -9999px !important;

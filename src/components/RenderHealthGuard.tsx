@@ -44,9 +44,8 @@ export function RenderHealthGuard() {
         return;
       }
       const rect = root.getBoundingClientRect();
-      const hasText = (root.innerText || "").trim().length > 0;
-      if (rect.height < MIN_HEIGHT_PX && !hasText) {
-        const msg = `Conteúdo principal com altura ${Math.round(rect.height)}px após ${CHECK_DELAY_MS}ms.`;
+      if (rect.height < MIN_HEIGHT_PX || rect.width < MIN_HEIGHT_PX) {
+        const msg = `Conteúdo principal colapsado (${Math.round(rect.width)}x${Math.round(rect.height)}px) após ${CHECK_DELAY_MS}ms.`;
         setReason(msg);
         markFailure(msg);
         captureRenderFailure(msg, {
