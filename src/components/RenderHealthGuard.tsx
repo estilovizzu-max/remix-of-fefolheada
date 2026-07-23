@@ -39,6 +39,7 @@ export function RenderHealthGuard() {
       if (!root) {
         setReason("Elemento #root não encontrado.");
         markFailure("root-missing");
+        captureRenderFailure("root-missing");
         setFailed(true);
         return;
       }
@@ -48,7 +49,13 @@ export function RenderHealthGuard() {
         const msg = `Conteúdo principal com altura ${Math.round(rect.height)}px após ${CHECK_DELAY_MS}ms.`;
         setReason(msg);
         markFailure(msg);
+        captureRenderFailure(msg, {
+          rootHeight: rect.height,
+          rootWidth: rect.width,
+          viewport: `${window.innerWidth}x${window.innerHeight}`,
+        });
         setFailed(true);
+
       }
     }, CHECK_DELAY_MS);
     return () => window.clearTimeout(t);
