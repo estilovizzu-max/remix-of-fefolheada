@@ -4,8 +4,8 @@
 
 /* Oculta o badge da Lovable apenas em produção (classe aplicada em <html> via main.tsx).
    Cobre todas as larguras de tela, estados de carregamento e navegação SPA. */
-html.hide-lovable-badge #lovable-badge,
-html.hide-lovable-badge [id="lovable-badge"] {
+html.production-ui-clean #lovable-badge,
+html.production-ui-clean [id="lovable-badge"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
@@ -13,7 +13,7 @@ html.hide-lovable-badge [id="lovable-badge"] {
 }
 
 @media (max-width: 9999px) {
-  html.hide-lovable-badge #lovable-badge { display: none !important; }
+  html.production-ui-clean #lovable-badge { display: none !important; }
 }
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
@@ -134,6 +134,14 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Montserrat', sans-serif;
+    min-width: 100%;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
   }
   
   h1, h2, h3, h4, h5, h6 {

@@ -15,7 +15,7 @@ const isDev =
   location.hostname.endsWith(".local");
 
 if (!isDev) {
-  document.documentElement.classList.add("hide-lovable-badge");
+  document.documentElement.classList.add("production-ui-clean");
 
   const BADGE_SELECTOR = [
     "#lovable-badge",
@@ -29,6 +29,9 @@ if (!isDev) {
   ].join(",");
 
   const neutralize = (el: Element) => {
+    if (el === document.documentElement || el === document.body || el.id === "root") {
+      return;
+    }
     const node = el as HTMLElement;
     node.setAttribute("aria-hidden", "true");
     node.setAttribute("tabindex", "-1");
