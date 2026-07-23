@@ -2,8 +2,11 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { initConsoleBuffer } from "./utils/consoleBuffer";
+import { initSentry } from "./lib/sentry";
 
 initConsoleBuffer();
+initSentry();
+
 
 // Ambiente: dev mantém o badge visível; qualquer outro contexto oculta.
 const isDev =
