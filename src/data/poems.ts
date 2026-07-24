@@ -398,7 +398,8 @@ Se prepare para pegar.
 Permaneça no Espírito,
 Para o propósito alcançar.
 Cuide bem do Seu rebanho,
-Pois tua hora vai chegar.`
+Pois tua hora vai chegar.`,
+      reflection: 'O poema fala de fogo que "segue ardendo" mesmo quando o medo tenta impedir o chamado. Você reconhece esse fogo em algum ministério que abandonou por acomodação ou receio de errar? Cuidar do rebanho com fervor começa nas pequenas responsabilidades de hoje: a célula, a visita, a palavra dita a tempo. Onde você está adiando o propósito que já foi confirmado no seu coração?',
     },
     {
       id: 'cm-2',
@@ -423,7 +424,8 @@ o desejo de Jesus, é ver você se libertar.
 Satanás está à espreita para derrubar você,
 cuidado com o seu veneno para você não beber.
 Olhe para Jesus Cristo, é o antídoto para a morte,
-se aproxime e busque Ele, pois mudou a sua sorte.`
+se aproxime e busque Ele, pois mudou a sua sorte.`,
+      reflection: 'A imagem do sobrenome católico e do coração de Cristo cobra coerência entre identidade e vida prática. Pedro voltou quando reconheceu Jesus, e a Samaritana correu para anunciar antes mesmo de entender tudo — o testemunho não espera perfeição. Quando foi a última vez que você falou de Cristo a alguém sem primeiro calcular o risco? O antídoto contra o veneno do inimigo está diante de você: qual atitude concreta muda hoje?',
     },
     {
       id: 'cm-5',
@@ -439,7 +441,8 @@ Faz um vaso para a honra, faz outro para ensinar.
 Escolhidos e eleitos, separados pelo amor,
 Cada vaso que Ele forma reflete o seu Senhor.
 Tua alma está sedenta, quer a fonte a transbordar,
-E a água que sacia já foi dada, vem provar.`
+E a água que sacia já foi dada, vem provar.`,
+      reflection: 'O oleiro que "faz um vaso para a honra, faz outro para ensinar" lembra que nem toda formação parece nobre enquanto está sendo moldada. Talvez você esteja sentindo a pressão das mãos do Oleiro numa fase difícil do trabalho, da família ou da vocação, sem entender ainda o desenho final. Você tem resistido ao barro sendo trabalhado ou tem deixado que o processo continue mesmo sem controle? A água que sacia já foi oferecida — falta você provar.',
     },
     {
       id: 'cm-8',
@@ -455,7 +458,8 @@ e semeie Cristo, para colher a salvação.
 Acredite na promessa, abra teu coração,
 alimente a fé, e busque a Ele na oração.
 A graça de Cristo te envolve, te fortalece,
-e a cada dia, mais Sua luz te esclarece.`
+e a cada dia, mais Sua luz te esclarece.`,
+      reflection: 'Simeão esperou com fé antes de ver a promessa cumprida, e o poema convida à mesma paciência ativa: alimentar a esperança enquanto se busca o Reino. Você tem semeado com a expectativa de colher, ou tem desistido antes do tempo de Deus se cumprir? A alegria da ressurreição não é sentimento passageiro, é decisão diária de confiar. O que você semeou esta semana esperando a salvação de alguém, inclusive a sua?',
     },
     {
       id: 'sv-1',
@@ -491,7 +495,8 @@ Não podemos nos santificar.
 A técnica sem o Espírito
 Não nos traz conversão.
 A criança sempre ensina
-O valor do perdão.`
+O valor do perdão.`,
+      reflection: 'O poema mostra os discípulos surdos ao anúncio da paixão porque ainda mediam grandeza pelos critérios do mundo. "Se quiser ser o primeiro, sirva a todos sem temor" desmonta qualquer projeto de destaque que não passe pelo serviço concreto. Onde você tem buscado ser o primeiro em vez de servir sem cobrar retorno? A criança que Jesus coloca no meio ensina que sem a graça não há santificação — técnica e esforço próprio não bastam.',
     },
     {
       id: 'sv-3',
@@ -532,7 +537,8 @@ Quando a morte chegar, dois juízos virão te encontrar:
 Primeiro, o juízo particular, ao Senhor irás se apresentar;
 Depois, no final dos tempos, o juízo final irá te julgar.
 Seja fiel à graça, lute até o fim, meu irmão,
-E terás no Céu teu eterno galardão!`
+E terás no Céu teu eterno galardão!`,
+      reflection: 'A parábola do rico e Lázaro, citada no poema, é um espelho duro: migalhas desprezadas em vida se tornam distância irreparável na eternidade. "Comungue todo dia" não é apenas devoção, é reconhecer que a alma se nutre da Eucaristia e da Palavra como quem tem sede real. Você tem tratado o pecado com a urgência de quem sabe que o juízo particular está próximo? O que você tem feito hoje que só fará sentido se olhado à luz do Céu?',
     },
     {
       id: 'sv-4',
@@ -552,7 +558,8 @@ tu possas continuar a sorrir.
 O reino está à porta,
 não deixe passar sem perceber,
 pois quem crer será acolhido,
-e com Ele, vai renascer.`
+e com Ele, vai renascer.`,
+      reflection: 'O caminho estreito guiado pela estrela pede mais confiança do que clareza total sobre o destino. O Reino está à porta, diz o poema, mas exige que se perceba o momento em vez de deixá-lo passar distraído. Em que área da sua vida você tem caminhado no escuro sem procurar a luz do Espírito que acende a esperança? Você reconheceria o Reino se ele batesse à sua porta hoje?',
     },
     {
       id: 'sv-5',
@@ -576,7 +583,8 @@ que nunca vai te abandonar.
 Confie no Salvador,
 na verdade que Ele traz.
 Sua graça nos renova,
-e a vida se refaz.`
+e a vida se refaz.`,
+      reflection: '"Ele é a porta aberta, é o pão que nos sustém" — a imagem recusa qualquer ideia de um Deus distante e aponta para alimento concreto, diário. Buscar a Palavra em silêncio, como sugere o poema, é o oposto de viver ocupado demais para orar. Você tem deixado o barulho do dia calar a voz que sustenta? Onde você precisa confiar que Jesus não vai abandonar, mesmo com a cruz pesando?',
     },
     {
       id: 'rv-1',
@@ -597,7 +605,8 @@ mas nem todos quiseram entender.
 Resgatou o pecado do mundo
 pra que todos pudessem
 ver…
-e crer.`
+e crer.`,
+      reflection: 'O poema pergunta diretamente: "Já pensou? Está na hora de pensar." sobre o peso que Cristo carregou para esmagar o ódio e a falta de perdão que ainda moram em você. Não é sentimentalismo sobre a cruz, é confronto: alguém foi perdoado por você e ainda carrega essa dívida como se fosse útil. Que mágoa você continua guardando como se isso não custasse nada a ninguém? O resgate já foi feito — falta você deixar de segurar o que já foi pago.',
     },
     {
       id: 'rv-3',
@@ -641,7 +650,8 @@ Ou que "o mundo dá voltas", em ciclos rodados?
 E se eu te disser que o mundo gira em torno de uma estrela,
 Você acreditaria, ou pensaria que é uma novela?
 Mas um soldado de verdade, sem armadura nem espada,
-É aquele que enfrenta a mente e sua cilada.`
+É aquele que enfrenta a mente e sua cilada.`,
+      reflection: '"Culpe-se por tê-la vendido tão fácil assim" atinge quem troca conquistas duradouras por alívios imediatos e depois reclama do resultado. O poema mistura ironia e sabedoria bíblica para lembrar que humilhação e exaltação seguem uma lógica que não é a do mundo. Você tem vendido barato aquilo que Deus construiu com paciência em você — relação, vocação, integridade? Que mentira você repete a si mesmo para justificar a desistência de hoje?',
     },
     {
       id: 'rv-7',
@@ -661,7 +671,8 @@ onde a vida se refaz, para continuar.
 Siga o ritmo do que vem,
 não deixe o momento escapar,
 faça de cada ação a chave
-que te levará ao teu lugar.`
+que te levará ao teu lugar.`,
+      reflection: '"Toc, toc, uma batida suave" descreve o tempo como visitante que não espera resposta atrasada. Cada segundo vira convite para agir, e o poema recusa a passividade de quem acha que sempre haverá amanhã. Que porta você tem deixado o tempo bater sem abrir, por medo ou acomodação? O que você faria hoje diferente se soubesse que esse instante não volta?',
     },
     {
       id: 'rv-8',
@@ -681,7 +692,8 @@ encontre o alívio e o seu papel.
 O tempo passa, mas nunca retorna,
 seu curso é irremediável,
 mas cada momento que viveres
-pode ser um milagre possível.`
+pode ser um milagre possível.`,
+      reflection: '"Ele nunca para, mas te oferece todo dia 24 horas para recomeçar" desfaz a desculpa de que já é tarde demais para mudar de vida. O tempo é irremediável em seu curso, mas cada manhã chega como graça renovada, não como cobrança. Você tem usado o recomeço diário para orar, perdoar, servir — ou apenas para repetir o cansaço de ontem? Que milagre possível você está deixando de viver hoje por hábito?',
     },
     {
       id: 'p1-39-new',
@@ -705,7 +717,8 @@ O Senhor sofreu por nós, para nos fazer renascer.
 Jesus é a ponte entre o homem e o Pai,
 É o amor que nos resgata, nos levanta e nunca cai.
 Não somos dos que recuam ou vivem a se arruinar,
-Somos os que creem com fé: Deus vai nos salvar.`
+Somos os que creem com fé: Deus vai nos salvar.`,
+      reflection: '"O justo não se justifica, pois já foi justificado" resume uma libertação que muitos cristãos ainda não aceitaram: viver como escravo depois de ter sido feito filho. O poema lembra o dia em que você foi iluminado — você ainda vive a partir dessa memória ou já a esqueceu no cansaço da rotina? Jesus é ponte, não obstáculo, entre você e o Pai. Em que decisão desta semana você vai agir como filho amado, e não como servo com medo de errar?',
     },
     {
       id: 'p1-43-new',
@@ -729,7 +742,8 @@ Acredite, tenha fé, o fogo já abrazou,
 Desapegue deste mundo, ouça a voz do Pastor,
 Alimente-se da Palavra, viva forte esse amor.
 O Senhor está chamando, inflamando o coração,
-Nesta noite, Ele espera por ti na oração.`
+Nesta noite, Ele espera por ti na oração.`,
+      reflection: '"Até quando ficará sem tomar a decisão?" é a pergunta que atravessa este poema sobre o juízo e o novo que Deus está fazendo. Não se trata de temor paralisante, mas de urgência: o fogo já abrasou, a graça já foi derramada, falta resposta. Que decisão você tem adiado esperando um momento mais confortável que talvez nunca chegue? Hoje, nesta noite, o que significa desapegar do mundo para alimentar-se da Palavra?',
     },
     {
       id: 'p1-50-new',
@@ -749,7 +763,8 @@ Arregace a mente e o coração, para um dia florescer.
 Seja assertivo na semente que você lançou,
 Pois o que sai da boca molda quem você se tornou.
 Reveja a semente que lança ao chão,
-E escolha, com sabedoria, a direção do seu coração.`
+E escolha, com sabedoria, a direção do seu coração.`,
+      reflection: '"É mais fácil amar quem está longe de você" desmascara uma caridade de fachada, que se sente generosa à distância mas se irrita com quem divide a mesma casa. A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
     },
     {
       id: 'p1-55-new',
@@ -796,7 +811,8 @@ Enquanto entra em profundo relaxamento.
 O pensamento que faz refletir te leva a relaxar
 E a resolver o que antes parecia impossível,
 Mantendo seus pensamentos alinhados
-E intensificando sua alegria.`
+E intensificando sua alegria.`,
+      reflection: 'O convite a perguntar "por que devo fazer isso?" antes de agir por impulso ou pressão alheia é sabedoria, mas o poema vai além: pensamento livre de verdade nasce alinhado a Deus, não à opinião de quem passou por perto. Quantas decisões você tomou hoje só porque alguém pediu, sem discernir se vinham do Espírito ou do medo de desagradar? A borboleta do poema pousa quando se cansa de voar sem direção — onde seu pensamento precisa pousar em oração antes de agir de novo?',
     }
   ],
   'bloco-2': [
@@ -927,7 +943,8 @@ Está movendo o lugar.
 Ele toca, Ele cura,
 Te convida a orar.
 Meu irmão, é nesta hora —
-Comece a levantar.`
+Comece a levantar.`,
+      reflection: '"Lança fora a tristeza, ansiedade, depressão" não é slogan vazio no poema, é convite concreto a deixar a graça e a luz entrarem onde antes só havia peso. A sombra do Altíssimo cobre justamente a noite mais escura, não apenas os dias fáceis. Você tem se recusado a levantar porque a dor parece maior que a promessa? O Espírito já começou a trabalhar no lugar onde você está — falta você começar também.',
     },
     {
       id: 'lp-4',
@@ -951,7 +968,8 @@ Não te embriegues, permanece ciente.
 Busca a santidade, é ela que encontrarás,
 Mantém-te no caminho, com Jesus a te guiar.
 Não desistas de ti, busca sempre a solução,
-O Espírito Divino hoje te segura pela mão.`
+O Espírito Divino hoje te segura pela mão.`,
+      reflection: 'Moisés cansado precisou de mãos que sustentassem as suas — o poema lembra que santidade não é proeza solitária, é comunidade sustentando comunidade. "O justo não se justifica, é justificado pelo Senhor" tira o peso de provar mérito próprio a cada instante. Quem tem segurado suas mãos quando a oração cansa, e a quem você tem recusado ajudar do mesmo jeito? Você vigia suas palavras ou fala primeiro e se arrepende depois?',
     },
     {
       id: 'lp-5',
@@ -967,7 +985,8 @@ desse jeito você vive e vencerá todo o mal
 Jesus está com você ele vai te ajudar
 eliminar a angústia para sua vida salvar
 Jesus ama a sua vida da morte vem para salvar
-tire a corda do pescoço para sua vida libertar`
+tire a corda do pescoço para sua vida libertar`,
+      reflection: '"Da cabeça ao coração, 30 cm" é a distância brutal entre saber da fé e vivê-la, entre ouvir sobre Jesus e deixar-se salvar por Ele de fato. O poema fala com urgência de quem já viu vidas se perderem por essa distância nunca percorrida. Você conhece a doutrina, mas ainda mede a distância entre a cabeça e o coração na prática diária? Que corda você precisa tirar do pescoço hoje — culpa, vício, desespero — para deixar Jesus libertar de verdade?',
     },
     {
       id: 'lp-6',
@@ -983,7 +1002,8 @@ Mesmo que pareça um grande dilema.
 Aquilo que parecia impossível de acontecer,
 Você fez a sua parte e Deus veio resolver.
 Na tempestade da vida, o Senhor está contigo,
-Quando o mar está agitado, Ele mesmo é seu abrigo.`
+Quando o mar está agitado, Ele mesmo é seu abrigo.`,
+      reflection: '"Quando o mar está agitado, Ele mesmo é seu abrigo" retoma a cena da tempestade acalmada, mas aponta para a tempestade de hoje: contas, doença, relação partida. O poema não promete ausência de problema, promete companhia dentro dele. Você tem lembrado da conexão que já fez com Jesus em outros momentos difíceis, ou trata cada crise como se fosse a primeira sem socorro? O que parecia impossível e você fez sua parte, esperando Deus resolver o resto?',
     },
     {
       id: 'lp-7',
@@ -1028,7 +1048,8 @@ Para enfrentar os desafios, Deus nos guia com precisão,
 Através da palavra e da fé, recebemos Sua proteção.
 
 Em cada batalha, Ele é nosso refúgio e fortaleza,
-Equipados com a armadura divina, vencemos com firmeza.`
+Equipados com a armadura divina, vencemos com firmeza.`,
+      reflection: 'Cada peça da armadura no poema tem função precisa: o cinto da verdade evita o engano, o escudo da fé resiste aos dardos inflamados. Você tem saído de casa desarmado, tentando enfrentar tentação e desânimo só com boa vontade? A couraça da justiça protege o coração de influências que corroem por dentro sem alarde. Qual peça dessa armadura você tem deixado no armário achando que hoje não precisaria dela?',
     },
     {
       id: 'lp-8',
@@ -1042,7 +1063,8 @@ Exercite a fé e vamos crescer.
 A Bíblia sem prática é como um homem forte e cego,
 Deus é bom, e eu não nego a palavra que prego.
 Vivo no dia a dia, pare já com a tristeza,
-E sinta agora a alegria.`
+E sinta agora a alegria.`,
+      reflection: '"A Bíblia sem prática é como um homem forte e cego" resume o risco de acumular conhecimento espiritual sem deixá-lo transformar um único dia real. O Reino de Deus, lembra o poema, não é ritual vazio — é justiça, paz e alegria vividas concretamente. Você tem lido, ouvido pregações, mas ainda vive como se o medo do passado ditasse o presente? Que exercício de fé você pode fazer hoje que exija mais do que ficar sentado ouvindo?',
     },
     {
       id: 'p2-12-new',
@@ -1096,7 +1118,8 @@ Nos chamando à conversão.
 Nunca perca a esperança,
 Esteja firme em oração.
 O Senhor é tua fortaleza,
-Teu refúgio e salvação.`
+Teu refúgio e salvação.`,
+      reflection: 'A mulher hemorroíssa tocou por não desistir mesmo com a multidão empurrando; Jó permaneceu firme mesmo perdendo tudo. O poema junta essas cenas para dizer que a fé perseverante às vezes é a única arma que resta. Você tem parado de lutar diante de uma dor que se arrasta há anos, achando que já tentou o suficiente? Que fonte de salvação você tem visto de longe sem se levantar para beber dela?',
     },
     {
       id: 'p2-14-new',
@@ -1152,7 +1175,8 @@ Entre, deixe de ser acanhado, ficar parado nunca mais.
 Parei de ficar parado, estou entrando em movimento.
 Todas as vezes que eu dizia “não aguento”,
 Eu sei de uma coisa agora: Jesus Cristo manda embora
-De dentro de mim o sofrimento.`
+De dentro de mim o sofrimento.`,
+      reflection: '"Parei de ficar parado esperando acontecer" é confissão de alguém que descobriu, tarde, que vergonha e medo eram prisões consentidas. O poema não promete facilidade, promete decisão: sair do conforto acomodado que só finge ser paz. O que você continua esperando que aconteça sozinho, sem sua ação, sua oração, seu primeiro passo? Jesus manda embora o sofrimento de dentro — mas você já abriu a porta para Ele agir?',
     }
   ],
   'bloco-3': [
@@ -1282,7 +1306,8 @@ Aceite Seu jugo, suave e leve ao coração, Nele encontramos alívio, descanso e
       title: 'Acenda Sua Luz',
       text: `Deixe sua luz brilhar,
 Você precisará acender o que está te impedindo,
-Terá que logo resolver.`
+Terá que logo resolver.`,
+      reflection: '"Você precisará acender o que está te impedindo" é uma frase curta que não deixa espaço para procrastinação espiritual. A luz não acende sozinha; exige reconhecer o que apaga o brilho — orgulho, ressentimento, comodismo. O que você sabe que precisa resolver e vem adiando há tempo demais? Que decisão pequena, tomada hoje, começaria a acender essa luz outra vez?',
     },
     {
       id: 'tr-2',
@@ -1294,7 +1319,8 @@ Deixe Deus te libertar.
 Pois Ele apaga a culpa,
 Basta apenas confessar.
 Abra a boca neste instante,
-Deixe a fé te guiar!`
+Deixe a fé te guiar!`,
+      reflection: '"O pecado está queimando, meu irmão, pode lançar!" é convite direto ao ato concreto da confissão, não a um sentimento vago de arrependimento. Deus apaga a culpa, mas pede que a boca se abra e nomeie o que pesa. O que você tem carregado em silêncio, achando que confessar seria fraqueza? Quando foi a última vez que você se confessou de verdade, sem guardar nada por trás?',
     },
     {
       id: 'tr-5',
@@ -1318,7 +1344,8 @@ do Teu amor a brilhar.
 No Teu tempo, sei que tudo
 encontrará razão e fim.
 Renova-me, ó Senhor,
-começa hoje, aqui, em mim.`
+começa hoje, aqui, em mim.`,
+      reflection: '"Faz do meu coração Templo, onde a paz venha morar" pede uma reforma interior que começa pela honestidade sobre culpas e angústias ainda não entregues. O poema não pede perfeição, pede início: "começa hoje, aqui, em mim". Que parte da sua vida ainda funciona como depósito de mágoas em vez de templo de paz? Você tem deixado o cansaço roubar a esperança que só o Espírito pode renovar?',
     },
     {
       id: 'tr-7',
@@ -1363,7 +1390,8 @@ Talvez, no fundo, só queremos entender,
 Para então, enfim, obedecer.
 Mas transformação não exige explicação,
 Exige entrega…
-E fé em meio à escuridão.`
+E fé em meio à escuridão.`,
+      reflection: '"Mudança é momentânea, transformação é essência que se entranha" separa o entusiasmo passageiro da conversão que realmente muda direção de vida. O poema confessa a dificuldade comum de pedir mudança sutil enquanto Deus propõe algo mais radical e assustador. Você tem pedido transformação de boca, mas resistido a largar a ferida antiga que já virou identidade? O que te falta hoje: clareza sobre o plano de Deus, ou coragem de obedecer mesmo sem entender tudo?',
     },
     {
       id: 'tr-10',
@@ -1395,7 +1423,8 @@ Mas alicerçados na rocha, não deixamos desanimar.
 Seja um missionário, ouça a voz do Senhor,
 Sua promessa cumprirá, confia em Seu favor.
 Somos de Deus Salvador, Seu amor nos guiará,
-E com alegria no coração, a Sua graça celebrar.`
+E com alegria no coração, a Sua graça celebrar.`,
+      reflection: '"Aceite Seu jugo, suave e leve ao coração" contrasta com a imagem comum de que seguir a Deus é peso extra numa vida já cansada. A casa construída na rocha resiste ao vento não porque nunca é sacudida, mas porque tem fundamento firme na Palavra ouvida com atenção. Sua vida está alicerçada em algo que resiste à tempestade, ou apenas parece firme em dias tranquilos? O que Deus quer restaurar hoje em sua casa e em sua família, se você deixar?',
     },
     {
       id: 'tr-11',
@@ -1424,7 +1453,8 @@ Esperar o tempo certo, para ela não morrer.
 Os frutos estão crescendo, já estão amadurecendo,
 Em breve, estarão prontos, já estão se formando.
 Não esqueça que a semente novamente
-Terá que ser plantada para novo crescimento."`
+Terá que ser plantada para novo crescimento."`,
+      reflection: '"A semente não mente" — o pensamento que você cultiva hoje é a colheita de amanhã, seja paz, seja medo. O poema compara o coração a terra onde o mato precisa ser arrancado para que algo bom cresça sem ser sufocado. Que "mato" — ressentimento, comparação, negatividade — você tem deixado crescer junto com a semente boa? Você tem cuidado da sua vida interior com a paciência de quem sabe que colheita tem tempo certo?',
     },
     {
       id: 'tr-12',
@@ -1454,7 +1484,8 @@ Se levantar com fé para suas feridas curar. Lembra daquele dia que encheu teu c
 Quando estava pedindo, buscando luz da escuridão? Ele estava contigo agora, mostrando a direção.
 Hoje estou trabalhando, curando seu coração,
 Restaurando sua memória, mudando sua história, colorindo sua vida.
-Estou cuidando de você, limpando sua ferida.`
+Estou cuidando de você, limpando sua ferida.`,
+      reflection: 'Bartimeu gritou apesar da multidão mandando calar — o poema pede que você também se posicione em vez de ficar prostrado esperando que a situação melhore sozinha. "Tire a sua maquagem" é convite duro a parar de fingir bem-estar diante de Deus que já vê tudo. Até quando você vai adiar o grito que poderia mudar sua história? Que máscara você usa até na oração, quando poderia simplesmente se entregar?',
     },
     {
       id: 'tr-13',
@@ -1477,7 +1508,8 @@ Cristo nos dá esperança e confiança, aos filhos Seus.
 O capacete da salvação protege nossa identidade, mente e sentimentos,
 Pois Jesus Cristo é a verdade. Hoje, para nos defender, uso a espada do Espírito,
 Com a palavra do Senhor. Não é pela força bruta, e sim pela meditação,
-Que encontramos sabedoria e orientação em Deus, nossa luz na escuridão, para enfrentar os desafios.`
+Que encontramos sabedoria e orientação em Deus, nossa luz na escuridão, para enfrentar os desafios.`,
+      reflection: 'A semente plantada precisa de água, tempo e as ervas daninhas arrancadas — nenhuma dessas etapas é opcional, lembra o poema. Controlar os próprios sentimentos, mais do que reprimi-los, é permitir que a emoção se estabilize sem alimentar o medo. Você tem cuidado da sua vida interior com a mesma diligência que dedica a outras áreas da vida? Que fruto amadurecido em você ainda não foi colhido por falta de atenção?',
     },
     {
       id: 'tr-14',
@@ -1511,7 +1543,8 @@ Até quando ficarás prostrado, irmão?
 É preciso fazer a tua parte, perceber e agir,
 Põe em ação a fé, sem nunca desistir.
 Jesus Cristo é quem te ajuda, com força e missão,
-Levanta-te e age, cumpre com devoção.`
+Levanta-te e age, cumpre com devoção.`,
+      reflection: 'Nas Bodas de Caná, Maria agiu diante de um problema concreto — vinho acabando — em vez de apenas lamentar; o paralítico, por outro lado, ficou trinta e oito anos esperando alguém que nunca vinha. O poema pergunta até quando você ficará prostrado esperando condições ideais para agir. Seu ministério, sua vocação, seu dom estão parados esperando uma ajuda que talvez já esteja ao seu lado, sem você perceber. O que você faria hoje se ouvisse Jesus perguntando: "não tens outra saída?"',
     },
     {
       id: 'tr-16',
@@ -1555,7 +1588,8 @@ meu escudo, Rochedo, Fortaleza, minha lida.
 Mostra esta misericórdia e salvação,
 sou ungido todo dia, buscando a proteção.
 Nós nos tornamos imitadores de Paulo e do Senhor,
-só não fiques preso sem viver o grande amor.`
+só não fiques preso sem viver o grande amor.`,
+      reflection: 'Nicodemos veio de noite, com dúvidas honestas, e mesmo assim ouviu que era preciso nascer de novo — o poema recusa a ideia de que fé madura significa nunca questionar. "Quem nascer da carne é carne" adverte contra viver só de aparência religiosa sem transformação real pelo Espírito. Você já nasceu de novo de fato, ou apenas repete gestos religiosos aprendidos? O que em você ainda precisa morrer para que o homem novo, do Espírito, possa nascer?',
     },
     {
       id: 'tr-17',
@@ -1579,7 +1613,8 @@ Ele é Deus soberano, nosso guia e protetor.
 Não há mais como voltar, prepare-se para lutar,
 Se deseja a vitória, aprenda a confiar.
 O Senhor está contigo, basta apenas perceber,
-Ouça a voz que te chama: Ele é Deus e te ama.`
+Ouça a voz que te chama: Ele é Deus e te ama.`,
+      reflection: '"Deixe os mortos enterrar os seus mortos" é frase dura que o poema usa para cobrar decisão: há um caminho certo que exige deixar para trás o que já não tem vida. Viver como filho amado, e não como órfão inseguro, muda a forma de enfrentar cada dificuldade do dia. O que você ainda carrega do passado que já deveria estar enterrado? Você tem ouvido a voz que te chama, ou está distraído demais para perceber Sua presença?',
     },
     {
       id: 'pc-1',
@@ -1588,7 +1623,8 @@ Ouça a voz que te chama: Ele é Deus e te ama.`
 aceito o Teu amor que me sustenta,
 que me protege e me guia.
 És meu Deus, meu Salvador,
-minha rocha, minha vida.`
+minha rocha, minha vida.`,
+      reflection: 'A oração curta "Dá-me força, Senhor" é honesta o suficiente para reconhecer que sozinho não se sustenta. Chamar Deus de rocha e vida, e não apenas de ajuda ocasional, muda a relação de emergência para dependência constante. Em que situação desta semana você tentou se sustentar sozinho antes de pedir essa força? Você trata a oração como último recurso ou como fundamento diário?',
     },
     {
       id: 'pc-2',
@@ -1600,7 +1636,8 @@ Entreguei por ti minha vida, sempre estou de pé.
 Recebe agora a cura, que Eu trouxe pra você,
 Abre o coração em graça, está na hora de crer.
 Faça agora a sua parte, confie e vá além,
-Pois o milagre acontece, quando a fé diz: Amém!`
+Pois o milagre acontece, quando a fé diz: Amém!`,
+      reflection: '"Já parou pra perceber?" pergunta o poema sobre um bálsamo que acalma justamente porque alguém entregou a vida por você primeiro. A cura oferecida exige que você abra o coração em vez de continuar administrando a ferida sozinho. Você tem feito "a sua parte" ou tem esperado o milagre acontecer sem nenhum movimento seu? O que significaria, hoje, dizer amém de verdade e não por hábito?',
     },
     {
       id: 'pc-4',
@@ -1618,7 +1655,8 @@ Peça a Deus todos os dias o Espírito Salvador.
 Deixe as queixas, erga a voz, tua hora já chegou,
 Cristo vive e reina, Ele já te libertou.
 Não se entregue à inércia, ouça a voz que te chamou,
-Se deseja ser curado, Deus já te restaurou.`
+Se deseja ser curado, Deus já te restaurou.`,
+      reflection: '"Por que estás parado? Erga-se, então" tira qualquer chance de vitimismo confortável diante da própria dor. A alma sedenta que quer beber água viva precisa, primeiro, parar de reclamar e clamar de fato. Você tem tratado sua aflição como desculpa para inércia ou como motivo para buscar o Espírito com mais insistência? Que passo concreto você pode dar hoje em vez de continuar esperando que a hora chegue sozinha?',
     },
     {
       id: 'pc-5',
@@ -1634,7 +1672,8 @@ A conquista já é sua, celebre sem hesitar.
 Sou capaz, posso dominar,
 Basta agir e acreditar.
 Comece agora, não há por que temer,
-O incrível acontece quando você crê.`
+O incrível acontece quando você crê.`,
+      reflection: '"Sou capaz, posso dominar, basta agir e acreditar" pede que a paz sentida na oração vire ação prática, não apenas sensação passageira de bem-estar. O convite a "apenas contemplar" antecede o agir — sem esse silêncio, a agitação volta rápido. Você tem tido momentos de paz que evaporam assim que a rotina retorna? O que muda em você quando decide, de fato, acreditar em vez de só desejar?',
     },
     {
       id: 'pc-6',
@@ -1670,7 +1709,8 @@ que foi dada pra você.
 Ao sentar à minha mesa,
 para perceber:
 ouça a voz interior,
-está sempre falando com você.`
+está sempre falando com você.`,
+      reflection: '"A paz que você procura está no silêncio que você não faz" acusa diretamente o barulho constante que evita o encontro real com Deus. O banquete preparado, no poema, só recebe quem aceita o convite ao silêncio interior, não a quem só passa por perto. Você tem preenchido cada momento vazio com ruído para não precisar escutar o que Deus quer dizer? Que silêncio você evita hoje por medo do que possa ouvir nele?',
     },
     {
       id: 'pc-7',
@@ -1691,7 +1731,8 @@ sem saber quando vai voltar.
 O que fica
 é a certeza:
 Teu amor me banha,
-e eu permaneço em paz.`
+e eu permaneço em paz.`,
+      reflection: 'O banho descrito no poema não lava só o corpo, lava medo, vergonha e raiva como quem deixa a sujeira escorrer de propósito. "A vergonha se dissipa como o cheiro de um perfume falso" reconhece que muita culpa carregada não tem fundamento real, só hábito de se condenar. O que você precisa deixar escorrer hoje em vez de guardar mais um dia? Você permite que o amor de Deus banhe também aquilo que você não conta a ninguém?',
     },
     {
       id: 'p3-29-new',
@@ -1711,7 +1752,8 @@ Que depende de você, a cada dia, renascer.
 Resolvi deixar no passado minhas antigas prisões,
 Enterrei as culpas e confusas convicções.
 Hoje, na mente, trago paz e emoção,
-Porque vivo com Deus dentro do meu coração.`
+Porque vivo com Deus dentro do meu coração.`,
+      reflection: '"Recebi um livro em branco para escrever" é imagem forte para quem acredita que o passado condena o futuro. Enterrar culpas e convicções confusas não é esquecer, é decidir que elas não escrevem mais nenhuma página. Que capítulo antigo você continua relendo em vez de virar a página que Deus já ofereceu? O que você escreveria hoje se realmente acreditasse que o passado não te define mais?',
     },
     {
       id: 'p3-33-new',
@@ -1759,7 +1801,8 @@ E com ele, a chance que hoje ainda te atrai.
 Quando tudo se encerrar, o tempo findar,
 A morte chegará, e nada poderá evitar.
 E então, diante de Cristo, a pergunta virá:
-“O que fizeste com o tempo que te dei pra transformar?”`
+“O que fizeste com o tempo que te dei pra transformar?”`,
+      reflection: '"O que fizeste com o tempo que te dei pra transformar?" é a pergunta final do poema, e ela deveria incomodar mais do que incomoda. Reclamar de falta de tempo enquanto se nega ação concreta é contradição que o texto expõe sem rodeios. Você tem pedido paz na oração enquanto negligencia o corpo, a alma e as relações que dependem de você? Quantas das suas próximas 24 horas serão realmente diferentes de ontem?',
     },
     {
       id: 'p3-40-new',
@@ -1787,7 +1830,8 @@ este é nosso ministério, faz com teu coração.
 Deus está chamando agora, é hora de aceitar,
 hoje é um novo dia, minha história vai mudar.
 Tome vergonha na cara, o Senhor vem te chamar,
-exerça teu ministério, o Espírito vem te falar.`
+exerça teu ministério, o Espírito vem te falar.`,
+      reflection: '"Nossa vida bem vivida se transforma em canção" propõe que a transformação espiritual não fica só no sentimento, ela reorganiza rotina, ministério, relações. O deserto a atravessar exige passos curtos, não saltos heroicos únicos. Que ministério ou responsabilidade você abandonou por vergonha ou cansaço e precisa retomar hoje? Deus está chamando agora — o que te impede de aceitar?',
     },
     {
       id: 'p3-50-new',
@@ -1807,7 +1851,8 @@ comece a orar com o Senhor.
 pois renovo em você,
 sua paz e alegria,
 então, só assim vai perceber,
-a paz em expansão.`
+a paz em expansão.`,
+      reflection: 'O sopro do Espírito que dissolve o medo e a dúvida no poema não é evento único, é convite diário: "toda manhã, por favor, pare agora, sinta o ar". A missão de anunciar nasce dessa paz recebida antes, não do esforço de convencer alguém sem paz própria. Você tem começado o dia parando o suficiente para sentir esse sopro, ou já sai correndo com a ansiedade de ontem? Que medo específico ainda não se desfez em você apesar de tantas orações?',
     }
   ],
   'bloco-4': [
@@ -1960,7 +2005,8 @@ Glorioso pelos séculos a mais.
 Em justiça e retidão,
 Sempre age o Criador.
 Na oração, enviou o anjo,
-Trazendo ao fogo o Seu calor.`
+Trazendo ao fogo o Seu calor.`,
+      reflection: 'As portas do céu abertas e a voz como trombeta descrevem um Deus que se aproxima em vez de esperar passivamente que você o busque. "Bendito e louvado seja" nasce de reconhecer que a justiça e a retidão de Deus agem mesmo quando você não percebe. Você tem reservado algum tempo real de louvor, ou a oração virou só pedido de socorro? Que fogo do altar você precisa deixar acender de novo em sua vida de oração?',
     },
     {
       id: 'oi-2',
@@ -1976,7 +2022,8 @@ O lugar que agora pisas
 Sua presença é real,
 Deus habita neste lugar.
 Tire a dúvida do peito,
-Pela fé, tudo vai mudar.`
+Pela fé, tudo vai mudar.`,
+      reflection: '"Tire a dúvida do peito, pela fé, tudo vai mudar" pede que a preparação para encontrar Deus comece antes, pela purificação dos próprios passos, não apenas no momento do culto. O lugar onde você está agora, diz o poema, é templo a se honrar — mesmo fora da igreja. Você trata sua rotina como espaço sagrado ou reserva reverência só para domingo? Que dúvida você carrega no peito que impede a fé de agir com liberdade?',
     },
     {
       id: 'oi-3',
@@ -1999,7 +2046,8 @@ Sente-se para escutar,
 perceba o Seu amor.
 Adore como Maria,
 abandone a preocupação.
-É hora de cuidar do seu coração.`
+É hora de cuidar do seu coração.`,
+      reflection: 'Marta se ocupava com tudo que era urgente e perdia o que era essencial; Maria escolheu simplesmente sentar e ouvir. O poema não desqualifica o trabalho, mas confronta a ansiedade de quem nunca para para escutar. Você tem sido mais Marta do que Maria nesta fase da vida, ocupado demais para se sentar aos pés de Jesus? O que muda hoje se você escolher, ainda que por dez minutos, a melhor parte?',
     },
     {
       id: 'oi-4',
@@ -2016,7 +2064,8 @@ Nunca percas tua fé, Jesus veio te dizer.
 Não te escondas, o Senhor está a procurar
 O servo que serve, que ama, que vive para adorar.
 Aproxime-se d’Ele, permita-se amar,
-Para curar teu coração, basta apenas se achegar.`
+Para curar teu coração, basta apenas se achegar.`,
+      reflection: '"Curar teu coração é também aprender a amar" liga intimidade com Deus e capacidade de amar de verdade — uma alimenta a outra. O poema pede que você deixe de se esconder, como Adão no jardim, quando na verdade é Deus quem está procurando por você. Que ferida você continua escondendo em vez de trazer à luz da presença Dele? Você tem se aproximado o suficiente para deixar Ele te achegar de volta?',
     },
     {
       id: 'oi-5',
@@ -2036,7 +2085,8 @@ Eu te busco sem fim.
 Venha logo se apresentar.
 Estavas com medo, mas agora estou aqui.
 Perdoe-me, Senhor,
-Nunca mais vou desistir.`
+Nunca mais vou desistir.`,
+      reflection: '"Tenho sede" é o grito da cruz e também, no poema, o grito de Deus buscando você antes de você buscá-Lo. Inverter essa lógica muda tudo: você não está correndo atrás de um Deus distante, é Ele quem pergunta "onde estás?". Você tem se escondido de Deus por vergonha de algo que acha imperdoável? O que significaria hoje responder "estou aqui" sem mais desculpas?',
     },
     {
       id: 'oi-6',
@@ -2052,7 +2102,8 @@ Seu braço forte ergue os que querem crer.
 Levante-se, meu irmão, confie na oração,
 O Senhor transforma e cura o coração.
 Com a força do Seu braço, fez justiça e amor,
-Derrubou os soberbos, exaltou o pecador.`
+Derrubou os soberbos, exaltou o pecador.`,
+      reflection: 'O Magnificat citado no poema é canto de quem reconhece grandeza recebida sem mérito próprio, não conquista pessoal. "Derrubou os soberbos, exaltou o pecador" inverte a lógica de status que ainda rege boa parte da vida cristã comum. Você tem cantado suas próprias conquistas ou reconhecido o que Deus fez apesar de você? Em que área da vida você precisa se humilhar para que a justiça de Deus possa agir?',
     },
     {
       id: 'oi-8',
@@ -2110,7 +2161,8 @@ Que as coisas não acontecem por si, é preciso fazer.
 É importante me expressar e me conhecer,
 Decidi fazer uma experiência para mudar e crescer.
 Enquanto orava, percebi que Deus me dizia,
-Para acalmar meu coração e viver a vida com alegria.`
+Para acalmar meu coração e viver a vida com alegria.`,
+      reflection: '"Não adianta só de vez em quando te buscar" desmonta a ideia de intimidade com Deus como visita ocasional em vez de convivência diária. O poema é honesto ao admitir que ser filho não garante automaticamente proximidade real — é preciso construir, como qualquer relação verdadeira. Você tem confundido frequentar a igreja com conhecer intimamente a Deus? Que hábito diário, pequeno, poderia transformar sua relação de visita em convivência?',
     },
     {
       id: 'oi-9',
@@ -2121,7 +2173,8 @@ o teu coração, ele pega em tua mão para conduzir irmão ao teu colo
 acolhedor, hoje cura a sua dor, libere enfim o perdão coloca em sua mão
 para te santificar mas não deixe teu inimigo dominar sua emoção.
 Nada pode amedrontar, nosso coração
-está em Deus, tenha fé e coloque em ação.`
+está em Deus, tenha fé e coloque em ação.`,
+      reflection: 'O Espírito que "sopra onde quer" não segue seu cronograma, mas o poema garante que Ele vem para curar exatamente onde você não quer que ninguém veja. Liberar o perdão, e não só recebê-lo, é parte do processo de não deixar o inimigo dominar a emoção. Que perdão você ainda não concedeu, guardando-o como se isso te protegesse? O que muda em você hoje se colocar essa fé em ação, e não só em sentimento?',
     },
     {
       id: 'oi-10',
@@ -2141,7 +2194,8 @@ que todos vivam em plena unidade.
 Aquele que estava te prendendo, o Senhor ordena,
 abre teus lábios nesta manhã, vem adorar,
 aquele que estava aprendendo,
-Deus venha ordenar os teus lábios, filho, vem me adorar.`
+Deus venha ordenar os teus lábios, filho, vem me adorar.`,
+      reflection: '"Aquele que estava te prendendo, o Senhor ordena" liga adoração à libertação — abrir os lábios para louvar é também abrir mão do que amarra. O poema busca adoradores em espírito e verdade, não apenas presentes fisicamente num culto. Sua adoração tem sido rotina automática ou encontro real que muda algo em você? O que te impede de abrir a boca e adorar hoje, mesmo sem sentir vontade?',
     },
     {
       id: 'oi-12',
@@ -2173,7 +2227,8 @@ Tome posse, meus irmãos,
 O poder já foi dado,
 Você tem que proclamar.
 O Senhor é onipotente,
-E hoje veio te tocar.`
+E hoje veio te tocar.`,
+      reflection: '"O poder já foi dado, você tem que proclamar" retira a desculpa de estar esperando permissão ou capacitação extra para agir. Coração que vagou pode voltar — o poema não trata afastamento como sentença definitiva, mas como convite ao retorno. Que verdade sobre Deus você conhece, mas nunca proclamou por medo do que os outros pensariam? Você tem se calado quando deveria se levantar?',
     },
     {
       id: 'p4-25-new',
@@ -2246,7 +2301,8 @@ Jesus estava com fome, na figueira não tinha nada.
 Jesus procura o fruto, mas se ele não achar,
 Qual é a tua excelência, teu filho de Deus, para amar?
 Jesus Cristo se aproxima para ter o fruto do céu,
-O teu fruto está maduro, qual a excelência Deus lhe deu.`
+O teu fruto está maduro, qual a excelência Deus lhe deu.`,
+      reflection: '"Ó Senhor, eu não mereço" reconhece a desproporção entre a entrega pedida e a graça recebida — e mesmo assim o poema convida à entrega total, sem resistir. A imagem de Jó caído por terra e depois erguido pela unção mostra que ruína não é palavra final. Você tem entregado a Deus só o que sobra do dia, ou toda a sua vida sem resistir? Que vício ou cansaço você ainda segura, achando que precisa resolver sozinho antes de entregar?',
     }
   ],
   'bloco-5': [
@@ -2405,7 +2461,8 @@ Não somos de perder o ânimo para não nos arruinar, Mas mantemos a fé, pois o
       text: `Nunca perca a esperança,
 Guarde Jesus no coração.
 Pare de reclamar agora,
-Busque firme a salvação.`
+Busque firme a salvação.`,
+      reflection: 'Quatro versos curtos e diretos: "pare de reclamar agora, busque firme a salvação". O poema não perde tempo com rodeios porque a esperança perdida não se recupera com lamentação, se recupera com decisão. Quanto tempo você tem gastado reclamando de uma situação em vez de buscar ativamente a salvação dela? Guardar Jesus no coração é verbo de ação — o que isso significa concretamente hoje?',
     },
     {
       id: 'fe-2',
@@ -2419,7 +2476,8 @@ Sinta agora Seu amor, Sua presença revelada.
 Veja a glória se manifestando, a dor se dissipando,
 Nos braços do Pai, tudo está se transformando.
 Os filhos de Deus aguardam Seu grande esplendor,
-Nunca perca a esperança em Jesus, nosso Salvador.`
+Nunca perca a esperança em Jesus, nosso Salvador.`,
+      reflection: '"A criação aguarda o dia em que irá renascer" amplia a esperança pessoal para uma espera cósmica, lembrando que sua fé participa de algo maior que sua própria dor. Acreditar em si mesmo, diz o poema, só faz sentido depois de crer primeiro no Senhor. Você tem tentado se reerguer sozinho, confiando na própria força antes de entregar a dor a Deus? O que mudaria se você aceitasse, hoje, que a graça já foi derramada sobre exatamente essa situação?',
     },
     {
       id: 'fe-3',
@@ -2439,7 +2497,8 @@ Tocou a orla do manto e recebeu a mudança.
 A fé é fundamento, é a base do cristão,
 Então creia, meu irmão, com todo o coração.
 Jesus está tocando, basta n’Ele confiar,
-Pois Seu poder divino veio hoje pra te curar.`
+Pois Seu poder divino veio hoje pra te curar.`,
+      reflection: 'Bartimeu deixou a capa — único bem de um mendigo — para correr sem nada que o atrasasse até Jesus. A mulher com hemorragia gastou tudo com médicos antes de tocar a orla do manto e ser curada pela fé, não pelo esforço. O que você ainda segura como a capa de Bartimeu, achando que precisa dela para chegar a Jesus? Que situação parece tão morta quanto Lázaro em que você ainda não ousou clamar por ressurreição?',
     },
     {
       id: 'fe-4',
@@ -2459,7 +2518,8 @@ Deus jamais vai nos abandonar.
 Proteja essa chama sagrada,
 com oração e devoção.
 Ela é o vínculo eterno
-da nossa fé com o coração`
+da nossa fé com o coração`,
+      reflection: '"Mesmo em meio à tempestade, essa chama não se apaga" não promete ausência de tempestade, promete permanência da fé dentro dela. O poema pede proteção ativa dessa chama — oração e devoção, não apenas esperança de que ela resista sozinha. Que ventania recente quase apagou sua fé, e o que você fez para protegê-la? Você tem alimentado essa chama diariamente ou só espera que ela continue acesa por conta própria?',
     },
     {
       id: 'fe-5',
@@ -2480,7 +2540,8 @@ a partir daquele dia ele nos acompanhou
 dei a vida por Jesus nunca nega a sua fé
 me levanta do pecado ele me coloca em pé
 nosso coração está com fé no meu senhor
-Não desista Fique firme e ele é teu Salvador`
+Não desista Fique firme e ele é teu Salvador`,
+      reflection: '"Nada pode amedrontar aquele que é seu" é afirmação que precisa ser repetida justamente porque o medo insiste em voltar. O poema lembra o véu rasgado, símbolo de acesso direto a Deus sem intermediários nem distância. Você vive como quem tem acesso livre a Deus, ou ainda se sente longe demais para se aproximar sem medo? O que te levanta hoje quando o pecado ou o cansaço tentam te derrubar de novo?',
     },
     {
       id: 'fe-6',
@@ -2493,7 +2554,8 @@ a escuridão interior para que eu possa me salvar.
 Vem, Espírito Santo, transformar todo o meu ser,
 a cruz seja meu guia para eu não me perder.
 Que alegria está presente, agora vou me apresentar,
-o meu nome é Reinaldo, aqui no MMA.`
+o meu nome é Reinaldo, aqui no MMA.`,
+      reflection: '"O Espírito hoje vem para me iluminar a escuridão interior" é confissão corajosa de quem reconhece zonas escuras que precisam de luz, não apenas aparência de vitória. A cruz como guia, e não como peso decorativo, muda a forma de enfrentar o dia. Que parte escura de você ainda não foi apresentada abertamente ao Espírito? Você tem coragem de nomear, como no poema, quem você é diante Dele sem máscara?',
     },
     {
       id: 'fe-7',
@@ -2519,7 +2581,8 @@ Jesus Cristo é o Senhor, Ele veio libertar,
 Renuncie ao pecado, sua alma limpará.
 Só depende de você para hoje se salvar,
 O Senhor espera que você abra o coração,
-Ele é a verdade, reconheça a salvação.`
+Ele é a verdade, reconheça a salvação.`,
+      reflection: '"Não estou só" é declaração que o poema faz em comunidade — os irmãos ajudam a sustentar a fé quando ela vacila sozinha. Restaurar a aliança e equilibrar a emoção, diz o texto, não são processos automáticos, exigem tempo do Senhor, não pressa humana. Você tem enfrentado dificuldades isolado, achando que pedir ajuda aos irmãos seria fraqueza? O que significa, hoje, renunciar ao pecado que você sabe que te afasta dessa aliança?',
     },
     {
       id: 'fe-9',
@@ -2544,7 +2607,8 @@ Ao chegar perto do mestre, ele logo perguntou:
 "O que queres que eu te faça?"
 "Que eu veja, meu Senhor."
 Quer mudar sua vida, preste muita atenção,
-E faça como Bartimeu, ouça com o coração.`
+E faça como Bartimeu, ouça com o coração.`,
+      reflection: 'Bartimeu planejou seu dia sabendo que Jesus passaria ali — a fé dele não era espontânea, era preparada com antecedência e coragem para gritar apesar da multidão que mandava calar. "O que queres que eu te faça?" é pergunta que Jesus ainda faz, mas exige resposta clara, não vaga. Você tem gritado por sua cura ou tem se calado porque as pessoas ao redor acham inconveniente sua fé? O que você responderia, hoje, se Jesus fizesse essa pergunta direto a você?',
     },
     {
       id: 'ag-1',
@@ -2584,7 +2648,8 @@ Pois no bem não há algema.
 Avança a cada dia,
 Na fé e na caridade.
 Jesus disse: "Este é o caminho,
-A verdade e a liberdade."`
+A verdade e a liberdade."`,
+      reflection: '"Sem amor, dons são vazios, nada podem transformar" é a advertência de Paulo que o poema retoma sem suavizar: falar línguas, profetizar, servir — nada substitui a caridade. O amor descrito é paciente e sem álgema, ou seja, livre de cobrança e controle. Você tem exercido dons ou funções na igreja sem o amor que deveria sustentá-los, só por obrigação ou vaidade? Onde sua fé ainda precisa amadurecer para se tornar caridade de fato, não apenas atividade religiosa?',
     },
     {
       id: 'ag-2',
@@ -2612,7 +2677,8 @@ Ouro e incenso em Seu louvor.
 Na manjedoura sagrada,
 O Salvador repousou.
 Anjos cantavam em glória,
-E os pastores O adoraram.`
+E os pastores O adoraram.`,
+      reflection: 'A cena de Herodes mentindo aos magos, no meio de uma mensagem de amor, lembra que o engano ronda até os planos mais sagrados. "Filho, eu te amo, pare um pouco para escutar" pede exatamente o que Herodes nunca fez: parar e discernir antes de agir por medo ou ambição. Você tem discernido as vozes que ouve, ou seguido conselhos convenientes sem consultar Deus primeiro? Que prisão você ainda carrega que Deus já ofereceu libertar?',
     },
     {
       id: 'ag-3',
@@ -2644,7 +2710,8 @@ Lembre-se diariamente de Jesus, nosso Salvador.
 Pois a morte foi vencida,
 Jesus curou nossa ferida.
 Que Deus nos conceda Seu amor,
-Fortalecendo-nos com Seu fervor.`
+Fortalecendo-nos com Seu fervor.`,
+      reflection: '"A tribulação gera paciência cultivada" reformula o sofrimento não como punição, mas como processo que amadurece o fruto da fé. O poema recusa a esperança como ilusão passageira: ela não decepciona porque se apoia num amor já derramado, não numa expectativa vaga. Você tem enfrentado dificuldades como quem espera apenas que passem, ou como quem espera que produzam algo em você? O que a tribulação atual pode estar cultivando em você que o conforto nunca cultivaria?',
     },
     {
       id: 'ag-4',
@@ -2668,7 +2735,8 @@ Deus está sempre pronto, vem comigo para entrar.
 Nunca abandone sua cruz,
 Se deseja a vitória alcançar.
 Toda hora é hora,
-A decisão precisa tomar.`
+A decisão precisa tomar.`,
+      reflection: '"Ainda que não sintas o amor, espera, confia" reconhece que a fé às vezes precisa avançar sem o apoio do sentimento imediato. O caminho excelente de Paulo é citado no poema como superior a qualquer dom espetacular, porque se sustenta na entrega simples e constante. Você tem esperado sentir para agir, ou tem agido mesmo sem sentir, confiando que a graça sustenta? Que cruz você está tentado a abandonar justamente quando a vitória está mais perto?',
     },
     {
       id: 'ag-5',
@@ -2682,7 +2750,8 @@ Mesmo que a mãe te esqueça, jamais te abandonarei.
 Quem ama a Cristo de todo o coração
 Tem diante dos olhos a força da salvação.
 A palavra semeada tem poder de alimentar,
-Fortalece tua fé, o Senhor sempre estará.`
+Fortalece tua fé, o Senhor sempre estará.`,
+      reflection: '"Mesmo que a mãe te esqueça, jamais te abandonarei" retoma promessa profética que o poema aplica a quem se sente esquecido até pelos mais próximos. A aliança com Noé, Abraão e Moisés mostra um Deus que renova compromisso apesar da infidelidade humana repetida. Você tem duvidado da fidelidade de Deus por causa de abandono ou decepção de pessoas que deveriam ter ficado? Que palavra semeada em você precisa ser relembrada agora para fortalecer sua fé?',
     },
     {
       id: 'ag-6',
@@ -2716,7 +2785,8 @@ Todos os dias vou estar.
 Numa vida de oração,
 As virtudes praticar.
 Com Jesus em cada passo,
-Meus irmãos irei amar.`
+Meus irmãos irei amar.`,
+      reflection: '"Sem ela, nada sou" é confissão radical de dependência que contraria o instinto humano de contar méritos próprios. A imagem da videira e dos ramos, no poema, avisa que fruto podre e desgraça vêm de quem se separa da fonte, não de azar. Você tem cultivado intimidade diária com Cristo ou vivido de reservas espirituais antigas, sem seiva nova? O que significaria hoje ser realmente íntimo de Cristo, e não apenas conhecido por Ele de longe?',
     },
     {
       id: 'p5-34-new',
@@ -2744,7 +2814,8 @@ Que entregou Isaque, com confiança inteira.
 Deus o provou e nele confiou,
 E o exemplo de fé permanece e nos guiou.
 Plante fé com o coração, mesmo sem ver,
-E milagres do céu você vai colher.`
+E milagres do céu você vai colher.`,
+      reflection: '"Se você plantar a fé, colherá milagres de verdade" conecta diretamente ação de hoje com resultado espiritual, sem atalhos. Abraão entregou Isaque com confiança inteira antes de ver qualquer solução — a fé precedeu a prova, não o contrário. Você tem esperado ver para crer, invertendo a ordem que fez Abraão pai da fé verdadeira? Que semente de fé você pode plantar hoje, mesmo sem enxergar ainda o milagre que ela vai gerar?',
     }
   ],
   'bloco-6': [
