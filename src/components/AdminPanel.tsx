@@ -40,10 +40,21 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
     text: '',
     reflection: ''
   });
+  const [errors, setErrors] = useState<Partial<Record<keyof NewPoem, string>>>({});
+
+  const validate = () => {
+    const newErrors: Partial<Record<keyof NewPoem, string>> = {};
+    if (!newPoem.theme) newErrors.theme = 'O tema é obrigatório';
+    if (!newPoem.title.trim()) newErrors.title = 'O título é obrigatório';
+    if (!newPoem.text.trim()) newErrors.text = 'O texto do poema é obrigatório';
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = () => {
-    if (!newPoem.theme || !newPoem.title.trim() || !newPoem.text.trim()) {
-      toast.error('Por favor, preencha todos os campos');
+    if (!validate()) {
+      toast.error('Por favor, corrija os campos obrigatórios');
       return;
     }
 
@@ -55,6 +66,7 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
 
   const handleReset = () => {
     setNewPoem({ theme: '', title: '', text: '', reflection: '' });
+    setErrors({});
   };
 
   return (
@@ -80,12 +92,17 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
         </DialogHeader>
         <div className="space-y-6 py-4">
           <div className="space-y-2">
-            <Label htmlFor="theme">Tema</Label>
+            <Label htmlFor="theme" className={errors.theme ? "text-destructive" : ""}>
+              Tema *
+            </Label>
             <Select
               value={newPoem.theme}
-              onValueChange={(value) => setNewPoem({ ...newPoem, theme: value })}
+              onValueChange={(value) => {
+                setNewPoem({ ...newPoem, theme: value });
+                if (errors.theme) setErrors({ ...errors, theme: undefined });
+              }}
             >
-              <SelectTrigger id="theme">
+              <SelectTrigger id="theme" className={errors.theme ? "border-destructive focus:ring-destructive" : ""}>
                 <SelectValue placeholder="Selecione um tema" />
               </SelectTrigger>
               <SelectContent>
@@ -96,31 +113,47 @@ export const AdminPanel = ({ onAddPoem }: AdminPanelProps) => {
                 ))}
               </SelectContent>
             </Select>
+            {errors.theme && <p className="text-xs text-destructive">{errors.theme}</p>}
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="title">Título do Poema</Label>
+            <Label htmlFor="title" className={errors.title ? "text-destructive" : ""}>
+              Título do Poema *
+            </Label>
             <Input
               id="title"
               value={newPoem.title}
-              onChange={(e) => setNewPoem({ ...newPoem, title: e.target.value })}
+              onChange={(e) => {
+                setNewPoem({ ...newPoem, title: e.target.value });
+                if (errors.title) setErrors({ ...errors, title: undefined });
+              }}
               placeholder="Digite o título do poema"
-              className="text-base"
+              className={`text-base ${errors.title ? "border-destructive focus-visible:ring-destructive" : ""}`}
             />
+            {errors.title && <p className="text-xs text-destructive">{errors.title}</p>}
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="text">Texto do Poema</Label>
+            <Label htmlFor="text" className={errors.text ? "text-destructive" : ""}>
+              Texto do Poema *
+            </Label>
             <Textarea
               id="text"
               value={newPoem.text}
-              onChange={(e) => setNewPoem({ ...newPoem, text: e.target.value })}
+              onChange={(e) => {
+                setNewPoem({ ...newPoem, text: e.target.value });
+                if (errors.text) setErrors({ ...errors, text: undefined });
+              }}
               placeholder="Digite o texto do poema aqui..."
-              className="min-h-[300px] font-serif text-base leading-relaxed"
+              className={`min-h-[300px] font-serif text-base leading-relaxed ${errors.text ? "border-destructive focus-visible:ring-destructive" : ""}`}
             />
-            <p className="text-sm text-muted-foreground">
-              Use quebras de linha para separar os versos
-            </p>
+            {errors.text ? (
+              <p className="text-xs text-destructive">{errors.text}</p>
+            ) : (
+              <p className="text-sm text-muted-foreground">
+                Use quebras de linha para separar os versos
+              </p>
+            )}
           </div>
 
           <div className="space-y-2">
