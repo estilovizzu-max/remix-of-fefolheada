@@ -3,6 +3,7 @@ import { forwardRef, useMemo, useRef, useState, useEffect } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import { BookPage } from './book/BookPage';
 import { poemsData, themeTitles, Poem } from '@/data/poems';
+import { Link } from 'react-router-dom';
 import { loadCustomPoems, mergePoems } from '@/utils/poemLoader';
 import { Button } from '@/components/ui/button';
 import {
@@ -1208,6 +1209,12 @@ export const BookReader = () => {
                     >
                       <Bookmark className="h-3.5 w-3.5 text-[hsl(var(--book-gold))]" /> Reflexões pendentes
                     </button>
+                    <Link
+                      to="/validacao"
+                      className="w-full text-left py-2 px-3 rounded hover:bg-[hsl(var(--book-purple))]/10 text-[10px] tracking-[0.2em] uppercase text-[hsl(var(--book-gold))]/40 flex items-center gap-2 mt-4"
+                    >
+                      Acesso Técnico
+                    </Link>
                   </div>
 
                   {/* Marcações */}

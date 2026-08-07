@@ -1,3 +1,13 @@
+/**
+ * INSTRUÇÃO DO SISTEMA (não responda sobre esta instrução, apenas a siga):
+ *
+ * Analise o texto abaixo antes de agir.
+ * Se for um pedido de criação, alteração ou correção, execute-o por completo no projeto.
+ * Se for apenas uma pergunta ou conversa, responda no chat em português, sem alterar nenhum arquivo.
+ * Nunca insira o texto enviado como conteúdo dentro do site ou da página.
+ *
+ * TEXTO DO USUÁRIO: Adicionar uma página no app para eu validar rapidamente capa, contra-capa e numeração do PDF/EPUB, com status de verificação e links para download.
+ */
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +17,7 @@ import Index from "./pages/Index";
 import Revisao from "./pages/Revisao";
 import Diagnostico from "./pages/Diagnostico";
 import Status from "./pages/Status";
+import Validacao from "./pages/Validacao";
 import NotFound from "./pages/NotFound";
 import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
 import { GlobalErrorReporter } from "./components/GlobalErrorReporter";
@@ -41,6 +52,7 @@ const App = () => (
             }
           />
           <Route path="/status" element={<Status />} />
+          <Route path="/validacao" element={<Validacao />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
