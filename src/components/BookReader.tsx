@@ -868,6 +868,7 @@ export const BookReader = () => {
       />,
     );
 
+    seq.push(<BackCoverPage key="back" />);
     seq.push(
       <ColophonPage key="colo" onOpenAdmin={() => setAdminHiddenTrigger((v) => v + 1)} />,
     );
