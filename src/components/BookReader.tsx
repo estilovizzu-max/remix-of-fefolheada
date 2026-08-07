@@ -68,7 +68,7 @@ const CoverPage = forwardRef<HTMLDivElement>((_, ref) => (
       </div>
       <div className="mb-8 space-y-2">
         <p className="text-[9px] tracking-[0.35em] text-[hsl(var(--book-gold-soft))]/80">
-          200 POEMAS · 6 BLOCOS
+          128 POEMAS · 6 CAPÍTULOS
         </p>
         <p className="text-[9px] tracking-[0.35em] text-[hsl(var(--book-gold-soft))]/60">
           MÉTODO PCH · POESIA QUE CURA O HOMEM
@@ -78,6 +78,46 @@ const CoverPage = forwardRef<HTMLDivElement>((_, ref) => (
   </BookPage>
 ));
 CoverPage.displayName = 'CoverPage';
+
+const BackCoverPage = forwardRef<HTMLDivElement>((_, ref) => (
+  <BookPage ref={ref} variant="cover">
+    <div
+      className="relative h-full w-full flex flex-col items-center justify-center p-12 text-center"
+      style={{
+        backgroundImage:
+          'radial-gradient(ellipse at center, hsl(var(--book-purple)) 0%, hsl(var(--book-purple-deep)) 90%)',
+      }}
+    >
+      <div className="absolute inset-4 border border-[hsl(var(--book-gold-soft))]/40 pointer-events-none" />
+      
+      <div className="space-y-8 max-w-xs">
+        <div className="space-y-2">
+          <div className="h-px w-8 bg-[hsl(var(--book-gold-soft))]/40 mx-auto" />
+          <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold-soft))] uppercase">
+            A Obra
+          </p>
+        </div>
+        
+        <p className="text-sm font-serif italic leading-relaxed text-[hsl(var(--paper))]/90">
+          "A poesia é o eco da oração que transborda do coração para o papel. 
+          Neste livro, cada verso é um convite para mergulhar no mistério 
+          do amor de Deus e redescobrir sua identidade de luz."
+        </p>
+        
+        <div className="pt-4 space-y-4">
+          <p className="text-[11px] tracking-[0.2em] text-[hsl(var(--book-gold-soft))]/70 font-serif">
+            MÉTODO FILHO DA LUZ
+          </p>
+          <div className="h-px w-12 bg-[hsl(var(--book-gold-soft))]/40 mx-auto" />
+          <p className="text-xs italic text-[hsl(var(--paper-muted))]">
+            Criado por Evaldo.os
+          </p>
+        </div>
+      </div>
+    </div>
+  </BookPage>
+));
+BackCoverPage.displayName = 'BackCoverPage';
 
 const CopyrightPage = forwardRef<HTMLDivElement>((_, ref) => (
   <BookPage ref={ref} folio="ii">
