@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Revisao from "./pages/Revisao";
 import Diagnostico from "./pages/Diagnostico";
 import Status from "./pages/Status";
+import Validacao from "./pages/Validacao";
 import NotFound from "./pages/NotFound";
 import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
 import { GlobalErrorReporter } from "./components/GlobalErrorReporter";
@@ -41,6 +42,7 @@ const App = () => (
             }
           />
           <Route path="/status" element={<Status />} />
+          <Route path="/validacao" element={<Validacao />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
