@@ -282,8 +282,8 @@ Ajudando-me a me entender, E meu coração, a aquecer.
 Após essa expressão, Eu abro meu coração, E o Senhor vem transformar,
 Minhas emoções equilibrar, Minha visão aprimorar,
 Para que eu possa enxergar Tudo o que preciso mudar.`,
-      reflection: 'A graça de Deus não é um evento único, é um "recarregar" diário. Ela equilibra as emoções e aprimora a visão para vermos o que precisa mudar.',
-      inspiration: 'Tua graça me alcança e equilibra meu...'
+      reflection: 'Este poema reflete a profunda conexão entre o eu lírico e Jesus, destacando a misericórdia e a paz que Ele traz diariamente. A transformação interna, guiada pela graça divina, é o tema central, onde a entrega a Jesus leva ao equilíbrio emocional e à clareza de visão para mudanças necessárias na vida.',
+      inspiration: 'Como você percebe a presença da misericórdia divina em sua vida? Em quais áreas você sente necessidade de transformação e equilíbrio?'
     },
     {
       id: 'p1-16',
@@ -295,8 +295,8 @@ Reflexione comigo: Por que devo fazer isso? O pensamento liberta.
 Até quando vai permanecer preso sem pensar? Se alguém é aprisionado, é porque não refletiu.
 O pensamento que faz refletir te leva a relaxar E a resolver o que antes parecia impossível,
 Mantendo seus pensamentos alinhados E intensificando sua alegria.`,
-      reflection: 'A liberdade começa no pensamento. Dizer "não" aos outros pode ser dizer "sim" para a sua paz e para a vontade de Deus.',
-      inspiration: 'Eu liberto minha mente e escolho...'
+      reflection: 'Este poema explora a importância do pensamento consciente e crítico, incentivando o leitor a questionar e refletir antes de tomar decisões. Ele aborda como a falta de reflexão pode levar a decisões erradas e como alinhar o pensamento com valores espirituais, como os que vêm de Deus, pode levar à verdadeira liberdade e alegria.',
+      inspiration: 'Como você pode aplicar a prática da reflexão crítica em suas decisões diárias? De que maneiras seus pensamentos podem estar te influenciando a agir contra seus verdadeiros desejos?'
     },
     {
       id: 'p1-17',
@@ -1890,8 +1890,8 @@ Acalme seu coração, toda manhã, por favor,
 pare agora, sinta o ar, comece a orar com o Senhor.
 Pois renovo em você, sua paz e alegria,
 então, só assim vai perceber, a paz em expansão.`,
-      reflection: 'A ansiedade tem roubado nosso fôlego. O exercício proposto é fisiológico e espiritual: sentir o ar e reconhecer nele a presença renovadora do Espírito. A paz de Cristo é contagiosa ("em expansão").',
-      inspiration: 'Eu inspiro a Tua paz e expiro a minha...'
+      reflection: 'Este poema evoca a presença do Espírito Santo como fonte de paz e renovação. A transformação que ocorre com a chegada do Espírito é sentida no coração, dissipando medos e dúvidas. A mensagem central convida o leitor a acalmar o coração, buscar a paz através da oração e sentir a presença renovadora do Espírito em sua vida.',
+      inspiration: 'Como você sente a presença do Espírito Santo em sua vida diária? De que forma a oração ajuda a acalmar seu coração e renovar sua paz interior?'
     },
     {
       id: 'p4-3',
