@@ -6,7 +6,28 @@
  * Se for apenas uma pergunta ou conversa, responda no chat em português, sem alterar nenhum arquivo.
  * Nunca insira o texto enviado como conteúdo dentro do site ou da página.
  *
- * TEXTO DO USUÁRIO: Implementar uma navegação rápida por página na /validacao, com teclado e jump para capa, sumário e contra-capa para eu revisar em segundos.
+ * TEXTO DO USUÁRIO: Sim. E, se você está falando desse projeto do Lovable, podemos estruturar **Skills + uma Editora Inteligente** dentro dele.
+ *
+ * Eu faria a arquitetura assim:
+ *
+ * ### 🧠 Núcleo da Editora
+ *
+ * A Editora não seria apenas um editor de texto. Seria um **sistema editorial com agentes especializados**, onde cada Skill executa uma função.
+ *
+ * **1. Skill — Arquiteto Editorial**
+ * **2. Skill — Escritor**
+ * **3. Skill — PCH / VerboLuz**
+ * **4. Skill — Revisor**
+ * **5. Skill — Editor Literário**
+ * **6. Skill — Editor Comercial**
+ * **7. Skill — Diagramador**
+ * **8. Skill — Capista**
+ *
+ * ### 📚 E o fluxo poderia ser:
+ * **IDEIA → PROJETO → ESTRUTURA → ESCRITA → EDIÇÃO → REVISÃO → DESIGN → PUBLICAÇÃO**
+ *
+ * ### 🚀 Mas eu iria além
+ * Criaria uma **Editora AI completa**, com um painel semelhante a um pequeno *publishing house*.
  */
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -53,6 +74,8 @@ const App = () => (
           />
           <Route path="/status" element={<Status />} />
           <Route path="/validacao" element={<Validacao />} />
+          <Route path="/editora" element={<Editora />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
