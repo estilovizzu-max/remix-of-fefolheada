@@ -461,12 +461,16 @@ export default function Editora() {
                                   <div key={key} className="space-y-1">
                                      <div className="text-[9px] uppercase tracking-widest text-[#f3ecdb]/30">{key}</div>
                                      <div className="flex flex-wrap gap-1">
-                                        {items.length > 0 ? items.map(item => (
-                                           <span key={item} className="text-[9px] px-2 py-0.5 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{item}</span>
-                                        )) : <span className="text-[9px] text-[#f3ecdb]/10 italic">Nenhum dado registrado</span>}
+                                        {Array.isArray(items) ? (
+                                          items.length > 0 ? items.map(item => (
+                                             <span key={item} className="text-[9px] px-2 py-0.5 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{item}</span>
+                                          )) : <span className="text-[9px] text-[#f3ecdb]/10 italic">Nenhum dado registrado</span>
+                                        ) : (
+                                          <span className="text-[10px] text-[#f3ecdb]/60">{items}</span>
+                                        )}
                                      </div>
                                   </div>
-                               ))}
+                                ))}
                             </div>
                          </Card>
 
