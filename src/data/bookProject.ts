@@ -117,7 +117,8 @@ export const initialBookData: BookProject = {
           changeSummary: 'Criação inicial'
         }
       ],
-      auditLog: []
+      auditLog: [],
+      approvals: []
     }
   ],
   createdAt: new Date().toISOString(),
