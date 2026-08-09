@@ -20,7 +20,10 @@ import {
   X,
   ThumbsUp,
   ThumbsDown,
-  MessageSquare
+  MessageSquare,
+  RefreshCw,
+  History,
+  Columns
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -191,40 +194,70 @@ export default function Editora() {
                      />
                   </div>
 
-                  <div className="w-64 flex flex-col gap-6 overflow-y-auto pr-2 scrollbar-thin">
-                    <div className="space-y-3">
-                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Versões</div>
-                       <div className="flex flex-col gap-2">
-                          {selectedChapter.versions.map(v => (
-                             <div key={v.id} className="p-2 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 cursor-pointer transition-colors group">
-                                <div className="flex justify-between items-center mb-1">
-                                   <span className="text-[10px] font-bold text-[#c19935]">{v.id.toUpperCase()}</span>
-                                   <span className="text-[8px] text-[#f3ecdb]/20">{new Date(v.timestamp).toLocaleDateString()}</span>
-                                </div>
-                                <p className="text-[9px] text-[#f3ecdb]/50 italic line-clamp-1">{v.changeSummary}</p>
-                                <div className="hidden group-hover:flex justify-end gap-1 mt-2">
-                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Comparar</Button>
-                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Restaurar</Button>
-                                </div>
-                             </div>
-                          ))}
-                       </div>
-                    </div>
+                  <div className="w-80 flex flex-col gap-6 overflow-y-auto pr-2 scrollbar-thin">
+                    <Tabs defaultValue="versoes" className="w-full">
+                       <TabsList className="w-full bg-black/20 border border-[#c19935]/10 h-8 p-0.5">
+                          <TabsTrigger value="versoes" className="flex-1 text-[9px] h-full data-[state=active]:bg-[#c19935] data-[state=active]:text-[#0d0722]">
+                             <History className="h-3 w-3 mr-1" /> Versões
+                          </TabsTrigger>
+                          <TabsTrigger value="comparar" className="flex-1 text-[9px] h-full data-[state=active]:bg-[#c19935] data-[state=active]:text-[#0d0722]">
+                             <Columns className="h-3 w-3 mr-1" /> Comparar
+                          </TabsTrigger>
+                          <TabsTrigger value="audit" className="flex-1 text-[9px] h-full data-[state=active]:bg-[#c19935] data-[state=active]:text-[#0d0722]">
+                             <Search className="h-3 w-3 mr-1" /> Audit
+                          </TabsTrigger>
+                       </TabsList>
 
-                    <div className="space-y-3">
-                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Histórico Audit</div>
-                       <div className="space-y-2">
-                          {selectedChapter.auditLog.length > 0 ? selectedChapter.auditLog.map((log, i) => (
-                             <div key={i} className="text-[9px] p-2 rounded bg-black/40 border-l-2 border-[#c19935]/40">
-                                <div className="font-bold text-[#c19935] mb-1">{skills.find(s => s.id === log.skillId)?.name}</div>
-                                <p className="text-[#f3ecdb]/40 mb-1">{log.action}</p>
-                                <div className="text-[8px] italic opacity-50">Evidência: {log.evidence}</div>
+                       <TabsContent value="versoes" className="mt-4 space-y-3">
+                          <div className="flex flex-col gap-2">
+                             {selectedChapter.versions.map(v => (
+                                <div key={v.id} className="p-2 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 cursor-pointer transition-colors group">
+                                   <div className="flex justify-between items-center mb-1">
+                                      <span className="text-[10px] font-bold text-[#c19935]">{v.id.toUpperCase()}</span>
+                                      <span className="text-[8px] text-[#f3ecdb]/20">{new Date(v.timestamp).toLocaleDateString()}</span>
+                                   </div>
+                                   <p className="text-[9px] text-[#f3ecdb]/50 italic line-clamp-1">{v.changeSummary}</p>
+                                   <div className="hidden group-hover:flex justify-end gap-1 mt-2">
+                                      <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Restaurar</Button>
+                                   </div>
+                                </div>
+                             ))}
+                          </div>
+                       </TabsContent>
+
+                       <TabsContent value="comparar" className="mt-4 space-y-4">
+                          <div className="space-y-4">
+                             <div className="text-[10px] text-[#c19935]/60 italic mb-2 px-1">Visualização V1 vs Atual</div>
+                             <div className="grid grid-cols-1 gap-4">
+                                <div className="p-3 bg-red-500/5 border border-red-500/10 rounded">
+                                   <div className="text-[8px] uppercase text-red-500/40 mb-1">V1 — Original</div>
+                                   <p className="text-[10px] text-red-200/40 line-through leading-relaxed">{selectedChapter.draft.substring(0, 100)}...</p>
+                                </div>
+                                <div className="p-3 bg-green-500/5 border border-green-500/10 rounded">
+                                   <div className="text-[8px] uppercase text-green-500/40 mb-1">Versão Atual</div>
+                                   <p className="text-[10px] text-green-200/60 leading-relaxed">{selectedChapter.draft.substring(0, 100)}...</p>
+                                </div>
                              </div>
-                          )) : (
-                             <div className="text-[9px] text-[#f3ecdb]/10 italic">Nenhuma atividade registrada</div>
-                          )}
-                       </div>
-                    </div>
+                             <Button size="sm" variant="outline" className="w-full text-[9px] border-[#c19935]/20 text-[#c19935]">Ver Diff Completo</Button>
+                          </div>
+                       </TabsContent>
+
+                       <TabsContent value="audit" className="mt-4 space-y-3">
+                          <div className="space-y-2">
+                             {selectedChapter.auditLog.length > 0 ? selectedChapter.auditLog.map((log, i) => (
+                                <div key={i} className="text-[9px] p-2 rounded bg-black/40 border-l-2 border-[#c19935]/40">
+                                   <div className="font-bold text-[#c19935] mb-1">{skills.find(s => s.id === log.skillId)?.name}</div>
+                                   <p className="text-[#f3ecdb]/40 mb-1">{log.action}</p>
+                                   <div className="text-[8px] italic opacity-50 bg-[#c19935]/5 p-1 rounded mt-1 border border-[#c19935]/10">
+                                      🔍 Evidência: {log.evidence}
+                                   </div>
+                                </div>
+                             )) : (
+                                <div className="text-[9px] text-[#f3ecdb]/10 italic">Nenhuma atividade registrada</div>
+                             )}
+                          </div>
+                       </TabsContent>
+                    </Tabs>
                   </div>
                </div>
             </div>
@@ -780,23 +813,51 @@ export default function Editora() {
                          <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
                             O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
                          </p>
-                         <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-6 group">
-                            INICIAR CICLO FINAL 
-                            <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                         </Button>
+                         <div className="flex flex-col gap-2">
+                            <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-5 group h-auto">
+                               <div className="flex flex-col items-center">
+                                  <span className="flex items-center">INICIAR CICLO FINAL <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                                  <span className="text-[8px] uppercase opacity-60 mt-1">Executar todas as Skills pendentes</span>
+                               </div>
+                            </Button>
+                            <Button variant="outline" className="w-full border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
+                               <RefreshCw className="mr-2 h-3 w-3" /> REEXECUTAR FALHAS/PENDENTES
+                            </Button>
+                         </div>
                       </Card>
 
                       <Card className="bg-black/20 border-[#c19935]/10 p-6">
-                         <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Avisos Críticos</h4>
+                         <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                            <Search className="h-4 w-4" /> Evidências e Fontes
+                         </h3>
                          <div className="space-y-3">
-                            <div className="p-2 rounded bg-red-500/10 border border-red-500/20 text-[9px] text-red-400 flex gap-2">
-                               <Info className="h-3 w-3 shrink-0" />
-                               <span>Capítulo 6 ainda não possui rascunho.</span>
-                            </div>
-                            <div className="p-2 rounded bg-yellow-500/10 border border-yellow-500/20 text-[9px] text-yellow-400 flex gap-2">
-                               <Info className="h-3 w-3 shrink-0" />
-                               <span>Consistência: João tem idades diferentes nos Cap. 2 e 8.</span>
-                            </div>
+                            {[
+                               { type: 'referencia', label: 'Citação: Jo 1:1-5', skill: 'Pesquisador', evidence: 'Verificado em Bíblia de Jerusalém', validated: true },
+                               { type: 'afirmacao', label: 'Impacto da Poesia na Cognição', skill: 'Pesquisador', evidence: 'Necessita fonte científica (Estudo Neuroestética 2024)', validated: false }
+                            ].map((ev, i) => (
+                               <div key={i} className="p-2 rounded bg-white/5 border border-white/5 space-y-2">
+                                  <div className="flex justify-between items-start">
+                                     <div className="flex flex-col">
+                                        <span className="text-[9px] font-bold text-[#f3ecdb]/80">{ev.label}</span>
+                                        <span className="text-[7px] uppercase tracking-widest text-[#c19935]/40">{ev.skill}</span>
+                                     </div>
+                                     <div className={`w-2 h-2 rounded-full ${ev.validated ? 'bg-green-500' : 'bg-yellow-500 animate-pulse'}`} />
+                                  </div>
+                                  <p className="text-[8px] italic text-[#f3ecdb]/40">"{ev.evidence}"</p>
+                                  {!ev.validated && (
+                                     <Button size="sm" className="w-full h-6 text-[8px] bg-[#c19935]/20 hover:bg-[#c19935]/40 text-[#c19935]">Validar Evidência</Button>
+                                  )}
+                               </div>
+                            ))}
+                         </div>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                         <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Estatísticas do Ciclo</h4>
+                         <div className="space-y-1">
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Skills Executadas:</span> <span>42</span></div>
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Versões Geradas:</span> <span>128</span></div>
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Alterações Aceitas:</span> <span>89%</span></div>
                          </div>
                       </Card>
                    </aside>
