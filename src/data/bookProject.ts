@@ -41,6 +41,13 @@ export interface BookProject {
   backCoverText: string;
   status: 'ideia' | 'projeto' | 'estrutura' | 'escrita' | 'edicao' | 'revisao' | 'design' | 'publicacao';
   readinessScore: number;
+  printSettings: {
+    format: '14x21' | '15x21' | '16x23' | '17x24' | 'custom';
+    margins: { top: number; bottom: number; left: number; right: number };
+    bleed: number;
+    dpi: number;
+    colorProfile: 'CMYK' | 'RGB';
+  };
   scores: {
     conteudo: number;
     estrutura: number;
