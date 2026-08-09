@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, AlertCircle, Download, FileText, BookOpen, ArrowLeft, Loader2, ZoomIn, X } from "lucide-react";
+import { CheckCircle2, AlertCircle, Download, FileText, BookOpen, ArrowLeft, Loader2, ZoomIn, X, ChevronLeft, ChevronRight, Hash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { poemsData } from "@/data/poems";
-import { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState, useEffect, useCallback } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export default function Validacao() {
   const [fileStatus, setFileStatus] = useState<Record<string, { exists: boolean, loading: boolean }>>({
@@ -12,7 +12,34 @@ export default function Validacao() {
     epub: { exists: false, loading: true },
     dossie: { exists: false, loading: true }
   });
-  const [selectedPreview, setSelectedPreview] = useState<{title: string, content: React.ReactNode} | null>(null);
+  const [selectedPreview, setSelectedPreview] = useState<number | null>(null);
+
+  const previews = [
+    { title: "Capa do Livro", content: <CoverPreview />, key: "capa" },
+    { title: "Sumário & Miolo", content: <InternalPagePreview />, key: "sumario" },
+    { title: "Diagramação de Poema", content: <PoemPagePreview />, key: "poema" },
+    { title: "Contra-capa", content: <BackCoverPreview />, key: "contracapa" },
+  ];
+
+  const navigatePreview = useCallback((direction: 'next' | 'prev') => {
+    setSelectedPreview(prev => {
+      if (prev === null) return null;
+      if (direction === 'next') return (prev + 1) % previews.length;
+      return (prev - 1 + previews.length) % previews.length;
+    });
+  }, [previews.length]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedPreview === null) return;
+      if (e.key === 'ArrowRight') navigatePreview('next');
+      if (e.key === 'ArrowLeft') navigatePreview('prev');
+      if (e.key === 'Escape') setSelectedPreview(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedPreview, navigatePreview]);
+
 
   const poemCount = Object.values(poemsData).reduce((acc, curr) => acc + curr.length, 0);
 
@@ -186,65 +213,68 @@ export default function Validacao() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* CAPA */}
-            <PreviewCard 
-              title="Capa (Frente)" 
-              onClick={() => setSelectedPreview({ 
-                title: "Capa do Livro", 
-                content: <CoverPreview /> 
-              })}
-            >
-              <CoverPreview scale={0.4} />
-            </PreviewCard>
-
-            {/* SUMÁRIO/PÁGINA TIPO */}
-            <PreviewCard 
-              title="Sumário / Miolo" 
-              onClick={() => setSelectedPreview({ 
-                title: "Estrutura Interna", 
-                content: <InternalPagePreview /> 
-              })}
-            >
-              <InternalPagePreview scale={0.4} />
-            </PreviewCard>
-
-            {/* POEMA TIPO */}
-            <PreviewCard 
-              title="Layout de Poema" 
-              onClick={() => setSelectedPreview({ 
-                title: "Exemplo de Diagramação", 
-                content: <PoemPagePreview /> 
-              })}
-            >
-              <PoemPagePreview scale={0.4} />
-            </PreviewCard>
-
-            {/* CONTRA-CAPA */}
-            <PreviewCard 
-              title="Contra-capa (Verso)" 
-              onClick={() => setSelectedPreview({ 
-                title: "Contra-capa", 
-                content: <BackCoverPreview /> 
-              })}
-            >
-              <BackCoverPreview scale={0.4} />
-            </PreviewCard>
+            {previews.map((p, idx) => (
+              <PreviewCard 
+                key={p.key}
+                title={p.title} 
+                onClick={() => setSelectedPreview(idx)}
+              >
+                {/* Clone do componente com escala reduzida para miniatura */}
+                {Object.assign({}, p.content, { props: { ...p.content.props, scale: 0.4 } })}
+              </PreviewCard>
+            ))}
           </div>
         </section>
 
-        {/* Modal de Zoom */}
-        <Dialog open={!!selectedPreview} onOpenChange={(open) => !open && setSelectedPreview(null)}>
-          <DialogContent className="max-w-[95vw] md:max-w-3xl bg-[#0d0722] border-[#c19935]/30 p-0 overflow-hidden">
-            <div className="p-4 border-b border-[#c19935]/20 flex justify-between items-center">
-              <h3 className="text-[#c19935] font-serif text-lg">{selectedPreview?.title}</h3>
+        {/* Modal de Zoom com Navegação */}
+        <Dialog open={selectedPreview !== null} onOpenChange={(open) => !open && setSelectedPreview(null)}>
+          <DialogContent className="max-w-[95vw] md:max-w-4xl bg-[#0d0722] border-[#c19935]/30 p-0 overflow-hidden outline-none">
+            <div className="p-4 border-b border-[#c19935]/20 flex justify-between items-center bg-black/20">
+              <div className="flex items-center gap-3">
+                <Hash className="h-4 w-4 text-[#c19935]/50" />
+                <h3 className="text-[#c19935] font-serif text-lg">
+                  {selectedPreview !== null && previews[selectedPreview].title}
+                </h3>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] text-[#f3ecdb]/40 mr-4 hidden md:block">Use as setas do teclado ← →</span>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={() => navigatePreview('prev')}
+                  className="text-[#c19935] hover:bg-[#c19935]/10"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </Button>
+                <span className="text-xs text-[#c19935] font-mono px-2">
+                  {(selectedPreview || 0) + 1} / {previews.length}
+                </span>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={() => navigatePreview('next')}
+                  className="text-[#c19935] hover:bg-[#c19935]/10"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={() => setSelectedPreview(null)}
+                  className="text-[#f3ecdb]/40 hover:text-[#f3ecdb] ml-2"
+                >
+                  <X className="h-5 w-5" />
+                </Button>
+              </div>
             </div>
-            <div className="flex justify-center p-8 bg-black/40 overflow-auto max-h-[80vh]">
-              <div className="scale-75 md:scale-100 origin-top">
-                {selectedPreview?.content}
+            <div className="flex justify-center p-4 md:p-12 bg-black/40 overflow-auto max-h-[85vh] relative group">
+              <div className="scale-75 md:scale-100 origin-top transition-transform duration-300">
+                {selectedPreview !== null && previews[selectedPreview].content}
               </div>
             </div>
           </DialogContent>
         </Dialog>
+
 
         <footer className="text-center py-8 text-[#f3ecdb]/30 text-xs">
           © 2026 Folheando Fé · Sistema de Validação Técnica · Criado por Evaldo.os
