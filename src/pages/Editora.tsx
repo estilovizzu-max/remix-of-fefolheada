@@ -519,6 +519,127 @@ export default function Editora() {
                 </div>
              </div>
           </TabsContent>
+          <TabsContent value="memoria" className="flex-1 p-8 overflow-y-auto m-0 border-none">
+             <div className="max-w-5xl mx-auto space-y-8">
+                <header className="flex justify-between items-end">
+                   <div>
+                      <h2 className="text-3xl font-serif text-[#c19935] mb-2">🧠 BOOK_CONTEXT</h2>
+                      <p className="text-[#f3ecdb]/40 italic text-sm">A alma do projeto: tom, voz, conceitos e regras que guiam as Skills.</p>
+                   </div>
+                   <Button size="sm" className="bg-[#c19935] text-[#0d0722]">
+                      <Save className="h-4 w-4 mr-2" /> Salvar Contexto
+                   </Button>
+                </header>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                   <div className="space-y-6">
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6 space-y-6">
+                         <div className="space-y-4">
+                            <div className="space-y-2">
+                               <label className="text-[10px] uppercase tracking-widest text-[#c19935]">Tom Editorial</label>
+                               <input 
+                                  className="w-full bg-transparent border-b border-[#c19935]/20 focus:border-[#c19935] outline-none py-2 text-sm italic" 
+                                  defaultValue={book.editorialMemory.tom} 
+                               />
+                            </div>
+                            <div className="space-y-2">
+                               <label className="text-[10px] uppercase tracking-widest text-[#c19935]">Voz da Obra</label>
+                               <input 
+                                  className="w-full bg-transparent border-b border-[#c19935]/20 focus:border-[#c19935] outline-none py-2 text-sm italic" 
+                                  defaultValue={book.editorialMemory.voz} 
+                               />
+                            </div>
+                         </div>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6 space-y-4">
+                         <div className="flex justify-between items-center">
+                            <h3 className="text-sm font-serif text-[#c19935]">Regras do Autor</h3>
+                            <Button variant="ghost" size="sm" className="h-6 text-[8px] text-[#c19935]">Adicionar Regra</Button>
+                         </div>
+                         <div className="space-y-2">
+                            {book.editorialMemory.regrasAutor.map((regra, i) => (
+                               <div key={i} className="flex gap-2 items-center p-2 rounded bg-[#c19935]/5 border border-[#c19935]/10 group">
+                                  <div className="w-1.5 h-1.5 rounded-full bg-[#c19935]" />
+                                  <span className="text-xs text-[#f3ecdb]/60 flex-1">{regra}</span>
+                                  <button className="opacity-0 group-hover:opacity-100 transition-opacity text-red-500/40 hover:text-red-500">
+                                     <X className="h-3 w-3" />
+                                  </button>
+                               </div>
+                            ))}
+                         </div>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6 space-y-4">
+                         <h3 className="text-sm font-serif text-[#c19935]">Personagens & Entidades</h3>
+                         <div className="flex flex-wrap gap-2">
+                            {book.editorialMemory.personagens.length > 0 ? book.editorialMemory.personagens.map(p => (
+                               <span key={p} className="text-[10px] px-2 py-1 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{p}</span>
+                            )) : <p className="text-[10px] italic text-[#f3ecdb]/20">Nenhum personagem cadastrado.</p>}
+                            <Button variant="outline" size="sm" className="h-6 px-2 text-[8px] border-dashed border-[#c19935]/20">+</Button>
+                         </div>
+                      </Card>
+                   </div>
+
+                   <div className="space-y-6">
+                      <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
+                         <h3 className="text-sm font-serif text-[#c19935] mb-4">Rastreamento de Contexto (Audit)</h3>
+                         <p className="text-[10px] text-[#f3ecdb]/40 mb-6 italic leading-relaxed">
+                            Visualize como as Skills utilizaram a Memória Editorial nas últimas execuções.
+                         </p>
+                         
+                         <div className="space-y-4">
+                            {book.chapters[0].auditLog.length > 0 ? book.chapters[0].auditLog.map((log, i) => (
+                               <div key={i} className="p-3 rounded bg-black/40 border border-[#c19935]/10 space-y-2">
+                                  <div className="flex justify-between items-center">
+                                     <span className="text-[10px] font-bold text-[#c19935] uppercase">{skills.find(s => s.id === log.skillId)?.name}</span>
+                                     <span className="text-[8px] opacity-30">{new Date(log.timestamp).toLocaleTimeString()}</span>
+                                  </div>
+                                  <p className="text-[10px] text-[#f3ecdb]/60 italic">"{log.action}"</p>
+                                  <div className="flex flex-wrap gap-1 mt-2 pt-2 border-t border-white/5">
+                                     {log.contextUsed ? log.contextUsed.map(ctx => (
+                                        <span key={ctx} className="text-[8px] px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                                           🔗 {ctx}
+                                        </span>
+                                     )) : (
+                                        <span className="text-[8px] text-[#f3ecdb]/20">Sem contexto específico rastreado</span>
+                                     )}
+                                  </div>
+                               </div>
+                            )) : (
+                               <div className="text-center py-12 border border-dashed border-[#c19935]/10 rounded">
+                                  <Info className="h-8 w-8 mx-auto text-[#f3ecdb]/10 mb-2" />
+                                  <p className="text-[10px] text-[#f3ecdb]/20">Aguardando primeira execução de Skill com rastreamento.</p>
+                               </div>
+                            )}
+                         </div>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6 space-y-4">
+                         <h3 className="text-sm font-serif text-[#c19935]">Conceitos & Promessas</h3>
+                         <div className="space-y-3">
+                            <div className="space-y-1">
+                               <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Conceitos Chave</div>
+                               <div className="flex flex-wrap gap-1">
+                                  {book.editorialMemory.conceitos.map(c => (
+                                     <span key={c} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{c}</span>
+                                  ))}
+                               </div>
+                            </div>
+                            <div className="space-y-1">
+                               <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Promessas da Obra</div>
+                               <div className="flex flex-wrap gap-1">
+                                  {book.editorialMemory.promessas.map(p => (
+                                     <span key={p} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{p}</span>
+                                  ))}
+                               </div>
+                            </div>
+                         </div>
+                      </Card>
+                   </div>
+                </div>
+             </div>
+          </TabsContent>
         </Tabs>
 
       </main>
