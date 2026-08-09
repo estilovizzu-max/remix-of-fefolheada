@@ -142,9 +142,9 @@ export default function Editora() {
             <div className="flex-1 p-8 flex flex-col gap-4 overflow-hidden">
                <div className="flex items-center justify-between border-b border-[#c19935]/10 pb-4">
                   <div className="flex items-center gap-4">
-                     <h2 className="font-serif text-[#c19935]">{book.chapters[0].title}</h2>
+                     <h2 className="font-serif text-[#c19935]">{selectedChapter.title}</h2>
                      <span className="text-[10px] px-2 py-0.5 rounded border border-[#c19935]/30 text-[#c19935]/60 uppercase tracking-tighter">
-                        {book.chapters[0].status}
+                        {selectedChapter.status}
                      </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -152,17 +152,59 @@ export default function Editora() {
                         <Save className="h-4 w-4 mr-2" /> Salvar
                      </Button>
                      <Button size="sm" className="bg-[#c19935] hover:bg-[#c19935]/90 text-[#0d0722]">
-                        Exportar Manuscrito
+                        Exportar PDF
                      </Button>
                   </div>
                </div>
-               <textarea 
-                  ref={editorRef}
-                  onSelect={handleTextSelection}
-                  className="flex-1 bg-transparent border-none focus:ring-0 resize-none font-serif text-lg leading-relaxed text-[#f3ecdb]/80 p-4 scrollbar-thin scrollbar-thumb-[#c19935]/20"
-                  placeholder="Comece a escrever aqui seu livro..."
-                  defaultValue={book.chapters[0].draft}
-               />
+               
+               <div className="flex-1 flex gap-6 overflow-hidden">
+                  <div className="flex-1 flex flex-col gap-2">
+                     <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40 px-4">Manuscrito</div>
+                     <textarea 
+                        ref={editorRef}
+                        onSelect={handleTextSelection}
+                        className="flex-1 bg-black/20 rounded border border-[#c19935]/5 focus:border-[#c19935]/20 focus:ring-0 resize-none font-serif text-lg leading-relaxed text-[#f3ecdb]/80 p-6 scrollbar-thin scrollbar-thumb-[#c19935]/20"
+                        placeholder="Comece a escrever aqui seu livro..."
+                        defaultValue={selectedChapter.draft}
+                     />
+                  </div>
+
+                  <div className="w-64 flex flex-col gap-6 overflow-y-auto pr-2 scrollbar-thin">
+                    <div className="space-y-3">
+                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Versões</div>
+                       <div className="flex flex-col gap-2">
+                          {selectedChapter.versions.map(v => (
+                             <div key={v.id} className="p-2 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 cursor-pointer transition-colors group">
+                                <div className="flex justify-between items-center mb-1">
+                                   <span className="text-[10px] font-bold text-[#c19935]">{v.id.toUpperCase()}</span>
+                                   <span className="text-[8px] text-[#f3ecdb]/20">{new Date(v.timestamp).toLocaleDateString()}</span>
+                                </div>
+                                <p className="text-[9px] text-[#f3ecdb]/50 italic line-clamp-1">{v.changeSummary}</p>
+                                <div className="hidden group-hover:flex justify-end gap-1 mt-2">
+                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Comparar</Button>
+                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Restaurar</Button>
+                                </div>
+                             </div>
+                          ))}
+                       </div>
+                    </div>
+
+                    <div className="space-y-3">
+                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Histórico Audit</div>
+                       <div className="space-y-2">
+                          {selectedChapter.auditLog.length > 0 ? selectedChapter.auditLog.map((log, i) => (
+                             <div key={i} className="text-[9px] p-2 rounded bg-black/40 border-l-2 border-[#c19935]/40">
+                                <div className="font-bold text-[#c19935] mb-1">{skills.find(s => s.id === log.skillId)?.name}</div>
+                                <p className="text-[#f3ecdb]/40 mb-1">{log.action}</p>
+                                <div className="text-[8px] italic opacity-50">Evidência: {log.evidence}</div>
+                             </div>
+                          )) : (
+                             <div className="text-[9px] text-[#f3ecdb]/10 italic">Nenhuma atividade registrada</div>
+                          )}
+                       </div>
+                    </div>
+                  </div>
+               </div>
             </div>
 
             {/* Painel de Skills à Direita */}
