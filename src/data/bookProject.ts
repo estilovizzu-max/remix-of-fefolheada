@@ -41,6 +41,13 @@ export interface BookProject {
   backCoverText: string;
   status: 'ideia' | 'projeto' | 'estrutura' | 'escrita' | 'edicao' | 'revisao' | 'design' | 'publicacao';
   readinessScore: number;
+  printSettings: {
+    format: '14x21' | '15x21' | '16x23' | '17x24' | 'custom';
+    margins: { top: number; bottom: number; left: number; right: number };
+    bleed: number;
+    dpi: number;
+    colorProfile: 'CMYK' | 'RGB';
+  };
   scores: {
     conteudo: number;
     estrutura: number;
@@ -87,6 +94,13 @@ export const initialBookData: BookProject = {
     revisao: 82,
     design: 76,
     comercial: 90
+  },
+  printSettings: {
+    format: '14x21',
+    margins: { top: 20, bottom: 20, left: 25, right: 20 },
+    bleed: 3,
+    dpi: 300,
+    colorProfile: 'CMYK'
   },
   editorialMemory: {
     personagens: [],
