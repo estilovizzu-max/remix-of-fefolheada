@@ -777,94 +777,99 @@ export default function Editora() {
                          </div>
                       </Card>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                         <Card className="bg-black/20 border-[#c19935]/10 p-6">
-                            <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
-                               <Library className="h-4 w-4" /> Editorial Gate
-                            </h3>
-                            <div className="space-y-2">
-                               {[
-                                  { check: 'Capítulos Concluídos', done: false },
-                                  { check: 'Estrutura Aprovada', done: true },
-                                  { check: 'Gramática Revisada', done: false },
-                                  { check: 'Consistência Verificada', done: true },
-                                  { check: 'PCH Aplicada', done: true },
-                                  { check: 'Autor Aprova Versão Final', done: false }
-                               ].map((c, i) => (
-                                  <div key={i} className="flex items-center gap-2 text-[10px]">
-                                     <div className={`w-3 h-3 rounded-sm border ${c.done ? 'bg-[#c19935] border-[#c19935] flex items-center justify-center' : 'border-[#c19935]/20'}`}>
-                                        {c.done && <CheckCircle2 className="h-2 w-2 text-[#0d0722]" />}
-                                     </div>
-                                     <span className={c.done ? 'text-[#f3ecdb]/60' : 'text-[#f3ecdb]/20'}>{c.check}</span>
-                                  </div>
-                               ))}
-                            </div>
-                         </Card>
+                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                             <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                                <Scissors className="h-4 w-4" /> Especificações de Impressão
+                             </h3>
+                             <div className="grid grid-cols-2 gap-4">
+                                <div className="space-y-1">
+                                   <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">Formato Físico</label>
+                                   <select className="w-full bg-white/5 border border-[#c19935]/20 rounded p-1 text-[10px] text-[#f3ecdb]">
+                                      <option value="14x21">14 × 21 cm</option>
+                                      <option value="15x21">15 × 21 cm</option>
+                                      <option value="16x23">16 × 23 cm</option>
+                                      <option value="17x24">17 × 24 cm</option>
+                                      <option value="custom">Personalizado</option>
+                                   </select>
+                                </div>
+                                <div className="space-y-1">
+                                   <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">Perfil de Cor</label>
+                                   <div className="text-xs text-[#f3ecdb]/80 p-1 bg-white/5 rounded border border-[#c19935]/10">CMYK (Gráfica)</div>
+                                </div>
+                                <div className="space-y-1">
+                                   <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">Margens / Sangria</label>
+                                   <div className="text-[9px] text-[#f3ecdb]/60">Interna: 25mm | Sangria: 3mm</div>
+                                </div>
+                                <div className="space-y-1">
+                                   <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">DPI / Resolução</label>
+                                   <div className="text-[9px] text-green-500 font-bold">300 DPI (Alta Qualidade)</div>
+                                </div>
+                             </div>
+                          </Card>
 
-                         <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6 flex flex-col justify-center items-center text-center">
-                            <div className="text-[10px] uppercase tracking-widest text-[#c19935] mb-2">Readiness Score</div>
-                            <div className="text-4xl font-serif text-[#c19935] mb-2">{book.readinessScore}%</div>
-                            <p className="text-[9px] text-[#f3ecdb]/40 italic">O livro atinge o estado FINAL quando o score superar 95% e o Gate estiver completo.</p>
-                         </Card>
-                      </div>
-                   </div>
+                          <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                             <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                                <Printer className="h-4 w-4" /> PDF Print Check
+                             </h3>
+                             <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                                {[
+                                   { check: 'Dimensões Corretas', done: true },
+                                   { check: 'Margens e Sangria', done: true },
+                                   { check: 'Fontes Incorporadas', done: true },
+                                   { check: 'Imagens (300 DPI)', done: true },
+                                   { check: 'Área Segura', done: false },
+                                   { check: 'Ficha Editorial', done: false },
+                                   { check: 'Lombada Calculada', done: false },
+                                   { check: 'PDF/X-1a Válido', done: false }
+                                ].map((c, i) => (
+                                   <div key={i} className="flex items-center gap-2 text-[10px]">
+                                      <div className={`w-3 h-3 rounded-sm border ${c.done ? 'bg-[#c19935] border-[#c19935] flex items-center justify-center' : 'border-[#c19935]/20'}`}>
+                                         {c.done && <CheckCircle2 className="h-2 w-2 text-[#0d0722]" />}
+                                      </div>
+                                      <span className={c.done ? 'text-[#f3ecdb]/60' : 'text-[#f3ecdb]/20'}>{c.check}</span>
+                                   </div>
+                                ))}
+                             </div>
+                          </Card>
+                       </div>
+                    </div>
 
-                   <aside className="space-y-6">
-                      <Card className="bg-[#c19935]/10 border-[#c19935]/30 p-6 border-t-4 border-t-[#c19935]">
-                         <h3 className="font-serif text-[#c19935] mb-4 flex items-center gap-2">
-                            <Sparkles className="h-4 w-4" /> Orquestrador AI
-                         </h3>
-                         <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
-                            O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
-                         </p>
-                         <div className="flex flex-col gap-2">
-                            <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-5 group h-auto">
-                               <div className="flex flex-col items-center">
-                                  <span className="flex items-center">INICIAR CICLO FINAL <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                                  <span className="text-[8px] uppercase opacity-60 mt-1">Executar todas as Skills pendentes</span>
-                               </div>
-                            </Button>
-                            <Button variant="outline" className="w-full border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
-                               <RefreshCw className="mr-2 h-3 w-3" /> REEXECUTAR FALHAS/PENDENTES
-                            </Button>
-                         </div>
-                      </Card>
+                    <aside className="space-y-6">
+                       <Card className="bg-[#c19935]/10 border-[#c19935]/30 p-6 border-t-4 border-t-[#c19935]">
+                          <h3 className="font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                             <Sparkles className="h-4 w-4" /> Orquestrador AI
+                          </h3>
+                          <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
+                             O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
+                          </p>
+                          <div className="flex flex-col gap-2">
+                             <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-6 group h-auto shadow-[0_0_20px_rgba(193,153,53,0.3)]">
+                                <div className="flex flex-col items-center">
+                                   <span className="flex items-center text-sm uppercase tracking-widest">🖨️ PREPARAR LIVRO PARA IMPRESSÃO</span>
+                                   <span className="text-[9px] opacity-70 mt-1">Orquestrar Diagramação e Pré-Impressão</span>
+                                </div>
+                             </Button>
+                             <div className="grid grid-cols-2 gap-2">
+                                <Button variant="outline" className="border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
+                                   <FileDown className="mr-2 h-3 w-3" /> PDF LEITURA (DIGITAL)
+                                </Button>
+                                <Button variant="outline" className="border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
+                                   <RefreshCw className="mr-2 h-3 w-3" /> REEXECUTAR PENDENTES
+                                </Button>
+                             </div>
+                          </div>
+                       </Card>
 
-                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
-                         <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
-                            <Search className="h-4 w-4" /> Evidências e Fontes
-                         </h3>
-                         <div className="space-y-3">
-                            {[
-                               { type: 'referencia', label: 'Citação: Jo 1:1-5', skill: 'Pesquisador', evidence: 'Verificado em Bíblia de Jerusalém', validated: true },
-                               { type: 'afirmacao', label: 'Impacto da Poesia na Cognição', skill: 'Pesquisador', evidence: 'Necessita fonte científica (Estudo Neuroestética 2024)', validated: false }
-                            ].map((ev, i) => (
-                               <div key={i} className="p-2 rounded bg-white/5 border border-white/5 space-y-2">
-                                  <div className="flex justify-between items-start">
-                                     <div className="flex flex-col">
-                                        <span className="text-[9px] font-bold text-[#f3ecdb]/80">{ev.label}</span>
-                                        <span className="text-[7px] uppercase tracking-widest text-[#c19935]/40">{ev.skill}</span>
-                                     </div>
-                                     <div className={`w-2 h-2 rounded-full ${ev.validated ? 'bg-green-500' : 'bg-yellow-500 animate-pulse'}`} />
-                                  </div>
-                                  <p className="text-[8px] italic text-[#f3ecdb]/40">"{ev.evidence}"</p>
-                                  {!ev.validated && (
-                                     <Button size="sm" className="w-full h-6 text-[8px] bg-[#c19935]/20 hover:bg-[#c19935]/40 text-[#c19935]">Validar Evidência</Button>
-                                  )}
-                               </div>
-                            ))}
-                         </div>
-                      </Card>
-
-                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
-                         <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Estatísticas do Ciclo</h4>
-                         <div className="space-y-1">
-                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Skills Executadas:</span> <span>42</span></div>
-                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Versões Geradas:</span> <span>128</span></div>
-                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Alterações Aceitas:</span> <span>89%</span></div>
-                         </div>
-                      </Card>
-                   </aside>
+                       <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                          <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Estatísticas do Ciclo</h4>
+                          <div className="space-y-1">
+                             <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Skills Executadas:</span> <span>42</span></div>
+                             <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Versões Geradas:</span> <span>128</span></div>
+                             <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Alterações Aceitas:</span> <span>89%</span></div>
+                          </div>
+                       </Card>
+                    </aside>
                 </div>
              </div>
           </TabsContent>
