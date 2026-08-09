@@ -95,6 +95,13 @@ export const initialBookData: BookProject = {
     design: 76,
     comercial: 90
   },
+  printSettings: {
+    format: '14x21',
+    margins: { top: 20, bottom: 20, left: 25, right: 20 },
+    bleed: 3,
+    dpi: 300,
+    colorProfile: 'CMYK'
+  },
   editorialMemory: {
     personagens: [],
     conceitos: ['Método PCH', 'VerboLuz'],
