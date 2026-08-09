@@ -478,15 +478,19 @@ export default function Editora() {
                    </div>
 
                    <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
-                      <h3 className="font-serif text-[#c19935] mb-6">Produção Operacional</h3>
+                      <div className="flex justify-between items-center mb-6">
+                         <h3 className="font-serif text-[#c19935]">Produção Operacional</h3>
+                         <Button variant="ghost" size="sm" className="h-6 text-[8px] uppercase tracking-tighter text-[#c19935]/50 border border-[#c19935]/10">Audit Log Geral</Button>
+                      </div>
                       <div className="space-y-5">
                          {[
-                            { label: 'Manuscrito', progress: 82 },
-                            { label: 'Pesquisa', progress: 91 },
-                            { label: 'Edição', progress: 67 },
-                            { label: 'Revisão', progress: 45 },
-                            { label: 'Design', progress: 20 },
-                            { label: 'Comercial', progress: 10 },
+                            { label: 'Ideia', progress: 100 },
+                            { label: 'Projeto', progress: 100 },
+                            { label: 'Estrutura', progress: 100 },
+                            { label: 'Escrita', progress: 45 },
+                            { label: 'Edição', progress: 20 },
+                            { label: 'Revisão', progress: 10 },
+                            { label: 'Design', progress: 5 },
                             { label: 'Publicação', progress: 0 },
                          ].map(item => (
                             <div key={item.label} className="space-y-1.5">
