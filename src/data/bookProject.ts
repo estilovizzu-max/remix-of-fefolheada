@@ -1,10 +1,27 @@
+export interface ChapterVersion {
+  id: string;
+  content: string;
+  author: string; // 'author' or skillId
+  timestamp: string;
+  changeSummary: string;
+}
+
 export interface Chapter {
   id: string;
   title: string;
+  objective?: string;
   draft: string;
   revision: string;
   final: string;
-  status: 'rascunho' | 'revisao' | 'finalizado';
+  status: 'rascunho' | 'desenvolvimento' | 'edicao' | 'revisao' | 'aprovado' | 'finalizado';
+  versions: ChapterVersion[];
+  auditLog: {
+    skillId: string;
+    action: string;
+    evidence: string;
+    decision: 'aprovado' | 'recusado' | 'editado';
+    timestamp: string;
+  }[];
 }
 
 export interface BookProject {
@@ -73,10 +90,21 @@ export const initialBookData: BookProject = {
     { 
       id: '1', 
       title: 'Capítulo 1: O Despertar', 
+      objective: 'Introduzir a jornada espiritual e a necessidade de silêncio interior.',
       draft: 'Texto inicial do rascunho...', 
       revision: '', 
       final: '', 
-      status: 'rascunho' 
+      status: 'rascunho',
+      versions: [
+        {
+          id: 'v1',
+          content: 'Texto inicial do rascunho...',
+          author: 'author',
+          timestamp: new Date().toISOString(),
+          changeSummary: 'Criação inicial'
+        }
+      ],
+      auditLog: []
     }
   ],
   createdAt: new Date().toISOString(),

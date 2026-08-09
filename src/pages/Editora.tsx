@@ -28,7 +28,11 @@ export default function Editora() {
   const [book, setBook] = useState<BookProject>(initialBookData);
   const [activeTab, setActiveTab] = useState("canvas");
   const [selectedText, setSelectedText] = useState("");
+  const [selectedChapterId, setSelectedChapterId] = useState<string>(initialBookData.chapters[0].id);
   const editorRef = useRef<HTMLTextAreaElement>(null);
+
+  const selectedChapter = book.chapters.find(c => c.id === selectedChapterId) || book.chapters[0];
+
 
   const skills = [
     { id: 'diretor', name: 'Diretor Editorial', icon: CheckCircle2, color: 'text-red-500', desc: 'Julga decisões e Readiness Score.', details: 'Avalia se o livro está pronto. Readiness: 87/100.' },
@@ -65,7 +69,7 @@ export default function Editora() {
   return (
     <div className="min-h-screen bg-[#0d0722] text-[#f3ecdb] font-sans flex overflow-hidden">
       {/* Sidebar Navegação */}
-      <aside className="w-64 bg-black/40 border-r border-[#c19935]/20 p-6 flex flex-col gap-8">
+      <aside className="w-64 bg-black/40 border-r border-[#c19935]/20 p-6 flex flex-col gap-6">
         <div className="flex items-center gap-3">
            <div className="w-8 h-8 rounded bg-[#c19935] flex items-center justify-center text-[#0d0722] font-bold">F</div>
            <span className="font-serif text-lg text-[#c19935]">Folheando Fé</span>
@@ -93,15 +97,26 @@ export default function Editora() {
           >
             <Library className="mr-3 h-4 w-4" /> 🏭 Modo Editora
           </Button>
-          <Button 
-            variant="ghost" 
-            onClick={() => setActiveTab("biblioteca")}
-            className={`justify-start ${activeTab === 'biblioteca' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
-          >
-            <Sparkles className="mr-3 h-4 w-4" /> Skills AI
-          </Button>
-
         </nav>
+
+        <div className="border-t border-[#c19935]/10 pt-4">
+          <div className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4 px-2">Capítulos</div>
+          <div className="flex flex-col gap-1 max-h-48 overflow-y-auto pr-2 scrollbar-thin">
+            {book.chapters.map(ch => (
+              <button
+                key={ch.id}
+                onClick={() => setSelectedChapterId(ch.id)}
+                className={`text-left px-2 py-1.5 rounded text-xs transition-colors ${selectedChapterId === ch.id ? 'bg-[#c19935]/20 text-[#c19935]' : 'text-[#f3ecdb]/40 hover:text-[#f3ecdb]/60'}`}
+              >
+                {ch.title}
+              </button>
+            ))}
+            <button className="text-left px-2 py-1.5 text-xs text-[#c19935]/60 hover:text-[#c19935] flex items-center gap-2">
+              <Plus className="h-3 w-3" /> Novo Capítulo
+            </button>
+          </div>
+        </div>
+
 
         <div className="mt-auto space-y-4">
           <div className="bg-[#c19935]/5 border border-[#c19935]/20 rounded p-4">
