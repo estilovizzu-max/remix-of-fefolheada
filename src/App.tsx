@@ -6,7 +6,7 @@
  * Se for apenas uma pergunta ou conversa, responda no chat em português, sem alterar nenhum arquivo.
  * Nunca insira o texto enviado como conteúdo dentro do site ou da página.
  *
- * TEXTO DO USUÁRIO: Implementar uma checagem automática que confirme contagem de páginas e presença de capa/contra-capa, exibindo os resultados com status e mensagens na /validacao.
+ * TEXTO DO USUÁRIO: Melhorar a /validacao com miniaturas por seção e zoom para eu inspecionar rapidamente capa, contra-capa e a sequência de páginas do PDF/EPUB.
  */
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
