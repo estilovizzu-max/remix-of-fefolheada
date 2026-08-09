@@ -200,7 +200,12 @@ All colors MUST be HSL.
   .poem-scroll { scrollbar-width: thin; scrollbar-color: hsl(var(--paper-rule) / 0.5) transparent; }
 
   /* Reader themes — override paper tokens inside the reader root */
-  .book-reader-root { --reader-font-scale: 1; --reader-line: 1.85; }
+  .book-reader-root { 
+    --reader-font-scale: 1; 
+    --reader-line: 2.2; 
+    --reader-margin: 2rem;
+    --reader-align: center;
+  }
   .book-reader-root[data-theme="light"] {
     --paper: 40 40% 98%; --paper-tint: 40 30% 95%;
     --paper-ink: 260 30% 12%; --paper-muted: 260 12% 42%; --paper-rule: 40 20% 78%;
@@ -219,7 +224,10 @@ All colors MUST be HSL.
   }
 
   .poem-verse {
-    font-size: calc(0.98rem * var(--reader-font-scale));
+    font-size: calc(1.1rem * var(--reader-font-scale));
     line-height: var(--reader-line);
+    padding-left: var(--reader-margin);
+    padding-right: var(--reader-margin);
+    text-align: var(--reader-align);
   }
 }

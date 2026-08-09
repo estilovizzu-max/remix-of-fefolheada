@@ -713,7 +713,9 @@ export const BookReader = () => {
   const [notes, setNotes] = useLocalStorage<Record<string, string>>('poemNotes', {});
   const [savedPage, setSavedPage] = useLocalStorage<number>('bookCurrentPage', 0);
   const [fontScale, setFontScale] = useLocalStorage<number>('readerFontScale', 1);
-  const [lineHeight, setLineHeight] = useLocalStorage<number>('readerLineHeight', 1.85);
+  const [lineHeight, setLineHeight] = useLocalStorage<number>('readerLineHeight', 2.2);
+  const [readerMargin, setReaderMargin] = useLocalStorage<number>('readerMargin', 2);
+  const [readerAlign, setReaderAlign] = useLocalStorage<string>('readerAlign', 'center');
   const [readerTheme, setReaderTheme] = useLocalStorage<ReaderTheme>('readerTheme', 'sepia');
 
   const [customPoems, setCustomPoems] = useState(loadCustomPoems());
@@ -977,6 +979,8 @@ export const BookReader = () => {
         // @ts-ignore CSS custom properties
         '--reader-font-scale': fontScale,
         '--reader-line': lineHeight,
+        '--reader-margin': `${readerMargin}rem`,
+        '--reader-align': readerAlign,
       } as React.CSSProperties}
     >
       {/* Toolbar */}
@@ -1047,11 +1051,56 @@ export const BookReader = () => {
                   </span>
                 </div>
                 <input
-                  type="range" min={1.4} max={2.4} step={0.05}
+                  type="range" min={1.4} max={3.0} step={0.05}
                   value={lineHeight}
                   onChange={(e) => setLineHeight(parseFloat(e.target.value))}
                   className="w-full accent-[hsl(var(--book-purple))]"
                 />
+              </div>
+
+              {/* Margin adjustment */}
+              <div className="mb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-serif flex items-center gap-1.5">
+                    <BookMarked className="h-3.5 w-3.5" /> Margens
+                  </span>
+                  <span className="text-[10px] text-[hsl(var(--paper-muted))]">
+                    {readerMargin}rem
+                  </span>
+                </div>
+                <input
+                  type="range" min={0} max={5} step={0.5}
+                  value={readerMargin}
+                  onChange={(e) => setReaderMargin(parseFloat(e.target.value))}
+                  className="w-full accent-[hsl(var(--book-purple))]"
+                />
+              </div>
+
+              {/* Alignment */}
+              <div className="mb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-serif flex items-center gap-1.5">
+                    <AlignJustify className="h-3.5 w-3.5" /> Alinhamento
+                  </span>
+                </div>
+                <div className="flex bg-[hsl(var(--paper-rule))]/20 p-1 rounded-md">
+                  {(['left', 'center', 'right', 'justify'] as const).map((a) => (
+                    <button
+                      key={a}
+                      onClick={() => setReaderAlign(a)}
+                      className={`flex-1 py-1 rounded text-[10px] uppercase font-serif transition-colors ${
+                        readerAlign === a
+                          ? 'bg-[hsl(var(--book-purple))] text-[hsl(var(--paper))]'
+                          : 'hover:bg-[hsl(var(--paper-rule))]/30'
+                      }`}
+                    >
+                      {a === 'left' && 'Esq'}
+                      {a === 'center' && 'Cent'}
+                      {a === 'right' && 'Dir'}
+                      {a === 'justify' && 'Just'}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               {/* Theme */}

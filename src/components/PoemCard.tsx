@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Volume2, Square, Share2 } from 'lucide-react';
+import { Volume2, Square, Share2, Settings2, Type, AlignJustify, BookMarked } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Poem } from '@/data/poems';
 import { toast } from '@/hooks/use-toast';
+import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
 interface PoemCardProps {
   poem: Poem;
@@ -14,6 +16,10 @@ interface PoemCardProps {
 
 export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [fontScale, setFontScale] = useLocalStorage<number>('readerFontScale', 1);
+  const [lineHeight, setLineHeight] = useLocalStorage<number>('readerLineHeight', 2.2);
+  const [readerMargin, setReaderMargin] = useLocalStorage<number>('readerMargin', 2);
+  const [readerAlign, setReaderAlign] = useLocalStorage<string>('readerAlign', 'center');
 
   useEffect(() => {
     return () => {
@@ -83,6 +89,82 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
           <h3 className="text-2xl font-bold text-primary tracking-tight">{poem.title}</h3>
           
           <div className="flex items-center gap-3 flex-wrap">
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="rounded-full px-4 hover:bg-primary hover:text-primary-foreground transition-all duration-300 border-primary/20"
+                  title="Ajustes de diagramação"
+                >
+                  <Settings2 className="h-4 w-4" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-72 p-4">
+                <p className="text-[10px] tracking-[0.3em] text-primary uppercase mb-3 font-bold">Ajustes de Leitura</p>
+                
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-xs font-bold flex items-center gap-2"><Type className="h-3.5 w-3.5" /> Fonte</span>
+                      <span className="text-[10px]">{Math.round(fontScale * 100)}%</span>
+                    </div>
+                    <input
+                      type="range" min={0.75} max={1.6} step={0.05}
+                      value={fontScale}
+                      onChange={(e) => setFontScale(parseFloat(e.target.value))}
+                      className="w-full accent-primary"
+                    />
+                  </div>
+
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-xs font-bold flex items-center gap-2"><AlignJustify className="h-3.5 w-3.5" /> Entrelinha</span>
+                      <span className="text-[10px]">{lineHeight.toFixed(2)}</span>
+                    </div>
+                    <input
+                      type="range" min={1.4} max={3.0} step={0.05}
+                      value={lineHeight}
+                      onChange={(e) => setLineHeight(parseFloat(e.target.value))}
+                      className="w-full accent-primary"
+                    />
+                  </div>
+
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-xs font-bold flex items-center gap-2"><BookMarked className="h-3.5 w-3.5" /> Margens</span>
+                      <span className="text-[10px]">{readerMargin}rem</span>
+                    </div>
+                    <input
+                      type="range" min={0} max={8} step={0.5}
+                      value={readerMargin}
+                      onChange={(e) => setReaderMargin(parseFloat(e.target.value))}
+                      className="w-full accent-primary"
+                    />
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold block mb-2">Alinhamento</span>
+                    <div className="flex bg-muted p-1 rounded-md">
+                      {(['left', 'center', 'right', 'justify'] as const).map((a) => (
+                        <button
+                          key={a}
+                          onClick={() => setReaderAlign(a)}
+                          className={`flex-1 py-1 rounded text-[10px] uppercase font-bold transition-colors ${
+                            readerAlign === a
+                              ? 'bg-primary text-primary-foreground'
+                              : 'hover:bg-muted-foreground/10'
+                          }`}
+                        >
+                          {a.slice(0, 3)}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
+
             <Button
               onClick={handleSpeak}
               variant="outline"
@@ -123,7 +205,16 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
 
       <div className="poem-container relative p-10 md:p-20 flex flex-col items-center">
         <div className="poem-watermark text-primary/5">Evaldo Poeta</div>
-        <p className="poem-text">
+        <p 
+          className="poem-text"
+          style={{
+            fontSize: `calc(1.25rem * ${fontScale})`,
+            lineHeight: lineHeight,
+            paddingLeft: `${readerMargin}rem`,
+            paddingRight: `${readerMargin}rem`,
+            textAlign: readerAlign as any
+          }}
+        >
           {poem.text}
         </p>
         
