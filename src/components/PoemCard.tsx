@@ -121,9 +121,9 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
         </div>
       </div>
 
-      <div className="poem-container relative p-10 md:p-14">
+      <div className="poem-container relative p-10 md:p-20 flex flex-col items-center">
         <div className="poem-watermark text-primary/5">Evaldo Poeta</div>
-        <p className="poem-text text-xl md:text-2xl leading-relaxed italic font-serif text-foreground/90">
+        <p className="poem-text">
           {poem.text}
         </p>
         

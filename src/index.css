@@ -159,9 +159,12 @@ All colors MUST be HSL.
   }
   
   .poem-text {
-    @apply font-serif whitespace-pre-line leading-relaxed text-lg text-foreground relative z-10;
-    text-align: left;
+    @apply font-serif whitespace-pre-line leading-[1.8] text-xl md:text-2xl text-foreground relative z-10;
+    text-align: center;
     font-style: italic;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .poem-text::selection {
