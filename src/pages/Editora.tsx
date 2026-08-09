@@ -682,30 +682,59 @@ export default function Editora() {
                          
                          <div className="space-y-4">
                             {[
-                               { label: 'Arquitetura e Sumário', status: 'concluído', skill: 'Arquiteto' },
-                               { label: 'Capítulos 1 a 4 (Refinamento PCH)', status: 'concluído', skill: 'PCH' },
-                               { label: 'Capítulo 5 (Edição Literária)', status: 'ativo', skill: 'Editor' },
-                               { label: 'Capítulo 6 (Desenvolvimento)', status: 'pendente', skill: 'Escritor' },
-                               { label: 'Verificação de Fontes e Citações', status: 'ativo', skill: 'Pesquisador' },
-                               { label: 'Revisão Gramatical Global', status: 'pendente', skill: 'Revisor' },
-                               { label: 'Conclusão e Posfácio', status: 'vazio', skill: 'Escritor' },
-                               { label: 'Design de Capa e Diagramação', status: 'pendente', skill: 'Designer' }
+                               { id: 'arq', label: 'Arquitetura e Sumário', status: 'concluído', skill: 'Arquiteto', approved: true },
+                               { id: 'pch1-4', label: 'Capítulos 1 a 4 (Refinamento PCH)', status: 'concluído', skill: 'PCH', approved: true },
+                               { id: 'ed5', label: 'Capítulo 5 (Edição Literária)', status: 'ativo', skill: 'Editor', approved: null },
+                               { id: 'esc6', label: 'Capítulo 6 (Desenvolvimento)', status: 'pendente', skill: 'Escritor', approved: null },
+                               { id: 'fontes', label: 'Verificação de Fontes e Citações', status: 'ativo', skill: 'Pesquisador', approved: null },
+                               { id: 'rev', label: 'Revisão Gramatical Global', status: 'pendente', skill: 'Revisor', approved: null },
+                               { id: 'concl', label: 'Conclusão e Posfácio', status: 'vazio', skill: 'Escritor', approved: null },
+                               { id: 'design', label: 'Design de Capa e Diagramação', status: 'pendente', skill: 'Designer', approved: null }
                             ].map((item, idx) => (
-                               <div key={idx} className="flex items-center gap-4 p-3 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 transition-all">
-                                  <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                                     item.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' :
-                                     item.status === 'ativo' ? 'border border-[#c19935] text-[#c19935] animate-pulse' :
-                                     item.status === 'vazio' ? 'border border-red-500/40 text-red-500/40' :
-                                     'border border-white/10 text-white/10'
-                                  }`}>
-                                     {item.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : <div className="w-1 h-1 rounded-full bg-current" />}
-                                  </div>
-                                  <div className="flex-1">
-                                     <div className="flex justify-between">
-                                        <span className={`text-xs font-bold ${item.status === 'vazio' ? 'text-red-500/60' : 'text-[#f3ecdb]/80'}`}>{item.label}</span>
-                                        <span className="text-[9px] uppercase tracking-widest text-[#c19935]/40">{item.skill}</span>
+                               <div key={idx} className="group flex flex-col gap-2 p-3 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 transition-all">
+                                  <div className="flex items-center gap-4">
+                                     <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
+                                        item.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' :
+                                        item.status === 'ativo' ? 'border border-[#c19935] text-[#c19935] animate-pulse' :
+                                        item.status === 'vazio' ? 'border border-red-500/40 text-red-500/40' :
+                                        'border border-white/10 text-white/10'
+                                     }`}>
+                                        {item.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : <div className="w-1 h-1 rounded-full bg-current" />}
+                                     </div>
+                                     <div className="flex-1">
+                                        <div className="flex justify-between">
+                                           <span className={`text-xs font-bold ${item.status === 'vazio' ? 'text-red-500/60' : 'text-[#f3ecdb]/80'}`}>{item.label}</span>
+                                           <span className="text-[9px] uppercase tracking-widest text-[#c19935]/40">{item.skill}</span>
+                                        </div>
                                      </div>
                                   </div>
+                                  
+                                  {/* Gate de Aprovação do Autor */}
+                                  {item.status === 'concluído' && (
+                                     <div className="flex items-center justify-between mt-2 pl-9 pr-2 py-2 border-t border-white/5">
+                                        <div className="flex items-center gap-2">
+                                           <span className="text-[8px] uppercase tracking-widest text-[#c19935]/60">Aprovação do Autor:</span>
+                                           {item.approved ? (
+                                              <span className="text-[8px] font-bold text-green-500 flex items-center gap-1">
+                                                 <CheckCircle2 className="h-2 w-2" /> APROVADO
+                                              </span>
+                                           ) : (
+                                              <span className="text-[8px] font-bold text-yellow-500">AGUARDANDO</span>
+                                           )}
+                                        </div>
+                                        <div className="flex gap-1">
+                                           <Button size="icon" variant="ghost" className="h-6 w-6 text-green-500/40 hover:text-green-500 hover:bg-green-500/10">
+                                              <ThumbsUp className="h-3 w-3" />
+                                           </Button>
+                                           <Button size="icon" variant="ghost" className="h-6 w-6 text-red-500/40 hover:text-red-500 hover:bg-red-500/10">
+                                              <ThumbsDown className="h-3 w-3" />
+                                           </Button>
+                                           <Button size="icon" variant="ghost" className="h-6 w-6 text-[#c19935]/40 hover:text-[#c19935] hover:bg-[#c19935]/10">
+                                              <MessageSquare className="h-3 w-3" />
+                                           </Button>
+                                        </div>
+                                     </div>
+                                  )}
                                </div>
                             ))}
                          </div>
