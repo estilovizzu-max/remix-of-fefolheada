@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, AlertCircle, Download, FileText, BookOpen, ArrowLeft, Loader2 } from "lucide-react";
+import { CheckCircle2, AlertCircle, Download, FileText, BookOpen, ArrowLeft, Loader2, ZoomIn, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { poemsData } from "@/data/poems";
 import { useState, useEffect } from "react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Validacao() {
   const [fileStatus, setFileStatus] = useState<Record<string, { exists: boolean, loading: boolean }>>({
@@ -11,8 +12,10 @@ export default function Validacao() {
     epub: { exists: false, loading: true },
     dossie: { exists: false, loading: true }
   });
+  const [selectedPreview, setSelectedPreview] = useState<{title: string, content: React.ReactNode} | null>(null);
 
   const poemCount = Object.values(poemsData).reduce((acc, curr) => acc + curr.length, 0);
+
 
   useEffect(() => {
     const checkFile = async (path: string, key: string) => {
@@ -176,43 +179,72 @@ export default function Validacao() {
           </Card>
         </div>
 
-        <section className="bg-[#c19935]/5 border border-[#c19935]/20 rounded-lg p-6 space-y-4">
-          <h2 className="text-xl font-serif text-[#c19935]">Visualização da Capa & Contra-capa</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-2">
-              <span className="text-xs uppercase tracking-widest text-[#c19935]/70">Capa (Frente)</span>
-              <div className="aspect-[3/4] rounded shadow-2xl overflow-hidden border border-[#c19935]/20 bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative">
-                <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
-                <div className="mt-8 mb-auto text-[8px] tracking-[0.4em] text-[#c19935]">EVALDO POETA</div>
-                <div className="space-y-4">
-                  <h3 className="text-3xl font-serif text-[#f3ecdb]">Folheando<br/><span className="italic text-[#c19935]">Fé</span></h3>
-                  <div className="h-px w-12 bg-[#c19935]/40 mx-auto" />
-                  <p className="text-[10px] italic text-[#c19935]">poesia do meu grupo de oração</p>
-                </div>
-                <div className="mt-auto mb-8 space-y-1">
-                  <p className="text-[7px] tracking-[0.3em] text-[#c19935]/80">128 POEMAS · 6 CAPÍTULOS</p>
-                  <p className="text-[7px] tracking-[0.3em] text-[#c19935]/60">MÉTODO PCH</p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <span className="text-xs uppercase tracking-widest text-[#c19935]/70">Contra-capa (Verso)</span>
-              <div className="aspect-[3/4] rounded shadow-2xl overflow-hidden border border-[#c19935]/20 bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative">
-                <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
-                <div className="my-auto space-y-6 max-w-[80%]">
-                   <p className="text-[10px] font-serif italic text-[#f3ecdb]/90 leading-relaxed">
-                    "A poesia é o eco da oração que transborda do coração para o papel..."
-                   </p>
-                   <div className="h-px w-8 bg-[#c19935]/40 mx-auto" />
-                   <div className="space-y-2">
-                    <p className="text-[9px] tracking-[0.2em] text-[#c19935]/70 font-serif">MÉTODO FILHO DA LUZ</p>
-                    <p className="text-[8px] italic text-[#f3ecdb]/50">Criado por Evaldo.os</p>
-                   </div>
-                </div>
-              </div>
-            </div>
+        <section className="bg-[#c19935]/5 border border-[#c19935]/20 rounded-lg p-6 space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-serif text-[#c19935]">Visualização da Estrutura Editorial</h2>
+            <p className="text-[10px] text-[#f3ecdb]/40 uppercase tracking-tighter">Clique para zoom</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* CAPA */}
+            <PreviewCard 
+              title="Capa (Frente)" 
+              onClick={() => setSelectedPreview({ 
+                title: "Capa do Livro", 
+                content: <CoverPreview /> 
+              })}
+            >
+              <CoverPreview scale={0.4} />
+            </PreviewCard>
+
+            {/* SUMÁRIO/PÁGINA TIPO */}
+            <PreviewCard 
+              title="Sumário / Miolo" 
+              onClick={() => setSelectedPreview({ 
+                title: "Estrutura Interna", 
+                content: <InternalPagePreview /> 
+              })}
+            >
+              <InternalPagePreview scale={0.4} />
+            </PreviewCard>
+
+            {/* POEMA TIPO */}
+            <PreviewCard 
+              title="Layout de Poema" 
+              onClick={() => setSelectedPreview({ 
+                title: "Exemplo de Diagramação", 
+                content: <PoemPagePreview /> 
+              })}
+            >
+              <PoemPagePreview scale={0.4} />
+            </PreviewCard>
+
+            {/* CONTRA-CAPA */}
+            <PreviewCard 
+              title="Contra-capa (Verso)" 
+              onClick={() => setSelectedPreview({ 
+                title: "Contra-capa", 
+                content: <BackCoverPreview /> 
+              })}
+            >
+              <BackCoverPreview scale={0.4} />
+            </PreviewCard>
           </div>
         </section>
+
+        {/* Modal de Zoom */}
+        <Dialog open={!!selectedPreview} onOpenChange={(open) => !open && setSelectedPreview(null)}>
+          <DialogContent className="max-w-[95vw] md:max-w-3xl bg-[#0d0722] border-[#c19935]/30 p-0 overflow-hidden">
+            <div className="p-4 border-b border-[#c19935]/20 flex justify-between items-center">
+              <h3 className="text-[#c19935] font-serif text-lg">{selectedPreview?.title}</h3>
+            </div>
+            <div className="flex justify-center p-8 bg-black/40 overflow-auto max-h-[80vh]">
+              <div className="scale-75 md:scale-100 origin-top">
+                {selectedPreview?.content}
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
 
         <footer className="text-center py-8 text-[#f3ecdb]/30 text-xs">
           © 2026 Folheando Fé · Sistema de Validação Técnica · Criado por Evaldo.os
@@ -221,3 +253,115 @@ export default function Validacao() {
     </div>
   );
 }
+
+function PreviewCard({ title, children, onClick }: { title: string, children: React.ReactNode, onClick: () => void }) {
+  return (
+    <div className="space-y-2 group cursor-pointer" onClick={onClick}>
+      <span className="text-[10px] uppercase tracking-widest text-[#c19935]/70 block truncate">{title}</span>
+      <div className="aspect-[3/4] rounded shadow-lg overflow-hidden border border-[#c19935]/20 bg-black/20 flex items-center justify-center relative group-hover:border-[#c19935]/50 transition-all">
+        <div className="absolute inset-0 bg-[#c19935]/0 group-hover:bg-[#c19935]/5 flex items-center justify-center transition-all z-10">
+          <ZoomIn className="text-[#c19935] opacity-0 group-hover:opacity-100 transition-all" />
+        </div>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function CoverPreview({ scale = 1 }: { scale?: number }) {
+  return (
+    <div 
+      style={{ transform: `scale(${scale})` }}
+      className="w-[300px] h-[400px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
+    >
+      <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
+      <div className="mt-8 mb-auto text-[8px] tracking-[0.4em] text-[#c19935]">EVALDO POETA</div>
+      <div className="space-y-4">
+        <h3 className="text-3xl font-serif text-[#f3ecdb]">Folheando<br/><span className="italic text-[#c19935]">Fé</span></h3>
+        <div className="h-px w-12 bg-[#c19935]/40 mx-auto" />
+        <p className="text-[10px] italic text-[#c19935]">poesia do meu grupo de oração</p>
+      </div>
+      <div className="mt-auto mb-8 space-y-1">
+        <p className="text-[7px] tracking-[0.3em] text-[#c19935]/80">128 POEMAS · 6 CAPÍTULOS</p>
+        <p className="text-[7px] tracking-[0.3em] text-[#c19935]/60">MÉTODO PCH</p>
+      </div>
+    </div>
+  );
+}
+
+function BackCoverPreview({ scale = 1 }: { scale?: number }) {
+  return (
+    <div 
+      style={{ transform: `scale(${scale})` }}
+      className="w-[300px] h-[400px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
+    >
+      <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
+      <div className="my-auto space-y-6 max-w-[80%]">
+         <p className="text-[10px] font-serif italic text-[#f3ecdb]/90 leading-relaxed">
+          "A poesia é o eco da oração que transborda do coração para o papel..."
+         </p>
+         <div className="h-px w-8 bg-[#c19935]/40 mx-auto" />
+         <div className="space-y-2">
+          <p className="text-[9px] tracking-[0.2em] text-[#c19935]/70 font-serif uppercase">Diocese de Osasco</p>
+          <p className="text-[8px] italic text-[#f3ecdb]/50">Criado por Evaldo.os</p>
+         </div>
+      </div>
+    </div>
+  );
+}
+
+function InternalPagePreview({ scale = 1 }: { scale?: number }) {
+  return (
+    <div 
+      style={{ transform: `scale(${scale})` }}
+      className="w-[300px] h-[400px] bg-[#f3ecdb] text-[#251456] p-8 relative shadow-2xl"
+    >
+      <div className="text-[8px] border-b border-[#251456]/10 pb-1 mb-4 flex justify-between font-serif italic">
+        <span>Folheando Fé</span>
+        <span>Sumário</span>
+      </div>
+      <div className="space-y-4">
+        <h4 className="text-lg font-serif mb-6 text-center">Sumário</h4>
+        {[1, 2, 3, 4, 5, 6].map(i => (
+          <div key={i} className="flex justify-between items-end border-b border-dotted border-[#251456]/20 pb-1">
+            <span className="text-[10px] font-serif">Capítulo {i}: Bloco de Fé</span>
+            <span className="text-[10px] font-sans italic">{i * 20}</span>
+          </div>
+        ))}
+      </div>
+      <div className="absolute bottom-4 left-0 right-0 text-center text-[8px] text-[#251456]/40">iv</div>
+    </div>
+  );
+}
+
+function PoemPagePreview({ scale = 1 }: { scale?: number }) {
+  return (
+    <div 
+      style={{ transform: `scale(${scale})` }}
+      className="w-[300px] h-[400px] bg-[#f3ecdb] text-[#251456] p-8 relative shadow-2xl"
+    >
+      <div className="text-[8px] border-b border-[#251456]/10 pb-1 mb-4 flex justify-between font-serif italic">
+        <span>Capítulo I: O Despertar</span>
+        <span>15</span>
+      </div>
+      <div className="space-y-4 text-center mt-12">
+        <h4 className="text-sm font-serif mb-4 uppercase tracking-widest">Sopro de Vida</h4>
+        <div className="space-y-2 italic text-[10px] leading-relaxed">
+          <p>No silêncio do amanhecer,</p>
+          <p>A luz vem nos envolver.</p>
+          <p>Sentimos o sopro sagrado,</p>
+          <p>De um Deus que está ao lado.</p>
+        </div>
+        <div className="mt-8 pt-4 border-t border-[#251456]/5">
+          <div className="text-[8px] uppercase tracking-tighter opacity-40">Reflexão</div>
+          <p className="text-[8px] opacity-60">Como você sente a presença divina hoje?</p>
+        </div>
+      </div>
+      <div className="absolute bottom-4 left-8 right-8 flex justify-between text-[7px] text-[#251456]/30 uppercase tracking-[0.2em]">
+        <span>Evaldo Poeta</span>
+        <span>Folheando Fé</span>
+      </div>
+    </div>
+  );
+}
+
