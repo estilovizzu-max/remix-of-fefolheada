@@ -31,11 +31,15 @@ export default function Editora() {
   const editorRef = useRef<HTMLTextAreaElement>(null);
 
   const skills = [
-    { id: 'arquiteto', name: 'Arquiteto Editorial', icon: Layout, color: 'text-blue-400', desc: 'Estrutura e Sumário', prompt: 'Analise a estrutura deste sumário e sugira melhorias na lógica dos capítulos.' },
-    { id: 'escritor', name: 'Escritor', icon: PenTool, color: 'text-green-400', desc: 'Desenvolvimento Narrativo', prompt: 'Expanda este parágrafo mantendo o tom autoral e adicionando mais profundidade.' },
-    { id: 'pch', name: 'PCH / VerboLuz', icon: Sparkles, color: 'text-purple-400', desc: 'Poética e Cognição', prompt: 'Aplique o Método PCH para tornar este texto mais poético e emocionalmente conectado.' },
-    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Clareza', prompt: 'Revise este trecho buscando erros gramaticais e melhorando a coesão.' },
-    { id: 'literario', name: 'Editor Literário', icon: Book, color: 'text-pink-400', desc: 'Ritmo e Voz', prompt: 'Avalie o ritmo narrativo e a voz deste capítulo.' },
+    { id: 'arquiteto', name: 'Arquiteto Editorial', icon: Layout, color: 'text-blue-400', desc: 'Estrategista estrutural e sumário.', details: 'Missão: Definir o que o livro precisa ser para cumprir sua promessa.' },
+    { id: 'pesquisador', name: 'Pesquisador', icon: Search, color: 'text-cyan-400', desc: 'Fundamentação e verificação.', details: 'Regra: Nunca inventar referências. Verificação de fatos e fontes.' },
+    { id: 'escritor', name: 'Escritor', icon: PenTool, color: 'text-green-400', desc: 'Motor de produção textual.', details: 'Regra: Preservar a voz autoral, evitando texto genérico.' },
+    { id: 'pch', name: 'PCH / VerboLuz', icon: Sparkles, color: 'text-purple-400', desc: 'Linguagem cognitiva e poética.', details: 'Transforma comum em profundo. Equilíbrio entre emoção e clareza.' },
+    { id: 'literario', name: 'Editor Literário', icon: Book, color: 'text-pink-400', desc: 'Ritmo, voz e profundidade.', details: 'Avalia se o texto funciona como obra literária.' },
+    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Coesão.', details: 'Clareza, repetições e qualidade argumentativa.' },
+    { id: 'design', name: 'Design / Diagramador', icon: Library, color: 'text-indigo-400', desc: 'Hierarquia e visual.', details: 'Formatação, tipografia e elementos destacáveis.' },
+    { id: 'capista', name: 'Capista', icon: Palette, color: 'text-orange-400', desc: 'Conceito e Prompt.', details: 'Direção de arte e identidade visual da capa.' },
+
   ];
 
   const handleTextSelection = () => {
@@ -191,7 +195,11 @@ export default function Editora() {
                             </div>
                             <h4 className="font-serif text-[#c19935]">{skill.name}</h4>
                          </div>
-                         <p className="text-xs text-[#f3ecdb]/50 leading-relaxed">{skill.desc}</p>
+                         <p className="text-xs text-[#f3ecdb]/50 leading-relaxed min-h-[40px]">{skill.desc}</p>
+                         <div className="pt-2">
+                            <p className="text-[9px] text-[#c19935]/60 italic line-clamp-2">{skill.details}</p>
+                         </div>
+
                          <div className="pt-4 flex flex-col gap-2">
                             <Button size="sm" variant="outline" className="text-[10px] h-7 border-[#c19935]/20 text-[#f3ecdb]/60 hover:text-[#c19935]">
                                Ver Documentação
