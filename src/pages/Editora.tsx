@@ -28,7 +28,11 @@ export default function Editora() {
   const [book, setBook] = useState<BookProject>(initialBookData);
   const [activeTab, setActiveTab] = useState("canvas");
   const [selectedText, setSelectedText] = useState("");
+  const [selectedChapterId, setSelectedChapterId] = useState<string>(initialBookData.chapters[0].id);
   const editorRef = useRef<HTMLTextAreaElement>(null);
+
+  const selectedChapter = book.chapters.find(c => c.id === selectedChapterId) || book.chapters[0];
+
 
   const skills = [
     { id: 'diretor', name: 'Diretor Editorial', icon: CheckCircle2, color: 'text-red-500', desc: 'Julga decisões e Readiness Score.', details: 'Avalia se o livro está pronto. Readiness: 87/100.' },
@@ -65,7 +69,7 @@ export default function Editora() {
   return (
     <div className="min-h-screen bg-[#0d0722] text-[#f3ecdb] font-sans flex overflow-hidden">
       {/* Sidebar Navegação */}
-      <aside className="w-64 bg-black/40 border-r border-[#c19935]/20 p-6 flex flex-col gap-8">
+      <aside className="w-64 bg-black/40 border-r border-[#c19935]/20 p-6 flex flex-col gap-6">
         <div className="flex items-center gap-3">
            <div className="w-8 h-8 rounded bg-[#c19935] flex items-center justify-center text-[#0d0722] font-bold">F</div>
            <span className="font-serif text-lg text-[#c19935]">Folheando Fé</span>
@@ -93,15 +97,26 @@ export default function Editora() {
           >
             <Library className="mr-3 h-4 w-4" /> 🏭 Modo Editora
           </Button>
-          <Button 
-            variant="ghost" 
-            onClick={() => setActiveTab("biblioteca")}
-            className={`justify-start ${activeTab === 'biblioteca' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
-          >
-            <Sparkles className="mr-3 h-4 w-4" /> Skills AI
-          </Button>
-
         </nav>
+
+        <div className="border-t border-[#c19935]/10 pt-4">
+          <div className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4 px-2">Capítulos</div>
+          <div className="flex flex-col gap-1 max-h-48 overflow-y-auto pr-2 scrollbar-thin">
+            {book.chapters.map(ch => (
+              <button
+                key={ch.id}
+                onClick={() => setSelectedChapterId(ch.id)}
+                className={`text-left px-2 py-1.5 rounded text-xs transition-colors ${selectedChapterId === ch.id ? 'bg-[#c19935]/20 text-[#c19935]' : 'text-[#f3ecdb]/40 hover:text-[#f3ecdb]/60'}`}
+              >
+                {ch.title}
+              </button>
+            ))}
+            <button className="text-left px-2 py-1.5 text-xs text-[#c19935]/60 hover:text-[#c19935] flex items-center gap-2">
+              <Plus className="h-3 w-3" /> Novo Capítulo
+            </button>
+          </div>
+        </div>
+
 
         <div className="mt-auto space-y-4">
           <div className="bg-[#c19935]/5 border border-[#c19935]/20 rounded p-4">
@@ -127,9 +142,9 @@ export default function Editora() {
             <div className="flex-1 p-8 flex flex-col gap-4 overflow-hidden">
                <div className="flex items-center justify-between border-b border-[#c19935]/10 pb-4">
                   <div className="flex items-center gap-4">
-                     <h2 className="font-serif text-[#c19935]">{book.chapters[0].title}</h2>
+                     <h2 className="font-serif text-[#c19935]">{selectedChapter.title}</h2>
                      <span className="text-[10px] px-2 py-0.5 rounded border border-[#c19935]/30 text-[#c19935]/60 uppercase tracking-tighter">
-                        {book.chapters[0].status}
+                        {selectedChapter.status}
                      </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -137,55 +152,128 @@ export default function Editora() {
                         <Save className="h-4 w-4 mr-2" /> Salvar
                      </Button>
                      <Button size="sm" className="bg-[#c19935] hover:bg-[#c19935]/90 text-[#0d0722]">
-                        Exportar Manuscrito
+                        Exportar PDF
                      </Button>
                   </div>
                </div>
-               <textarea 
-                  ref={editorRef}
-                  onSelect={handleTextSelection}
-                  className="flex-1 bg-transparent border-none focus:ring-0 resize-none font-serif text-lg leading-relaxed text-[#f3ecdb]/80 p-4 scrollbar-thin scrollbar-thumb-[#c19935]/20"
-                  placeholder="Comece a escrever aqui seu livro..."
-                  defaultValue={book.chapters[0].draft}
-               />
+               
+               <div className="flex-1 flex gap-6 overflow-hidden">
+                  <div className="flex-1 flex flex-col gap-2">
+                     <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40 px-4">Manuscrito</div>
+                     <textarea 
+                        ref={editorRef}
+                        onSelect={handleTextSelection}
+                        className="flex-1 bg-black/20 rounded border border-[#c19935]/5 focus:border-[#c19935]/20 focus:ring-0 resize-none font-serif text-lg leading-relaxed text-[#f3ecdb]/80 p-6 scrollbar-thin scrollbar-thumb-[#c19935]/20"
+                        placeholder="Comece a escrever aqui seu livro..."
+                        defaultValue={selectedChapter.draft}
+                     />
+                  </div>
+
+                  <div className="w-64 flex flex-col gap-6 overflow-y-auto pr-2 scrollbar-thin">
+                    <div className="space-y-3">
+                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Versões</div>
+                       <div className="flex flex-col gap-2">
+                          {selectedChapter.versions.map(v => (
+                             <div key={v.id} className="p-2 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 cursor-pointer transition-colors group">
+                                <div className="flex justify-between items-center mb-1">
+                                   <span className="text-[10px] font-bold text-[#c19935]">{v.id.toUpperCase()}</span>
+                                   <span className="text-[8px] text-[#f3ecdb]/20">{new Date(v.timestamp).toLocaleDateString()}</span>
+                                </div>
+                                <p className="text-[9px] text-[#f3ecdb]/50 italic line-clamp-1">{v.changeSummary}</p>
+                                <div className="hidden group-hover:flex justify-end gap-1 mt-2">
+                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Comparar</Button>
+                                   <Button variant="ghost" className="h-5 px-1.5 text-[8px] text-[#c19935]">Restaurar</Button>
+                                </div>
+                             </div>
+                          ))}
+                       </div>
+                    </div>
+
+                    <div className="space-y-3">
+                       <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Histórico Audit</div>
+                       <div className="space-y-2">
+                          {selectedChapter.auditLog.length > 0 ? selectedChapter.auditLog.map((log, i) => (
+                             <div key={i} className="text-[9px] p-2 rounded bg-black/40 border-l-2 border-[#c19935]/40">
+                                <div className="font-bold text-[#c19935] mb-1">{skills.find(s => s.id === log.skillId)?.name}</div>
+                                <p className="text-[#f3ecdb]/40 mb-1">{log.action}</p>
+                                <div className="text-[8px] italic opacity-50">Evidência: {log.evidence}</div>
+                             </div>
+                          )) : (
+                             <div className="text-[9px] text-[#f3ecdb]/10 italic">Nenhuma atividade registrada</div>
+                          )}
+                       </div>
+                    </div>
+                  </div>
+               </div>
             </div>
 
             {/* Painel de Skills à Direita */}
-            <aside className="w-80 bg-black/20 border-l border-[#c19935]/20 p-6 flex flex-col gap-6 overflow-y-auto">
-               <h3 className="font-serif text-[#c19935] flex items-center gap-2">
-                  <Wand2 className="h-4 w-4" /> Ações de Skill
-               </h3>
+            <aside className="w-80 bg-black/20 border-l border-[#c19935]/20 p-6 flex flex-col gap-6 overflow-y-auto scrollbar-thin">
+               <div className="flex items-center justify-between">
+                  <h3 className="font-serif text-[#c19935] flex items-center gap-2">
+                     <Wand2 className="h-4 w-4" /> Pipeline Editorial
+                  </h3>
+                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+               </div>
                
-               {selectedText ? (
-                 <div className="space-y-4">
-                    <div className="p-3 bg-[#c19935]/5 border border-[#c19935]/20 rounded text-xs italic opacity-60 line-clamp-3">
-                       "{selectedText}"
+               <div className="space-y-6">
+                  {selectedText ? (
+                    <div className="space-y-4">
+                       <div className="p-3 bg-[#c19935]/5 border border-[#c19935]/20 rounded text-xs italic opacity-60 line-clamp-3">
+                          "{selectedText}"
+                       </div>
+                       <div className="text-[10px] uppercase tracking-widest text-[#c19935]/50">Skills Disponíveis</div>
+                       <div className="space-y-2">
+                          {skills.map(skill => (
+                             <div key={skill.id} className="group relative">
+                                <Button 
+                                  variant="outline" 
+                                  className="w-full justify-start border-[#c19935]/10 hover:border-[#c19935]/40 bg-black/20 text-[#f3ecdb]/60 hover:text-[#c19935] h-9"
+                                  onClick={() => applySkillAction(skill.name)}
+                                >
+                                   <skill.icon className={`h-4 w-4 mr-3 ${skill.color}`} />
+                                   <span className="text-xs">{skill.name}</span>
+                                </Button>
+                                <div className="hidden group-hover:block absolute left-full ml-2 top-0 w-48 p-3 bg-[#0d0722] border border-[#c19935]/20 rounded shadow-xl z-50">
+                                   <div className="text-[9px] uppercase tracking-widest text-[#c19935] mb-2">Missão</div>
+                                   <p className="text-[9px] text-[#f3ecdb]/60 mb-2">{skill.details}</p>
+                                   <div className="text-[9px] uppercase tracking-widest text-[#c19935] mb-1">Critério</div>
+                                   <p className="text-[8px] italic text-[#f3ecdb]/40">{skill.desc}</p>
+                                </div>
+                             </div>
+                          ))}
+                       </div>
+                       <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold mt-2">
+                         Executar Orquestrador
+                       </Button>
                     </div>
-                    <div className="space-y-2">
-                       {skills.map(skill => (
-                          <Button 
-                            key={skill.id}
-                            variant="outline" 
-                            className="w-full justify-start border-[#c19935]/10 hover:border-[#c19935]/40 bg-black/20 text-[#f3ecdb]/60 hover:text-[#c19935]"
-                            onClick={() => applySkillAction(skill.name)}
-                          >
-                             <skill.icon className={`h-4 w-4 mr-3 ${skill.color}`} />
-                             <span className="text-xs">{skill.name}</span>
-                          </Button>
-                       ))}
+                  ) : (
+                    <div className="space-y-6">
+                      <div className="flex flex-col items-center justify-center h-40 text-center space-y-2 text-[#f3ecdb]/20 border border-dashed border-[#c19935]/10 rounded">
+                         <Info className="h-8 w-8" />
+                         <p className="text-xs px-4">Selecione um trecho ou capítulo para ativar o Pipeline</p>
+                      </div>
+
+                      <div className="space-y-4">
+                         <div className="text-[10px] uppercase tracking-widest text-[#c19935]/50">Orquestração do Capítulo</div>
+                         <div className="grid grid-cols-2 gap-2">
+                            <Button variant="outline" className="text-[9px] h-8 border-[#c19935]/10 bg-[#c19935]/5">Revisar Capítulo</Button>
+                            <Button variant="outline" className="text-[9px] h-8 border-[#c19935]/10 bg-[#c19935]/5">Expandir Texto</Button>
+                            <Button variant="outline" className="text-[9px] h-8 border-[#c19935]/10 bg-[#c19935]/5">Analise PCH</Button>
+                            <Button variant="outline" className="text-[9px] h-8 border-[#c19935]/10 bg-[#c19935]/5">Check Consistência</Button>
+                         </div>
+                      </div>
                     </div>
-                 </div>
-               ) : (
-                 <div className="flex flex-col items-center justify-center h-40 text-center space-y-2 text-[#f3ecdb]/20">
-                    <Info className="h-8 w-8" />
-                    <p className="text-xs">Selecione um trecho do texto para ativar as Skills</p>
-                 </div>
-               )}
+                  )}
+               </div>
 
                <div className="mt-auto border-t border-[#c19935]/10 pt-6">
-                  <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Dica do Arquiteto</h4>
-                  <p className="text-[10px] italic text-[#f3ecdb]/40 leading-relaxed">
-                     "Tente manter a conexão emocional entre as estrofes usando o PCH. A transição deve ser fluida como um sopro."
+                  <div className="flex justify-between items-center mb-4">
+                    <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50">Dica do Orquestrador</h4>
+                    <Sparkles className="h-3 w-3 text-[#c19935]/40" />
+                  </div>
+                  <p className="text-[10px] italic text-[#f3ecdb]/40 leading-relaxed bg-[#c19935]/5 p-3 rounded border border-[#c19935]/10">
+                     "Este capítulo está com 87% de prontidão. Recomendo passar o PCH nas metáforas do segundo parágrafo para atingir a meta de 95%."
                   </p>
                </div>
             </aside>
@@ -272,32 +360,35 @@ export default function Editora() {
                    <aside className="space-y-6">
                       <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
                          <h3 className="font-serif text-[#c19935] mb-6">Fluxo Editorial</h3>
-                         <div className="space-y-6 relative">
-                            <div className="absolute left-[11px] top-2 bottom-2 w-px bg-[#c19935]/20" />
-                            {[
-                              { step: 'Ideia', status: 'concluído' },
-                              { step: 'Projeto', status: 'concluído' },
-                              { step: 'Estrutura', status: 'concluído' },
-                              { step: 'Escrita', status: 'ativo' },
-                              { step: 'Edição', status: 'pendente' },
-                              { step: 'Revisão', status: 'pendente' },
-                              { step: 'Design', status: 'pendente' },
-                              { step: 'Publicação', status: 'pendente' },
-                            ].map((s, i) => (
-                              <div key={s.step} className="flex items-center gap-4 relative z-10">
-                                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${
-                                  s.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' : 
-                                  s.status === 'ativo' ? 'bg-[#0d0722] border border-[#c19935] text-[#c19935]' : 
-                                  'bg-black/40 border border-[#f3ecdb]/10 text-[#f3ecdb]/20'
-                                }`}>
-                                  {s.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
-                                </div>
-                                <span className={`text-[10px] uppercase tracking-wider ${s.status === 'ativo' ? 'text-[#f3ecdb]' : 'text-[#f3ecdb]/30'}`}>
-                                  {s.step}
-                                </span>
-                              </div>
-                            ))}
-                         </div>
+                          <div className="space-y-6 relative">
+                             <div className="absolute left-[11px] top-2 bottom-2 w-px bg-[#c19935]/20" />
+                             {[
+                               { step: 'Ideia', status: 'concluído' },
+                               { step: 'Projeto', status: 'concluído' },
+                               { step: 'Estrutura', status: 'concluído' },
+                               { step: 'Escrita', status: 'ativo' },
+                               { step: 'Edição', status: 'pendente' },
+                               { step: 'Revisão', status: 'pendente' },
+                               { step: 'Design', status: 'pendente' },
+                               { step: 'Publicação', status: 'pendente' },
+                             ].map((s, i) => (
+                               <div key={s.step} className="flex items-center gap-4 relative z-10 group">
+                                 <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${
+                                   s.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' : 
+                                   s.status === 'ativo' ? 'bg-[#0d0722] border border-[#c19935] text-[#c19935]' : 
+                                   'bg-black/40 border border-[#f3ecdb]/10 text-[#f3ecdb]/20'
+                                 }`}>
+                                   {s.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
+                                 </div>
+                                 <span className={`text-[10px] uppercase tracking-wider ${s.status === 'ativo' ? 'text-[#f3ecdb]' : 'text-[#f3ecdb]/30'}`}>
+                                   {s.step}
+                                 </span>
+                                 {s.status === 'ativo' && (
+                                    <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#c19935] animate-pulse" />
+                                 )}
+                               </div>
+                             ))}
+                          </div>
                       </Card>
                       
                       <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold">
@@ -332,7 +423,7 @@ export default function Editora() {
                                   </div>
                                   <div className="flex justify-between text-[10px] text-[#c19935] uppercase tracking-widest font-bold">
                                      <span>Status: Pronto para última rodada</span>
-                                     <span>Meta: 95+</span>
+                                     <span>Readiness Score: {book.readinessScore}%</span>
                                   </div>
                                </div>
                             </div>
@@ -387,15 +478,19 @@ export default function Editora() {
                    </div>
 
                    <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
-                      <h3 className="font-serif text-[#c19935] mb-6">Produção Operacional</h3>
+                      <div className="flex justify-between items-center mb-6">
+                         <h3 className="font-serif text-[#c19935]">Produção Operacional</h3>
+                         <Button variant="ghost" size="sm" className="h-6 text-[8px] uppercase tracking-tighter text-[#c19935]/50 border border-[#c19935]/10">Audit Log Geral</Button>
+                      </div>
                       <div className="space-y-5">
                          {[
-                            { label: 'Manuscrito', progress: 82 },
-                            { label: 'Pesquisa', progress: 91 },
-                            { label: 'Edição', progress: 67 },
-                            { label: 'Revisão', progress: 45 },
-                            { label: 'Design', progress: 20 },
-                            { label: 'Comercial', progress: 10 },
+                            { label: 'Ideia', progress: 100 },
+                            { label: 'Projeto', progress: 100 },
+                            { label: 'Estrutura', progress: 100 },
+                            { label: 'Escrita', progress: 45 },
+                            { label: 'Edição', progress: 20 },
+                            { label: 'Revisão', progress: 10 },
+                            { label: 'Design', progress: 5 },
                             { label: 'Publicação', progress: 0 },
                          ].map(item => (
                             <div key={item.label} className="space-y-1.5">
