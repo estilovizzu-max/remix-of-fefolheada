@@ -127,13 +127,24 @@ export default function Editora() {
 
 
         <div className="mt-auto space-y-4">
-          <div className="bg-[#c19935]/5 border border-[#c19935]/20 rounded p-4">
-             <div className="text-[10px] uppercase tracking-widest text-[#c19935] mb-2">Progresso Atual</div>
-             <div className="text-xs font-serif mb-1 capitalize">{book.status}</div>
-             <div className="h-1 bg-white/5 rounded-full overflow-hidden">
-                <div className="h-full bg-[#c19935]" style={{ width: '45%' }}></div>
+          <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-4">
+             <div className="flex justify-between items-center mb-2">
+                <div className="text-[10px] uppercase tracking-widest text-[#c19935]">Editorial Readiness</div>
+                <div className="text-xs font-bold text-[#c19935]">{book.readinessScore}%</div>
              </div>
-          </div>
+             <div className="h-2 bg-white/5 rounded-full overflow-hidden border border-[#c19935]/10">
+                <div 
+                  className="h-full bg-gradient-to-r from-[#c19935]/50 to-[#c19935] transition-all duration-1000" 
+                  style={{ width: `${book.readinessScore}%` }}
+                ></div>
+             </div>
+             <Button 
+                className="w-full mt-4 bg-[#c19935] hover:bg-[#c19935]/90 text-[#0d0722] text-[10px] font-bold py-1 h-8 uppercase tracking-widest"
+                onClick={() => setActiveTab("finalizacao")}
+             >
+                🚀 Finalizar Livro
+             </Button>
+          </Card>
           <Link to="/">
             <Button variant="ghost" className="w-full justify-start text-[#f3ecdb]/30 text-xs">
               <ArrowLeft className="mr-3 h-3 w-3" /> Sair do Editor
@@ -638,6 +649,125 @@ export default function Editora() {
                          </div>
                       </Card>
                    </div>
+                </div>
+             </div>
+          </TabsContent>
+          <TabsContent value="finalizacao" className="flex-1 p-8 overflow-y-auto m-0 border-none">
+             <div className="max-w-4xl mx-auto space-y-8">
+                <header className="flex justify-between items-center">
+                   <div>
+                      <h2 className="text-3xl font-serif text-[#c19935] mb-2 text-glow">🚀 Central de Finalização</h2>
+                      <p className="text-[#f3ecdb]/40 italic text-sm">Transformando material bruto em uma obra editorial de excelência.</p>
+                   </div>
+                   <div className="text-right">
+                      <div className="text-[10px] text-[#c19935] uppercase tracking-widest mb-1">Status Global</div>
+                      <div className="px-3 py-1 rounded-full bg-[#c19935]/10 border border-[#c19935]/20 text-[#c19935] text-[10px] font-bold uppercase">
+                         {book.readinessScore >= 95 ? 'Pronto para Publicação' : 'Em Refinamento'}
+                      </div>
+                   </div>
+                </header>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                   <div className="md:col-span-2 space-y-6">
+                      <Card className="bg-black/40 border-[#c19935]/20 p-6 relative overflow-hidden group">
+                         <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <Sparkles className="h-24 w-24 text-[#c19935]" />
+                         </div>
+                         <h3 className="text-lg font-serif text-[#c19935] mb-6 flex items-center gap-2">
+                            <Layout className="h-5 w-5" /> Fila de Trabalho Editorial
+                         </h3>
+                         
+                         <div className="space-y-4">
+                            {[
+                               { label: 'Arquitetura e Sumário', status: 'concluído', skill: 'Arquiteto' },
+                               { label: 'Capítulos 1 a 4 (Refinamento PCH)', status: 'concluído', skill: 'PCH' },
+                               { label: 'Capítulo 5 (Edição Literária)', status: 'ativo', skill: 'Editor' },
+                               { label: 'Capítulo 6 (Desenvolvimento)', status: 'pendente', skill: 'Escritor' },
+                               { label: 'Verificação de Fontes e Citações', status: 'ativo', skill: 'Pesquisador' },
+                               { label: 'Revisão Gramatical Global', status: 'pendente', skill: 'Revisor' },
+                               { label: 'Conclusão e Posfácio', status: 'vazio', skill: 'Escritor' },
+                               { label: 'Design de Capa e Diagramação', status: 'pendente', skill: 'Designer' }
+                            ].map((item, idx) => (
+                               <div key={idx} className="flex items-center gap-4 p-3 rounded bg-white/5 border border-white/5 hover:border-[#c19935]/20 transition-all">
+                                  <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
+                                     item.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' :
+                                     item.status === 'ativo' ? 'border border-[#c19935] text-[#c19935] animate-pulse' :
+                                     item.status === 'vazio' ? 'border border-red-500/40 text-red-500/40' :
+                                     'border border-white/10 text-white/10'
+                                  }`}>
+                                     {item.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : <div className="w-1 h-1 rounded-full bg-current" />}
+                                  </div>
+                                  <div className="flex-1">
+                                     <div className="flex justify-between">
+                                        <span className={`text-xs font-bold ${item.status === 'vazio' ? 'text-red-500/60' : 'text-[#f3ecdb]/80'}`}>{item.label}</span>
+                                        <span className="text-[9px] uppercase tracking-widest text-[#c19935]/40">{item.skill}</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            ))}
+                         </div>
+                      </Card>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                         <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                            <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                               <Library className="h-4 w-4" /> Editorial Gate
+                            </h3>
+                            <div className="space-y-2">
+                               {[
+                                  { check: 'Capítulos Concluídos', done: false },
+                                  { check: 'Estrutura Aprovada', done: true },
+                                  { check: 'Gramática Revisada', done: false },
+                                  { check: 'Consistência Verificada', done: true },
+                                  { check: 'PCH Aplicada', done: true },
+                                  { check: 'Autor Aprova Versão Final', done: false }
+                               ].map((c, i) => (
+                                  <div key={i} className="flex items-center gap-2 text-[10px]">
+                                     <div className={`w-3 h-3 rounded-sm border ${c.done ? 'bg-[#c19935] border-[#c19935] flex items-center justify-center' : 'border-[#c19935]/20'}`}>
+                                        {c.done && <CheckCircle2 className="h-2 w-2 text-[#0d0722]" />}
+                                     </div>
+                                     <span className={c.done ? 'text-[#f3ecdb]/60' : 'text-[#f3ecdb]/20'}>{c.check}</span>
+                                  </div>
+                               ))}
+                            </div>
+                         </Card>
+
+                         <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6 flex flex-col justify-center items-center text-center">
+                            <div className="text-[10px] uppercase tracking-widest text-[#c19935] mb-2">Readiness Score</div>
+                            <div className="text-4xl font-serif text-[#c19935] mb-2">{book.readinessScore}%</div>
+                            <p className="text-[9px] text-[#f3ecdb]/40 italic">O livro atinge o estado FINAL quando o score superar 95% e o Gate estiver completo.</p>
+                         </Card>
+                      </div>
+                   </div>
+
+                   <aside className="space-y-6">
+                      <Card className="bg-[#c19935]/10 border-[#c19935]/30 p-6 border-t-4 border-t-[#c19935]">
+                         <h3 className="font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                            <Sparkles className="h-4 w-4" /> Orquestrador AI
+                         </h3>
+                         <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
+                            O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
+                         </p>
+                         <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-6 group">
+                            INICIAR CICLO FINAL 
+                            <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                         </Button>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                         <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Avisos Críticos</h4>
+                         <div className="space-y-3">
+                            <div className="p-2 rounded bg-red-500/10 border border-red-500/20 text-[9px] text-red-400 flex gap-2">
+                               <Info className="h-3 w-3 shrink-0" />
+                               <span>Capítulo 6 ainda não possui rascunho.</span>
+                            </div>
+                            <div className="p-2 rounded bg-yellow-500/10 border border-yellow-500/20 text-[9px] text-yellow-400 flex gap-2">
+                               <Info className="h-3 w-3 shrink-0" />
+                               <span>Consistência: João tem idades diferentes nos Cap. 2 e 8.</span>
+                            </div>
+                         </div>
+                      </Card>
+                   </aside>
                 </div>
              </div>
           </TabsContent>
