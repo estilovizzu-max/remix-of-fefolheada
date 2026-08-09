@@ -180,8 +180,8 @@ export default function Editora() {
                      <Button variant="ghost" size="sm" className="text-[#f3ecdb]/40 hover:text-[#c19935]">
                         <Save className="h-4 w-4 mr-2" /> Salvar
                      </Button>
-                     <Button size="sm" className="bg-[#c19935] hover:bg-[#c19935]/90 text-[#0d0722]">
-                        Exportar PDF
+                     <Button size="sm" className="bg-[#c19935] hover:bg-[#c19935]/90 text-[#0d0722]" onClick={() => setActiveTab("finalizacao")}>
+                        <Printer className="h-4 w-4 mr-2" /> Preparar Impressão
                      </Button>
                   </div>
                </div>
