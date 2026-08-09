@@ -23,6 +23,12 @@ export interface Chapter {
     contextUsed?: string[]; // IDs das chaves de editorialMemory ou outros metadados usados
     timestamp: string;
   }[];
+  approvals: {
+    skillId: string;
+    approved: boolean;
+    authorNote?: string;
+    timestamp: string;
+  }[];
 }
 
 export interface BookProject {
