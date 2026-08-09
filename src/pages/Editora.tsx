@@ -31,14 +31,18 @@ export default function Editora() {
   const editorRef = useRef<HTMLTextAreaElement>(null);
 
   const skills = [
+    { id: 'diretor', name: 'Diretor Editorial', icon: CheckCircle2, color: 'text-red-500', desc: 'Julga decisões e Readiness Score.', details: 'Avalia se o livro está pronto. Readiness: 87/100.' },
     { id: 'arquiteto', name: 'Arquiteto Editorial', icon: Layout, color: 'text-blue-400', desc: 'Estrategista estrutural e sumário.', details: 'Missão: Definir o que o livro precisa ser para cumprir sua promessa.' },
     { id: 'pesquisador', name: 'Pesquisador', icon: Search, color: 'text-cyan-400', desc: 'Fundamentação e verificação.', details: 'Regra: Nunca inventar referências. Verificação de fatos e fontes.' },
     { id: 'escritor', name: 'Escritor', icon: PenTool, color: 'text-green-400', desc: 'Motor de produção textual.', details: 'Regra: Preservar a voz autoral, evitando texto genérico.' },
     { id: 'pch', name: 'PCH / VerboLuz', icon: Sparkles, color: 'text-purple-400', desc: 'Linguagem cognitiva e poética.', details: 'Transforma comum em profundo. Equilíbrio entre emoção e clareza.' },
+    { id: 'consistencia', name: 'Consistência', icon: Library, color: 'text-orange-400', desc: 'Memória Editorial do Livro.', details: 'Garante que o livro não se contradiga entre capítulos.' },
     { id: 'literario', name: 'Editor Literário', icon: Book, color: 'text-pink-400', desc: 'Ritmo, voz e profundidade.', details: 'Avalia se o texto funciona como obra literária.' },
-    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Coesão.', details: 'Clareza, repetições e qualidade argumentativa.' },
-    { id: 'design', name: 'Design / Diagramador', icon: Library, color: 'text-indigo-400', desc: 'Hierarquia e visual.', details: 'Formatação, tipografia e elementos destacáveis.' },
-    { id: 'capista', name: 'Capista', icon: Palette, color: 'text-orange-400', desc: 'Conceito e Prompt.', details: 'Direção de arte e identidade visual da capa.' },
+    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Coesão.', details: 'Pergunta: "O texto está correto?". Ortografia e padronização.' },
+    { id: 'design', name: 'Design Editorial', icon: Palette, color: 'text-indigo-400', desc: 'Experiência visual e Design System.', details: 'Capa, tipografia, sumário e abertura de capítulos.' },
+    { id: 'comercial', name: 'Editor Comercial', icon: ShoppingBag, color: 'text-emerald-400', desc: 'Produto Editorial e Venda.', details: 'Título, sinopse, bio, posicionamento e promessa.' },
+    { id: 'publicador', name: 'Publicador', icon: Save, color: 'text-slate-400', desc: 'Estágio Final de Exportação.', details: 'Geração de PDF, EPUB e Manuscrito final.' },
+
 
   ];
 
@@ -73,22 +77,30 @@ export default function Editora() {
             onClick={() => setActiveTab("canvas")}
             className={`justify-start ${activeTab === 'canvas' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
           >
-            <PenTool className="mr-3 h-4 w-4" /> Editor Canvas
-          </Button>
-          <Button 
-            variant="ghost" 
-            onClick={() => setActiveTab("biblioteca")}
-            className={`justify-start ${activeTab === 'biblioteca' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
-          >
-            <Library className="mr-3 h-4 w-4" /> Biblioteca Skills
+            <PenTool className="mr-3 h-4 w-4" /> ✍️ Modo Escrita
           </Button>
           <Button 
             variant="ghost" 
             onClick={() => setActiveTab("projeto")}
             className={`justify-start ${activeTab === 'projeto' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
           >
-            <Settings className="mr-3 h-4 w-4" /> Projeto Editorial
+            <Layout className="mr-3 h-4 w-4" /> 🏗️ Modo Projeto
           </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => setActiveTab("dashboard-producao")}
+            className={`justify-start ${activeTab === 'dashboard-producao' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
+          >
+            <Library className="mr-3 h-4 w-4" /> 🏭 Modo Editora
+          </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => setActiveTab("biblioteca")}
+            className={`justify-start ${activeTab === 'biblioteca' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
+          >
+            <Sparkles className="mr-3 h-4 w-4" /> Skills AI
+          </Button>
+
         </nav>
 
         <div className="mt-auto space-y-4">
@@ -181,12 +193,19 @@ export default function Editora() {
 
           <TabsContent value="biblioteca" className="flex-1 p-8 overflow-y-auto m-0 border-none">
              <div className="max-w-4xl mx-auto space-y-12">
-                <header>
-                   <h2 className="text-3xl font-serif text-[#c19935] mb-2">Biblioteca de Agentes</h2>
-                   <p className="text-[#f3ecdb]/40 italic text-sm">Skills especializadas para cada etapa da sua obra.</p>
+                <header className="flex justify-between items-end">
+                   <div>
+                      <h2 className="text-3xl font-serif text-[#c19935] mb-2">Núcleo de Inteligência Editorial</h2>
+                      <p className="text-[#f3ecdb]/40 italic text-sm">Agentes operacionais orquestrados para a excelência da obra.</p>
+                   </div>
+                   <div className="text-right">
+                      <div className="text-[10px] text-[#c19935] uppercase tracking-widest mb-1">Editorial Readiness</div>
+                      <div className="text-2xl font-serif text-[#c19935]">{book.readinessScore}/100</div>
+                   </div>
                 </header>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
                    {skills.map(skill => (
                       <Card key={skill.id} className="bg-black/20 border-[#c19935]/10 hover:border-[#c19935]/40 transition-all p-6 space-y-4">
                          <div className="flex items-center gap-3">
@@ -288,7 +307,114 @@ export default function Editora() {
                 </div>
              </div>
           </TabsContent>
+
+          <TabsContent value="dashboard-producao" className="flex-1 p-8 overflow-y-auto m-0 border-none">
+             <div className="max-w-5xl mx-auto space-y-8">
+                <header>
+                   <h2 className="text-3xl font-serif text-[#c19935] mb-2">🏭 Modo Editora</h2>
+                   <p className="text-[#f3ecdb]/40 italic text-sm">Visão de produção e saúde editorial da obra.</p>
+                </header>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                   <div className="md:col-span-2 space-y-6">
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                         <CardHeader className="p-0 mb-6">
+                            <CardTitle className="text-lg text-[#c19935] font-serif flex items-center gap-2">
+                               <CheckCircle2 className="h-5 w-5" /> Editorial Readiness Score
+                            </CardTitle>
+                         </CardHeader>
+                         <div className="space-y-6">
+                            <div className="flex items-center gap-6">
+                               <div className="text-5xl font-serif text-[#c19935]">{book.readinessScore}</div>
+                               <div className="flex-1 space-y-2">
+                                  <div className="h-4 bg-white/5 rounded-full overflow-hidden border border-[#c19935]/10">
+                                     <div className="h-full bg-gradient-to-r from-[#c19935]/50 to-[#c19935]" style={{ width: `${book.readinessScore}%` }}></div>
+                                  </div>
+                                  <div className="flex justify-between text-[10px] text-[#c19935] uppercase tracking-widest font-bold">
+                                     <span>Status: Pronto para última rodada</span>
+                                     <span>Meta: 95+</span>
+                                  </div>
+                               </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 pt-4 border-t border-[#c19935]/10">
+                               {Object.entries(book.scores).map(([key, value]) => (
+                                  <div key={key} className="space-y-1">
+                                     <div className="flex justify-between items-center text-[9px] uppercase tracking-tighter text-[#f3ecdb]/40">
+                                        <span>{key}</span>
+                                        <span className={value >= 90 ? 'text-green-400' : 'text-[#c19935]'}>{value}</span>
+                                     </div>
+                                     <div className="h-1 bg-white/5 rounded-full overflow-hidden">
+                                        <div className="h-full bg-[#c19935]/30" style={{ width: `${value}%` }}></div>
+                                     </div>
+                                  </div>
+                               ))}
+                            </div>
+                         </div>
+                      </Card>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                         <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                            <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                               <Library className="h-4 w-4" /> Memória Editorial
+                            </h3>
+                            <div className="space-y-3">
+                               {Object.entries(book.editorialMemory).map(([key, items]) => (
+                                  <div key={key} className="space-y-1">
+                                     <div className="text-[9px] uppercase tracking-widest text-[#f3ecdb]/30">{key}</div>
+                                     <div className="flex flex-wrap gap-1">
+                                        {items.length > 0 ? items.map(item => (
+                                           <span key={item} className="text-[9px] px-2 py-0.5 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{item}</span>
+                                        )) : <span className="text-[9px] text-[#f3ecdb]/10 italic">Nenhum dado registrado</span>}
+                                     </div>
+                                  </div>
+                               ))}
+                            </div>
+                         </Card>
+
+                         <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                            <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                               <Info className="h-4 w-4" /> Relatório do Diretor
+                            </h3>
+                            <p className="text-[10px] text-[#f3ecdb]/50 leading-relaxed italic">
+                               "O livro apresenta uma força poética excepcional (PCH 95), porém a revisão gramatical e a consistência visual ainda precisam de um ciclo final de aprimoramento antes da exportação definitiva."
+                            </p>
+                            <div className="mt-4 p-2 bg-red-500/10 border border-red-500/20 rounded text-[9px] text-red-400">
+                               ⚠️ 3 Inconsistências Críticas detectadas pelo Agente de Consistência no Cap. 04.
+                            </div>
+                         </Card>
+                      </div>
+                   </div>
+
+                   <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
+                      <h3 className="font-serif text-[#c19935] mb-6">Produção Operacional</h3>
+                      <div className="space-y-5">
+                         {[
+                            { label: 'Manuscrito', progress: 82 },
+                            { label: 'Pesquisa', progress: 91 },
+                            { label: 'Edição', progress: 67 },
+                            { label: 'Revisão', progress: 45 },
+                            { label: 'Design', progress: 20 },
+                            { label: 'Comercial', progress: 10 },
+                            { label: 'Publicação', progress: 0 },
+                         ].map(item => (
+                            <div key={item.label} className="space-y-1.5">
+                               <div className="flex justify-between text-[10px] uppercase tracking-widest">
+                                  <span className="text-[#f3ecdb]/40">{item.label}</span>
+                                  <span className="text-[#c19935]">{item.progress}%</span>
+                               </div>
+                               <div className="h-1.5 bg-black/40 rounded-full overflow-hidden border border-[#c19935]/5">
+                                  <div className="h-full bg-[#c19935]" style={{ width: `${item.progress}%` }}></div>
+                               </div>
+                            </div>
+                         ))}
+                      </div>
+                   </Card>
+                </div>
+             </div>
+          </TabsContent>
         </Tabs>
+
       </main>
     </div>
   );

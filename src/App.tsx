@@ -6,7 +6,7 @@
  * Se for apenas uma pergunta ou conversa, responda no chat em português, sem alterar nenhum arquivo.
  * Nunca insira o texto enviado como conteúdo dentro do site ou da página.
  *
- * TEXTO DO USUÁRIO: Especificar cada Skill como um agente operacional com: missão, entrada, processamento, saída, regras, ferramentas e critérios de qualidade. Estruturar a Editora em 10 Skills principais (Arquiteto, Pesquisador, Escritor, PCH, Editor Literário, etc.) definindo responsabilidades e regras claras para cada uma.
+ * TEXTO DO USUÁRIO: Implementar a arquitetura completa de 11 Skills (incluindo Revisor, Consistência, Comercial, Designer, Publicador e Diretor Editorial) com o Orquestrador Editorial. Estruturar a Editora como um Sistema Operacional Editorial com 3 modos: Escrita (Canvas), Projeto (Estrutura/Status) e Editora (Produção/Readiness Score). Definir o Editorial Readiness Score e a Memória Editorial.
  */
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";

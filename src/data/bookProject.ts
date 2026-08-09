@@ -16,6 +16,25 @@ export interface BookProject {
   coverPrompt: string;
   backCoverText: string;
   status: 'ideia' | 'projeto' | 'estrutura' | 'escrita' | 'edicao' | 'revisao' | 'design' | 'publicacao';
+  readinessScore: number;
+  scores: {
+    conteudo: number;
+    estrutura: number;
+    escrita: number;
+    originalidade: number;
+    pch: number;
+    consistencia: number;
+    revisao: number;
+    design: number;
+    comercial: number;
+  };
+  editorialMemory: {
+    personagens: string[];
+    conceitos: string[];
+    termos: string[];
+    promessas: string[];
+    metaforas: string[];
+  };
   chapters: Chapter[];
   createdAt: string;
   updatedAt: string;
@@ -30,6 +49,26 @@ export const initialBookData: BookProject = {
   coverPrompt: 'Uma capa elegante em azul marinho e dourado com elementos de luz e folhas.',
   backCoverText: 'A poesia é o eco da oração que transborda do coração para o papel...',
   status: 'escrita',
+  readinessScore: 87,
+  scores: {
+    conteudo: 92,
+    estrutura: 89,
+    escrita: 91,
+    originalidade: 84,
+    pch: 95,
+    consistencia: 88,
+    revisao: 82,
+    design: 76,
+    comercial: 90
+  },
+  editorialMemory: {
+    personagens: [],
+    conceitos: ['Método PCH', 'VerboLuz'],
+    termos: ['Filho da Luz', 'Sopro Sagrado'],
+    promessas: ['Transformação espiritual através da poesia'],
+    metaforas: ['O hábito silencioso como destino']
+  },
+
   chapters: [
     { 
       id: '1', 
