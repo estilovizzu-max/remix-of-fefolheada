@@ -813,60 +813,52 @@ export default function Editora() {
                          <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
                             O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
                          </p>
-                               <div className="flex flex-col gap-2">
-                                  <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-5 group h-auto">
-                                     <div className="flex flex-col items-center">
-                                        <span className="flex items-center">INICIAR CICLO FINAL <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                                        <span className="text-[8px] uppercase opacity-60 mt-1">Executar todas as Skills pendentes</span>
-                                     </div>
-                                  </Button>
-                                  <Button variant="outline" className="w-full border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
-                                     <RefreshCw className="mr-2 h-3 w-3" /> REEXECUTAR FALHAS/PENDENTES
-                                  </Button>
+                         <div className="flex flex-col gap-2">
+                            <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold py-5 group h-auto">
+                               <div className="flex flex-col items-center">
+                                  <span className="flex items-center">INICIAR CICLO FINAL <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                                  <span className="text-[8px] uppercase opacity-60 mt-1">Executar todas as Skills pendentes</span>
                                </div>
-                            </Card>
-
-                            <Card className="bg-black/20 border-[#c19935]/10 p-6">
-                               <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
-                                  <Search className="h-4 w-4" /> Evidências e Fontes
-                               </h3>
-                               <div className="space-y-3">
-                                  {[
-                                     { type: 'referencia', label: 'Citação: Jo 1:1-5', skill: 'Pesquisador', evidence: 'Verificado em Bíblia de Jerusalém', validated: true },
-                                     { type: 'afirmacao', label: 'Impacto da Poesia na Cognição', skill: 'Pesquisador', evidence: 'Necessita fonte científica (Estudo Neuroestética 2024)', validated: false }
-                                  ].map((ev, i) => (
-                                     <div key={i} className="p-2 rounded bg-white/5 border border-white/5 space-y-2">
-                                        <div className="flex justify-between items-start">
-                                           <div className="flex flex-col">
-                                              <span className="text-[9px] font-bold text-[#f3ecdb]/80">{ev.label}</span>
-                                              <span className="text-[7px] uppercase tracking-widest text-[#c19935]/40">{ev.skill}</span>
-                                           </div>
-                                           <div className={`w-2 h-2 rounded-full ${ev.validated ? 'bg-green-500' : 'bg-yellow-500 animate-pulse'}`} />
-                                        </div>
-                                        <p className="text-[8px] italic text-[#f3ecdb]/40">"{ev.evidence}"</p>
-                                        {!ev.validated && (
-                                           <Button size="sm" className="w-full h-6 text-[8px] bg-[#c19935]/20 hover:bg-[#c19935]/40 text-[#c19935]">Validar Evidência</Button>
-                                        )}
-                                     </div>
-                                  ))}
-                               </div>
-                            </Card>
+                            </Button>
+                            <Button variant="outline" className="w-full border-[#c19935]/20 text-[#c19935] hover:bg-[#c19935]/10 h-10 text-[9px]">
+                               <RefreshCw className="mr-2 h-3 w-3" /> REEXECUTAR FALHAS/PENDENTES
+                            </Button>
                          </div>
+                      </Card>
 
-                         <div className="md:col-span-1 space-y-6">
-                            <Card className="bg-[#c19935]/10 border-[#c19935]/30 p-6 border-t-4 border-t-[#c19935]">
-                               <h3 className="font-serif text-[#c19935] mb-4 flex items-center gap-2">
-                                  <Sparkles className="h-4 w-4" /> Orquestrador AI
-                               </h3>
-                               <p className="text-[10px] text-[#f3ecdb]/60 leading-relaxed mb-6">
-                                  O orquestrador analisará a obra completa, identificando fraquezas estruturais, inconsistências e trechos que necessitam de refinamento PCH ou pesquisa.
-                               </p>
-                               <div className="text-[10px] text-[#c19935]/60 mb-2 font-bold uppercase tracking-widest">Estatísticas do Ciclo</div>
-                               <div className="space-y-1 mb-4">
-                                  <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Skills Executadas:</span> <span>42</span></div>
-                                  <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Versões Geradas:</span> <span>128</span></div>
-                                  <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Alterações Aceitas:</span> <span>89%</span></div>
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                         <h3 className="text-sm font-serif text-[#c19935] mb-4 flex items-center gap-2">
+                            <Search className="h-4 w-4" /> Evidências e Fontes
+                         </h3>
+                         <div className="space-y-3">
+                            {[
+                               { type: 'referencia', label: 'Citação: Jo 1:1-5', skill: 'Pesquisador', evidence: 'Verificado em Bíblia de Jerusalém', validated: true },
+                               { type: 'afirmacao', label: 'Impacto da Poesia na Cognição', skill: 'Pesquisador', evidence: 'Necessita fonte científica (Estudo Neuroestética 2024)', validated: false }
+                            ].map((ev, i) => (
+                               <div key={i} className="p-2 rounded bg-white/5 border border-white/5 space-y-2">
+                                  <div className="flex justify-between items-start">
+                                     <div className="flex flex-col">
+                                        <span className="text-[9px] font-bold text-[#f3ecdb]/80">{ev.label}</span>
+                                        <span className="text-[7px] uppercase tracking-widest text-[#c19935]/40">{ev.skill}</span>
+                                     </div>
+                                     <div className={`w-2 h-2 rounded-full ${ev.validated ? 'bg-green-500' : 'bg-yellow-500 animate-pulse'}`} />
+                                  </div>
+                                  <p className="text-[8px] italic text-[#f3ecdb]/40">"{ev.evidence}"</p>
+                                  {!ev.validated && (
+                                     <Button size="sm" className="w-full h-6 text-[8px] bg-[#c19935]/20 hover:bg-[#c19935]/40 text-[#c19935]">Validar Evidência</Button>
+                                  )}
                                </div>
+                            ))}
+                         </div>
+                      </Card>
+
+                      <Card className="bg-black/20 border-[#c19935]/10 p-6">
+                         <h4 className="text-[10px] uppercase tracking-widest text-[#c19935]/50 mb-4">Estatísticas do Ciclo</h4>
+                         <div className="space-y-1">
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Skills Executadas:</span> <span>42</span></div>
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Versões Geradas:</span> <span>128</span></div>
+                            <div className="flex justify-between text-[9px]"><span className="text-[#f3ecdb]/40">Alterações Aceitas:</span> <span>89%</span></div>
+                         </div>
                       </Card>
                    </aside>
                 </div>
