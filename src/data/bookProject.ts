@@ -20,6 +20,7 @@ export interface Chapter {
     action: string;
     evidence: string;
     decision: 'aprovado' | 'recusado' | 'editado';
+    contextUsed?: string[]; // IDs das chaves de editorialMemory ou outros metadados usados
     timestamp: string;
   }[];
 }
@@ -51,6 +52,9 @@ export interface BookProject {
     termos: string[];
     promessas: string[];
     metaforas: string[];
+    tom: string;
+    voz: string;
+    regrasAutor: string[];
   };
   chapters: Chapter[];
   createdAt: string;
@@ -83,7 +87,10 @@ export const initialBookData: BookProject = {
     conceitos: ['Método PCH', 'VerboLuz'],
     termos: ['Filho da Luz', 'Sopro Sagrado'],
     promessas: ['Transformação espiritual através da poesia'],
-    metaforas: ['O hábito silencioso como destino']
+    metaforas: ['O hábito silencioso como destino'],
+    tom: 'Espiritual, profundo e acolhedor',
+    voz: 'Lírica e contemplativa',
+    regrasAutor: ['Evitar clichês religiosos excessivos', 'Focar na experiência sensorial da fé']
   },
 
   chapters: [
