@@ -6,7 +6,7 @@
  * Se for apenas uma pergunta ou conversa, responda no chat em português, sem alterar nenhum arquivo.
  * Nunca insira o texto enviado como conteúdo dentro do site ou da página.
  *
- * TEXTO DO USUÁRIO: Melhorar a /validacao com miniaturas por seção e zoom para eu inspecionar rapidamente capa, contra-capa e a sequência de páginas do PDF/EPUB.
+ * TEXTO DO USUÁRIO: Implementar uma navegação rápida por página na /validacao, com teclado e jump para capa, sumário e contra-capa para eu revisar em segundos.
  */
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
