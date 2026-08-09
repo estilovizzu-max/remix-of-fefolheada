@@ -31,14 +31,18 @@ export default function Editora() {
   const editorRef = useRef<HTMLTextAreaElement>(null);
 
   const skills = [
+    { id: 'diretor', name: 'Diretor Editorial', icon: CheckCircle2, color: 'text-red-500', desc: 'Julga decisões e Readiness Score.', details: 'Avalia se o livro está pronto. Readiness: 87/100.' },
     { id: 'arquiteto', name: 'Arquiteto Editorial', icon: Layout, color: 'text-blue-400', desc: 'Estrategista estrutural e sumário.', details: 'Missão: Definir o que o livro precisa ser para cumprir sua promessa.' },
     { id: 'pesquisador', name: 'Pesquisador', icon: Search, color: 'text-cyan-400', desc: 'Fundamentação e verificação.', details: 'Regra: Nunca inventar referências. Verificação de fatos e fontes.' },
     { id: 'escritor', name: 'Escritor', icon: PenTool, color: 'text-green-400', desc: 'Motor de produção textual.', details: 'Regra: Preservar a voz autoral, evitando texto genérico.' },
     { id: 'pch', name: 'PCH / VerboLuz', icon: Sparkles, color: 'text-purple-400', desc: 'Linguagem cognitiva e poética.', details: 'Transforma comum em profundo. Equilíbrio entre emoção e clareza.' },
+    { id: 'consistencia', name: 'Consistência', icon: Library, color: 'text-orange-400', desc: 'Memória Editorial do Livro.', details: 'Garante que o livro não se contradiga entre capítulos.' },
     { id: 'literario', name: 'Editor Literário', icon: Book, color: 'text-pink-400', desc: 'Ritmo, voz e profundidade.', details: 'Avalia se o texto funciona como obra literária.' },
-    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Coesão.', details: 'Clareza, repetições e qualidade argumentativa.' },
-    { id: 'design', name: 'Design / Diagramador', icon: Library, color: 'text-indigo-400', desc: 'Hierarquia e visual.', details: 'Formatação, tipografia e elementos destacáveis.' },
-    { id: 'capista', name: 'Capista', icon: Palette, color: 'text-orange-400', desc: 'Conceito e Prompt.', details: 'Direção de arte e identidade visual da capa.' },
+    { id: 'revisor', name: 'Revisor', icon: Search, color: 'text-yellow-400', desc: 'Gramática e Coesão.', details: 'Pergunta: "O texto está correto?". Ortografia e padronização.' },
+    { id: 'design', name: 'Design Editorial', icon: Palette, color: 'text-indigo-400', desc: 'Experiência visual e Design System.', details: 'Capa, tipografia, sumário e abertura de capítulos.' },
+    { id: 'comercial', name: 'Editor Comercial', icon: ShoppingBag, color: 'text-emerald-400', desc: 'Produto Editorial e Venda.', details: 'Título, sinopse, bio, posicionamento e promessa.' },
+    { id: 'publicador', name: 'Publicador', icon: Save, color: 'text-slate-400', desc: 'Estágio Final de Exportação.', details: 'Geração de PDF, EPUB e Manuscrito final.' },
+
 
   ];
 
