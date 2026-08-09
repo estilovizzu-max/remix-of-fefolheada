@@ -39,6 +39,7 @@ import Revisao from "./pages/Revisao";
 import Diagnostico from "./pages/Diagnostico";
 import Status from "./pages/Status";
 import Validacao from "./pages/Validacao";
+import Editora from "./pages/Editora";
 import NotFound from "./pages/NotFound";
 import { RouteErrorBoundary } from "./components/RouteErrorBoundary";
 import { GlobalErrorReporter } from "./components/GlobalErrorReporter";
