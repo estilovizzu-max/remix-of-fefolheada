@@ -97,6 +97,13 @@ export default function Editora() {
           >
             <Library className="mr-3 h-4 w-4" /> 🏭 Modo Editora
           </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => setActiveTab("memoria")}
+            className={`justify-start ${activeTab === 'memoria' ? 'text-[#c19935] bg-[#c19935]/10' : 'text-[#f3ecdb]/60 hover:text-[#c19935]'}`}
+          >
+            <Sparkles className="mr-3 h-4 w-4" /> 🧠 Memória & Contexto
+          </Button>
         </nav>
 
         <div className="border-t border-[#c19935]/10 pt-4">
