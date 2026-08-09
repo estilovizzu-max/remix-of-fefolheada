@@ -325,10 +325,14 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
             <div className="h-px w-10 bg-[hsl(var(--book-gold))] mx-auto mt-3" />
           </div>
 
-          <div className="flex-1 overflow-y-auto min-h-0 poem-scroll">
+          <div className="flex-1 overflow-y-auto min-h-0 poem-scroll flex flex-col">
             <p
-              className="poem-verse whitespace-pre-line italic font-serif text-[hsl(var(--paper-ink))] text-center py-4"
-              style={{ fontFamily: 'Lora, serif' }}
+              className="poem-verse whitespace-pre-line italic font-serif text-[hsl(var(--paper-ink))] text-center py-8 px-4"
+              style={{ 
+                fontFamily: 'Lora, serif',
+                lineHeight: '2.2',
+                fontSize: '1.1rem'
+              }}
             >
               {poem.text}
             </p>
