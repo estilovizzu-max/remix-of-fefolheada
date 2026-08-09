@@ -360,32 +360,35 @@ export default function Editora() {
                    <aside className="space-y-6">
                       <Card className="bg-[#c19935]/5 border-[#c19935]/20 p-6">
                          <h3 className="font-serif text-[#c19935] mb-6">Fluxo Editorial</h3>
-                         <div className="space-y-6 relative">
-                            <div className="absolute left-[11px] top-2 bottom-2 w-px bg-[#c19935]/20" />
-                            {[
-                              { step: 'Ideia', status: 'concluído' },
-                              { step: 'Projeto', status: 'concluído' },
-                              { step: 'Estrutura', status: 'concluído' },
-                              { step: 'Escrita', status: 'ativo' },
-                              { step: 'Edição', status: 'pendente' },
-                              { step: 'Revisão', status: 'pendente' },
-                              { step: 'Design', status: 'pendente' },
-                              { step: 'Publicação', status: 'pendente' },
-                            ].map((s, i) => (
-                              <div key={s.step} className="flex items-center gap-4 relative z-10">
-                                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${
-                                  s.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' : 
-                                  s.status === 'ativo' ? 'bg-[#0d0722] border border-[#c19935] text-[#c19935]' : 
-                                  'bg-black/40 border border-[#f3ecdb]/10 text-[#f3ecdb]/20'
-                                }`}>
-                                  {s.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
-                                </div>
-                                <span className={`text-[10px] uppercase tracking-wider ${s.status === 'ativo' ? 'text-[#f3ecdb]' : 'text-[#f3ecdb]/30'}`}>
-                                  {s.step}
-                                </span>
-                              </div>
-                            ))}
-                         </div>
+                          <div className="space-y-6 relative">
+                             <div className="absolute left-[11px] top-2 bottom-2 w-px bg-[#c19935]/20" />
+                             {[
+                               { step: 'Ideia', status: 'concluído' },
+                               { step: 'Projeto', status: 'concluído' },
+                               { step: 'Estrutura', status: 'concluído' },
+                               { step: 'Escrita', status: 'ativo' },
+                               { step: 'Edição', status: 'pendente' },
+                               { step: 'Revisão', status: 'pendente' },
+                               { step: 'Design', status: 'pendente' },
+                               { step: 'Publicação', status: 'pendente' },
+                             ].map((s, i) => (
+                               <div key={s.step} className="flex items-center gap-4 relative z-10 group">
+                                 <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] ${
+                                   s.status === 'concluído' ? 'bg-[#c19935] text-[#0d0722]' : 
+                                   s.status === 'ativo' ? 'bg-[#0d0722] border border-[#c19935] text-[#c19935]' : 
+                                   'bg-black/40 border border-[#f3ecdb]/10 text-[#f3ecdb]/20'
+                                 }`}>
+                                   {s.status === 'concluído' ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
+                                 </div>
+                                 <span className={`text-[10px] uppercase tracking-wider ${s.status === 'ativo' ? 'text-[#f3ecdb]' : 'text-[#f3ecdb]/30'}`}>
+                                   {s.step}
+                                 </span>
+                                 {s.status === 'ativo' && (
+                                    <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#c19935] animate-pulse" />
+                                 )}
+                               </div>
+                             ))}
+                          </div>
                       </Card>
                       
                       <Button className="w-full bg-[#c19935] text-[#0d0722] font-bold">
