@@ -423,7 +423,7 @@ export default function Editora() {
                                   </div>
                                   <div className="flex justify-between text-[10px] text-[#c19935] uppercase tracking-widest font-bold">
                                      <span>Status: Pronto para última rodada</span>
-                                     <span>Meta: 95+</span>
+                                     <span>Readiness Score: {book.readinessScore}%</span>
                                   </div>
                                </div>
                             </div>
