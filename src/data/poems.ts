@@ -797,9 +797,8 @@ e sua cilada.`,
       reflection: 'Organizamos o jardim de imagens deste poema: da estabilidade da casa à astronomia da Lua, terminando na batalha espiritual da mente. O soldado de verdade não luta contra o mundo, mas contra as ciladas do seu próprio pensamento.',
       inspiration: 'O que eu digo a Deus depois de ler sobre as batalhas da minha própria mente?'
     },
-
-    },
     {
+
       id: 'rv-7',
       title: 'A Passagem',
       text: `Toc, toc, uma batida suave,
