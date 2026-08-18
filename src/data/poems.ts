@@ -1122,7 +1122,7 @@ Jesus está tocando, basta n’Ele confiar, Pois Seu poder divino veio hoje pra 
     },
     {
       id: 'p3-3',
-      title: 'O Senhor Realiza Milagres (Naamã)',
+      title: 'O Mergulho da Humildade',
       text: `É certeza no meu coração: O Senhor realiza milagres e prodígios, Peça a Ele em oração.
 Deus curou Naamã Pra mostrar para o seu povo, Realizou o milagre E restaurou tudo de novo.
 Ele era leproso, Tinha prestígio diante do rei. Com as minhas qualidades, Ao Senhor adorarei.
@@ -2448,16 +2448,17 @@ Não desista Fique firme e ele é teu Salvador`,
     },
     {
       id: 'fe-6',
-      title: 'Coração sem Medo',
+      title: 'Firme na Rocha',
       text: `Nada pode amedrontar meu coração,
-pois ele está em Deus.
-Tenha fé e coloque em ação.
-O Espírito hoje vem para me iluminar,
-a escuridão interior para que eu possa me salvar.
-Vem, Espírito Santo, transformar todo o meu ser,
-a cruz seja meu guia para eu não me perder.
-Que alegria está presente, agora vou me apresentar,
-o meu nome é Reinaldo, aqui no MMA.`,
+Pois ele está em Deus, minha salvação.
+Tenha fé agora e coloque em ação,
+O Espírito vem dissipar a escuridão.
+
+Luz no interior para o caminho enxergar,
+Cruz como guia para não se desviar.
+Transforma meu ser, renova o meu viver,
+Nos braços do Pai nada tenho a temer.`,
+
       reflection: '"O Espírito hoje vem para me iluminar a escuridão interior" é confissão corajosa de quem reconhece zonas escuras que precisam de luz, não apenas aparência de vitória. A cruz como guia, e não como peso decorativo, muda a forma de enfrentar o dia. Que parte escura de você ainda não foi apresentada abertamente ao Espírito? Você tem coragem de nomear, como no poema, quem você é diante Dele sem máscara?',
     },
     {
@@ -2726,7 +2727,7 @@ E milagres do céu você vai colher.`,
       id: 'p6-1',
       title: 'Oficina do Poeta: A Antena Ligada',
       text: `O maior inimigo do poeta no Grupo de Oração é a procrastinação disfarçada de "esperar para entender".
-A poesia, no Método PCH (Poesia Cognitiva Hipnótica), é um registro da temperatura espiritual do momento.
+A poesia, no Método PCH (Poesia que Cura o Homem), é um registro da temperatura espiritual do momento.
 Ela precisa ser escrita "a quente".
 Não tente anotar tudo o que ele diz. Busque a "Espinha Dorsal" da mensagem.
 Identifique as "Palavras de Fogo" (Rhema).
