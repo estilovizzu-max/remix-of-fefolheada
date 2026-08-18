@@ -16,8 +16,9 @@ export const themeTitles: { [key: string]: string } = {
   'bloco-3': 'Cura e Restauração',
   'bloco-4': 'O Poder do Espírito Santo',
   'bloco-5': 'Esperança, Adoração e Eternidade',
-  'bloco-6': 'Oficina do Poeta (Curso Prático)'
+  'bloco-6': 'Epílogo: A Oficina do Poeta'
 };
+
 
 export const readingAchievementsList: { name: string; desc: string; icon: string; goal: number | 'all' }[] = [
   { name: 'Iniciante', desc: 'Leia 5 poemas', icon: '🌱', goal: 5 },
@@ -1254,7 +1255,8 @@ começa hoje, aqui, em mim.`,
     },
     {
       id: 'tr-7',
-      title: 'Reflexões sobre Transformação',
+      title: 'O Casulo da Alma',
+
       text: `Afinal, por que tantos vão à igreja e não mudam,
 Mesmo depois de orações que afundam?
 Por que clamam tanto a Deus, mas duvidam?

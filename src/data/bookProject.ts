@@ -1,140 +1,44 @@
-export interface ChapterVersion {
-  id: string;
-  content: string;
-  author: string; // 'author' or skillId
-  timestamp: string;
-  changeSummary: string;
-}
+import { Poem, PoemsData } from './poems';
 
-export interface Chapter {
-  id: string;
-  title: string;
-  objective?: string;
-  draft: string;
-  revision: string;
-  final: string;
-  status: 'rascunho' | 'desenvolvimento' | 'edicao' | 'revisao' | 'aprovado' | 'finalizado';
-  versions: ChapterVersion[];
-  auditLog: {
-    skillId: string;
-    action: string;
-    evidence: string;
-    decision: 'aprovado' | 'recusado' | 'editado';
-    contextUsed?: string[]; // IDs das chaves de editorialMemory ou outros metadados usados
-    timestamp: string;
-  }[];
-  approvals: {
-    skillId: string;
-    approved: boolean;
-    authorNote?: string;
-    timestamp: string;
-  }[];
-}
-
-export interface BookProject {
-  id: string;
-  title: string;
-  subtitle: string;
-  authorBio: string;
-  synopsis: string;
-  coverPrompt: string;
-  backCoverText: string;
-  status: 'ideia' | 'projeto' | 'estrutura' | 'escrita' | 'edicao' | 'revisao' | 'design' | 'publicacao';
-  readinessScore: number;
-  printSettings: {
-    format: '14x21' | '15x21' | '16x23' | '17x24' | 'custom';
-    margins: { top: number; bottom: number; left: number; right: number };
-    bleed: number;
-    dpi: number;
-    colorProfile: 'CMYK' | 'RGB';
-  };
-  scores: {
-    conteudo: number;
-    estrutura: number;
-    escrita: number;
-    originalidade: number;
-    pch: number;
-    consistencia: number;
-    revisao: number;
-    design: number;
-    comercial: number;
-  };
-  editorialMemory: {
-    personagens: string[];
-    conceitos: string[];
-    termos: string[];
-    promessas: string[];
-    metaforas: string[];
-    tom: string;
-    voz: string;
-    regrasAutor: string[];
-  };
-  chapters: Chapter[];
-  createdAt: string;
-  updatedAt: string;
-}
-
-export const initialBookData: BookProject = {
-  id: 'current-book',
+export const bookProject = {
+  id: 'folheando-fe-v1',
   title: 'Folheando Fé',
-  subtitle: 'Poesia do meu grupo de oração',
-  authorBio: 'Evaldo Poeta, um apaixonado pela palavra que cura e transforma...',
-  synopsis: 'Uma jornada espiritual através de poemas divididos em 6 blocos do Método PCH.',
-  coverPrompt: 'Uma capa elegante em azul marinho e dourado com elementos de luz e folhas.',
-  backCoverText: 'A poesia é o eco da oração que transborda do coração para o papel...',
-  status: 'escrita',
-  readinessScore: 87,
-  scores: {
-    conteudo: 92,
-    estrutura: 89,
-    escrita: 91,
-    originalidade: 84,
-    pch: 95,
-    consistencia: 88,
-    revisao: 82,
-    design: 76,
-    comercial: 90
-  },
+  subtitle: 'Método PCH — Poesia que Cura o Homem',
+  author: 'Evaldo Poeta',
+  version: '2.0.0',
+  status: 'finalizing' as const,
+  lastUpdated: new Date().toISOString(),
+  
   printSettings: {
     format: '14x21',
-    margins: { top: 20, bottom: 20, left: 25, right: 20 },
+    margins: { top: 20, bottom: 20, inner: 25, outer: 20 },
     bleed: 3,
     dpi: 300,
     colorProfile: 'CMYK'
   },
+
   editorialMemory: {
-    personagens: [],
-    conceitos: ['Método PCH', 'VerboLuz'],
-    termos: ['Filho da Luz', 'Sopro Sagrado'],
-    promessas: ['Transformação espiritual através da poesia'],
-    metaforas: ['O hábito silencioso como destino'],
-    tom: 'Espiritual, profundo e acolhedor',
-    voz: 'Lírica e contemplativa',
-    regrasAutor: ['Evitar clichês religiosos excessivos', 'Focar na experiência sensorial da fé']
+    tom: 'Espiritual, encorajador, sensorial e profundo.',
+    voz: 'Testemunhal e profética.',
+    regrasAutor: [
+      'Priorizar imagens (metáforas) sobre explicações diretas.',
+      'Manter a rima orgânica, nunca forçada.',
+      'Terminar sempre em esperança e vitória (Selo PCH).',
+      'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.'
+    ],
+    conceitos: [
+      { tag: 'PCH', descricao: 'Poesia que Cura o Homem (Metodologia de escrita sob unção).' },
+      { tag: 'BARCO', descricao: 'Metáfora para a vida e restauração (leme, âncora, mar).' },
+      { tag: 'LUZ', descricao: 'Identidade do cristão (Filho da Luz).' }
+    ]
   },
 
-  chapters: [
-    { 
-      id: '1', 
-      title: 'Capítulo 1: O Despertar', 
-      objective: 'Introduzir a jornada espiritual e a necessidade de silêncio interior.',
-      draft: 'Texto inicial do rascunho...', 
-      revision: '', 
-      final: '', 
-      status: 'rascunho',
-      versions: [
-        {
-          id: 'v1',
-          content: 'Texto inicial do rascunho...',
-          author: 'author',
-          timestamp: new Date().toISOString(),
-          changeSummary: 'Criação inicial'
-        }
-      ],
-      auditLog: [],
-      approvals: []
-    }
-  ],
-  createdAt: new Date().toISOString(),
-  updatedAt: new Date().toISOString()
+  readinessScore: 85,
+  productionProgress: {
+    arquitetura: 100,
+    escrita: 90,
+    revisao: 70,
+    diagramacao: 80,
+    preImpressao: 40
+  }
 };
