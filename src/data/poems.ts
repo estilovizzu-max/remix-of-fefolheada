@@ -693,27 +693,108 @@ teu refúgio e salvação.`,
     {
       id: 'p2-14-new',
       title: 'Parei de Ficar Parado',
-      text: `Ah! Parei de ficar parado,
-Com o medo ao meu lado querendo me atrapalhar.
-Parei com toda vergonha, a timidez e o mal que ela me fez,
-Impediu-me de prosperar, mas agora aceitei a coragem.
+      text: `Ah!
+Parei de ficar parado.
 
-Parei de esperar que as coisas aconteçam lá fora,
-Faço o que deve ser feito, aqui e agora.
-Pensava que tinha que ser perfeito, parei de me preocupar,
-O certo só é certo porque nunca foi errado, e o erro é degrau para acertar.
+Com o medo ao meu lado,
+querendo me atrapalhar.
 
-Não fico mais vendo a vida passar da janela,
-Tomei a decisão de controlar meu coração.
-Parado não fico, pois nasci para brilhar,
-E o culpado pelo meu progresso sou eu, em comunhão com o Altar.
+Parei com toda vergonha,
+o monstro medonho
+que queria me controlar.
 
-Toda vez que eu te falo, sei que vou continuar,
-Com coragem no peito, seguirei a estudar.
-Parei de olhar o que não era para ser meu,
-Jesus manda embora o sofrimento, e o futuro é Seu.`,
-      reflection: '"Parei de ficar parado esperando acontecer" é confissão de alguém que descobriu, tarde, que vergonha e medo eram prisões consentidas. O poema não promete facilidade, promete decisão: sair do conforto acomodado que só finge ser paz. O que você continua esperando que aconteça sozinho, sem sua ação, sua oração, seu primeiro passo? Jesus manda embora o sofrimento de dentro — mas você já abriu a porta para Ele agir?',
-    }
+Parei com a timidez
+e com o mal que ela me fez.
+
+Impediu-me de prosperar.
+Eu tive muita vergonha,
+medo também.
+
+Mas timidez,
+eu repito:
+
+**nunca mais vou deixar.**
+
+Nunca mais vou permitir
+que me mantenham aprisionado,
+pois eu nasci para brilhar.
+
+Parei de olhar para trás.
+Agora eu mudei.
+
+Aceitei a coragem.
+
+Ninguém me segura mais.
+
+Parei com a negação.
+Parei de ficar parado.
+
+Já tomei a decisão.
+
+Parei de esperar
+que as coisas aconteçam.
+
+Parei de achar
+que precisava ser perfeito.
+
+Parei de me preocupar
+com aquilo que não posso controlar.
+
+Parei de esperar o amanhã.
+
+Agora faço
+o que precisa ser feito.
+
+Parei de olhar
+o que não era para ser meu.
+
+Parei de ficar sentado
+no conforto acomodado,
+achando que tudo iria se resolver.
+
+O presente é importante.
+
+O futuro também.
+
+Mas é no presente
+que a decisão acontece.
+
+Pare agora.
+
+Reflita.
+
+Analise.
+
+Não vou mais pensar
+que não vou conseguir.
+
+Agora sou muito mais.
+
+Chega de ficar parado.
+
+Entre.
+
+Deixe de ser acanhado.
+
+**Ficar parado, nunca mais.**
+
+Parei de ficar parado.
+
+Estou entrando em movimento.
+
+E todas as vezes
+que eu dizia:
+
+“Eu não aguento...”
+
+agora eu sei:
+
+**Jesus Cristo manda embora
+de dentro de mim
+o sofrimento.**`,
+      reflection: 'O termo "Parei" foi elevado a martelo poético, enfatizando a ruptura consciente com a inércia, o perfeccionismo e a timidez. É um testemunho de movimento: a decisão acontece no presente, e a força para prosseguir vem da expulsão do sofrimento por Cristo.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a decisão de sair da inércia?'
+    },
   ],
   'bloco-3': [
 
