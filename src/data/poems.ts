@@ -768,54 +768,24 @@ E escolha, com sabedoria, a direção do seu coração.`,
     },
     {
       id: 'p1-55-new',
-      title: 'Pensamento Libertador (II)',
-      text: `Acredite ou não, saiba que você não é obrigado a nada.
-Não é porque as pessoas te pedem algo
-Que você deve atender sem questionar.
-É necessário aprender a indagar, fazer as perguntas certas.
-Reflexione comigo, ou melhor, apenas pense:
-Por que devo fazer isso? O que ganho ao fazê-lo?
-O que perco se não fizer? Quem se beneficia ou quem é prejudicado?
-Sempre reflita e não tome nenhuma decisão sem ponderar.
-O pensamento liberta.
-Até quando vai permanecer preso sem pensar
-Ou acorrentado ao pensamento sem buscar a liberdade?
-Se alguém é aprisionado, é porque não refletiu sobre a besteira que ia cometer.
-Se tivesse ponderado antes, não estaria encarcerado.
-Até quando o pensamento te manterá aprisionado?
-Estou neste instante te levando a refletir.
-E pense livremente.
-Você se prende ao pensamento de outra pessoa ou a algo que alguém disse
-Ou vive na liberdade do pensamento próprio?
-Mas tome cuidado, o pensamento pode te enganar,
-Te levar a agir de forma que você jamais gostaria.
-No final das contas, você agiu sem pensar
-Nas consequências que o pensamento errado poderia causar.
-Nosso pensamento deve estar bem alinhado
-Com aquilo que desejamos ou pretendemos realizar.
-Devemos pensar com o pensamento
-Daquele que nos deu a capacidade de pensar, Deus.
-Sem o pensamento d’Ele, pensaríamos de forma distorcida,
-E pensando de forma errada, estaremos no erro com pensamentos sombrios.
-Quantas pessoas pensam de maneira equivocada
-E continuam errando porque acreditaram que estavam certas,
-Mas estavam equivocadas.
-Cada vez que você pensa, milhares de neurônios são ativados nesse pensamento.
-E onde está o seu pensamento agora,
-Enquanto lê ou ouve este poema?
-Deixe ir neste momento, quando parece que seu pensamento não para.
-A borboleta sempre voa, assim como seu pensamento que vai e vem.
-No final, uma hora ela pousa, e quando pousa, ela relaxa.
-Agora você se concentra nesse pensamento
-Enquanto entra em profundo relaxamento.
-O pensamento que faz refletir te leva a relaxar
-E a resolver o que antes parecia impossível,
-Mantendo seus pensamentos alinhados
-E intensificando sua alegria.`,
-      reflection: 'O convite a perguntar "por que devo fazer isso?" antes de agir por impulso ou pressão alheia é sabedoria, mas o poema vai além: pensamento livre de verdade nasce alinhado a Deus, não à opinião de quem passou por perto. Quantas decisões você tomou hoje só porque alguém pediu, sem discernir se vinham do Espírito ou do medo de desagradar? A borboleta do poema pousa quando se cansa de voar sem direção — onde seu pensamento precisa pousar em oração antes de agir de novo?',
+      title: 'A Lei da Semeadura',
+      text: `O sentido da vida é servir com alegria,
+Semeando o amor em cada novo dia.
+É mais fácil amar quem está longe de você,
+Mas é o irmão de perto que te ajuda a crescer.
+
+Saia do imediatismo, a semente tem seu tempo,
+Não lance palavras vãs ao sabor do vento.
+O que sai da sua boca molda a sua motivação,
+Escolha com sabedoria a semente do coração.
+
+Um semeia, outro rega, mas é Deus quem faz brotar,
+Arregace a mente e prepare-se para colher e amar.`,
+      reflection: 'A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
     }
   ],
   'bloco-2': [
+
     {
       id: 'p2-1',
       title: 'Nunca Pare de Lutar',
@@ -973,37 +943,39 @@ O Espírito Divino hoje te segura pela mão.`,
     },
     {
       id: 'lp-5',
-      title: 'Não Brincamos com a Vida',
-      text: `não brincamos com a vida Deus é sério e quer te dar
-sacrifique com Jesus ele vai te ajudar
-Vinde a mim olhe a cruz teu chamado é para fazer
-Ame a Cristo todo dia que o pecado vai vencer
-a distância entre o céu e o inferno vem a ver
-da cabeça ao coração 30 cm quer aprender?
-é tempo de viver o renovo espiritual
-desse jeito você vive e vencerá todo o mal
-Jesus está com você ele vai te ajudar
-eliminar a angústia para sua vida salvar
-Jesus ama a sua vida da morte vem para salvar
-tire a corda do pescoço para sua vida libertar`,
-      reflection: '"Da cabeça ao coração, 30 cm" é a distância brutal entre saber da fé e vivê-la, entre ouvir sobre Jesus e deixar-se salvar por Ele de fato. O poema fala com urgência de quem já viu vidas se perderem por essa distância nunca percorrida. Você conhece a doutrina, mas ainda mede a distância entre a cabeça e o coração na prática diária? Que corda você precisa tirar do pescoço hoje — culpa, vício, desespero — para deixar Jesus libertar de verdade?',
+      title: 'A Distância da Graça',
+      text: `Não brincamos com a vida, Deus é sério ao chamar,
+Sacrifique com Jesus, Ele vem te auxiliar.
+Vinde a Mim, olhe a Cruz, há um mundo a fazer,
+Ame a Cristo todo dia, e o pecado irá vencer.
+
+A distância entre o Céu e o abismo, vem saber:
+Da cabeça ao coração, trinta centímetros a percorrer.
+É tempo de viver o renovo espiritual,
+Pois com Cristo em você, vencerá todo o mal.
+
+Tire o peso do pescoço, deixe a vida florescer,
+Jesus ama a sua história e te faz prevalecer.`,
+      reflection: '"Da cabeça ao coração, 30 cm" é a distância entre saber da fé e vivê-la. O poema foi lapidado para remover a linguagem de rascunho e focar na urgência da conversão. Você conhece a doutrina, mas ela já desceu para o seu coração?',
+      inspiration: 'Senhor, percorre em mim esses 30 centímetros hoje...'
     },
     {
       id: 'lp-6',
-      title: 'Na Tempestade da Vida',
-      text: `Olá, claro que sim, pode pedir o que precisar,
-Lute até o fim, pois quem manda é o Senhor.
-Lembre da conexão que você fez com Ele,
-Neste dia, fale com Ele outra vez, a graça a pedir.
-Jesus está ao seu lado, ajudando a vencer,
-Na batalha da vida, Ele ensina a fazer.
-Com Ele, você resolve qualquer problema,
-Mesmo que pareça um grande dilema.
-Aquilo que parecia impossível de acontecer,
-Você fez a sua parte e Deus veio resolver.
-Na tempestade da vida, o Senhor está contigo,
-Quando o mar está agitado, Ele mesmo é seu abrigo.`,
-      reflection: '"Quando o mar está agitado, Ele mesmo é seu abrigo" retoma a cena da tempestade acalmada, mas aponta para a tempestade de hoje: contas, doença, relação partida. O poema não promete ausência de problema, promete companhia dentro dele. Você tem lembrado da conexão que já fez com Jesus em outros momentos difíceis, ou trata cada crise como se fosse a primeira sem socorro? O que parecia impossível e você fez sua parte, esperando Deus resolver o resto?',
+      title: 'Abrigo na Tempestade',
+      text: `Lute até o fim, pois quem manda é o Senhor,
+Lembre da conexão, sinta o Seu imenso amor.
+Neste dia, fale com Ele, peça a graça outra vez,
+Pois na batalha da vida, Ele vence o que você fez.
+
+Com Ele, você resolve qualquer grande dilema,
+O impossível se curva diante do Teu teorema.
+Faça a sua parte e deixe Deus agir,
+Pois na tempestade da vida, Ele te faz prosseguir.
+
+Quando o mar está agitado e o vento é perigo,
+O Senhor está contigo, Ele mesmo é o teu abrigo.`,
+      reflection: 'O poema foi revisado para manter o tom poético desde o primeiro verso, removendo saudações informais. Foca na soberania de Deus sobre as tormentas da vida. O que parecia impossível e você entregou nas mãos dEle hoje?',
+      inspiration: 'No meio do vento forte, eu ouço o silêncio de Deus dizendo...'
     },
     {
       id: 'lp-7',
@@ -1067,119 +1039,52 @@ E sinta agora a alegria.`,
       reflection: '"A Bíblia sem prática é como um homem forte e cego" resume o risco de acumular conhecimento espiritual sem deixá-lo transformar um único dia real. O Reino de Deus, lembra o poema, não é ritual vazio — é justiça, paz e alegria vividas concretamente. Você tem lido, ouvido pregações, mas ainda vive como se o medo do passado ditasse o presente? Que exercício de fé você pode fazer hoje que exija mais do que ficar sentado ouvindo?',
     },
     {
-      id: 'p2-12-new',
-      title: 'Nunca Pare de Lutar (II)',
-      text: `Alguém me tocou...
-Senti uma força sair,
-Manifestei minha Palavra —
+      id: 'p2-12',
+      title: 'Nunca Pare de Lutar',
+      text: `Alguém Me tocou... senti a força sair,
 A mulher hemorroísa foi curada por não desistir.
-Encontrei-me com Jesus, agora posso me salvar,
-É sair do mundo interno e do pecado se libertar.
-Deus nos escolheu, neste mundo nos colocou,
-Preparou em nossa mãe, que com amor nos cuidou.
-Por amor à humanidade,
-Jesus morreu e ressuscitou.
-Não duvide, pois a Graça
-Se entrega em oração, Ele já manifestou!
-A fonte de salvação, se levante e vá beber.
-Seja firme, meu irmão!
-Éramos escravos do pecado,
-Mas tudo muda com a decisão.
-Renunciar à impiedade,
-Aos desejos deste mundo vão,
-Pois o tempo está chegando — Jesus virá com a separação:
-Das ovelhas e cordeiros,
-Ele vai nos separar.
-Pelo batismo, nós morremos,
-E para o céu que vamos caminhar.
-E se quiser no céu entrar,
-Do pecado há que se arrepender.
-A justiça de Deus não falha — tome cuidado, podes creer!
-Nunca perca a esperança,
-Guarde Jesus no coração.
-Pare de reclamar agora,
-Busque firme a salvação.
-Faça como a mulher que tocou no Salvador,
-Nunca pare de lutar com fé e com fervor.
-É certeza que um dia nós iremos festejar
-Com o Salvador — no céu — todos nós a esperar.
-Não creia nas mentiras, nas promessas enganosas,
-Não se deixe seduzir, viva uma vida amorosa.
-Permaneça firme, irmão, como fez o servo Jó:
-O inimigo levou tudo, mas ele nunca esteve só.
-Deus estava sempre com ele,
-Fortalecendo sua fé.
-Hoje é o dia da graça —
-Levante-se! Fique de pé!
-Não fique aí na tristeza —
-Ela também é tentação.
-Paulo escreveu com firmeza,
-Nos chamando à conversão.
-Nunca perca a esperança,
-Esteja firme em oração.
-O Senhor é tua fortaleza,
-Teu refúgio e salvação.`,
-      reflection: 'A mulher hemorroíssa tocou por não desistir mesmo com a multidão empurrando; Jó permaneceu firme mesmo perdendo tudo. O poema junta essas cenas para dizer que a fé perseverante às vezes é a única arma que resta. Você tem parado de lutar diante de uma dor que se arrasta há anos, achando que já tentou o suficiente? Que fonte de salvação você tem visto de longe sem se levantar para beber dela?',
+Sair do mundo interno e do pecado se libertar,
+Pois o tempo está chegando e Jesus virá nos buscar.
+
+Renunciar à impiedade, aos desejos deste mundo vão,
+Tudo muda na vida quando se toma uma decisão.
+Lembra de Jó? A tristeza também é tentação,
+Mas o Senhor é tua fortaleza, refúgio e salvação.
+
+Pelo batismo morremos, para o Céu ressurgir,
+Seja firme, meu irmão, levante-se para seguir!
+Guarde Jesus no peito, pare de reclamar,
+Pois quem persevera com fé, a vitória irá alcançar.`,
+      reflection: 'Fundimos as narrativas de fé perseverante: da mulher que toca a orla do manto à paciência de Jó. O poema se tornou um chamado à ação e à renúncia dos desejos vãos. Qual "multidão" está te impedindo de tocar em Jesus hoje?',
+      inspiration: 'Eu não desisto da minha cura porque Aquele que me prometeu é fiel...'
     },
     {
       id: 'p2-14-new',
-      title: 'Parei de Ficar Parado (II)',
+      title: 'Parei de Ficar Parado',
       text: `Ah! Parei de ficar parado,
 Com o medo ao meu lado querendo me atrapalhar.
-Parei com toda vergonha,
-O monstro que é medonho queria me controlar.
-Parei com a timidez e o mal que ela me fez,
-Impediu-me de prosperar.
-Eu tive muita vergonha, medo também,
-Timidez, eu repito, nunca mais vou deixar.
-Nunca mais vou permitir que me mantenham aprisionado,
-Pois eu nasci para brilhar.
-E eu fiquei com vergonha e também com a timidez,
-Com medo de me expressar.
-Parei, pois agora eu mudei e aceitei a coragem.
-Ninguém me segura mais, pois parei com a negação,
-Parado não fico, já tomei a decisão,
-Com vergonha não fico mais.
-Parei de olhar para trás, já parei de ficar parado.
-Toda vez que eu te falo, sei que vou continuar.
-Comigo vou levar e com coragem vou falar.
-Parei, agora sim, parei e seguirei no propósito de estudar.
-Parei de ficar na rua achando que vou fazer.
-Parei de esperar que as coisas aconteçam.
-Parei com tudo o que atrapalha, faço o que deve ser feito.
+Parei com toda vergonha, a timidez e o mal que ela me fez,
+Impediu-me de prosperar, mas agora aceitei a coragem.
+
+Parei de esperar que as coisas aconteçam lá fora,
+Faço o que deve ser feito, aqui e agora.
 Pensava que tinha que ser perfeito, parei de me preocupar,
-Pois tomei a decisão de controlar meu coração
-E também parar de fofocar.
-Parei de ficar parado esperando acontecer.
-Vou continuar andando e fazer o que é certo.
-O certo só é certo porque nunca foi errado.
-Pare de ficar parado achando que vai acertar.
-Parei de olhar o que não era para ser meu.
-Sei que o culpado sou eu, mas não vou me preocupar.
-Parei de ficar parado, não vou mais ficar
-Vendo as coisas acontecerem.
-Pois parei para perceber que depende só de mim.
-Quando ficava parado, nada em mim acontecia.
-Esperava que os outros melhorassem minha alegria.
-Percebi que no momento não dependo de ninguém.
-Quero aumentar minha energia, nunca mais vou ficar sem.
-Parei com essa besteira de ficar sentado
-No conforto acomodado achando que vai resolver.
-O presente é importante, e o futuro também é,
-Tudo já aconteceu no passado ou no futuro,
-No presente é que se resolve.
-Pare agora e reflita, pare para analisar.
-Não irei mais pensar que não vou conseguir.
-Agora sou muito mais, chega de ficar parado,
-Entre, deixe de ser acanhado, ficar parado nunca mais.
-Parei de ficar parado, estou entrando em movimento.
-Todas as vezes que eu dizia “não aguento”,
-Eu sei de uma coisa agora: Jesus Cristo manda embora
-De dentro de mim o sofrimento.`,
+O certo só é certo porque nunca foi errado, e o erro é degrau para acertar.
+
+Não fico mais vendo a vida passar da janela,
+Tomei a decisão de controlar meu coração.
+Parado não fico, pois nasci para brilhar,
+E o culpado pelo meu progresso sou eu, em comunhão com o Altar.
+
+Toda vez que eu te falo, sei que vou continuar,
+Com coragem no peito, seguirei a estudar.
+Parei de olhar o que não era para ser meu,
+Jesus manda embora o sofrimento, e o futuro é Seu.`,
       reflection: '"Parei de ficar parado esperando acontecer" é confissão de alguém que descobriu, tarde, que vergonha e medo eram prisões consentidas. O poema não promete facilidade, promete decisão: sair do conforto acomodado que só finge ser paz. O que você continua esperando que aconteça sozinho, sem sua ação, sua oração, seu primeiro passo? Jesus manda embora o sofrimento de dentro — mas você já abriu a porta para Ele agir?',
     }
   ],
   'bloco-3': [
+
     {
       id: 'p3-1',
       title: 'Deus Cura as Feridas',
@@ -2400,17 +2305,21 @@ Na minha mente, vivo em paz com as emoções.`,
     },
     {
       id: 'p5-7',
-      title: 'A Semeadura da Vida (II)',
-      text: `O sentido da vida você tem que encontrar, Sirva com alegria, isso é o verdadeiro amar.
-É mais fácil amar quem está longe de você, Pois quem está perto ajuda a perceber.
-Que a vida não é fácil, é preciso aprender, Depois a caridade vem, e você se alegra.
-Seja forte e corajoso, o Senhor já te salvou, Um semeia, outro rega, para depois colher.
-A lei da semeadura é preciso entender, Saia do imediatismo, com o tempo vai aprender.
-Na prateleira da vida, é preciso escolher, Tente arregaçar a mente para um dia florescer.
-Escolha assertiva a semente que plantou, Pois o que sai da sua boca desperta a motivação.
-Reveja a semente que planta no chão, Escolha com sabedoria a direção do coração.`,
-      reflection: '"Saia do imediatismo". A colheita não é imediata, mas é certa. O que plantamos hoje (palavras, ações) nascerá amanhã. Quais sementes tenho plantado com a minha boca ultimamente? Tenho paciência para esperar o tempo da colheita?',
-      inspiration: 'Eu planto sementes de esperança para...'
+      title: 'A Lei da Semeadura',
+      text: `O sentido da vida é servir com alegria,
+Semeando o amor em cada novo dia.
+É mais fácil amar quem está longe de você,
+Mas é o irmão de perto que te ajuda a crescer.
+
+Saia do imediatismo, a semente tem seu tempo,
+Não lance palavras vãs ao sabor do vento.
+O que sai da sua boca molda a sua motivação,
+Escolha com sabedoria a semente do coração.
+
+Um semeia, outro rega, mas é Deus quem faz brotar,
+Arregace a mente e prepare-se para colher e amar.`,
+      reflection: 'Unificamos as lições sobre a semeadura espiritual. A colheita não é imediata, mas é certa. O poema nos lembra que nossas palavras são sementes: o que você tem plantado na vida de quem convive com você diariamente?',
+      inspiration: 'Hoje eu planto paciência para colher...'
     },
     {
       id: 'p5-8',
@@ -2456,16 +2365,8 @@ Não somos de perder o ânimo para não nos arruinar, Mas mantemos a fé, pois o
       inspiration: 'Eu fui escolhido e anuncio que...'
     },
     {
-      id: 'fe-1',
-      title: 'Nunca perca a esperança',
-      text: `Nunca perca a esperança,
-Guarde Jesus no coração.
-Pare de reclamar agora,
-Busque firme a salvação.`,
-      reflection: 'Quatro versos curtos e diretos: "pare de reclamar agora, busque firme a salvação". O poema não perde tempo com rodeios porque a esperança perdida não se recupera com lamentação, se recupera com decisão. Quanto tempo você tem gastado reclamando de uma situação em vez de buscar ativamente a salvação dela? Guardar Jesus no coração é verbo de ação — o que isso significa concretamente hoje?',
-    },
-    {
       id: 'fe-2',
+
       title: 'Acredite e Confie',
       text: `Acredite em você, mas primeiro creia no Senhor,
 Entregue sua vida a Ele, se sentir alguma dor.
