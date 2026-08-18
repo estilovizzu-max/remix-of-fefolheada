@@ -489,6 +489,7 @@ export default function Editora() {
 
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 pt-4 border-t border-[#c19935]/10">
                                {Object.entries(book.scores).map(([key, value]) => (
+
                                   <div key={key} className="space-y-1">
                                      <div className="flex justify-between items-center text-[9px] uppercase tracking-tighter text-[#f3ecdb]/40">
                                         <span>{key}</span>
@@ -624,10 +625,11 @@ export default function Editora() {
 
                       <Card className="bg-black/20 border-[#c19935]/10 p-6 space-y-4">
                          <h3 className="text-sm font-serif text-[#c19935]">Personagens & Entidades</h3>
-                         <div className="flex flex-wrap gap-2">
-                            {book.editorialMemory.personagens.length > 0 ? book.editorialMemory.personagens.map(p => (
-                               <span key={p} className="text-[10px] px-2 py-1 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{p}</span>
-                            )) : <p className="text-[10px] italic text-[#f3ecdb]/20">Nenhum personagem cadastrado.</p>}
+                          <div className="flex flex-wrap gap-2">
+                             {book.editorialMemory.personagens.length > 0 ? book.editorialMemory.personagens.map(p => (
+                                <span key={p} className="text-[10px] px-2 py-1 bg-[#c19935]/10 rounded border border-[#c19935]/20 text-[#c19935]">{p}</span>
+                             )) : <p className="text-[10px] italic text-[#f3ecdb]/20">Nenhum personagem cadastrado.</p>}
+
                             <Button variant="outline" size="sm" className="h-6 px-2 text-[8px] border-dashed border-[#c19935]/20">+</Button>
                          </div>
                       </Card>
@@ -682,9 +684,10 @@ export default function Editora() {
                             <div className="space-y-1">
                                <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Promessas da Obra</div>
                                <div className="flex flex-wrap gap-1">
-                                  {book.editorialMemory.promessas.map(p => (
-                                     <span key={p} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{p}</span>
-                                  ))}
+                                   {book.editorialMemory.promessas.map(p => (
+                                      <span key={p} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{p}</span>
+                                   ))}
+
                                </div>
                             </div>
                          </div>
