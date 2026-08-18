@@ -614,22 +614,81 @@ E sinta agora a alegria.`,
     {
       id: 'p2-12',
       title: 'Nunca Pare de Lutar',
-      text: `Alguém Me tocou... senti a força sair,
-A mulher hemorroísa foi curada por não desistir.
-Sair do mundo interno e do pecado se libertar,
-Pois o tempo está chegando e Jesus virá nos buscar.
+      text: `Alguém Me tocou...
+senti uma força sair.
 
-Renunciar à impiedade, aos desejos deste mundo vão,
-Tudo muda na vida quando se toma uma decisão.
-Lembra de Jó? A tristeza também é tentação,
-Mas o Senhor é tua fortaleza, refúgio e salvação.
+Minha Palavra se manifestou —
+a mulher de fé não desistiu.
 
-Pelo batismo morremos, para o Céu ressurgir,
-Seja firme, meu irmão, levante-se para seguir!
-Guarde Jesus no peito, pare de reclamar,
-Pois quem persevera com fé, a vitória irá alcançar.`,
-      reflection: 'Fundimos as narrativas de fé perseverante: da mulher que toca a orla do manto à paciência de Jó. O poema se tornou um chamado à ação e à renúncia dos desejos vãos. Qual "multidão" está te impedindo de tocar em Jesus hoje?',
-      inspiration: 'Eu não desisto da minha cura porque Aquele que me prometeu é fiel...'
+Quis Me encontrar,
+rompeu a multidão,
+pois quem sai do mundo interno
+começa a se libertar.
+
+Deus nos escolheu,
+neste mundo nos colocou,
+preparou-nos no ventre materno,
+onde com amor nos guardou.
+
+Por amor à humanidade,
+Jesus morreu e ressuscitou.
+Não duvide da Sua graça,
+ela já se manifestou.
+
+A fonte da salvação está aberta,
+levante-se e vá beber.
+
+Seja firme, meu irmão,
+o pecado você pode vencer.
+
+A decisão muda tudo.
+Renuncie ao que for vão.
+
+Pelo batismo morremos para o mundo,
+para o Céu caminhar.
+
+Se queres a glória eterna,
+do pecado há que se arrepender.
+
+A justiça de Deus não falha.
+Vigie o seu proceder.
+
+Nunca perca a esperança.
+Deixe Jesus em você viver.
+
+Busque firme a salvação,
+sinta a força do Redentor.
+
+Faça como aquela mulher:
+toque com fé e com fervor.
+
+Permaneça firme, irmão,
+como fez o servo Jó.
+
+O inimigo levou tudo,
+mas ele nunca esteve só.
+
+Deus estava sempre com ele,
+fortalecendo sua fé.
+
+Hoje é o dia da graça:
+
+**Levante-se!
+Fique de pé!**
+
+Não fique aí na tristeza.
+Ela também pode te paralisar.
+
+Paulo escreveu com firmeza,
+chamando-nos à conversão.
+
+Nunca perca a esperança.
+Esteja firme em oração.
+
+O Senhor é tua fortaleza,
+teu refúgio e salvação.`,
+      reflection: 'Fundimos as narrativas da mulher hemorroísa e de Jó para criar uma progressão poderosa sobre a perseverança. O poema agora conecta a decisão de tocar a orla de Jesus com a resistência espiritual diante das perdas, culminando em um comando de despertar: "Levante-se! Fique de pé!".',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a força da minha perseverança?'
     },
     {
       id: 'p2-14-new',
