@@ -534,21 +534,43 @@ Jesus ama a sua história e te faz prevalecer.`,
     },
     {
       id: 'lp-6',
-      title: 'Abrigo na Tempestade',
-      text: `Lute até o fim, pois quem manda é o Senhor,
-Lembre da conexão, sinta o Seu imenso amor.
-Neste dia, fale com Ele, peça a graça outra vez,
-Pois na batalha da vida, Ele vence o que você fez.
+      title: 'Na Tempestade da Vida',
+      text: `Lute até o fim,
+pois quem manda é o Senhor.
 
-Com Ele, você resolve qualquer grande dilema,
-O impossível se curva diante do Teu teorema.
-Faça a sua parte e deixe Deus agir,
-Pois na tempestade da vida, Ele te faz prosseguir.
+Lembre da conexão
+que você fez com Ele.
 
-Quando o mar está agitado e o vento é perigo,
-O Senhor está contigo, Ele mesmo é o teu abrigo.`,
-      reflection: 'O poema foi revisado para manter o tom poético desde o primeiro verso, removendo saudações informais. Foca na soberania de Deus sobre as tormentas da vida. O que parecia impossível e você entregou nas mãos dEle hoje?',
-      inspiration: 'No meio do vento forte, eu ouço o silêncio de Deus dizendo...'
+Neste dia,
+fale com Ele outra vez,
+peça a graça
+e permaneça em oração.
+
+Jesus está ao seu lado,
+ajudando você a vencer.
+
+Na batalha da vida,
+Ele ensina o caminho
+e fortalece o coração.
+
+Com Ele,
+você enfrenta qualquer problema,
+mesmo quando parece
+um grande dilema.
+
+Aquilo que parecia impossível
+começa a acontecer.
+
+Você fez a sua parte
+e Deus veio ajudar.
+
+Na tempestade da vida,
+o Senhor está contigo.
+
+Quando o mar está agitado,
+**Ele mesmo é seu abrigo.**`,
+      reflection: 'O poema foi lapidado para focar na soberania de Deus sobre as tormentas, removendo elementos de conversa informal. A imagem central é a de que o próprio Senhor se torna o abrigo no meio do mar agitado, transformando dilemas em vitórias através da conexão espiritual.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre o abrigo na minha tempestade?'
     },
     {
       id: 'lp-7',
