@@ -893,41 +893,79 @@ Nesta noite, Ele espera por ti na oração.`,
     {
       id: 'p1-50-new',
       title: 'A Semeadura da Vida',
-      text: `O sentido da vida você precisa encontrar,
-Sirva com alegria — isso é o verdadeiro amar.
-É mais fácil amar quem está longe de você,
-Pois quem está perto faz você se conhecer.
-A vida não é fácil, é preciso aprender,
-Depois vem a caridade, e com ela, o florescer.
-Seja forte e corajoso, o Senhor já te salvou,
-Um semeia, outro rega — e no tempo certo, colheu.
-A lei da semeadura você deve entender,
-Saia do imediatismo — com paciência, vai crescer.
-Na prateleira da vida, escolhas vão aparecer,
-Arregace a mente e o coração, para um dia florescer.
-Seja assertivo na semente que você lançou,
-Pois o que sai da boca molda quem você se tornou.
-Reveja a semente que lança ao chão,
-E escolha, com sabedoria, a direção do seu coração.`,
-      reflection: '"É mais fácil amar quem está longe de você" desmascara uma caridade de fachada, que se sente generosa à distância mas se irrita com quem divide a mesma casa. A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
+      text: `O sentido da vida
+você precisa encontrar.
+
+Sirva com alegria —
+isso é o verdadeiro amar.
+
+É mais fácil amar
+quem está longe de você,
+
+pois quem está perto
+faz você se conhecer.
+
+A vida não é fácil,
+é preciso aprender.
+
+Depois vem a caridade
+e, com ela, o florescer.
+
+Seja forte e corajoso,
+o Senhor já te salvou.
+
+Um semeia,
+outro rega,
+
+e no tempo certo,
+a semente brotou.
+
+A lei da semeadura
+você deve entender:
+
+saia do imediatismo,
+com paciência vai crescer.
+
+Na prateleira da vida,
+escolhas vão aparecer.
+
+Arregace a mente
+e o coração
+para um dia florescer.
+
+Seja assertivo
+na semente que você lançou,
+
+pois o que sai da boca
+molda quem você se tornou.
+
+Reveja a semente
+que lança ao chão
+
+e escolha, com sabedoria,
+a direção do seu coração.
+
+Lembre-se de Abraão,
+pai da fé verdadeira,
+
+que entregou Isaque
+com confiança inteira.
+
+Deus o provou
+e nele confiou,
+
+e o exemplo de fé
+permanece
+e nos guiou.
+
+Plante fé com o coração,
+mesmo sem ver.
+
+E, no tempo de Deus,
+você verá nascer.`,
+      reflection: 'Fundimos as duas versões para criar o fechamento ideal do Bloco 1. O poema agora conecta a semeadura prática (serviço e convivência) com a semeadura espiritual (a fé de Abraão). A paciência é a chave para o despertar da identidade.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre as sementes que estou plantando?'
     },
-    {
-      id: 'p1-55-new',
-      title: 'A Lei da Semeadura',
-      text: `O sentido da vida é servir com alegria,
-Semeando o amor em cada novo dia.
-É mais fácil amar quem está longe de você,
-Mas é o irmão de perto que te ajuda a crescer.
-
-Saia do imediatismo, a semente tem seu tempo,
-Não lance palavras vãs ao sabor do vento.
-O que sai da sua boca molda a sua motivação,
-Escolha com sabedoria a semente do coração.
-
-Um semeia, outro rega, mas é Deus quem faz brotar,
-Arregace a mente e prepare-se para colher e amar.`,
-      reflection: 'A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
-    }
   ],
   'bloco-2': [
 
@@ -2448,24 +2486,6 @@ Eu deixei lá no passado, resolvi as convicções Que me prenderam antigamente, 
 Na minha mente, vivo em paz com as emoções.`,
       reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã. O que eu vou escrever na página em branco de hoje? Quais "convicções antigas" eu preciso deixar no ano que passou?',
       inspiration: 'Neste livro em branco, eu escrevo...'
-    },
-    {
-      id: 'p5-7',
-      title: 'A Lei da Semeadura',
-      text: `O sentido da vida é servir com alegria,
-Semeando o amor em cada novo dia.
-É mais fácil amar quem está longe de você,
-Mas é o irmão de perto que te ajuda a crescer.
-
-Saia do imediatismo, a semente tem seu tempo,
-Não lance palavras vãs ao sabor do vento.
-O que sai da sua boca molda a sua motivação,
-Escolha com sabedoria a semente do coração.
-
-Um semeia, outro rega, mas é Deus quem faz brotar,
-Arregace a mente e prepare-se para colher e amar.`,
-      reflection: 'Unificamos as lições sobre a semeadura espiritual. A colheita não é imediata, mas é certa. O poema nos lembra que nossas palavras são sementes: o que você tem plantado na vida de quem convive com você diariamente?',
-      inspiration: 'Hoje eu planto paciência para colher...'
     },
     {
       id: 'p5-8',
