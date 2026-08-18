@@ -621,17 +621,40 @@ Equipados com a armadura divina, vencemos com firmeza.`,
     {
       id: 'lp-8',
       title: 'Jornada de Fé',
-      text: `Na jornada avançada, a mente é transformada,
-Deus faz a partir do nada, te prepara para vencer.
-O Reino de Deus não é nem comida nem bebida,
-Aumente a fé em sua vida, pois você não é escravo.
-Deus está sempre ao seu lado, deixe o medo no passado,
-Exercite a fé e vamos crescer.
-A Bíblia sem prática é como um homem forte e cego,
-Deus é bom, e eu não nego a palavra que prego.
-Vivo no dia a dia, pare já com a tristeza,
-E sinta agora a alegria.`,
-      reflection: '"A Bíblia sem prática é como um homem forte e cego" resume o risco de acumular conhecimento espiritual sem deixá-lo transformar um único dia real. O Reino de Deus, lembra o poema, não é ritual vazio — é justiça, paz e alegria vividas concretamente. Você tem lido, ouvido pregações, mas ainda vive como se o medo do passado ditasse o presente? Que exercício de fé você pode fazer hoje que exija mais do que ficar sentado ouvindo?',
+      text: `Na jornada da fé,
+a mente é transformada.
+
+Deus faz a partir do nada,
+prepara você para vencer.
+
+O Reino de Deus
+não é comida nem bebida.
+
+Aumente a fé em sua vida,
+pois você não nasceu para ser escravo.
+
+Deus está sempre ao seu lado.
+
+Deixe o medo no passado.
+
+Exercite a fé
+e vamos crescer.
+
+A Bíblia sem prática
+é como um homem forte e cego:
+
+tem força,
+mas não sabe para onde ir.
+
+Deus é bom,
+e eu não nego a Palavra que prego.
+
+Viva no dia a dia.
+
+Pare com a tristeza
+e sinta agora a alegria.`,
+      reflection: 'Reescrevemos o poema para dar foco à imagem potente do "homem forte e cego". A jornada de fé é apresentada como a transição da escravidão do medo para a liberdade da prática bíblica, onde a alegria é o fruto de uma mente transformada pela ação diária.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a prática da minha fé?'
     },
     {
       id: 'p2-12',
