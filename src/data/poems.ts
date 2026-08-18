@@ -2397,16 +2397,8 @@ Não somos de perder o ânimo para não nos arruinar, Mas mantemos a fé, pois o
       inspiration: 'Eu fui escolhido e anuncio que...'
     },
     {
-      id: 'fe-1',
-      title: 'Nunca perca a esperança',
-      text: `Nunca perca a esperança,
-Guarde Jesus no coração.
-Pare de reclamar agora,
-Busque firme a salvação.`,
-      reflection: 'Quatro versos curtos e diretos: "pare de reclamar agora, busque firme a salvação". O poema não perde tempo com rodeios porque a esperança perdida não se recupera com lamentação, se recupera com decisão. Quanto tempo você tem gastado reclamando de uma situação em vez de buscar ativamente a salvação dela? Guardar Jesus no coração é verbo de ação — o que isso significa concretamente hoje?',
-    },
-    {
       id: 'fe-2',
+
       title: 'Acredite e Confie',
       text: `Acredite em você, mas primeiro creia no Senhor,
 Entregue sua vida a Ele, se sentir alguma dor.
