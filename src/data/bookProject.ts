@@ -102,7 +102,8 @@ export const initialBookData: BookProject = {
       'Priorizar imagens (metáforas) sobre explicações diretas.',
       'Manter a rima orgânica, nunca forçada.',
       'Terminar sempre em esperança e vitória (Selo PCH).',
-      'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.'
+      'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.',
+      'Evitar o "esperar para entender" — escrever a quente (Rhema).'
     ],
     personagens: ['Filho da Luz', 'Jesus Cristo', 'Virgem Maria', 'Jó'],
     promessas: ['Cura interior', 'Restauração familiar', 'Encontro com o Espírito'],
@@ -112,6 +113,7 @@ export const initialBookData: BookProject = {
       { tag: 'LUZ', descricao: 'Identidade do cristão (Filho da Luz).' }
     ]
   },
+
   printSettings: {
     format: '14x21',
     margins: { top: 20, bottom: 20, inner: 25, outer: 20 },
