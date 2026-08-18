@@ -1060,63 +1060,31 @@ Pois quem persevera com fé, a vitória irá alcançar.`,
     },
     {
       id: 'p2-14-new',
-      title: 'Parei de Ficar Parado (II)',
+      title: 'Parei de Ficar Parado',
       text: `Ah! Parei de ficar parado,
 Com o medo ao meu lado querendo me atrapalhar.
-Parei com toda vergonha,
-O monstro que é medonho queria me controlar.
-Parei com a timidez e o mal que ela me fez,
-Impediu-me de prosperar.
-Eu tive muita vergonha, medo também,
-Timidez, eu repito, nunca mais vou deixar.
-Nunca mais vou permitir que me mantenham aprisionado,
-Pois eu nasci para brilhar.
-E eu fiquei com vergonha e também com a timidez,
-Com medo de me expressar.
-Parei, pois agora eu mudei e aceitei a coragem.
-Ninguém me segura mais, pois parei com a negação,
-Parado não fico, já tomei a decisão,
-Com vergonha não fico mais.
-Parei de olhar para trás, já parei de ficar parado.
-Toda vez que eu te falo, sei que vou continuar.
-Comigo vou levar e com coragem vou falar.
-Parei, agora sim, parei e seguirei no propósito de estudar.
-Parei de ficar na rua achando que vou fazer.
-Parei de esperar que as coisas aconteçam.
-Parei com tudo o que atrapalha, faço o que deve ser feito.
+Parei com toda vergonha, a timidez e o mal que ela me fez,
+Impediu-me de prosperar, mas agora aceitei a coragem.
+
+Parei de esperar que as coisas aconteçam lá fora,
+Faço o que deve ser feito, aqui e agora.
 Pensava que tinha que ser perfeito, parei de me preocupar,
-Pois tomei a decisão de controlar meu coração
-E também parar de fofocar.
-Parei de ficar parado esperando acontecer.
-Vou continuar andando e fazer o que é certo.
-O certo só é certo porque nunca foi errado.
-Pare de ficar parado achando que vai acertar.
-Parei de olhar o que não era para ser meu.
-Sei que o culpado sou eu, mas não vou me preocupar.
-Parei de ficar parado, não vou mais ficar
-Vendo as coisas acontecerem.
-Pois parei para perceber que depende só de mim.
-Quando ficava parado, nada em mim acontecia.
-Esperava que os outros melhorassem minha alegria.
-Percebi que no momento não dependo de ninguém.
-Quero aumentar minha energia, nunca mais vou ficar sem.
-Parei com essa besteira de ficar sentado
-No conforto acomodado achando que vai resolver.
-O presente é importante, e o futuro também é,
-Tudo já aconteceu no passado ou no futuro,
-No presente é que se resolve.
-Pare agora e reflita, pare para analisar.
-Não irei mais pensar que não vou conseguir.
-Agora sou muito mais, chega de ficar parado,
-Entre, deixe de ser acanhado, ficar parado nunca mais.
-Parei de ficar parado, estou entrando em movimento.
-Todas as vezes que eu dizia “não aguento”,
-Eu sei de uma coisa agora: Jesus Cristo manda embora
-De dentro de mim o sofrimento.`,
+O certo só é certo porque nunca foi errado, e o erro é degrau para acertar.
+
+Não fico mais vendo a vida passar da janela,
+Tomei a decisão de controlar meu coração.
+Parado não fico, pois nasci para brilhar,
+E o culpado pelo meu progresso sou eu, em comunhão com o Altar.
+
+Toda vez que eu te falo, sei que vou continuar,
+Com coragem no peito, seguirei a estudar.
+Parei de olhar o que não era para ser meu,
+Jesus manda embora o sofrimento, e o futuro é Seu.`,
       reflection: '"Parei de ficar parado esperando acontecer" é confissão de alguém que descobriu, tarde, que vergonha e medo eram prisões consentidas. O poema não promete facilidade, promete decisão: sair do conforto acomodado que só finge ser paz. O que você continua esperando que aconteça sozinho, sem sua ação, sua oração, seu primeiro passo? Jesus manda embora o sofrimento de dentro — mas você já abriu a porta para Ele agir?',
     }
   ],
   'bloco-3': [
+
     {
       id: 'p3-1',
       title: 'Deus Cura as Feridas',
