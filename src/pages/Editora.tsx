@@ -194,7 +194,7 @@ export default function Editora() {
                         onSelect={handleTextSelection}
                         className="flex-1 bg-black/20 rounded border border-[#c19935]/5 focus:border-[#c19935]/20 focus:ring-0 resize-none font-serif text-lg leading-relaxed text-[#f3ecdb]/80 p-6 scrollbar-thin scrollbar-thumb-[#c19935]/20"
                         placeholder="Comece a escrever aqui seu livro..."
-                        defaultValue={selectedChapter.draft}
+                        defaultValue={selectedChapter.content}
                      />
                   </div>
 
@@ -235,11 +235,11 @@ export default function Editora() {
                              <div className="grid grid-cols-1 gap-4">
                                 <div className="p-3 bg-red-500/5 border border-red-500/10 rounded">
                                    <div className="text-[8px] uppercase text-red-500/40 mb-1">V1 — Original</div>
-                                   <p className="text-[10px] text-red-200/40 line-through leading-relaxed">{selectedChapter.draft.substring(0, 100)}...</p>
+                                   <p className="text-[10px] text-red-200/40 line-through leading-relaxed">{selectedChapter.content.substring(0, 100)}...</p>
                                 </div>
                                 <div className="p-3 bg-green-500/5 border border-green-500/10 rounded">
                                    <div className="text-[8px] uppercase text-green-500/40 mb-1">Versão Atual</div>
-                                   <p className="text-[10px] text-green-200/60 leading-relaxed">{selectedChapter.draft.substring(0, 100)}...</p>
+                                   <p className="text-[10px] text-green-200/60 leading-relaxed">{selectedChapter.content.substring(0, 100)}...</p>
                                 </div>
                              </div>
                              <Button size="sm" variant="outline" className="w-full text-[9px] border-[#c19935]/20 text-[#c19935]">Ver Diff Completo</Button>
@@ -673,9 +673,10 @@ export default function Editora() {
                             <div className="space-y-1">
                                <div className="text-[9px] uppercase tracking-widest text-[#c19935]/40">Conceitos Chave</div>
                                <div className="flex flex-wrap gap-1">
-                                  {book.editorialMemory.conceitos.map(c => (
-                                     <span key={c} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{c}</span>
-                                  ))}
+                                   {book.editorialMemory.conceitos.map(c => (
+                                      <span key={c.tag} className="text-[9px] px-1.5 py-0.5 bg-[#c19935]/5 rounded border border-[#c19935]/10 text-[#f3ecdb]/60">{c.tag}</span>
+                                   ))}
+
                                </div>
                             </div>
                             <div className="space-y-1">
