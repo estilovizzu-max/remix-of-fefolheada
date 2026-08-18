@@ -534,21 +534,43 @@ Jesus ama a sua história e te faz prevalecer.`,
     },
     {
       id: 'lp-6',
-      title: 'Abrigo na Tempestade',
-      text: `Lute até o fim, pois quem manda é o Senhor,
-Lembre da conexão, sinta o Seu imenso amor.
-Neste dia, fale com Ele, peça a graça outra vez,
-Pois na batalha da vida, Ele vence o que você fez.
+      title: 'Na Tempestade da Vida',
+      text: `Lute até o fim,
+pois quem manda é o Senhor.
 
-Com Ele, você resolve qualquer grande dilema,
-O impossível se curva diante do Teu teorema.
-Faça a sua parte e deixe Deus agir,
-Pois na tempestade da vida, Ele te faz prosseguir.
+Lembre da conexão
+que você fez com Ele.
 
-Quando o mar está agitado e o vento é perigo,
-O Senhor está contigo, Ele mesmo é o teu abrigo.`,
-      reflection: 'O poema foi revisado para manter o tom poético desde o primeiro verso, removendo saudações informais. Foca na soberania de Deus sobre as tormentas da vida. O que parecia impossível e você entregou nas mãos dEle hoje?',
-      inspiration: 'No meio do vento forte, eu ouço o silêncio de Deus dizendo...'
+Neste dia,
+fale com Ele outra vez,
+peça a graça
+e permaneça em oração.
+
+Jesus está ao seu lado,
+ajudando você a vencer.
+
+Na batalha da vida,
+Ele ensina o caminho
+e fortalece o coração.
+
+Com Ele,
+você enfrenta qualquer problema,
+mesmo quando parece
+um grande dilema.
+
+Aquilo que parecia impossível
+começa a acontecer.
+
+Você fez a sua parte
+e Deus veio ajudar.
+
+Na tempestade da vida,
+o Senhor está contigo.
+
+Quando o mar está agitado,
+**Ele mesmo é seu abrigo.**`,
+      reflection: 'O poema foi lapidado para focar na soberania de Deus sobre as tormentas, removendo elementos de conversa informal. A imagem central é a de que o próprio Senhor se torna o abrigo no meio do mar agitado, transformando dilemas em vitórias através da conexão espiritual.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre o abrigo na minha tempestade?'
     },
     {
       id: 'lp-7',
@@ -599,62 +621,225 @@ Equipados com a armadura divina, vencemos com firmeza.`,
     {
       id: 'lp-8',
       title: 'Jornada de Fé',
-      text: `Na jornada avançada, a mente é transformada,
-Deus faz a partir do nada, te prepara para vencer.
-O Reino de Deus não é nem comida nem bebida,
-Aumente a fé em sua vida, pois você não é escravo.
-Deus está sempre ao seu lado, deixe o medo no passado,
-Exercite a fé e vamos crescer.
-A Bíblia sem prática é como um homem forte e cego,
-Deus é bom, e eu não nego a palavra que prego.
-Vivo no dia a dia, pare já com a tristeza,
-E sinta agora a alegria.`,
-      reflection: '"A Bíblia sem prática é como um homem forte e cego" resume o risco de acumular conhecimento espiritual sem deixá-lo transformar um único dia real. O Reino de Deus, lembra o poema, não é ritual vazio — é justiça, paz e alegria vividas concretamente. Você tem lido, ouvido pregações, mas ainda vive como se o medo do passado ditasse o presente? Que exercício de fé você pode fazer hoje que exija mais do que ficar sentado ouvindo?',
+      text: `Na jornada da fé,
+a mente é transformada.
+
+Deus faz a partir do nada,
+prepara você para vencer.
+
+O Reino de Deus
+não é comida nem bebida.
+
+Aumente a fé em sua vida,
+pois você não nasceu para ser escravo.
+
+Deus está sempre ao seu lado.
+
+Deixe o medo no passado.
+
+Exercite a fé
+e vamos crescer.
+
+A Bíblia sem prática
+é como um homem forte e cego:
+
+tem força,
+mas não sabe para onde ir.
+
+Deus é bom,
+e eu não nego a Palavra que prego.
+
+Viva no dia a dia.
+
+Pare com a tristeza
+e sinta agora a alegria.`,
+      reflection: 'Reescrevemos o poema para dar foco à imagem potente do "homem forte e cego". A jornada de fé é apresentada como a transição da escravidão do medo para a liberdade da prática bíblica, onde a alegria é o fruto de uma mente transformada pela ação diária.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a prática da minha fé?'
     },
     {
       id: 'p2-12',
       title: 'Nunca Pare de Lutar',
-      text: `Alguém Me tocou... senti a força sair,
-A mulher hemorroísa foi curada por não desistir.
-Sair do mundo interno e do pecado se libertar,
-Pois o tempo está chegando e Jesus virá nos buscar.
+      text: `Alguém Me tocou...
+senti uma força sair.
 
-Renunciar à impiedade, aos desejos deste mundo vão,
-Tudo muda na vida quando se toma uma decisão.
-Lembra de Jó? A tristeza também é tentação,
-Mas o Senhor é tua fortaleza, refúgio e salvação.
+Minha Palavra se manifestou —
+a mulher de fé não desistiu.
 
-Pelo batismo morremos, para o Céu ressurgir,
-Seja firme, meu irmão, levante-se para seguir!
-Guarde Jesus no peito, pare de reclamar,
-Pois quem persevera com fé, a vitória irá alcançar.`,
-      reflection: 'Fundimos as narrativas de fé perseverante: da mulher que toca a orla do manto à paciência de Jó. O poema se tornou um chamado à ação e à renúncia dos desejos vãos. Qual "multidão" está te impedindo de tocar em Jesus hoje?',
-      inspiration: 'Eu não desisto da minha cura porque Aquele que me prometeu é fiel...'
+Quis Me encontrar,
+rompeu a multidão,
+pois quem sai do mundo interno
+começa a se libertar.
+
+Deus nos escolheu,
+neste mundo nos colocou,
+preparou-nos no ventre materno,
+onde com amor nos guardou.
+
+Por amor à humanidade,
+Jesus morreu e ressuscitou.
+Não duvide da Sua graça,
+ela já se manifestou.
+
+A fonte da salvação está aberta,
+levante-se e vá beber.
+
+Seja firme, meu irmão,
+o pecado você pode vencer.
+
+A decisão muda tudo.
+Renuncie ao que for vão.
+
+Pelo batismo morremos para o mundo,
+para o Céu caminhar.
+
+Se queres a glória eterna,
+do pecado há que se arrepender.
+
+A justiça de Deus não falha.
+Vigie o seu proceder.
+
+Nunca perca a esperança.
+Deixe Jesus em você viver.
+
+Busque firme a salvação,
+sinta a força do Redentor.
+
+Faça como aquela mulher:
+toque com fé e com fervor.
+
+Permaneça firme, irmão,
+como fez o servo Jó.
+
+O inimigo levou tudo,
+mas ele nunca esteve só.
+
+Deus estava sempre com ele,
+fortalecendo sua fé.
+
+Hoje é o dia da graça:
+
+**Levante-se!
+Fique de pé!**
+
+Não fique aí na tristeza.
+Ela também pode te paralisar.
+
+Paulo escreveu com firmeza,
+chamando-nos à conversão.
+
+Nunca perca a esperança.
+Esteja firme em oração.
+
+O Senhor é tua fortaleza,
+teu refúgio e salvação.`,
+      reflection: 'Fundimos as narrativas da mulher hemorroísa e de Jó para criar uma progressão poderosa sobre a perseverança. O poema agora conecta a decisão de tocar a orla de Jesus com a resistência espiritual diante das perdas, culminando em um comando de despertar: "Levante-se! Fique de pé!".',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a força da minha perseverança?'
     },
     {
       id: 'p2-14-new',
       title: 'Parei de Ficar Parado',
-      text: `Ah! Parei de ficar parado,
-Com o medo ao meu lado querendo me atrapalhar.
-Parei com toda vergonha, a timidez e o mal que ela me fez,
-Impediu-me de prosperar, mas agora aceitei a coragem.
+      text: `Ah!
+Parei de ficar parado.
 
-Parei de esperar que as coisas aconteçam lá fora,
-Faço o que deve ser feito, aqui e agora.
-Pensava que tinha que ser perfeito, parei de me preocupar,
-O certo só é certo porque nunca foi errado, e o erro é degrau para acertar.
+Com o medo ao meu lado,
+querendo me atrapalhar.
 
-Não fico mais vendo a vida passar da janela,
-Tomei a decisão de controlar meu coração.
-Parado não fico, pois nasci para brilhar,
-E o culpado pelo meu progresso sou eu, em comunhão com o Altar.
+Parei com toda vergonha,
+o monstro medonho
+que queria me controlar.
 
-Toda vez que eu te falo, sei que vou continuar,
-Com coragem no peito, seguirei a estudar.
-Parei de olhar o que não era para ser meu,
-Jesus manda embora o sofrimento, e o futuro é Seu.`,
-      reflection: '"Parei de ficar parado esperando acontecer" é confissão de alguém que descobriu, tarde, que vergonha e medo eram prisões consentidas. O poema não promete facilidade, promete decisão: sair do conforto acomodado que só finge ser paz. O que você continua esperando que aconteça sozinho, sem sua ação, sua oração, seu primeiro passo? Jesus manda embora o sofrimento de dentro — mas você já abriu a porta para Ele agir?',
-    }
+Parei com a timidez
+e com o mal que ela me fez.
+
+Impediu-me de prosperar.
+Eu tive muita vergonha,
+medo também.
+
+Mas timidez,
+eu repito:
+
+**nunca mais vou deixar.**
+
+Nunca mais vou permitir
+que me mantenham aprisionado,
+pois eu nasci para brilhar.
+
+Parei de olhar para trás.
+Agora eu mudei.
+
+Aceitei a coragem.
+
+Ninguém me segura mais.
+
+Parei com a negação.
+Parei de ficar parado.
+
+Já tomei a decisão.
+
+Parei de esperar
+que as coisas aconteçam.
+
+Parei de achar
+que precisava ser perfeito.
+
+Parei de me preocupar
+com aquilo que não posso controlar.
+
+Parei de esperar o amanhã.
+
+Agora faço
+o que precisa ser feito.
+
+Parei de olhar
+o que não era para ser meu.
+
+Parei de ficar sentado
+no conforto acomodado,
+achando que tudo iria se resolver.
+
+O presente é importante.
+
+O futuro também.
+
+Mas é no presente
+que a decisão acontece.
+
+Pare agora.
+
+Reflita.
+
+Analise.
+
+Não vou mais pensar
+que não vou conseguir.
+
+Agora sou muito mais.
+
+Chega de ficar parado.
+
+Entre.
+
+Deixe de ser acanhado.
+
+**Ficar parado, nunca mais.**
+
+Parei de ficar parado.
+
+Estou entrando em movimento.
+
+E todas as vezes
+que eu dizia:
+
+“Eu não aguento...”
+
+agora eu sei:
+
+**Jesus Cristo manda embora
+de dentro de mim
+o sofrimento.**`,
+      reflection: 'O termo "Parei" foi elevado a martelo poético, enfatizando a ruptura consciente com a inércia, o perfeccionismo e a timidez. É um testemunho de movimento: a decisão acontece no presente, e a força para prosseguir vem da expulsão do sofrimento por Cristo.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a decisão de sair da inércia?'
+    },
   ],
   'bloco-3': [
 
