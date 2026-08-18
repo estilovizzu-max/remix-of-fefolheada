@@ -77,15 +77,17 @@ export const initialBookData: BookProject = {
   version: '2.0.0',
   status: 'finalizing',
   lastUpdated: new Date().toISOString(),
-  readinessScore: 85,
+  readinessScore: 68,
   scores: {
-    'Arquitetura': 95,
-    'PCH': 92,
-    'Revisão': 78,
-    'Consistência': 85,
-    'Comercial': 80,
-    'Design': 75
+    'Arquitetura': 90,
+    'PCH': 90,
+    'Revisão': 50,
+    'Consistência': 70,
+    'Comercial': 75,
+    'Design': 75,
+    'Métrica/Ritmo': 55
   },
+
   productionProgress: {
     'Arquitetura': 100,
     'Escrita': 90,
@@ -100,7 +102,8 @@ export const initialBookData: BookProject = {
       'Priorizar imagens (metáforas) sobre explicações diretas.',
       'Manter a rima orgânica, nunca forçada.',
       'Terminar sempre em esperança e vitória (Selo PCH).',
-      'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.'
+      'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.',
+      'Evitar o "esperar para entender" — escrever a quente (Rhema).'
     ],
     personagens: ['Filho da Luz', 'Jesus Cristo', 'Virgem Maria', 'Jó'],
     promessas: ['Cura interior', 'Restauração familiar', 'Encontro com o Espírito'],
@@ -110,6 +113,7 @@ export const initialBookData: BookProject = {
       { tag: 'LUZ', descricao: 'Identidade do cristão (Filho da Luz).' }
     ]
   },
+
   printSettings: {
     format: '14x21',
     margins: { top: 20, bottom: 20, inner: 25, outer: 20 },

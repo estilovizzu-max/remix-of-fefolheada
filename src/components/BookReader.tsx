@@ -361,13 +361,14 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
                     {poem.inspiration && (
                       <div>
                         <p className="text-[10px] tracking-[0.3em] text-[hsl(var(--book-gold))] uppercase mb-1.5">
-                          Convite ao poeta
+                          O que eu digo a Deus depois de ler?
                         </p>
                         <p className="text-xs italic font-serif leading-relaxed text-[hsl(var(--paper-muted))]">
                           {poem.inspiration}
                         </p>
                       </div>
                     )}
+
                   </>
                 )}
               </div>

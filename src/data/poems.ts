@@ -309,9 +309,10 @@ Parei com tudo o que atrapalha, faço o que deve ser feito.
 Pensava que tinha que ser perfeito, parei de me preocupar.
 O certo só é certo porque nunca foi errado. Pare de ficar parado achando que vai acertar.
 Parei de olhar o que não era para ser meu. Sei que o culpado sou eu, mas não vou me preocupar.`,
-      reflection: 'A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito". O medo se alimenta da nossa inércia.',
-      inspiration: 'O medo não me para mais, eu avanço para...'
+      reflection: 'O perfeccionismo é o freio da alma. Esperar o momento perfeito é a forma mais sutil de nunca começar. A cura acontece no movimento, não na espera estática. A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito". O medo se alimenta da nossa inércia.',
+      inspiration: 'O que eu diria a Deus sobre os "medos medonhos" que me fizeram parar no passado?'
     },
+
     {
       id: 'p1-18',
       title: 'O Tempo e a Transformação',
