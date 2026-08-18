@@ -1420,7 +1420,7 @@ Que encontramos sabedoria e orientação em Deus, nossa luz na escuridão, para 
     },
     {
       id: 'tr-14',
-      title: 'O Despertar e a Ação',
+      title: 'O Despertar da Graça',
       text: `Não faço o bem que quero, embora saiba ser capaz,
 Com a graça do Espírito, o pecado já não faz paz.
 O Senhor é meu amparo, sustenta meu caminhar,
@@ -2139,7 +2139,7 @@ E hoje veio te tocar.`,
     },
     {
       id: 'p4-25-new',
-      title: 'Oração de Entrega e Adoração',
+      title: 'Caminho de Adoração',
       text: `Na missão de desvendar os mistérios da tua vida,
 Agora vou contemplar, junto com a Virgem Maria.
 Ao Senhor vou entregar minha vida, sem hesitar,
