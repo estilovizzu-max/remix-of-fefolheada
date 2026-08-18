@@ -768,54 +768,24 @@ E escolha, com sabedoria, a direção do seu coração.`,
     },
     {
       id: 'p1-55-new',
-      title: 'Pensamento Libertador (II)',
-      text: `Acredite ou não, saiba que você não é obrigado a nada.
-Não é porque as pessoas te pedem algo
-Que você deve atender sem questionar.
-É necessário aprender a indagar, fazer as perguntas certas.
-Reflexione comigo, ou melhor, apenas pense:
-Por que devo fazer isso? O que ganho ao fazê-lo?
-O que perco se não fizer? Quem se beneficia ou quem é prejudicado?
-Sempre reflita e não tome nenhuma decisão sem ponderar.
-O pensamento liberta.
-Até quando vai permanecer preso sem pensar
-Ou acorrentado ao pensamento sem buscar a liberdade?
-Se alguém é aprisionado, é porque não refletiu sobre a besteira que ia cometer.
-Se tivesse ponderado antes, não estaria encarcerado.
-Até quando o pensamento te manterá aprisionado?
-Estou neste instante te levando a refletir.
-E pense livremente.
-Você se prende ao pensamento de outra pessoa ou a algo que alguém disse
-Ou vive na liberdade do pensamento próprio?
-Mas tome cuidado, o pensamento pode te enganar,
-Te levar a agir de forma que você jamais gostaria.
-No final das contas, você agiu sem pensar
-Nas consequências que o pensamento errado poderia causar.
-Nosso pensamento deve estar bem alinhado
-Com aquilo que desejamos ou pretendemos realizar.
-Devemos pensar com o pensamento
-Daquele que nos deu a capacidade de pensar, Deus.
-Sem o pensamento d’Ele, pensaríamos de forma distorcida,
-E pensando de forma errada, estaremos no erro com pensamentos sombrios.
-Quantas pessoas pensam de maneira equivocada
-E continuam errando porque acreditaram que estavam certas,
-Mas estavam equivocadas.
-Cada vez que você pensa, milhares de neurônios são ativados nesse pensamento.
-E onde está o seu pensamento agora,
-Enquanto lê ou ouve este poema?
-Deixe ir neste momento, quando parece que seu pensamento não para.
-A borboleta sempre voa, assim como seu pensamento que vai e vem.
-No final, uma hora ela pousa, e quando pousa, ela relaxa.
-Agora você se concentra nesse pensamento
-Enquanto entra em profundo relaxamento.
-O pensamento que faz refletir te leva a relaxar
-E a resolver o que antes parecia impossível,
-Mantendo seus pensamentos alinhados
-E intensificando sua alegria.`,
-      reflection: 'O convite a perguntar "por que devo fazer isso?" antes de agir por impulso ou pressão alheia é sabedoria, mas o poema vai além: pensamento livre de verdade nasce alinhado a Deus, não à opinião de quem passou por perto. Quantas decisões você tomou hoje só porque alguém pediu, sem discernir se vinham do Espírito ou do medo de desagradar? A borboleta do poema pousa quando se cansa de voar sem direção — onde seu pensamento precisa pousar em oração antes de agir de novo?',
+      title: 'A Lei da Semeadura',
+      text: `O sentido da vida é servir com alegria,
+Semeando o amor em cada novo dia.
+É mais fácil amar quem está longe de você,
+Mas é o irmão de perto que te ajuda a crescer.
+
+Saia do imediatismo, a semente tem seu tempo,
+Não lance palavras vãs ao sabor do vento.
+O que sai da sua boca molda a sua motivação,
+Escolha com sabedoria a semente do coração.
+
+Um semeia, outro rega, mas é Deus quem faz brotar,
+Arregace a mente e prepare-se para colher e amar.`,
+      reflection: 'A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
     }
   ],
   'bloco-2': [
+
     {
       id: 'p2-1',
       title: 'Nunca Pare de Lutar',
