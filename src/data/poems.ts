@@ -289,16 +289,97 @@ Para que eu possa enxergar Tudo o que preciso mudar.`,
     {
       id: 'p1-16',
       title: 'Pensamento Libertador',
-      text: `Acredite ou não, saiba que você não é obrigado a nada.
-Não é porque as pessoas te pedem algo Que você deve atender sem questionar.
-É necessário aprender a indagar, fazer as perguntas certas.
-Reflexione comigo: Por que devo fazer isso? O pensamento liberta.
-Até quando vai permanecer preso sem pensar? Se alguém é aprisionado, é porque não refletiu.
-O pensamento que faz refletir te leva a relaxar E a resolver o que antes parecia impossível,
-Mantendo seus pensamentos alinhados E intensificando sua alegria.`,
-      reflection: 'Este poema explora a importância do pensamento consciente e crítico, incentivando o leitor a questionar e refletir antes de tomar decisões. Ele aborda como a falta de reflexão pode levar a decisões erradas e como alinhar o pensamento com valores espirituais, como os que vêm de Deus, pode levar à verdadeira liberdade e alegria.',
-      inspiration: 'Como você pode aplicar a prática da reflexão crítica em suas decisões diárias? De que maneiras seus pensamentos podem estar te influenciando a agir contra seus verdadeiros desejos?'
+      text: `Acredite ou não,
+saiba que você não é obrigado a nada.
+
+Não é porque as pessoas te pedem algo
+que você deve atender sem questionar.
+
+É necessário aprender a indagar,
+fazer as perguntas certas.
+
+Por que devo fazer isso?
+O que ganho ao fazê-lo?
+O que perco se não fizer?
+Quem se beneficia
+ou quem é prejudicado?
+
+Sempre reflita
+e não tome nenhuma decisão sem ponderar.
+
+O pensamento liberta.
+
+Até quando vai permanecer preso sem pensar,
+ou acorrentado ao pensamento
+sem buscar a liberdade?
+
+Se alguém é aprisionado,
+é porque não refletiu
+sobre a decisão que ia tomar.
+
+Se tivesse ponderado antes,
+talvez não estivesse encarcerado.
+
+Até quando o pensamento
+te manterá aprisionado?
+
+Você se prende ao pensamento de outra pessoa,
+a algo que alguém disse,
+ou vive na liberdade do pensamento próprio?
+
+Mas tome cuidado:
+o pensamento também pode te enganar,
+te levar a agir de uma forma
+que você jamais gostaria.
+
+No final das contas,
+você pode agir sem pensar
+nas consequências
+que um pensamento errado poderia causar.
+
+Devemos pensar com o pensamento
+Daquele que nos deu a capacidade de pensar:
+Deus.
+
+Sem o pensamento d'Ele,
+podemos pensar de forma distorcida
+e caminhar por pensamentos sombrios.
+
+Quantas pessoas continuam errando
+porque acreditaram que estavam certas,
+mas estavam equivocadas?
+
+Cada vez que você pensa,
+milhares de neurônios são ativados.
+
+E onde está o seu pensamento agora,
+enquanto lê ou ouve este poema?
+
+Deixe-o ir neste momento,
+quando parece que seu pensamento não para.
+
+A borboleta sempre voa,
+assim como seu pensamento
+que vai e vem.
+
+No final, uma hora ela pousa.
+
+E quando pousa,
+ela relaxa.
+
+Agora, concentre-se nesse pensamento.
+
+O pensamento que faz refletir
+te leva a relaxar
+e a resolver o que antes parecia impossível,
+
+mantendo seus pensamentos alinhados
+com aquilo que desejamos ou pretendemos realizar
+e intensificando sua alegria.`,
+      reflection: 'Fundimos as duas versões para criar um caminho lógico: da dúvida inicial e questionamento social, passando pela responsabilidade individual, até o alinhamento com o pensamento de Deus e o relaxamento final. O pensamento liberta quando para de ser reativo e passa a ser contemplativo.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a liberdade do meu pensamento?'
     },
+
     {
       id: 'p1-17',
       title: 'Parei de Ficar Parado',
@@ -614,46 +695,109 @@ e crer.`,
       id: 'rv-3',
       title: 'Reflexões Sobre o Passado e o Futuro',
       text: `Para construir um futuro,
-É preciso olhar o passado,
-Analisar o que foi bom e ruim,
-E deixar o que não presta de lado.
-Use o passado como novo começo,
-Para criar a vida, o amor é o alicerce.
-Numa casa, é preciso ter materiais;
-Para um sonho, fé e esperança são vitais.
-Se eu comprar sua casa e você for pra rua,
-Não me culpe por tê-la adquirida à sua.
-Culpe-se por tê-la vendido tão fácil assim —
-Desistir nunca foi um bom fim.
-Sabia que a lua se afasta da Terra a cada ano?
-Quatro centímetros, no tempo, é um engano.
-Mas nós, seres humanos, levamos segundos
-Para nos afastar de Deus e dos assuntos profundos.
-A aparência esconde o que dentro há,
-E nem toda beleza revela quem será.
-Algumas personalidades nos trazem alegria,
-Enquanto o invejoso duvida da tua valentia.
+é preciso olhar o passado,
+
+analisar o que foi bom e ruim
+e deixar o que não presta de lado.
+
+Use o passado como novo começo.
+Para construir a vida,
+o amor é o alicerce.
+
+Numa casa,
+é preciso ter materiais.
+
+Para um sonho,
+fé e esperança são vitais.
+
+Se eu comprar sua casa
+e você for para a rua,
+não me culpe por tê-la adquirido.
+
+Pergunte antes
+por que você a vendeu tão fácil assim.
+
+Desistir
+nunca foi um bom fim.
+
+Sabia que a Lua se afasta da Terra
+a cada ano?
+
+Quatro centímetros,
+no tempo, parecem um engano.
+
+Mas nós, seres humanos,
+levamos segundos
+para nos afastar de Deus
+e das coisas profundas.
+
+A aparência esconde
+o que existe por dentro.
+
+E nem toda beleza
+revela quem alguém será.
+
+Algumas personalidades
+nos trazem alegria,
+
+enquanto o invejoso
+duvida da tua valentia.
+
 Quando você conquista o impossível,
-Ele corre e pergunta, todo acessível:
-— Como conseguiu? Me ensina, por favor?
-E você responde com fé e amor:
-“Ainda dá tempo pra perdoar e amar,
-Ser amado, buscar, lutar, conquistar.
-Tudo é um caminho que precisa ser trilhado,
-Mesmo quando o passado foi amargurado.”
-Não diga mentiras, pois quando se mente,
-Toda verdade se torna perda de tempo, e ninguém sente.
-Passando pelas pessoas, cego é quem não vê —
-Que teu brilho incomoda e só te faz crescer.
-Dizem que a guerra destrói tudo por inteiro,
-Mas ignoram o fim da Terra, lento e verdadeiro.
-Já ouviu que "os humilhados serão exaltados"?
-Ou que "o mundo dá voltas", em ciclos rodados?
-E se eu te disser que o mundo gira em torno de uma estrela,
-Você acreditaria, ou pensaria que é uma novela?
-Mas um soldado de verdade, sem armadura nem espada,
-É aquele que enfrenta a mente e sua cilada.`,
-      reflection: '"Culpe-se por tê-la vendido tão fácil assim" atinge quem troca conquistas duradouras por alívios imediatos e depois reclama do resultado. O poema mistura ironia e sabedoria bíblica para lembrar que humilhação e exaltação seguem uma lógica que não é a do mundo. Você tem vendido barato aquilo que Deus construiu com paciência em você — relação, vocação, integridade? Que mentira você repete a si mesmo para justificar a desistência de hoje?',
+ele corre e pergunta:
+
+— Como conseguiu?
+Me ensina, por favor?
+
+E você responde
+com fé e amor:
+
+“Ainda dá tempo
+de perdoar e amar,
+
+ser amado,
+buscar, lutar, conquistar.
+
+Tudo é um caminho
+que precisa ser trilhado,
+
+mesmo quando
+o passado foi amargurado.”
+
+Não diga mentiras,
+pois quando se mente,
+toda verdade se torna
+perda de tempo.
+
+Passando pelas pessoas,
+cego é quem não vê
+que teu brilho incomoda
+e só te faz crescer.
+
+Dizem que a guerra
+destrói tudo por inteiro,
+
+mas ignoram
+o fim da Terra,
+lento e verdadeiro.
+
+E se eu te disser
+que o mundo gira
+em torno de uma estrela?
+
+Você acreditaria
+ou pensaria
+que é uma novela?
+
+Mas um soldado de verdade,
+sem armadura nem espada,
+é aquele que enfrenta
+a própria mente
+e sua cilada.`,
+      reflection: 'Organizamos o jardim de imagens deste poema: da estabilidade da casa à astronomia da Lua, terminando na batalha espiritual da mente. O soldado de verdade não luta contra o mundo, mas contra as ciladas do seu próprio pensamento.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre as batalhas da minha própria mente?'
+    },
+
     },
     {
       id: 'rv-7',
