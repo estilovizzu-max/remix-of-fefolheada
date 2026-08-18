@@ -250,7 +250,7 @@ Aquilo que veio para destruir é uma ponte para te conectar. Não o rejeite, poi
     {
       id: 'p1-13',
       title: 'O Poder da Mente e do Amor Próprio',
-      text: `Quem pensa, enriquece, Pois o Senhor não esquece Daquele a quem prometeu: "Se creres, farás obras maiores do que Eu."
+      text: `Quem crê, se fortalece, Pois o Senhor não esquece Daquele a quem prometeu: "Se creres, farás obras maiores do que Eu."
 Não saia da Sua presença, Aumente sua fé, sua crença Naquele que criou e te formou — Teu Senhor, teu Deus, teu Salvador.
 Tua mente é poderosa, Mas se mal direcionar, Pensarás que não consegue, E hoje não irá triunfar.
 Viva agora, no presente, Sinta o sopro do ar, Esse sopro é divino, é o Senhor A te ensinar a despertar.
@@ -2742,7 +2742,8 @@ Escreva dois versos simples. Não apague. Não risque. Deixe nascer.`,
       title: 'Oficina do Poeta: Tradução Simultânea',
       text: `A pregação fala à razão (teologia). A poesia fala à emoção (imagem). O seu trabalho é ser o tradutor.
 Enquanto o pregador explica, você traduz para imagens na mesma hora.
-Se ele diz: "Vocês precisam ter fé nas dificuldades", eu escrevo: "Na tempestade da vida, Ele é meu abrigo".
+Se ele diz: "Vocês precisam ter fé nas dificuldades", eu escrevo: "No deserto da alma, o Senhor é manancial".
+
 Não explique, mostre! Existe uma regra que diz: "Show, don't tell".
 Dificuldade = Tempestade, Deserto. Proteção = Abrigo, Escudo.
 Pecado = Sujeira, Lama. Graça = Chuva, Fogo, Óleo.
