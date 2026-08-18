@@ -49,242 +49,7 @@ Deixe as prisões para trás, venha agora Me encontrar.
 Sou teu Deus, estou contigo, sempre pronto a te guiar,
 Derramando a Minha graça sobre quem soube confiar.`,
       reflection: 'Muitas vezes, sabemos que temos uma luz, mas algo a impede de brilhar: medo, vergonha ou feridas do passado. Deus hoje te convida a resolver o que te impede. O que está cobrindo a minha luz hoje? Estou disposto a parar tudo agora apenas para escutar o amor de Deus?',
-      inspiration: 'Senhor, eu retiro a barreira do...'
-    },
-    {
-      id: 'p1-2',
-      title: 'Filho da Luz (O Discípulo)',
-      text: `Quando cheguei em Tua casa, os meus pés não Me lavou;
-Mas esta mulher com lágrimas, com seus cabelos enxugou.
-Para ser o Meu discípulo, Minha voz deves escutar,
-E colocar em prática tudo o que Eu vim te ensinar.
-
-Para o teu crescimento, ouça o que acabo de dizer:
-Concentra-te em Minha voz, se queres realmente aprender.
-A luz do Meu Espírito acendeu para te guiar,
-Um cego não guia outro — está na hora de brilhar.
-
-Veja agora com clareza o que mostro para você,
-Para ser um verdadeiro discípulo, escute o que vou dizer:
-O Espírito te conduz para onde deves ir,
-Entregue-se ao caminho, levante-se para seguir.
-
-Reconheça o teu pecado, o Senhor quer perdoar;
-Faça como aquela mulher, coloque-se a adorar.
-Aceite o Senhor Jesus, Ele veio te salvar,
-Sua misericórdia é graça pura para te dar.
-
-Receba a bênção nesta noite, converta-se a Jesus;
-O nosso grupo de oração chama-se "Filho da Luz".
-Sua luz resplandeceu, Cristo veio te acender,
-Sua luz está brilhando, já parou para perceber?
-
-"O que queres que Eu te faça?", o Senhor está perguntando...
-— "Que eu veja, meu Senhor!"
-Sinta: Ele está te curando.
-Sua misericórdia reacende a tua luz,
-O Senhor cura a cegueira — olhe agora para a Cruz.`,
-      reflection: 'A mulher pecadora lavou os pés de Jesus com lágrimas porque reconheceu quem Ele era. O discipulado começa na humildade e na escuta. Tenho sido um discípulo que escuta ou apenas um ouvinte distraído? Se Jesus me perguntasse agora "O que queres que eu te faça?", qual seria minha resposta sincera?',
-      inspiration: 'Mestre, lava meus olhos para que eu veja...'
-    },
-    {
-      id: 'p1-3',
-      title: 'Há um Brilho Escondido',
-      text: `Há um brilho escondido,
-Eu te digo: retiro o véu, meu amigo,
-Abro o céu de luz interior.
-Há um trono iluminado,
-Banhado de ouro, de amor.
-Um tesouro na mente,
-No coração a gente sente —
-Mas não fica permanente...
-Encontra o remédio da dor.
-Através desta poesia,
-Sinta a paz e a alegria
-Que vêm de Jesus, Salvador.`,
-      reflection: 'Existe um "trono iluminado" dentro de você, onde Deus habita. Às vezes, a dor do mundo coloca um véu sobre esse brilho. Qual é o "tesouro" interno que eu tenho esquecido que possuo? Como posso tornar essa sensação de paz mais "permanente" no meu dia a dia?',
-      inspiration: 'Dentro de mim habita um tesouro que...'
-    },
-    {
-      id: 'p1-4',
-      title: 'Do Escondido ao Palco',
-      text: `Eu sou luz. Nasci para brilhar.
-Mesmo quando a vida tenta me apagar,
-Quando as dores querem me esconder,
-Sei que meu destino é resplandecer.
-Muitos desistem sem saber, que nasceram também para acender — para ser farol, estrela, chama, mesmo quando a escuridão reclama.
-Ninguém apaga a luz interior, se você não entrega o interruptor.
-Diga comigo com convicção: “Eu sou luz, sou direção.”
-Fui chamado a brilhar nas trevas, Jesus me tirou das amarras e regras.
-Aceitei viver com decisão, e nada abaixo disso é minha missão.
-Neste dia, Deus aumenta minha energia, para que minha luz não se apague na correria.
-Existe um meio entre você e Deus, um processo que firma os passos teus.
-A luz é Cristo, e vive em mim, desde o ventre, desde o princípio, sim!
-Ninguém pode apagar essa centelha sagrada, que em meu interior foi despertada.
-Na fecundação, brilhei pela primeira vez, no ventre da minha mãe, como quem renasce outra vez.
-Ela deixou de ser apenas mulher, e se tornou luz também, por minha fé.
-Com minha chegada, tudo mudou, no lar, minha luz tudo tocou.
-Fiquei escondido na vergonha e solidão, mas a luz nunca se foi do meu coração.
-Até que um dia, alguém mostrou o processo, eu abracei a coragem, superei o regresso.
-E aqui estou, aceso, no palco da vida, com a luz de Cristo, alma renascida.
-Nada nem ninguém pode me apagar, porque foi Deus quem veio me acender.
-Minha missão é brilhar e iluminar, e assim, com fé, eu vou viver.`,
-      reflection: '"Ninguém apaga a luz interior se você não entrega o interruptor". Esta é uma verdade poderosa sobre autorresponsabilidade. Para quem eu entreguei o interruptor da minha vida? (Para a opinião dos outros? Para o medo?) Estou pronto para subir no "palco da vida" e assumir meu lugar?',
-      inspiration: 'Eu pego de volta o interruptor e decido...'
-    },
-    {
-      id: 'p1-5',
-      title: 'Despertar para a Luz',
-      text: `Desperta agora, meu amigo, ouve a voz do Senhor.
-Levanta-te dentre os mortos, que Cristo já te iluminou.
-Ele te chama para a luz, para a ação e o amor,
-Pois a vontade d'Ele é que conheças o Senhor.
-Você é filho da luz, das trevas pode sair;
-Aceite a graça divina, deixe-se conduzir.
-O Espírito te guia, mostrando o caminho a trilhar;
-Siga suas orientações, não deixe de escutar.
-Seja esperto e fique perto do Senhor,
-Faça como Bartimeu, grite com fé e fervor:
-"Jesus, tem piedade, transforma meu coração!"
-Então tua vida, certamente, será cheia de alegria,
-Se de noite ou de dia vigiar tua conduta com sabedoria.
-Aceite a mudança, ouça o chamado do Senhor;
-Ele está sempre ao teu lado, curando toda dor.
-Levanta agora, meu amigo, sai dessa prostração,
-Anime-se, e alegre o coração!
-Abandone a vida antiga, receba a vida nova que chegou,
-Deixe a escuridão pra trás — viva o brilho que o Senhor revelou.
-Toma da água viva, com alegria de viver,
-Meditando na Palavra, que é luz para o teu ser.
-No passado, éramos trevas, mas agora somos luz;
-O fruto dessa luz é bondade, justiça e verdade,
-Pois Cristo é a Verdade, que nos liberta e conduz.`,
-      reflection: 'Bartimeu não ficou calado quando ouviu que Jesus passava. Ele gritou acima da multidão. A prostração nos deixa mudos, mas a fé nos devolve a voz. Qual área da minha vida está "morta" ou "prostrada" e precisa despertar? Tenho coragem de gritar por socorro espiritual hoje?',
-      inspiration: 'Eu me levanto do chão e grito...'
-    },
-    {
-      id: 'p1-6',
-      title: 'Seu Talento',
-      text: `Cada um recebe um dom Para a Igreja edificar.
-Vou mostrar-te o caminho, Para que possas caminhar.
-Quanto tempo ainda tens? O Senhor quer te ensinar.
-O amor é paciente, Para e vem analisar.
-Como o bronze que ressoa, Ou o címbalo a tocar,
-Sem amor, dons são vazios, Nada podem transformar.
-Ainda que fales línguas, Ou profetizes sem cessar,
-Se não houver caridade, Nada disso há de contar.
-Espera no Senhor, Ele tudo vai te dar.
-Com fé amadurecida, Segue firme a caminhar.
-Acolhe os teus irmãos, A quem tanto precisar.
-Persevera todo dia, Na promessa a se firmar.`,
-      reflection: 'Talento sem amor é barulho ("bronze que ressoa"). O dom não é para minha vaidade, é para edificar o outro. Qual talento Deus me deu que eu tenho guardado? Faço as coisas com amor ou apenas por obrigação?',
-      inspiration: 'Meu talento é um presente para...'
-    },
-    {
-      id: 'p1-7',
-      title: 'O Milagre da Escrita',
-      text: `Tantos passam sem perceber, mas ao escrever, o milagre começa a florescer.
-No silêncio da mente, um pensamento se eleva, e no ato de escrever, algo novo se revela.
-O presente se torna eternidade, e as palavras, ao nascer, ganham liberdade.
-Sinta, cada frase que brota do coração, é a criação de um novo caminho, uma nova canção.
-Do pensamento ao sentimento, surge a emoção que transforma o momento.
-Ao escrever, você vê mais claro, o milagre da escrita, tão simples e tão raro.`,
-      reflection: 'A escrita é uma forma de materializar a alma. Quando escrevemos, tiramos o caos da mente e damos forma ao que Deus está falando.',
-      inspiration: 'Hoje minhas palavras ganham asas e...'
-    },
-    {
-      id: 'p1-8',
-      title: 'Chamado à Santificação',
-      text: `Hoje é o dia da graça se revelar, meu Senhor me chama para me santificar.
-Sou escolhido para falar, anunciar o evangelho, e em Cristo, adorar.
-Teu nome exalto com devoção, glorifico Teu Reino, e com fé, sigo a Tua direção.
-O Cordeiro está no trono, em Seu brilho divino, e eu sou chamado para seguir Seu caminho.
-Sou separado para adorar, para morar junto de Cristo, e Sua luz irradiar.
-O pecado não tem mais domínio sobre mim, pois em Jesus, encontrei meu verdadeiro fim.`,
-      reflection: 'Santificar-se significa "separar-se". Não é ser perfeito, é ser reservado para Deus. O pecado perde o domínio quando entendemos nosso propósito.',
-      inspiration: 'Eu me separo do mundo para...'
-    },
-    {
-      id: 'p1-9',
-      title: 'As Vozes que Ouvimos',
-      text: `Quais são as vozes que falam em tua mente? Qual delas te chama e qual te faz desistir?
-São muitas, mas há uma que se destaca, uma voz suave, que traz paz e esperança.
-Ela te envolve com suavidade, fazendo com que te sintas em serenidade.
-O medo vai embora, e com ele a timidez, pois essa voz traz calma, e alivia a sua rigidez.
-Sinta o vento leve e a respiração tranquila, deixe a voz que te chama acalmar tua agitação.`,
-      reflection: 'O inimigo grita, acusa e agita. O Espírito Santo sussurra, acalma e encoraja. Qual voz você tem alimentado?',
-      inspiration: 'Eu calo o barulho para ouvir...'
-    },
-    {
-      id: 'p1-10',
-      title: 'Chamado e Luz',
-      text: `Tens um chamado, um caminho a seguir. Perdoa nesta jornada, o Espírito está aqui.
-Faz de ti um modelo vivo, a paz que vem do amor, em resposta à oração, dons Deus derramou.
-Eu consolo tua vida, sê luz em meio à dor. Teu nome tem história, consagra o teu amor.
-Abre agora teus ouvidos, tua boca para falar. O Espírito Divino está aqui para te escutar.`,
-      reflection: '"Teu nome tem história". Deus não te chamou por acaso, Ele conhece cada capítulo da sua vida e quer usar sua história como luz.',
-      inspiration: 'Minha história é um testemunho de...'
-    },
-    {
-      id: 'p1-11',
-      title: 'Deixe Marcas de Santidade',
-      text: `Deixe marcas de santidade, o céu é seu lugar. O relógio não para, pare para observar.
-Qual é o seu legado? O que irá deixar? Faça como Maria, pare para escutar.
-O Senhor está chamando, não há por que temer. Ansiedade e tristeza, Ele pode dissolver.
-Qual tem sido a escolha? Onde você está? Ouvindo a voz de Cristo, sua casa irá mudar.`,
-      reflection: 'Não levaremos bens materiais, mas levaremos o amor que demos. Nossa casa muda quando nossa audição espiritual muda.',
-      inspiration: 'Eu escolho deixar marcas de...'
-    },
-    {
-      id: 'p1-12',
-      title: 'Fluindo com Fé: Identidade',
-      text: `Resgate sua identidade, deixe fluir no interior. Não desista de si mesmo; continue e faça com amor.
-Descanse bem e depois prossiga; a vida é como uma semente que você terá que plantar.
-Acredite que irá colher o fruto; esforce-se para se alimentar do fruto que terá que colher.
-Existe o tempo certo para a semente germinar; Deus lhe deu a vida para cuidar.
-Sua palavra poderosa completará em você; Deus não faz nada pela metade, Ele te ajudará.
-Aquilo que veio para destruir é uma ponte para te conectar. Não o rejeite, pois o Senhor veio para te curar.`,
-      reflection: '"Aquilo que veio para destruir é uma ponte para te conectar". Deus tem o poder de transformar a maior crise em um altar de adoração.',
-      inspiration: 'Minha dor se torna ponte quando...'
-    },
-    {
-      id: 'p1-13',
-      title: 'O Poder da Mente e do Amor Próprio',
-      text: `Quem crê, se fortalece, Pois o Senhor não esquece Daquele a quem prometeu: "Se creres, farás obras maiores do que Eu."
-Não saia da Sua presença, Aumente sua fé, sua crença Naquele que criou e te formou — Teu Senhor, teu Deus, teu Salvador.
-Tua mente é poderosa, Mas se mal direcionar, Pensarás que não consegue, E hoje não irá triunfar.
-Viva agora, no presente, Sinta o sopro do ar, Esse sopro é divino, é o Senhor A te ensinar a despertar.
-O ser que habita em ti, Só floresce com amor. Depende do teu cuidado, Do reconhecimento do teu valor.
-Deus é contigo, sempre será, Essa verdade não se apagará. Mas para viver em paz, com sucesso, Uma coisa só te peço:
-Nunca se esqueça de você, Pois é o amor próprio que te faz florescer.`,
-      reflection: 'Amar ao próximo como a si mesmo. Se você não se ama, não reconhece o valor da obra que Deus criou: você. O cuidado com a mente é uma forma de honrar ao Criador.',
-      inspiration: 'Eu me amo porque Deus...'
-    },
-    {
-      id: 'p1-14',
-      title: 'Volte Para Minha Presença',
-      text: `Antes que fosse gerado, já era amado. Eu te conhecia, e te consagrei.
-Volte para a Minha presença, te espero com ardor. Volte o teu coração — Sou teu Deus e Salvador.
-Não se prenda mais ao erro, tira a dúvida do coração. Se volte para Mim, na presença, tome agora a decisão.
-Eu sei das tuas fraquezas, também das limitações. Estou sempre preparado para te libertar das prisões.
-O centro da tua vida, o sentido e a razão, não se perca com pessoas que te levam à depressão.
-Sou o Deus da misericórdia, e também da compaixão. Mais uma vez Eu te falo: Saia já desta prisão!`,
-      reflection: 'Deus não olha para o seu erro, Ele olha para a sua volta. Ele te amou antes mesmo de você existir. Saia da prisão do passado.',
-      inspiration: 'Eu volto para casa e deixo para trás...'
-    },
-    {
-      id: 'p1-15',
-      title: 'Pura Graça',
-      text: `Jesus, fonte de toda graça, Vivo Sua paz que me abraça, Que se derrama sobre mim.
-Sua misericórdia sem fim, Todos os dias me alcança, Trazendo luz e esperança.
-Recarregando minha energia Com o Teu Espírito, dia após dia.
-Na minha alma, ouço o Teu chamado, Que vem suave, ao meu lado,
-Ajudando-me a me entender, E meu coração, a aquecer.
-Após essa expressão, Eu abro meu coração, E o Senhor vem transformar,
-Minhas emoções equilibrar, Minha visão aprimorar,
-Para que eu possa enxergar Tudo o que preciso mudar.`,
-      reflection: 'Este poema reflete a profunda conexão entre o eu lírico e Jesus, destacando a misericórdia e a paz que Ele traz diariamente. A transformação interna, guiada pela graça divina, é o tema central, onde a entrega a Jesus leva ao equilíbrio emocional e à clareza de visão para mudanças necessárias na vida.',
-      inspiration: 'Como você percebe a presença da misericórdia divina em sua vida? Em quais áreas você sente necessidade de transformação e equilíbrio?'
+      inspiration: 'O que eu digo a Deus depois de ler sobre a minha luz?'
     },
     {
       id: 'p1-16',
@@ -379,426 +144,47 @@ e intensificando sua alegria.`,
       reflection: 'Fundimos as duas versões para criar um caminho lógico: da dúvida inicial e questionamento social, passando pela responsabilidade individual, até o alinhamento com o pensamento de Deus e o relaxamento final. O pensamento liberta quando para de ser reativo e passa a ser contemplativo.',
       inspiration: 'O que eu digo a Deus depois de ler sobre a liberdade do meu pensamento?'
     },
-
     {
-      id: 'p1-17',
-      title: 'Parei de Ficar Parado',
-      text: `Ah! Parei de ficar parado, Com o medo ao meu lado querendo me atrapalhar.
-Parei com toda vergonha, O monstro que é medonho queria me controlar.
-Parei de ficar na rua achando que vou fazer. Parei de esperar que as coisas aconteçam.
-Parei com tudo o que atrapalha, faço o que deve ser feito.
-Pensava que tinha que ser perfeito, parei de me preocupar.
-O certo só é certo porque nunca foi errado. Pare de ficar parado achando que vai acertar.
-Parei de olhar o que não era para ser meu. Sei que o culpado sou eu, mas não vou me preocupar.`,
-      reflection: 'O perfeccionismo é o freio da alma. Esperar o momento perfeito é a forma mais sutil de nunca começar. A cura acontece no movimento, não na espera estática. A perfeição é inimiga da ação. "Parei de achar que tinha que ser perfeito". O medo se alimenta da nossa inércia.',
-      inspiration: 'O que eu diria a Deus sobre os "medos medonhos" que me fizeram parar no passado?'
-    },
-
-    {
-      id: 'p1-18',
-      title: 'O Tempo e a Transformação',
-      text: `O tempo passa como o vento a soprar,
-Ele não espera, não pare de avançar.
-Toda noite, o Senhor te entrega um novo amanhecer,
-Vinte e quatro horas para você renascer.
-
-O tempo de Deus é perfeito, podes acreditar,
-Ele te chama agora: "Vem, vamos juntos caminhar!"
-O tempo é o mensageiro que traz a você
-Alegria e clareza para o mundo perceber.
-
-São apenas horas que o Pai te concede,
-Para que a mudança em ti se apresse.
-Não fique parado, pois a hora vai chegar —
-O que restará quando o tempo se findar?`,
-      reflection: 'O tempo é um recurso não renovável que Deus nos dá diariamente. Como gastei minhas últimas 24 horas? Construindo ou destruindo? Se o tempo "chegasse" hoje, o que eu apresentaria a Deus?',
-      inspiration: 'Meu tempo é agora e eu o dedico a...'
-    },
-    {
-      id: 'p1-19',
-      title: 'Imagem Espelhada',
-      text: `Quando se olha no espelho, o que é que você vê? Como se enxerga agora e o que você vai fazer?
-Certamente já parou tantas vezes, pra pensar, Pra resolver o seu problema e disse que não dá.
-Vamos fechar as portas daquela sua prisão, Que estava suja e imunda dentro do seu coração.
-Rancor, ódio e medo, tudo isso vai mudar, Se teu coração se abrir e a prática colocar.
-Lembre daquele espelho que você tanto olhou, Enxergando sua imagem e muito se recordou.
-Como é bom perceber que não é outra pessoa, Não se entrega facilmente, luta com unhas e dentes.`,
-      reflection: 'O espelho reflete o corpo, mas Deus vê o coração. A "prisão" interna (rancor, ódio) distorce nossa imagem. Eu gosto de quem eu vejo no espelho ou vejo apenas meus erros? Qual porta da "prisão interna" eu fecho hoje?',
-      inspiration: 'No espelho da graça, eu vejo um filho que...'
-    },
-    {
-      id: 'p1-20',
-      title: 'O Chamado de Mateus',
-      text: `Depois que Jesus saiu e viu alguém no balcão, O nome dele era Mateus, também chamado de ladrão.
-Ele estava no posto de arrecadação, Jesus parou, fitou os olhos e chamou sua atenção.
-"Segue-me agora", e Levi se levantou, Ele não pediu tempo, logo o acompanhou.
-"Não os que têm saúde precisam de doutor, Mas sim os pecadores", respondeu o meu Senhor.`,
-      reflection: 'Jesus chamou Mateus no seu local de trabalho, no meio de sua rotina e de seus erros. Sinto que preciso estar "pronto" para ser chamado, ou aceito que Jesus me chama como estou? Qual é o meu "balcão" que preciso deixar para seguir a Jesus?',
-      inspiration: 'Eu me levanto do meu balcão e...'
-    },
-    {
-      id: 'p1-21',
-      title: 'Transformação e Chamado',
-      text: `Eis que faço novas todas as coisas, nosso canto, nossa vida precisa se transformar em canção.
-Deus transforma em meu coração, temos um deserto a atravessar.
-Jesus está vivo em Sua plena glória, com o canto da vitória, Sua graça neste dia ecoa, nos tirando desta vida velha, uma vida extraordinária Ele nos dá.
-Retoma teu caminho, faz melhor do que já fizeste, volta para teu Senhor, faz novo outra vez.
-Deus está chamando agora, é hora de aceitar, hoje é um novo dia, minha história vai mudar.`,
-      reflection: '"Faz melhor do que já fizeste". O chamado de Deus é sempre para a excelência e para o novo. Estou vivendo a vida extraordinária que Ele preparou ou a vida velha? O que eu posso fazer "melhor do que já fiz" para Deus hoje?',
-      inspiration: 'Hoje é um novo dia e eu decido...'
-    },
-    {
-      id: 'cm-1',
-      title: 'Chamado do Senhor',
-      text: `Ele está confirmando,
-Derramando o Seu amor.
-Escute bem esta voz,
-Pois quem fala é o Senhor.
-Entregue-se a Ele,
-Todo dia, sem temer.
-Ouça a voz que te chama,
-Sinta Deus em teu viver.
-O medo tenta impedir,
-Mas não pode te parar.
-O fogo segue ardendo,
-E jamais deixará de queimar.
-A presença do Senhor
-Faz renascer, faz transformar.
-Sua graça é derramada,
-Basta apenas acreditar.
-Deus te chama a conduzir
-O rebanho com fervor.
-Permaneça em Sua presença,
-Mesmo em tempos de dor.
-Se estiver no deserto,
-Ele vem te confortar.
-Aguenta firme, meu irmão,
-Logo tudo vai mudar.
-Peça com fé, não desista,
-Esse tempo vai passar.
-A promessa está chegando,
-Se prepare para pegar.
-Permaneça no Espírito,
-Para o propósito alcançar.
-Cuide bem do Seu rebanho,
-Pois tua hora vai chegar.`,
-      reflection: 'O poema fala de fogo que "segue ardendo" mesmo quando o medo tenta impedir o chamado. Você reconhece esse fogo em algum ministério que abandonou por acomodação ou receio de errar? Cuidar do rebanho com fervor começa nas pequenas responsabilidades de hoje: a célula, a visita, a palavra dita a tempo. Onde você está adiando o propósito que já foi confirmado no seu coração?',
-    },
-    {
-      id: 'cm-2',
-      title: 'Homilia da Missa de Sábado',
-      text: `Eu sou cristão, meu sobrenome é católico,
-meu coração é de Cristo, nele vou expressar.
-Pedro queria ir embora e o Senhor veio falar,
-ao perceber que era Jesus, voltou para anunciar.
-Entregou a sua vida para se crucificar,
-quando é que você a decisão irá tomar?
-Não desista do Senhor, ele vai te ajudar,
-você e eu fomos chamados
-para o evangelho anunciar.
-É preciso renascer da água e do espírito,
-A Mulher Samaritana foi chamar com o seu grito.
-O povo da sua cidade encontrou o meu Senhor,
-ao chegar perto, disseram: acreditamos no seu amor.
-O Novo Nascimento, Jesus Cristo veio trazer,
-o fruto do ministério, quando você vai colher?
-Através do meu espírito, se você realizar
-o desejo de Jesus, é ver você se libertar.
-Satanás está à espreita para derrubar você,
-cuidado com o seu veneno para você não beber.
-Olhe para Jesus Cristo, é o antídoto para a morte,
-se aproxime e busque Ele, pois mudou a sua sorte.`,
-      reflection: 'A imagem do sobrenome católico e do coração de Cristo cobra coerência entre identidade e vida prática. Pedro voltou quando reconheceu Jesus, e a Samaritana correu para anunciar antes mesmo de entender tudo — o testemunho não espera perfeição. Quando foi a última vez que você falou de Cristo a alguém sem primeiro calcular o risco? O antídoto contra o veneno do inimigo está diante de você: qual atitude concreta muda hoje?',
-    },
-    {
-      id: 'cm-5',
-      title: 'O Chamado do Oleiro',
-      text: `Não resista mais, é hora de seguir,
-Minha voz te chama, vem, deixa-me te conduzir.
-Nada pode impedir, nem angústia, nem dor,
-Por amor aos seus eleitos, Deus te chama—eu estou aqui, Senhor.
-Escute a voz que clama e reconheça o Criador,
-Ele é justo, Ele é santo, inquestionável é Seu amor.
-O oleiro molda o barro, com poder para transformar,
-Faz um vaso para a honra, faz outro para ensinar.
-Escolhidos e eleitos, separados pelo amor,
-Cada vaso que Ele forma reflete o seu Senhor.
-Tua alma está sedenta, quer a fonte a transbordar,
-E a água que sacia já foi dada, vem provar.`,
-      reflection: 'O oleiro que "faz um vaso para a honra, faz outro para ensinar" lembra que nem toda formação parece nobre enquanto está sendo moldada. Talvez você esteja sentindo a pressão das mãos do Oleiro numa fase difícil do trabalho, da família ou da vocação, sem entender ainda o desenho final. Você tem resistido ao barro sendo trabalhado ou tem deixado que o processo continue mesmo sem controle? A água que sacia já foi oferecida — falta você provar.',
-    },
-    {
-      id: 'cm-8',
-      title: 'Resposta ao Chamado',
-      text: `Responde ao chamado do Senhor,
-busca Seu Reino, onde há justiça e amor.
-O Espírito revelou ao justo Simeão,
-que Cristo viria, para nossa salvação.
-Alimente a esperança, como fez Simeão,
-aguarde com fé a consumação da redenção.
-Sinta a alegria da ressurreição,
-e semeie Cristo, para colher a salvação.
-Acredite na promessa, abra teu coração,
-alimente a fé, e busque a Ele na oração.
-A graça de Cristo te envolve, te fortalece,
-e a cada dia, mais Sua luz te esclarece.`,
-      reflection: 'Simeão esperou com fé antes de ver a promessa cumprida, e o poema convida à mesma paciência ativa: alimentar a esperança enquanto se busca o Reino. Você tem semeado com a expectativa de colher, ou tem desistido antes do tempo de Deus se cumprir? A alegria da ressurreição não é sentimento passageiro, é decisão diária de confiar. O que você semeou esta semana esperando a salvação de alguém, inclusive a sua?',
-    },
-    {
-      id: 'sv-1',
-      title: 'O Caminho para o Céu',
-      text: `Jesus, junto aos discípulos,
-Anuncia sua paixão,
-O sofrimento que viria,
-Para nossa redenção.
-Os discípulos, acostumados,
-Sempre ao lado do Senhor,
-Não compreendem que o Mestre
-Padecerá por amor.
-Se quiser ser o primeiro,
-Sirva a todos sem temor.
-Para entrar no Reino eterno,
-Aprenda com o Senhor.
-Mantenha acesa a chama,
-O desejo de crescer.
-Não desvie o seu olhar,
-Ouça o que Ele veio dizer.
-Servir é o caminho certo,
-Para o céu poder entrar.
-Amar e se entregar,
-Sem nada em troca esperar.
-"Está tudo consumado",
-Jesus disse em sua dor.
-Na cruz, Ele derramou
-Seu sangue puro de amor.
-O modelo da criança
-Nos convida a enxergar
-Que sem a graça de Deus
-Não podemos nos santificar.
-A técnica sem o Espírito
-Não nos traz conversão.
-A criança sempre ensina
-O valor do perdão.`,
-      reflection: 'O poema mostra os discípulos surdos ao anúncio da paixão porque ainda mediam grandeza pelos critérios do mundo. "Se quiser ser o primeiro, sirva a todos sem temor" desmonta qualquer projeto de destaque que não passe pelo serviço concreto. Onde você tem buscado ser o primeiro em vez de servir sem cobrar retorno? A criança que Jesus coloca no meio ensina que sem a graça não há santificação — técnica e esforço próprio não bastam.',
-    },
-    {
-      id: 'sv-3',
-      title: 'O Senhor te prepara para a missão',
-      text: `O Senhor te prepara para a missão,
-Te protege e ampara, cuida do teu coração.
-Ele quer te levar ao santuário celestial,
-Abandona o pecado e alcança a salvação real.
-Precisa se colocar em espírito de oração,
-Se quiser no Céu entrar, se prepare, meu irmão.
-Para não perder a salvação, abandona o pecado,
-Pois o inimigo deseja ver-nos derrotados.
-Cristo veio, o Sumo Sacerdote dos bens,
-Pelo Seu sangue, salvou a todos que querem ir além.
-Não duvide, tenha fé: a graça do Senhor
-É alimento pela Palavra e pela Eucaristia de amor.
-Comungue todo dia, Jesus é teu Salvador,
-Veja o que aconteceu com o rico e o pobre Lázaro:
-O rico ao inferno foi, enquanto Lázaro ao Céu chegou,
-Abraçado por Abraão, o pobre enfim descansou.
-O rico implorou, mas já era tarde demais,
-As migalhas que desprezou, agora não pôde mais alcançar.
-Lázaro firme se manteve, na esperança se alimentou,
-E assim, pela Palavra, o Céu enfim encontrou.
-Meu irmão, você é chamado, ouça essa lição:
-Deus te fala em Sua Palavra, não endureça teu coração.
-Ele te prepara com amor para cumprir tua missão,
-Pelo Espírito Santo, alcançarás a salvação.
-Beba da água viva todo dia,
-Se quiser no Céu entrar, nunca mais terás sede, confia!
-A vida do cristão é batalha sem cessar,
-Todos os dias, é preciso se preparar.
-Se entregue ao Senhor, se prepare para rezar,
-O Céu está aberto — basta acreditar.
-Abandona o pecado, se quiser no Céu morar.
-Meu irmão, atenção ao que agora vou contar:
-Quando a morte chegar, dois juízos virão te encontrar:
-Primeiro, o juízo particular, ao Senhor irás se apresentar;
-Depois, no final dos tempos, o juízo final irá te julgar.
-Seja fiel à graça, lute até o fim, meu irmão,
-E terás no Céu teu eterno galardão!`,
-      reflection: 'A parábola do rico e Lázaro, citada no poema, é um espelho duro: migalhas desprezadas em vida se tornam distância irreparável na eternidade. "Comungue todo dia" não é apenas devoção, é reconhecer que a alma se nutre da Eucaristia e da Palavra como quem tem sede real. Você tem tratado o pecado com a urgência de quem sabe que o juízo particular está próximo? O que você tem feito hoje que só fará sentido se olhado à luz do Céu?',
-    },
-    {
-      id: 'sv-4',
-      title: 'O Reino de Deus',
-      text: `Senhor, eu confio em tua graça,
-Teu amor é vasto e verdadeiro,
-nós caminhamos na direção do Teu reino,
-onde o céu se faz mais perto, e o amor é o primeiro.
-O caminho é estreito,
-mas a fé te guia com precisão,
-como a estrela que brilha na noite,
-te conduz ao Teu coração.
-O Espírito, com sua luz radiante,
-acende a chama da esperança em ti,
-para que, mesmo nos tempos difíceis,
-tu possas continuar a sorrir.
-O reino está à porta,
-não deixe passar sem perceber,
-pois quem crer será acolhido,
-e com Ele, vai renascer.`,
-      reflection: 'O caminho estreito guiado pela estrela pede mais confiança do que clareza total sobre o destino. O Reino está à porta, diz o poema, mas exige que se perceba o momento em vez de deixá-lo passar distraído. Em que área da sua vida você tem caminhado no escuro sem procurar a luz do Espírito que acende a esperança? Você reconheceria o Reino se ele batesse à sua porta hoje?',
-    },
-    {
-      id: 'sv-5',
-      title: 'O Reino e a Verdade',
-      text: `O Reino está próximo,
-a verdade é a luz.
-Caminha quem confia
-no amor de Jesus.
-Ele é a porta aberta,
-é o pão que nos sustém.
-Em Suas mãos está a vida,
-a promessa do bem.
-Quem busca Sua palavra
-em amor há de crescer.
-No silêncio da oração,
-encontra força pra viver.
-Não temas a jornada,
-nem a cruz que vai pesar.
-Jesus é o companheiro,
-que nunca vai te abandonar.
-Confie no Salvador,
-na verdade que Ele traz.
-Sua graça nos renova,
-e a vida se refaz.`,
-      reflection: '"Ele é a porta aberta, é o pão que nos sustém" — a imagem recusa qualquer ideia de um Deus distante e aponta para alimento concreto, diário. Buscar a Palavra em silêncio, como sugere o poema, é o oposto de viver ocupado demais para orar. Você tem deixado o barulho do dia calar a voz que sustenta? Onde você precisa confiar que Jesus não vai abandonar, mesmo com a cruz pesando?',
-    },
-    {
-      id: 'rv-1',
-      title: 'O Peso da Redenção',
-      text: `A dor não impediu
-que o Senhor cumprisse sua missão.
-Ela só te mantém preso
-se não tratar teu coração.
-Imagine o peso nos ombros
-que Ele carregou pra vencer,
-pra salvar.
-Esmagou o ódio,
-a falta de perdão…
-Já pensou?
-Está na hora de pensar.
-Ofereceu amor a todos,
-mas nem todos quiseram entender.
-Resgatou o pecado do mundo
-pra que todos pudessem
-ver…
-e crer.`,
-      reflection: 'O poema pergunta diretamente: "Já pensou? Está na hora de pensar." sobre o peso que Cristo carregou para esmagar o ódio e a falta de perdão que ainda moram em você. Não é sentimentalismo sobre a cruz, é confronto: alguém foi perdoado por você e ainda carrega essa dívida como se fosse útil. Que mágoa você continua guardando como se isso não custasse nada a ninguém? O resgate já foi feito — falta você deixar de segurar o que já foi pago.',
-    },
-    {
-      id: 'rv-3',
+      id: '615',
       title: 'Reflexões Sobre o Passado e o Futuro',
-      text: `Para construir um futuro,
-é preciso olhar o passado,
+      text: `O que você está construindo hoje?
+A base é sólida ou está no ar?
+Não adianta apenas querer o novo,
+se os alicerces você não preparar.
 
-analisar o que foi bom e ruim
-e deixar o que não presta de lado.
+A Lua parece distante da Terra,
+mas o brilho dela reflete aqui.
+Assim é o futuro que você espera:
+ele começa no sim que você deu ali.
 
-Use o passado como novo começo.
-Para construir a vida,
-o amor é o alicerce.
+Não olhe para o lado com inveja,
+cada um tem seu tempo de florescer.
+A conquista que o outro deseja,
+pode não ser a que vai te fazer crescer.
 
-Numa casa,
-é preciso ter materiais.
+O mundo apresenta mil fachadas,
+mas a verdade habita no interior.
+São muitas as vozes e as estradas,
+mas só uma conduz ao Senhor.
 
-Para um sonho,
-fé e esperança são vitais.
+A maior batalha não é lá fora,
+contra o inimigo que você pode ver.
+A luta real acontece agora,
+dentro da mente que tenta te vencer.
 
-Se eu comprar sua casa
-e você for para a rua,
-não me culpe por tê-la adquirido.
+Seja o soldado da própria consciência,
+não caia em ciladas de medo ou dor.
+O despertar exige persistência,
+no combate da mente, seja o vencedor.
 
-Pergunte antes
-por que você a vendeu tão fácil assim.
-
-Desistir
-nunca foi um bom fim.
-
-Sabia que a Lua se afasta da Terra
-a cada ano?
-
-Quatro centímetros,
-no tempo, parecem um engano.
-
-Mas nós, seres humanos,
-levamos segundos
-para nos afastar de Deus
-e das coisas profundas.
-
-A aparência esconde
-o que existe por dentro.
-
-E nem toda beleza
-revela quem alguém será.
-
-Algumas personalidades
-nos trazem alegria,
-
-enquanto o invejoso
-duvida da tua valentia.
-
-Quando você conquista o impossível,
-ele corre e pergunta:
-
-— Como conseguiu?
-Me ensina, por favor?
-
-E você responde
-com fé e amor:
-
-“Ainda dá tempo
-de perdoar e amar,
-
-ser amado,
-buscar, lutar, conquistar.
-
-Tudo é um caminho
-que precisa ser trilhado,
-
-mesmo quando
-o passado foi amargurado.”
-
-Não diga mentiras,
-pois quando se mente,
-toda verdade se torna
-perda de tempo.
-
-Passando pelas pessoas,
-cego é quem não vê
-que teu brilho incomoda
-e só te faz crescer.
-
-Dizem que a guerra
-destrói tudo por inteiro,
-
-mas ignoram
-o fim da Terra,
-lento e verdadeiro.
-
-E se eu te disser
-que o mundo gira
-em torno de uma estrela?
-
-Você acreditaria
-ou pensaria
-que é uma novela?
-
-Mas um soldado de verdade,
-sem armadura nem espada,
-é aquele que enfrenta
-a própria mente
-e sua cilada.`,
-      reflection: 'Organizamos o jardim de imagens deste poema: da estabilidade da casa à astronomia da Lua, terminando na batalha espiritual da mente. O soldado de verdade não luta contra o mundo, mas contra as ciladas do seu próprio pensamento.',
-      inspiration: 'O que eu digo a Deus depois de ler sobre as batalhas da minha própria mente?'
+É livre aquele que encontra a saída,
+deixando o passado em sua morada.
+O verdadeiro guerreiro da vida,
+enfrenta a própria mente e sua cilada.`,
+      reflection: 'Reestruturamos as imagens do poema para criar uma linha de leitura clara: do alicerce da casa até a batalha final na mente. O despertar da identidade acontece quando deixamos de ser reféns das circunstâncias externas e assumimos o comando do nosso território interior.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre as batalhas da minha mente?'
     },
     {
-
       id: 'rv-7',
       title: 'A Passagem',
       text: `Toc, toc, uma batida suave,
@@ -818,6 +204,7 @@ não deixe o momento escapar,
 faça de cada ação a chave
 que te levará ao teu lugar.`,
       reflection: '"Toc, toc, uma batida suave" descreve o tempo como visitante que não espera resposta atrasada. Cada segundo vira convite para agir, e o poema recusa a passividade de quem acha que sempre haverá amanhã. Que porta você tem deixado o tempo bater sem abrir, por medo ou acomodação? O que você faria hoje diferente se soubesse que esse instante não volta?',
+      inspiration: 'O que eu digo a Deus depois de ler sobre a urgência do meu tempo?'
     },
     {
       id: 'rv-8',
@@ -839,6 +226,7 @@ seu curso é irremediável,
 mas cada momento que viveres
 pode ser um milagre possível.`,
       reflection: '"Ele nunca para, mas te oferece todo dia 24 horas para recomeçar" desfaz a desculpa de que já é tarde demais para mudar de vida. O tempo é irremediável em seu curso, mas cada manhã chega como graça renovada, não como cobrança. Você tem usado o recomeço diário para orar, perdoar, servir — ou apenas para repetir o cansaço de ontem? Que milagre possível você está deixando de viver hoje por hábito?',
+      inspiration: 'O que eu digo a Deus depois de ler sobre o recomeço diário?'
     },
     {
       id: 'p1-39-new',
@@ -864,6 +252,7 @@ Jesus é a ponte entre o homem e o Pai,
 Não somos dos que recuam ou vivem a se arruinar,
 Somos os que creem com fé: Deus vai nos salvar.`,
       reflection: '"O justo não se justifica, pois já foi justificado" resume uma libertação que muitos cristãos ainda não aceitaram: viver como escravo depois de ter sido feito filho. O poema lembra o dia em que você foi iluminado — você ainda vive a partir dessa memória ou já a esqueceu no cansaço da rotina? Jesus é ponte, não obstáculo, entre você e o Pai. Em que decisão desta semana você vai agir como filho amado, e não como servo com medo de errar?',
+      inspiration: 'O que eu digo a Deus depois de ler sobre o meu chamado como filho?'
     },
     {
       id: 'p1-43-new',
@@ -889,44 +278,83 @@ Alimente-se da Palavra, viva forte esse amor.
 O Senhor está chamando, inflamando o coração,
 Nesta noite, Ele espera por ti na oração.`,
       reflection: '"Até quando ficará sem tomar a decisão?" é a pergunta que atravessa este poema sobre o juízo e o novo que Deus está fazendo. Não se trata de temor paralisante, mas de urgência: o fogo já abrasou, a graça já foi derramada, falta resposta. Que decisão você tem adiado esperando um momento mais confortável que talvez nunca chegue? Hoje, nesta noite, o que significa desapegar do mundo para alimentar-se da Palavra?',
+      inspiration: 'O que eu digo a Deus depois de ler sobre o meu despertar final?'
     },
     {
       id: 'p1-50-new',
       title: 'A Semeadura da Vida',
-      text: `O sentido da vida você precisa encontrar,
-Sirva com alegria — isso é o verdadeiro amar.
-É mais fácil amar quem está longe de você,
-Pois quem está perto faz você se conhecer.
-A vida não é fácil, é preciso aprender,
-Depois vem a caridade, e com ela, o florescer.
-Seja forte e corajoso, o Senhor já te salvou,
-Um semeia, outro rega — e no tempo certo, colheu.
-A lei da semeadura você deve entender,
-Saia do imediatismo — com paciência, vai crescer.
-Na prateleira da vida, escolhas vão aparecer,
-Arregace a mente e o coração, para um dia florescer.
-Seja assertivo na semente que você lançou,
-Pois o que sai da boca molda quem você se tornou.
-Reveja a semente que lança ao chão,
-E escolha, com sabedoria, a direção do seu coração.`,
-      reflection: '"É mais fácil amar quem está longe de você" desmascara uma caridade de fachada, que se sente generosa à distância mas se irrita com quem divide a mesma casa. A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
-    },
-    {
-      id: 'p1-55-new',
-      title: 'A Lei da Semeadura',
-      text: `O sentido da vida é servir com alegria,
-Semeando o amor em cada novo dia.
-É mais fácil amar quem está longe de você,
-Mas é o irmão de perto que te ajuda a crescer.
+      text: `O sentido da vida
+você precisa encontrar.
 
-Saia do imediatismo, a semente tem seu tempo,
-Não lance palavras vãs ao sabor do vento.
-O que sai da sua boca molda a sua motivação,
-Escolha com sabedoria a semente do coração.
+Sirva com alegria —
+isso é o verdadeiro amar.
 
-Um semeia, outro rega, mas é Deus quem faz brotar,
-Arregace a mente e prepare-se para colher e amar.`,
-      reflection: 'A lei da semeadura pede paciência: um semeia, outro rega, e a colheita tem hora certa demais para o imediatismo de hoje. Que palavra você tem lançado sem cuidado, esquecendo que ela molda quem você se torna? Quem, perto de você, está esperando ser amado de verdade, não à distância?',
+É mais fácil amar
+quem está longe de você,
+
+pois quem está perto
+faz você se conhecer.
+
+A vida não é fácil,
+é preciso aprender.
+
+Depois vem a caridade
+e, com ela, o florescer.
+
+Seja forte e corajoso,
+o Senhor já te salvou.
+
+Um semeia,
+outro rega,
+
+e no tempo certo,
+a semente brotou.
+
+A lei da semeadura
+você deve entender:
+
+saia do imediatismo,
+com paciência vai crescer.
+
+Na prateleira da vida,
+escolhas vão aparecer.
+
+Arregace a mente
+e o coração
+para um dia florescer.
+
+Seja assertivo
+na semente que você lançou,
+
+pois o que sai da boca
+molda quem você se tornou.
+
+Reveja a semente
+que lança ao chão
+
+e escolha, com sabedoria,
+a direção do seu coração.
+
+Lembre-se de Abraão,
+pai da fé verdadeira,
+
+que entregou Isaque
+com confiança inteira.
+
+Deus o provou
+e nele confiou,
+
+e o exemplo de fé
+permanece
+e nos guiou.
+
+Plante fé com o coração,
+mesmo sem ver.
+
+E, no tempo de Deus,
+você verá nascer.`,
+      reflection: 'Fundimos as duas versões para criar o fechamento ideal do Bloco 1. O poema agora conecta a semeadura prática (serviço e convivência) com a semeadura espiritual (a fé de Abraão). A paciência é a chave para o despertar da identidade.',
+      inspiration: 'O que eu digo a Deus depois de ler sobre as sementes que estou plantando?'
     }
   ],
   'bloco-2': [
@@ -2448,24 +1876,6 @@ Eu deixei lá no passado, resolvi as convicções Que me prenderam antigamente, 
 Na minha mente, vivo em paz com as emoções.`,
       reflection: 'Todo dia é um "primeiro de janeiro" em Deus. Recebemos um livro em branco a cada manhã. O que eu vou escrever na página em branco de hoje? Quais "convicções antigas" eu preciso deixar no ano que passou?',
       inspiration: 'Neste livro em branco, eu escrevo...'
-    },
-    {
-      id: 'p5-7',
-      title: 'A Lei da Semeadura',
-      text: `O sentido da vida é servir com alegria,
-Semeando o amor em cada novo dia.
-É mais fácil amar quem está longe de você,
-Mas é o irmão de perto que te ajuda a crescer.
-
-Saia do imediatismo, a semente tem seu tempo,
-Não lance palavras vãs ao sabor do vento.
-O que sai da sua boca molda a sua motivação,
-Escolha com sabedoria a semente do coração.
-
-Um semeia, outro rega, mas é Deus quem faz brotar,
-Arregace a mente e prepare-se para colher e amar.`,
-      reflection: 'Unificamos as lições sobre a semeadura espiritual. A colheita não é imediata, mas é certa. O poema nos lembra que nossas palavras são sementes: o que você tem plantado na vida de quem convive com você diariamente?',
-      inspiration: 'Hoje eu planto paciência para colher...'
     },
     {
       id: 'p5-8',

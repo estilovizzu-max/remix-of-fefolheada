@@ -79,13 +79,16 @@ export const initialBookData: BookProject = {
   lastUpdated: new Date().toISOString(),
   readinessScore: 68,
   scores: {
-    'Arquitetura': 90,
-    'PCH': 90,
+    'Conceito': 90,
+    'Estrutura': 85,
+    'Identidade espiritual': 90,
+    'Originalidade': 75,
+    'Força das imagens': 70,
+    'Qualidade literária': 60,
+    'Coesão': 70,
+    'Métrica/Ritmo': 55,
     'Revisão': 50,
-    'Consistência': 70,
-    'Comercial': 75,
-    'Design': 75,
-    'Métrica/Ritmo': 55
+    'Meditações': 50
   },
 
   productionProgress: {
