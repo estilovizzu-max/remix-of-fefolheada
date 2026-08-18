@@ -235,8 +235,9 @@ export const PoemCard = ({ poem, isRead, onToggleRead }: PoemCardProps) => {
             <div className="p-6 bg-secondary/[0.02] rounded-3xl border border-secondary/10 relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-1 h-full bg-secondary/40" />
               <h4 className="flex items-center gap-2 font-bold text-secondary mb-3 text-sm uppercase tracking-widest">
-                <span className="text-xl">✍️</span> Convite ao Poeta
+                <span className="text-xl">✍️</span> O que eu digo a Deus depois de ler?
               </h4>
+
               <p className="text-base text-foreground/80 leading-relaxed">
                 {poem.inspiration}
               </p>
