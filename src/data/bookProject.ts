@@ -4,6 +4,7 @@ export interface ChapterVersion {
   content: string;
   timestamp: string;
   author: string;
+  changeSummary?: string;
 }
 
 export interface AuditEntry {
@@ -33,6 +34,9 @@ export interface BookProject {
   id: string;
   title: string;
   subtitle: string;
+  synopsis?: string;
+  authorBio?: string;
+  coverPrompt?: string;
   author: string;
   version: string;
   status: 'ideia' | 'escrita' | 'producao' | 'finalizing';
@@ -49,6 +53,8 @@ export interface BookProject {
     tom: string;
     voz: string;
     regrasAutor: string[];
+    personagens: string[];
+    promessas: string[];
     conceitos: { tag: string; descricao: string }[];
   };
   printSettings: {
@@ -64,6 +70,9 @@ export const initialBookData: BookProject = {
   id: 'folheando-fe-v1',
   title: 'Folheando Fé',
   subtitle: 'Método PCH — Poesia que Cura o Homem',
+  synopsis: 'Uma jornada poética de cura e restauração espiritual.',
+  authorBio: 'Evaldo Poeta é um missionário da RCC apaixonado por transformar pregação em poesia.',
+  coverPrompt: 'Uma capa sóbria com tons de roxo e dourado, elementos de luz e um barco navegando.',
   author: 'Evaldo Poeta',
   version: '2.0.0',
   status: 'finalizing',
@@ -93,6 +102,8 @@ export const initialBookData: BookProject = {
       'Terminar sempre em esperança e vitória (Selo PCH).',
       'Integrar a espiritualidade católica (Maria, Terço, Eucaristia) de forma profunda.'
     ],
+    personagens: ['Filho da Luz', 'Jesus Cristo', 'Virgem Maria', 'Jó'],
+    promessas: ['Cura interior', 'Restauração familiar', 'Encontro com o Espírito'],
     conceitos: [
       { tag: 'PCH', descricao: 'Poesia que Cura o Homem (Metodologia de escrita sob unção).' },
       { tag: 'BARCO', descricao: 'Metáfora para a vida e restauração (leme, âncora, mar).' },
@@ -112,7 +123,9 @@ export const initialBookData: BookProject = {
       title: 'Bloco 1: O Despertar',
       content: 'Conteúdo do Bloco 1 sendo processado pelas Skills...',
       status: 'revisao',
-      versions: [],
+      versions: [
+        { id: 'v1', version: 1, content: 'Versão original...', timestamp: new Date().toISOString(), author: 'Evaldo', changeSummary: 'Criação inicial' }
+      ],
       auditLog: [],
       approvals: []
     },
