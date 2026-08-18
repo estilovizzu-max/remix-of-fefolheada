@@ -1,22 +1,89 @@
-import { Poem, PoemsData } from './poems';
+export interface ChapterVersion {
+  id: string;
+  version: number;
+  content: string;
+  timestamp: string;
+  author: string;
+}
 
-export const bookProject = {
+export interface AuditEntry {
+  id: string;
+  skillId: string;
+  action: string;
+  evidence: string;
+  timestamp: string;
+  contextUsed?: string[];
+}
+
+export interface Chapter {
+  id: string;
+  title: string;
+  content: string;
+  status: 'rascunho' | 'revisao' | 'finalizado';
+  versions: ChapterVersion[];
+  auditLog: AuditEntry[];
+  approvals: {
+    skillId: string;
+    approved: boolean;
+    authorNote?: string;
+  }[];
+}
+
+export interface BookProject {
+  id: string;
+  title: string;
+  subtitle: string;
+  author: string;
+  version: string;
+  status: 'ideia' | 'escrita' | 'producao' | 'finalizing';
+  lastUpdated: string;
+  chapters: Chapter[];
+  readinessScore: number;
+  scores: {
+    [key: string]: number;
+  };
+  productionProgress: {
+    [key: string]: number;
+  };
+  editorialMemory: {
+    tom: string;
+    voz: string;
+    regrasAutor: string[];
+    conceitos: { tag: string; descricao: string }[];
+  };
+  printSettings: {
+    format: string;
+    margins: { top: number; bottom: number; inner: number; outer: number };
+    bleed: number;
+    dpi: number;
+    colorProfile: string;
+  };
+}
+
+export const initialBookData: BookProject = {
   id: 'folheando-fe-v1',
   title: 'Folheando Fé',
   subtitle: 'Método PCH — Poesia que Cura o Homem',
   author: 'Evaldo Poeta',
   version: '2.0.0',
-  status: 'finalizing' as const,
+  status: 'finalizing',
   lastUpdated: new Date().toISOString(),
-  
-  printSettings: {
-    format: '14x21',
-    margins: { top: 20, bottom: 20, inner: 25, outer: 20 },
-    bleed: 3,
-    dpi: 300,
-    colorProfile: 'CMYK'
+  readinessScore: 85,
+  scores: {
+    'Arquitetura': 95,
+    'PCH': 92,
+    'Revisão': 78,
+    'Consistência': 85,
+    'Comercial': 80,
+    'Design': 75
   },
-
+  productionProgress: {
+    'Arquitetura': 100,
+    'Escrita': 90,
+    'Revisão': 70,
+    'Diagramação': 80,
+    'Pré-Impressão': 40
+  },
   editorialMemory: {
     tom: 'Espiritual, encorajador, sensorial e profundo.',
     voz: 'Testemunhal e profética.',
@@ -32,13 +99,31 @@ export const bookProject = {
       { tag: 'LUZ', descricao: 'Identidade do cristão (Filho da Luz).' }
     ]
   },
-
-  readinessScore: 85,
-  productionProgress: {
-    arquitetura: 100,
-    escrita: 90,
-    revisao: 70,
-    diagramacao: 80,
-    preImpressao: 40
-  }
+  printSettings: {
+    format: '14x21',
+    margins: { top: 20, bottom: 20, inner: 25, outer: 20 },
+    bleed: 3,
+    dpi: 300,
+    colorProfile: 'CMYK'
+  },
+  chapters: [
+    {
+      id: 'cap-1',
+      title: 'Bloco 1: O Despertar',
+      content: 'Conteúdo do Bloco 1 sendo processado pelas Skills...',
+      status: 'revisao',
+      versions: [],
+      auditLog: [],
+      approvals: []
+    },
+    {
+      id: 'cap-2',
+      title: 'Bloco 2: A Decisão',
+      content: 'Conteúdo do Bloco 2 em fase de lapidação...',
+      status: 'rascunho',
+      versions: [],
+      auditLog: [],
+      approvals: []
+    }
+  ]
 };
