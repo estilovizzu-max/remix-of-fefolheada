@@ -868,13 +868,13 @@ Pois o toque do Senhor faz a alma renascer.`,
       title: 'A Fé que Cura (Bartimeu e a Hemorroísa)',
       text: `Orai sem cessar, não deixes de clamar, como fez Bartimeu, deixa a capa e vem gritar:
 "Jesus, Filho de Davi, tem piedade de mim, Toca minha vida agora, faz minha visão se abrir!"
-Tenha fé, não desista, confia no Senhor, Como em Betânia, onde Ele derramou Seu amor.
-Quatro dias se passaram, mas Lázaro ressurgiu, E a glória de Deus Pai naquele dia se viu.
+Ele deixou a capa, ergueu-se sem tardar, Pois quem ouve o Seu chamado pode confiar.
+Tenha fé, não desista, confia no Senhor, Como Bartimeu, que o alcançou no seu clamor.
 A mulher já padecia, doze anos a sofrer, Buscou ajuda dos homens, mas não pôde se erguer.
 Aproximou-se de Cristo, cheia de esperança, Tocou a orla do manto e recebeu a mudança.
 A fé é fundamento, é a base do cristão, Então creia, meu irmão, com todo o coração.
 Jesus está tocando, basta n’Ele confiar, Pois Seu poder divino veio hoje pra te curar.`,
-      reflection: 'Bartimeu precisou jogar fora sua capa (sua velha identidade de mendigo) para ir até Jesus. A mulher hemorroísa precisou vencer a vergonha para tocar no manto. A fé exige movimento. Qual "capa" velha eu preciso jogar fora hoje para correr até Jesus? Tenho buscado ajuda apenas "nos homens" ou já toquei na orla de Jesus com fé?',
+      reflection: 'Bartimeu precisou jogar fora sua capa (sua velha identidade de mendigo) e correr até Jesus, confiando apenas no Seu chamado. A mulher hemorroísa precisou vencer a vergonha para tocar no manto. A fé exige movimento e confiança. Qual "capa" velha eu preciso jogar fora hoje para correr até Jesus? Estou disposto a confiar plenamente n’Ele, ou ainda busco ajuda apenas "nos homens", sem tocar na orla de Jesus com fé?',
       inspiration: 'Jesus, Filho de Davi, olha para a minha...'
     },
     {
