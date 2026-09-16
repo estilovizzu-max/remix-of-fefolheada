@@ -107,6 +107,12 @@ export default function Validacao() {
       detail: fileStatus.epub.exists ? "Metadados e Capa OK" : "Arquivo não encontrado"
     },
     { 
+      label: "Formato Físico", 
+      value: "16 × 23 cm", 
+      status: "ok", 
+      detail: "Margens 20/20/25/20 mm · sangria 3 mm" 
+    },
+    { 
       label: "Numeração & Folio", 
       value: "Auditado", 
       status: "ok", 
@@ -128,7 +134,7 @@ export default function Validacao() {
         <header className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#c19935]/20 pb-6">
           <div className="space-y-1">
             <h1 className="text-3xl font-serif text-[#c19935]">Validação Técnica</h1>
-            <p className="text-[#f3ecdb]/60 text-sm">Controle de qualidade dos artefatos e estrutura do livro.</p>
+             <p className="text-[#f3ecdb]/60 text-sm">Miolo físico 16 × 23 cm · margens espelhadas · sangria de 3 mm.</p>
           </div>
           <Link to="/">
             <Button variant="outline" className="border-[#c19935]/40 text-[#f3ecdb] hover:bg-[#c19935]/10">
@@ -288,7 +294,7 @@ function PreviewCard({ title, children, onClick }: { title: string, children: Re
   return (
     <div className="space-y-2 group cursor-pointer" onClick={onClick}>
       <span className="text-[10px] uppercase tracking-widest text-[#c19935]/70 block truncate">{title}</span>
-      <div className="aspect-[3/4] rounded shadow-lg overflow-hidden border border-[#c19935]/20 bg-black/20 flex items-center justify-center relative group-hover:border-[#c19935]/50 transition-all">
+       <div className="aspect-[16/23] rounded shadow-lg overflow-hidden border border-[#c19935]/20 bg-black/20 flex items-center justify-center relative group-hover:border-[#c19935]/50 transition-all">
         <div className="absolute inset-0 bg-[#c19935]/0 group-hover:bg-[#c19935]/5 flex items-center justify-center transition-all z-10">
           <ZoomIn className="text-[#c19935] opacity-0 group-hover:opacity-100 transition-all" />
         </div>
@@ -302,7 +308,7 @@ function CoverPreview({ scale = 1 }: { scale?: number }) {
   return (
     <div 
       style={{ transform: `scale(${scale})` }}
-      className="w-[300px] h-[400px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
+      className="w-[320px] h-[460px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
     >
       <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
       <div className="mt-8 mb-auto text-[8px] tracking-[0.4em] text-[#c19935]">EVALDO POETA</div>
@@ -323,7 +329,7 @@ function BackCoverPreview({ scale = 1 }: { scale?: number }) {
   return (
     <div 
       style={{ transform: `scale(${scale})` }}
-      className="w-[300px] h-[400px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
+      className="w-[320px] h-[460px] bg-[#251456] flex flex-col items-center justify-center text-center p-8 relative shadow-2xl"
     >
       <div className="absolute inset-2 border border-[#c19935]/20 pointer-events-none" />
       <div className="my-auto space-y-6 max-w-[80%]">
@@ -344,8 +350,9 @@ function InternalPagePreview({ scale = 1 }: { scale?: number }) {
   return (
     <div 
       style={{ transform: `scale(${scale})` }}
-      className="w-[300px] h-[400px] bg-[#f3ecdb] text-[#251456] p-8 relative shadow-2xl"
+      className="w-[320px] h-[460px] bg-[#f3ecdb] text-[#251456] px-10 pt-10 pb-9 relative shadow-2xl"
     >
+      <div className="absolute inset-x-[12.5%] top-[8.7%] bottom-[8.7%] border border-dashed border-[#c19935]/20 pointer-events-none" />
       <div className="text-[8px] border-b border-[#251456]/10 pb-1 mb-4 flex justify-between font-serif italic">
         <span>Folheando Fé</span>
         <span>Sumário</span>
@@ -368,8 +375,9 @@ function PoemPagePreview({ scale = 1 }: { scale?: number }) {
   return (
     <div 
       style={{ transform: `scale(${scale})` }}
-      className="w-[300px] h-[400px] bg-[#f3ecdb] text-[#251456] p-8 relative shadow-2xl"
+      className="w-[320px] h-[460px] bg-[#f3ecdb] text-[#251456] pl-[50px] pr-10 pt-10 pb-9 relative shadow-2xl"
     >
+      <div className="absolute left-[15.625%] right-[12.5%] top-[8.7%] bottom-[8.7%] border border-dashed border-[#c19935]/20 pointer-events-none" />
       <div className="text-[8px] border-b border-[#251456]/10 pb-1 mb-4 flex justify-between font-serif italic">
         <span>Capítulo I: O Despertar</span>
         <span>15</span>

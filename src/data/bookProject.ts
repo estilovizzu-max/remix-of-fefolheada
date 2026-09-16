@@ -118,7 +118,7 @@ export const initialBookData: BookProject = {
   },
 
   printSettings: {
-    format: '14x21',
+    format: '16x23',
     margins: { top: 20, bottom: 20, inner: 25, outer: 20 },
     bleed: 3,
     dpi: 300,

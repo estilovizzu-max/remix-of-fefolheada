@@ -1339,12 +1339,12 @@ export const BookReader = () => {
         >
           <HTMLFlipBook
             ref={bookRef}
-            width={420}
-            height={620}
-            minWidth={315}
+            width={432}
+            height={621}
+            minWidth={306}
             maxWidth={480}
-            minHeight={460}
-            maxHeight={720}
+            minHeight={440}
+            maxHeight={690}
             size="stretch"
             drawShadow
             flippingTime={700}

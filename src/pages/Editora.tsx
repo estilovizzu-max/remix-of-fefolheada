@@ -789,7 +789,14 @@ export default function Editora() {
                              <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-1">
                                    <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">Formato Físico</label>
-                                   <select className="w-full bg-white/5 border border-[#c19935]/20 rounded p-1 text-[10px] text-[#f3ecdb]">
+                                    <select
+                                       value={book.printSettings.format}
+                                       onChange={(event) => setBook(currentBook => ({
+                                          ...currentBook,
+                                          printSettings: { ...currentBook.printSettings, format: event.target.value }
+                                       }))}
+                                       className="w-full bg-white/5 border border-[#c19935]/20 rounded p-1 text-[10px] text-[#f3ecdb]"
+                                    >
                                       <option value="14x21">14 × 21 cm</option>
                                       <option value="15x21">15 × 21 cm</option>
                                       <option value="16x23">16 × 23 cm</option>
@@ -803,7 +810,9 @@ export default function Editora() {
                                 </div>
                                 <div className="space-y-1">
                                    <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">Margens / Sangria</label>
-                                   <div className="text-[9px] text-[#f3ecdb]/60">Interna: 25mm | Sangria: 3mm</div>
+                                    <div className="text-[9px] text-[#f3ecdb]/60 leading-relaxed">
+                                       Superior/Inferior: 20 mm<br />Interna: 25 mm · Externa: 20 mm<br />Sangria: 3 mm
+                                    </div>
                                 </div>
                                 <div className="space-y-1">
                                    <label className="text-[9px] uppercase tracking-widest text-[#c19935]/50">DPI / Resolução</label>

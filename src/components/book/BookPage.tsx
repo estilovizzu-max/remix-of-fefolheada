@@ -11,11 +11,16 @@ interface BookPageProps {
 
 export const BookPage = forwardRef<HTMLDivElement, BookPageProps>(
   ({ children, className, runningHead, folio, variant = 'paper' }, ref) => {
+    const numericFolio = typeof folio === 'number' ? folio : undefined;
+    const pageSide = numericFolio ? (numericFolio % 2 === 0 ? 'verso' : 'recto') : undefined;
+
     return (
       <div
         ref={ref}
+        data-page-side={pageSide}
+        data-trim-size="160x230mm"
         className={cn(
-          'book-page relative overflow-hidden select-text',
+          'book-page print-page-real relative overflow-hidden select-text',
           variant === 'paper' && 'bg-[hsl(var(--paper))] text-[hsl(var(--paper-ink))]',
           variant === 'cover' && 'bg-[hsl(var(--book-purple))] text-[hsl(var(--paper))]',
           variant === 'plain' && 'bg-[hsl(var(--paper))] text-[hsl(var(--paper-ink))]',
@@ -23,6 +28,7 @@ export const BookPage = forwardRef<HTMLDivElement, BookPageProps>(
       >
         {variant === 'paper' && (
           <>
+            <div className="print-safe-area absolute pointer-events-none" aria-hidden="true" />
             {/* running head */}
             {runningHead && (
               <div className="absolute top-4 left-0 right-0 px-8 flex items-center justify-between text-[10px] tracking-[0.25em] uppercase text-[hsl(var(--paper-muted))] font-sans">
@@ -42,7 +48,7 @@ export const BookPage = forwardRef<HTMLDivElement, BookPageProps>(
             )}
           </>
         )}
-        <div className={cn('h-full w-full', className)}>{children}</div>
+        <div className={cn('book-page-content h-full w-full', className)}>{children}</div>
       </div>
     );
   }
