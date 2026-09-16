@@ -189,11 +189,33 @@ All colors MUST be HSL.
   }
 
   .book-page {
+    aspect-ratio: 16 / 23;
     background-image:
       radial-gradient(hsl(var(--paper-rule) / 0.08) 1px, transparent 1px),
       linear-gradient(to bottom right, hsl(var(--paper)) 0%, hsl(var(--paper-tint, 40 40% 91%)) 100%);
     background-size: 24px 24px, 100% 100%;
     box-shadow: inset 0 0 60px hsl(var(--book-purple) / 0.06);
+  }
+  .print-page-real {
+    --trim-width: 160mm;
+    --trim-height: 230mm;
+    --page-bleed: 3mm;
+    --margin-top: 20mm;
+    --margin-bottom: 20mm;
+    --margin-inner: 25mm;
+    --margin-outer: 20mm;
+  }
+  .print-safe-area {
+    z-index: 20;
+    top: 8.6957%;
+    bottom: 8.6957%;
+    left: 12.5%;
+    right: 15.625%;
+    border: 1px dashed hsl(var(--book-gold) / 0.16);
+  }
+  .print-page-real[data-page-side="verso"] .print-safe-area {
+    left: 15.625%;
+    right: 12.5%;
   }
   .poem-scroll::-webkit-scrollbar { width: 4px; }
   .poem-scroll::-webkit-scrollbar-thumb { background: hsl(var(--paper-rule) / 0.5); border-radius: 2px; }
@@ -229,5 +251,24 @@ All colors MUST be HSL.
     padding-left: var(--reader-margin);
     padding-right: var(--reader-margin);
     text-align: var(--reader-align);
+  }
+}
+
+@media print {
+  @page {
+    size: 160mm 230mm;
+    margin: 0;
+  }
+
+  .book-page {
+    width: 160mm !important;
+    height: 230mm !important;
+    box-shadow: none !important;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .print-safe-area {
+    display: none;
   }
 }
