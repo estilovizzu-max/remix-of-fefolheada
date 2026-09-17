@@ -264,6 +264,22 @@ interface PoemPageProps {
   onSaveNote: (id: string, note: string) => void;
 }
 
+type PoemDensity = 'short' | 'standard' | 'long' | 'compact' | 'extended';
+
+const getPoemDensity = (text: string): PoemDensity => {
+  const visualLines = text.split('\n').reduce((total, line) => {
+    const trimmedLine = line.trim();
+    if (!trimmedLine) return total + 0.55;
+    return total + Math.max(1, Math.ceil(trimmedLine.length / 38));
+  }, 0);
+
+  if (visualLines <= 16) return 'short';
+  if (visualLines <= 24) return 'standard';
+  if (visualLines <= 34) return 'long';
+  if (visualLines <= 46) return 'compact';
+  return 'extended';
+};
+
 const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
   (
     {
@@ -311,28 +327,25 @@ const PoemPage = forwardRef<HTMLDivElement, PoemPageProps>(
 
     const hasExtra = poem.reflection || poem.inspiration;
     const isPending = !hasExtra && !!pendingText;
+    const density = getPoemDensity(poem.text);
 
     return (
       <BookPage ref={ref} runningHead={runningHead + ` · ${marker}`} folio={folio}>
-        <div className="h-full flex flex-col px-8 pt-14 pb-10">
-          <div className="text-center mb-3 shrink-0">
+        <div className="poem-page-layout h-full flex flex-col" data-poem-density={density}>
+          <div className="poem-page-title text-center shrink-0">
             <h3
-              className="text-xl md:text-2xl font-serif text-[hsl(var(--book-purple))] leading-tight"
+              className="poem-page-heading font-serif text-[hsl(var(--book-purple))] leading-tight"
               style={{ fontFamily: 'Lora, serif' }}
             >
               {poem.title}
             </h3>
-            <div className="h-px w-10 bg-[hsl(var(--book-gold))] mx-auto mt-3" />
+            <div className="poem-title-rule h-px w-10 bg-[hsl(var(--book-gold))] mx-auto" />
           </div>
 
-          <div className="flex-1 overflow-y-auto min-h-0 poem-scroll flex flex-col">
+          <div className="poem-reading-area flex-1 overflow-y-auto min-h-0 poem-scroll flex flex-col">
             <p
-              className="poem-verse whitespace-pre-line italic font-serif text-[hsl(var(--paper-ink))] text-center py-8 px-4"
-              style={{ 
-                fontFamily: 'Lora, serif',
-                lineHeight: '2.2',
-                fontSize: '1.1rem'
-              }}
+              className="poem-verse whitespace-pre-line italic font-serif text-[hsl(var(--paper-ink))]"
+              style={{ fontFamily: 'Lora, serif' }}
             >
               {poem.text}
             </p>
