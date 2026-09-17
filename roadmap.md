@@ -5,4 +5,4 @@
 - [x] Ajustar páginas e miniaturas para a proporção real 16:23.
 - [x] Exibir área segura, fólio e especificações de pré-impressão.
 - [x] Validar leitor, Editora e Validação; testes concluídos.
-- [ ] Refinar a tipografia dinâmica das páginas de poemas e validar em desktop e telas menores.
+- [x] Refinar a tipografia dinâmica das páginas de poemas e validar em desktop e telas menores.
